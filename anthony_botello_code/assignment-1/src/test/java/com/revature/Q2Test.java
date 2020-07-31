@@ -2,8 +2,6 @@ package com.revature;
 
 import static org.junit.Assert.assertTrue;
 
-import java.math.BigInteger;
-
 import org.junit.Test;
 
 /**
@@ -13,7 +11,6 @@ public class Q2Test {
 
     @Test // Tests that 'fibonacci' returns null for inputs less than 0
     public void shouldReturnNullForInputLessThan0(){
-
         assertTrue(Q2.fibonacci(-1) == null);
     }
 
@@ -34,20 +31,4 @@ public class Q2Test {
             assertTrue(expected == returned);
         }
     }
-
-    @Test // Tests that 'fibonacci' returns a Long up to the 92nd number
-    public void shouldReturnLong(){
-        
-        for(int i = 0; i < 93; i++){
-
-            assertTrue(Q2.fibonacci(i) instanceof Long);
-        }
-    }
-
-    @Test // Tests that 'fibonacci' returns a BigInteger starting at the 93rd number
-    public void shouldReturnBigInteger(){
-        
-        assertTrue(Q2.fibonacci(93) instanceof BigInteger);
-    }
-    
 }

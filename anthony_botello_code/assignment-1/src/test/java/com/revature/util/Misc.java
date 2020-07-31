@@ -107,13 +107,13 @@ public class Misc{
         return new String(string);
     }
 
-    public static void main(String[] args){
-        String testString = Misc.getRandomAlphaString();
-        String reversedTestString = new String(testString);
+    // public static void main(String[] args){
+    //     String testString = Misc.getRandomAlphaString();
+    //     String reversedTestString = new String(testString);
 
-        // System.out.println(testString);
-        // System.out.println(reversedTestString);
-        System.out.println(testString == reversedTestString);
-        System.out.println(testString.equals(reversedTestString));
-    }
+    //     // System.out.println(testString);
+    //     // System.out.println(reversedTestString);
+    //     System.out.println(testString == reversedTestString);
+    //     System.out.println(testString.equals(reversedTestString));
+    // }
 }
