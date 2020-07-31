@@ -1,17 +1,15 @@
 package com.revature;
 
+import java.math.BigInteger;
+
 public class Q4{
 
-    public static long factorial(int n){
-        if (n == 0) return 1;
-        return (long) n * factorial(n - 1);
-    }
-
-    public static void main(String[] args){
+    public static BigInteger factorial(int n){
         
-        for(int i = 0; i < 20; i++){
-            System.out.printf("%d! = %d\n", i, factorial(i));
-        }
-    }
+        if(n < 0) return null;
 
+        if (n == 0 | n == 1) return BigInteger.valueOf(1);
+
+        return BigInteger.valueOf(n).multiply(factorial(n - 1));
+    }
 }

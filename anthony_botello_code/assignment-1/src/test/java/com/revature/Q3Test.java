@@ -14,13 +14,13 @@ import org.junit.Test;
 public class Q3Test {
 
     @Test // Tests that 'reverseString' returns null when given null input
-    public void shouldReturnNullWhenInputIsNull(){
+    public void testIfNullStringReturnsNull(){
 
         assertNull(Q3.reverseString(null));
     }
     
     @Test // Tests that 'reverseString' method returns the input String in reverse
-    public void shouldReturnReversedInputString(){
+    public void testIfStringReversed(){
 
         // Test for empty String
         assertTrue(Q3.reverseString("").equals(""));

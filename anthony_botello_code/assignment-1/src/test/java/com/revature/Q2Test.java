@@ -10,13 +10,13 @@ import org.junit.Test;
 public class Q2Test {
 
     @Test // Tests that 'fibonacci' returns null for inputs less than 0
-    public void shouldReturnNullForInputLessThan0(){
+    public void testIfReturnsNullForNegativeInput(){
         assertTrue(Q2.fibonacci(-1) == null);
     }
 
 
     @Test // Tests the accuracy of 'fibonacci' for the first 25 Fibonacci numbers
-    public void shouldReturnFirst25FibonacciNumbers(){
+    public void testForFirst25FibonacciNumbers(){
 
         long[] first25FibonacciNumbers = {0,1,1,2,3
                                         ,5,8,13,21,34
