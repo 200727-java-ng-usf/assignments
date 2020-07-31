@@ -1,6 +1,7 @@
 package com.revature;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -8,8 +9,13 @@ import org.junit.Test;
  * Unit test for Q3
  */
 public class Q4Test {
+
+    @Test // Tests that 'fibonacci' returns null for inputs less than 0
+    public void testIfReturnsNullForNegativeInput(){
+        assertTrue(Q4.factorial(-1) == null);
+    }
     
-    @Test
+    @Test // tests accuracy for first 25 factorials
     public void testFirst20Factorials(){
 
         long[] first20Factorials = {
