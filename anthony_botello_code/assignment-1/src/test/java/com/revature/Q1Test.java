@@ -2,6 +2,10 @@ package com.revature;
 
 import static org.junit.Assert.assertArrayEquals;
 
+import java.util.Arrays;
+
+import com.revature.util.Misc;
+
 import org.junit.Test;
     
 /**
@@ -15,7 +19,7 @@ public class Q1Test {
      * 'bubbleSort' takes an int array as input
      * should output sorted array
      */
-    @Test
+    @Test // Test for fixed array
     public void shouldReturnSortedArray(){
         
         int[] testArray = {1,0,5,6,3,2,3,7,9,8,4};
@@ -24,6 +28,19 @@ public class Q1Test {
         Q1.bubbleSort(testArray); // run 'bubbleSort' on the unsorted test array
         
         // Assert that the unsorted array is now identical to the sorted array
+        assertArrayEquals(testArray, sortedTestArray);
+
+    }
+
+    @Test // Test for random array
+    public void shouldReturnSortedRandomArray(){
+
+        int[] testArray = Misc.randomIntArray(10000);
+        int[] sortedTestArray = testArray.clone();  // returns new copy of test array
+        Arrays.sort(sortedTestArray);   // sort test array, used for comparison
+
+        Q1.bubbleSort(testArray);
+
         assertArrayEquals(testArray, sortedTestArray);
     }
 }
