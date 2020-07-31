@@ -7,17 +7,11 @@ import java.math.BigInteger;
 import org.junit.Test;
 
 /**
- * Unit test for Q2
+ * Unit tests for Q2
  */
 public class Q2Test {
 
-    /**
-     * Tests for 'fibonacci' method of Q2
-     * 'fibonacci' takes int 'n' as input
-     *  should return long with value of nth Fibonacci number
-     */
-    
-    @Test // Tests that 'fibonacci' returns null inputs less than 0
+    @Test // Tests that 'fibonacci' returns null for inputs less than 0
     public void shouldReturnNullForInputLessThan0(){
 
         assertTrue(Q2.fibonacci(-1) == null);
