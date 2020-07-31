@@ -2,24 +2,7 @@ package com.revature;
 
 public class q1bubbleSort {
 
-    public static void main(String[] args){
-        //this is the array
-        int[] arr ={1,0,5,6,3,2,3,7,9,8,4};
-        //this is the array before the bubble sort
-        for(int i = 0;i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
-        }
-        System.out.println("+--------------+");
-        //this here will bubble sort the numbers
-        bubbleSort(arr);
 
-        for(int i = 0; i< arr.length; i++ ){
-            System.out.println(arr[i] + " ");
-        }
-        System.out.println("+--------------+");
-
-
-    }
 //this is the bubble sort question
     static void bubbleSort(int[] arr){
         //length of the array
