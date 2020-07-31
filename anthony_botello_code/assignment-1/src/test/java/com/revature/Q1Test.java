@@ -35,7 +35,7 @@ public class Q1Test {
     @Test // Test for random array
     public void shouldReturnSortedRandomArray(){
 
-        int[] testArray = Misc.randomIntArray(10000);
+        int[] testArray = Misc.randomIntArray(); // returns array of between 0 and 10000 random ints
         int[] sortedTestArray = testArray.clone();  // returns new copy of test array
         Arrays.sort(sortedTestArray);   // sort test array, used for comparison
 
