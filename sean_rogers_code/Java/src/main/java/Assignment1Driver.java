@@ -137,11 +137,24 @@ public class Assignment1Driver {
 
         {
             //Question 8 test
-            ArrayList<String> al = new ArrayList<String>();
-            String[] input = {"karan", "madam", "tom", "civic", "radar", "jimmy", "kayak", "john", "refer", "billy", "did"};
-            for(String word : input) {
-                al.add(word);
+            Question8 question8 = new Question8();
+            ArrayList<String> input = new ArrayList<String>();
+            ArrayList<String> expectedOutput = new ArrayList<String>();
+
+            String[] words1 = {"karan", "madam", "tom", "civic", "radar", "jimmy", "kayak", "john", "refer", "billy", "did"};
+            String[] words2 = {"madam", "civic", "radar", "kayak", "refer", "did"};
+
+            for(String word : words1) {
+                input.add(word);
             }
+            for(String word : words2) {
+                expectedOutput.add(word);
+            }
+
+            // replace System.out.println with assert
+            System.out.println(question8.getPalindromes(input).toString().equals(expectedOutput.toString()));
+            System.out.println(); //new line
+
 
         }
 
