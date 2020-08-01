@@ -19,6 +19,7 @@ public class Fibonacci {
         for(int i = 2; i < fibonacciArray.length; i++)
             fibonacciArray[i] = fibonacciArray[i-1] + fibonacciArray[i-2];
 
+        // Generate getters and setters
         public Fibonacci[] getFibonacciArray() {
             return fibonacciArray;
         }
@@ -27,13 +28,6 @@ public class Fibonacci {
             this.fibonacciArray = fibonacciArray;
         }
 
-        public int getI() {
-            return i;
-        }
-
-        public void setI(int i) {
-            this.i = i;
-        }
     }
 
 }
