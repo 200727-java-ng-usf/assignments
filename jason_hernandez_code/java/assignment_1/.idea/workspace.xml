@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../demos/jason_hernandez_code/java/day-4-demos" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,6 +86,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="560" y="8" key="#Project_Structure" timestamp="1596315791812">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="560" y="8" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1596315791812" />
     <state x="640" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1596311954135">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
