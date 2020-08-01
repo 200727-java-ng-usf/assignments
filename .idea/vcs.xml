@@ -2,6 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/farren_springer_code/java/assignment_Due_August_7th/src/main/java/assignments" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/farren_springer_code/java/assignment_Due_August_7th" vcs="Git" />
   </component>
 </project>

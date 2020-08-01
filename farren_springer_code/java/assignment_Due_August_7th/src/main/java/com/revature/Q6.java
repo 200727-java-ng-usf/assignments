@@ -1,5 +1,3 @@
-package com.revature;
-
 public class Q6 {
 
     static boolean isEven(int n) {

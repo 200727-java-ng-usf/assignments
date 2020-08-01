@@ -1,5 +1,3 @@
-package com.revature;
-
 public class Q5 {
 
     static void concatIt(String str, int idx) {

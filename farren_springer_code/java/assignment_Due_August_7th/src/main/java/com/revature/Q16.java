@@ -1,4 +1,3 @@
-package com.revature;
 import java.util.Scanner;
 
 public class Q16 {

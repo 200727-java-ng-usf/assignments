@@ -1,5 +1,3 @@
-package com.revature;
-
 public class Q7Driver {
 
     public static void main(String[] args) {

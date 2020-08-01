@@ -1,5 +1,3 @@
-package com.revature;
-
 import jdk.internal.util.xml.impl.Input;
 import java.util.Scanner;
 
