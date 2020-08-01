@@ -7,6 +7,10 @@ public class Q4 {
 
     public static void main(String[] args) {
 
+        // take an input that is an int
+        // scan it into n
+        // make it a method that can be used elsewhere
+
         // take an integer input from the user
         int n = 7;
 

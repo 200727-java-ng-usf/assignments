@@ -1,6 +1,7 @@
 package com.revature;
 
 public class Q1 {
+
     // main method
     public static void main(String[] args) {
         // establish the string to be used from the worksheet
