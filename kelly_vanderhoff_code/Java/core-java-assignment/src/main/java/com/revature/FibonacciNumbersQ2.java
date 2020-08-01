@@ -2,11 +2,11 @@ package com.revature;
 
 import java.util.Arrays;
 
-public class FibonacciNumbers {
+public class FibonacciNumbersQ2 {
 
     private int[] fibNums;
 
-    public FibonacciNumbers(int amount) {
+    public FibonacciNumbersQ2(int amount) {
         fibNums = new int[amount];
         if (amount == 1) {
             fibNums[0] = 0;
@@ -26,7 +26,8 @@ public class FibonacciNumbers {
     }
 
     public static void main(String[] args) {
-        FibonacciNumbers fibNum = new FibonacciNumbers(25);
+        FibonacciNumbersQ2 fibNum = new FibonacciNumbersQ2(25);
         fibNum.print();
     }
 }
+
