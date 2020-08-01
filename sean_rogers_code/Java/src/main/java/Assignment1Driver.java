@@ -222,10 +222,20 @@ public class Assignment1Driver {
         {
             //Question 14 test
             Question14 question14 = new Question14();
-            // replace System.out.println with assert
             question14.switchDemo(1);
             question14.switchDemo(2);
             question14.switchDemo(3);
+        }
+
+        {
+            //Question 15 test
+            Question15 question15 = new Question15();
+            // replace System.out.println with assert
+            System.out.println(question15.add(2, 5) == 2 + 5);
+            System.out.println(question15.subtract(5, 3) == 5 - 3);
+            System.out.println(question15.multiply(10, 5) == 10 * 5);
+            System.out.println(question15.divide(10, 5) == 10 / 5);
+            System.out.println();
         }
 
     }
