@@ -5,7 +5,6 @@ import java.util.Scanner;
 // Do NOT use reverse() in the StringBuffer or the StringBuilder APIs.
 public class Q3 {
 
-    // needs to actually return String, not array of chars. can use stringbuilder, just not use reverse??
     public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             System.out.println("Please enter a String");
