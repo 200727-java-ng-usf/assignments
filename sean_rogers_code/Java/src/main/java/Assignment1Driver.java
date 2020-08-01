@@ -208,8 +208,24 @@ public class Assignment1Driver {
         {
             //Question 13 test
             Question13 question13 = new Question13();
-            question13.displayTriangle();
+            StringBuilder expectedOutput = new StringBuilder();
+            expectedOutput.append("0 \n");
+            expectedOutput.append("1 0 \n");
+            expectedOutput.append("1 0 1 \n");
+            expectedOutput.append("0 1 0 1 \n");
+
+            // replace System.out.println with assert
+            System.out.println(question13.displayTriangle().toString().equals(expectedOutput.toString()));
             System.out.println();
+        }
+
+        {
+            //Question 14 test
+            Question14 question14 = new Question14();
+            // replace System.out.println with assert
+            question14.switchDemo(1);
+            question14.switchDemo(2);
+            question14.switchDemo(3);
         }
 
     }
