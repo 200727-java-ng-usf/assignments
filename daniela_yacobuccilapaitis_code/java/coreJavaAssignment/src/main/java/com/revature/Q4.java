@@ -9,15 +9,15 @@ public class Q4 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number ");
-        int num = (int)scan.next();
-        System.out.println();
+        int num = (int)scan.nextInt();
+        System.out.println(num + "! =" + calcFactorial(num));
     }
 
     public static int calcFactorial(int num) {
         if (num == 0||num == 1)
             return 1;
         else
-        return (num * calcFactorial(num-1) * calcFactorial(num-2));
+        return (num * calcFactorial(num-1));
     }
 
 
