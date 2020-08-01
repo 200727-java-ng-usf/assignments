@@ -1,3 +1,5 @@
+import com.revature.package1.Question11;
+
 import java.util.ArrayList;
 
 public class Assignment1Driver {
@@ -183,7 +185,17 @@ public class Assignment1Driver {
 
         {
             //Question 11 test
+            Question11 question11 = new Question11();
+            float f1 = question11.getFloat1();
+            float f2 = question11.getFloat2();
+            // replace System.out.println with assert
+            System.out.println(f1 == question11.getFloat1());
+            System.out.println(f2 == question11.getFloat2());
+            System.out.println();
+        }
 
+        {
+            //
         }
 
     }
