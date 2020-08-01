@@ -4,7 +4,7 @@ public class Fibonacci {
 
     Fibonacci x; // Set class attribute
 
-    public Fibonacci() {
+    public Fibonacci[] Fibonacci() {
         x = 0;
         // First, set up an array with length 25
         Fibonacci[] fibonacciArray = new Fibonacci[25];
