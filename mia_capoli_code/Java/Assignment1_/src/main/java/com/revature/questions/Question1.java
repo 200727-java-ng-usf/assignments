@@ -1,16 +1,12 @@
 package com.revature.questions;
 
+import com.revature.Assignment1Driver;
+
 import java.util.Arrays;
 
 public class Question1 {
 
-    private void printValues(int[] arr) {
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
-
-    }
+    Assignment1Driver printValues = new Assignment1Driver();
 
     public void bubbleSort() {
 
@@ -31,6 +27,6 @@ public class Question1 {
                 }
             }
         }
-        printValues(q1Array);
+        printValues.printValues(q1Array);
     }
 }

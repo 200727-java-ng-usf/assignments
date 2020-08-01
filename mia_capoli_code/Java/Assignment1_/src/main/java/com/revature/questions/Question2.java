@@ -1,14 +1,10 @@
 package com.revature.questions;
 
+import com.revature.Assignment1Driver;
+
 public class Question2 {
 
-    private void printValues(int[] arr) {
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
-
-    }
+    Assignment1Driver printValues = new Assignment1Driver();
 
     public void fibonacciSequence() {
         int[] fibonacciArray = new int[25];
@@ -23,8 +19,7 @@ public class Question2 {
                 fibonacciArray[i] = fibonacciArray[i-1] + fibonacciArray[i-2];
             }
         }
-
-        printValues(fibonacciArray);
+        printValues.printValues(fibonacciArray);
 
     }
 }
