@@ -220,7 +220,7 @@ public class Assignment1Driver {
         }
 
         {
-            //Question 14 test
+            //Question 14 test?
             Question14 question14 = new Question14();
             question14.switchDemo(1);
             question14.switchDemo(2);
@@ -236,6 +236,16 @@ public class Assignment1Driver {
             System.out.println(question15.multiply(10, 5) == 10 * 5);
             System.out.println(question15.divide(10, 5) == 10 / 5);
             System.out.println();
+        }
+            //Question 16 test?
+        {
+            //Question 17 test?
+            Question17 question17 = new Question17();
+            System.out.println(question17.calculateInterest());
+        }
+
+        {
+            //Question 18
         }
 
     }
