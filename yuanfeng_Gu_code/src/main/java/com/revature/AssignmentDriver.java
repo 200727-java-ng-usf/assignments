@@ -22,7 +22,13 @@ public class AssignmentDriver {
 
         // q9();
 
-        q10();
+        // q10();
+
+        // q11();
+
+        // q12();
+
+        // q13();
 
 
     }
@@ -123,5 +129,22 @@ public class AssignmentDriver {
         System.out.println(showResult.minNumber(5, 9));
     }
 
+    static void q11() {
+        Q11 showResult = new Q11();
+        showResult.printFloat();
+    }
 
+    static void q12() {
+        Q12 showResult = new Q12();
+
+        int[] arr = new int[101];
+        for (int i = 0; i < 100; i++) {
+            arr[i]=i+1;
+        }
+        showResult.printEven(arr);
+    }
+    static void q13() {
+        Q13 showResult = new Q13();
+        showResult.printPattern();
+    }
 }
