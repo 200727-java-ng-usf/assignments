@@ -241,11 +241,17 @@ public class Assignment1Driver {
         {
             //Question 17 test?
             Question17 question17 = new Question17();
-            System.out.println(question17.calculateInterest());
+            //System.out.println(question17.calculateInterest());
         }
 
         {
             //Question 18
+            Question18ConcreteClass question18ConcreteClass = new Question18ConcreteClass();
+            // replace System.out.println with assert
+            System.out.println(question18ConcreteClass.hasUpperCaseCharacter("asdf") == false);
+            System.out.println(question18ConcreteClass.hasUpperCaseCharacter("aSdf") == true);
+            System.out.println(question18ConcreteClass.toUpperCase("aSDf").equals("ASDF"));
+            System.out.println(question18ConcreteClass.fromStringToInt("25") == 35);
         }
 
     }
