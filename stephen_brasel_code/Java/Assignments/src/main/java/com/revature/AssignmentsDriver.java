@@ -32,7 +32,7 @@ public class AssignmentsDriver {
         Q3StringReversal q3str = new Q3StringReversal();
         {
             String str = "ReverseMe";
-            q3str.reverseString(str);
+            str = q3str.reverseString(str);
             System.out.println(str);
         }
         Q4Factorial q4fac = new Q4Factorial();
