@@ -1,8 +1,8 @@
 package com.revature.testHelpers;
 
 public class FloatPoints {
-    float x = 42.0F;
-    float y = 31.0F;
+    private float x = 42.0F;
+    private float y = 31.0F;
 
     public FloatPoints() {
         super();
@@ -13,7 +13,7 @@ public class FloatPoints {
         this.y = y;
     }
 
-    public static float getX() {
+    public float getX() {
         return x;
     }
 
@@ -21,7 +21,7 @@ public class FloatPoints {
         this.x = x;
     }
 
-    public static float getY() {
+    public float getY() {
         return y;
     }
 

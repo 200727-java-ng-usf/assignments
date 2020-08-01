@@ -28,10 +28,16 @@ public class Q9PrimeNumber {
 
     public void printPrimes(){
         primesToHundred.clear();
+        boolean firstNum = true;
         for (int i = 0; i < hundred.size(); i++) {
             if(isPrime(hundred.get(i))){
                 primesToHundred.add(hundred.get(i));
-                System.out.println(hundred.get(i));
+                if(!firstNum){
+                    System.out.print(", ");
+                } else{
+                    firstNum = false;
+                }
+                System.out.print(hundred.get(i));
             }
         }
     }

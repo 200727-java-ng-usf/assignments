@@ -6,14 +6,22 @@ public class Q11PackageAccess {
 //    Q11. Write a program that would access two float-variables from a class that exists in another package.
 //    Note, you will need to create two packages to demonstrate the solution.
 
-    float a;
-    float b;
+    private float a;
+    private float b;
 
-    public static void printFloats(){
-        a = FloatPoints.getX();
-        b = FloatPoints.getY();
+    public float getA() {
+        return a;
+    }
+
+    public float getB() {
+        return b;
+    }
+
+    public void printFloats(FloatPoints fp){
+        a = fp.getX();
+        b = fp.getY();
         System.out.println(
-                "X: " + FloatPoints.getX() + ", " +
-                "Y: " + FloatPoints.getY());
+                "X: " + a + ", " +
+                "Y: " + b);
     }
 }

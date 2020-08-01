@@ -1,5 +1,6 @@
 import com.revature.questions.*;
 import com.revature.testHelpers.Employee;
+import com.revature.testHelpers.FloatPoints;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +27,7 @@ public class AssignmentTesting {
     Q9PrimeNumber q9 = new Q9PrimeNumber();
     Q10Ternary q10 = new Q10Ternary();
     Q11PackageAccess q11 = new Q11PackageAccess();
-    Q12EnhancedFor q12 = new Q12EnhancedFor(5);
+    Q12EnhancedFor q12 = new Q12EnhancedFor();
     Q13TrianglePrint q13 = new Q13TrianglePrint();
     Q14SwitchCases q14 = new Q14SwitchCases();
     Q15MathInterface q15 = new Q15MathInterface();
@@ -35,6 +36,15 @@ public class AssignmentTesting {
     Q18StringSubClasses q18 = new Q18StringSubClasses();
     Q19ArrayListOperations q19 = new Q19ArrayListOperations();
     Q20DataBaseParsing q20 = new Q20DataBaseParsing();
+
+    Random rand;
+    //endregion
+
+    //region CONSTRUCTORS
+    public AssignmentTesting() {
+        rand = new Random();
+        rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
+    };
     //endregion
 
     //region HELPER_FUNCTIONS
@@ -164,8 +174,6 @@ public class AssignmentTesting {
 
     @Test
     public void t10Ternary(){
-        Random rand = new Random();
-        rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
         int x = rand.nextInt();
         int y = rand.nextInt();
         System.out.println(x + " " + y + ": " + q10.lesser(x, y));
@@ -173,7 +181,32 @@ public class AssignmentTesting {
     }
 
     @Test
-    public void t11PackageAccess(){
+    public void t11PackageAccessX(){
 //        q11
+        float x = rand.nextFloat();
+        float y = rand.nextFloat();
+        FloatPoints fp = new FloatPoints(x, y);
+        q11.printFloats(fp);
+        assertEquals(x, q11.getA(), 0.001F);
+    }
+
+    @Test
+    public void t11PackageAccessY(){
+//        q11
+        float x = rand.nextFloat();
+        float y = rand.nextFloat();
+        FloatPoints fp = new FloatPoints(x, y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
+    }
+
+    @Test
+    public void t12EnhancedFor(){
+        q12.enhancedFor();
+        assertArrayEquals(new int[]{2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100}, q12.getArrEven());
+    }
+    @Test
+    public void t13TrianglePoint(){
+        q13.triWhile(80);
     }
 }
