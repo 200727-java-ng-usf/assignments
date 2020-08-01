@@ -245,13 +245,34 @@ public class Assignment1Driver {
         }
 
         {
-            //Question 18
+            //Question 18 test
             Question18ConcreteClass question18ConcreteClass = new Question18ConcreteClass();
             // replace System.out.println with assert
             System.out.println(question18ConcreteClass.hasUpperCaseCharacter("asdf") == false);
             System.out.println(question18ConcreteClass.hasUpperCaseCharacter("aSdf") == true);
             System.out.println(question18ConcreteClass.toUpperCase("aSDf").equals("ASDF"));
             System.out.println(question18ConcreteClass.fromStringToInt("25") == 35);
+        }
+
+        {
+            //Question 19 test
+            Question19 question19 = new Question19();
+            // replace System.out.println with assert
+            System.out.println(question19.addEvens() == (2 + 4 + 6 + 8 + 10));
+            System.out.println(question19.addOdds() == (1 + 3 + 5 + 7 + 9));
+            ArrayList<Integer> expectedOutput = new ArrayList<Integer>();
+            expectedOutput.add(4);
+            expectedOutput.add(6);
+            expectedOutput.add(8);
+            expectedOutput.add(9);
+            expectedOutput.add(10);
+            System.out.println(question19.removePrimesAndDisplay().equals(expectedOutput.toString()));
+
+        }
+
+        {
+            //Question 20 test
+
         }
 
     }
