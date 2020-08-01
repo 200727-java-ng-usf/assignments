@@ -166,11 +166,23 @@ public class Assignment1Driver {
             for(int num : ints) {
                 expectedOutput.add(num);
             }
+            // replace System.out.println with assert
             System.out.println(question9.displayPrimeNumbers().toString().equals(expectedOutput.toString()));
+            System.out.println();
         }
 
         {
             //Question 10 test
+            Question10 question10 = new Question10();
+            // replace System.out.println with assert
+            System.out.println(question10.findMin(8, 4) == 4);
+            System.out.println(question10.findMin(2, 3) == 2);
+            System.out.println(question10.findMin(1, 1) == 1);
+            System.out.println();
+        }
+
+        {
+            //Question 11 test
 
         }
 
