@@ -1,13 +1,15 @@
 package mainpackage;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ReverseString {
-    public ReverseString() {
+    private List;
+
+    public ReverseString(Object list) {
+        List = list;
 
         // Begin with a string, convert to arraylist
         String string = "Revature Java";
@@ -19,6 +21,7 @@ public class ReverseString {
 
         System.out.println(chars);
 
+        // Next, reverse the arraylist
         public static<T> List<T> reverseList(List<T> list) {
             List<T> reverse = new ArrayList<>(list.size());
             list.stream()
