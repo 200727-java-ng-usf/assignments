@@ -30,6 +30,10 @@ public class AssignmentDriver {
 
         // q13();
 
+        q14();
+    	
+
+
 
     }
 
@@ -146,5 +150,37 @@ public class AssignmentDriver {
     static void q13() {
         Q13 showResult = new Q13();
         showResult.printPattern();
+    }
+
+    static void  q14(){
+        Q14 showResult = new Q14();
+        int option = 0;
+
+        while(option !=4) {
+            showResult.menu();
+            Scanner sc = new Scanner(System.in);
+            option = sc.nextInt();
+            switch (option) {
+                case 1:
+                    System.out.println(" The number is 4");
+                    System.out.println("The answer is :" + showResult.SquareRoot(4));
+                    break;
+                case 2:
+                    System.out.println("----- Today's date -----");
+                    showResult.today();
+                    break;
+                case 3:
+                    System.out.println("---  String split ---");
+                    System.out.println("The String is " + "\"I am learning Core Java\"");
+                    showResult.StringSplit();
+                    break;
+                case 4:
+                    break;
+
+                default:
+                    System.out.println("Wrong number！");
+                    break;
+            }
+        }
     }
 }
