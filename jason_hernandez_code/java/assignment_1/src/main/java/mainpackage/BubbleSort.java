@@ -12,19 +12,19 @@ public class BubbleSort {
         };
 
         // Instantiate a bubbleSort
-        static void bubbleSort(int[] arr){
-            int n = bubbleSorts.length;
-            int number = 0;
-            // Must compare each number and determine if < or > previous
-            // If < previous, switch them; if > previous, do not
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < bubbleSorts.length; j++)
-                    if (bubbleSorts[j] > bubbleSorts[j + 1]) {
-                        number = bubbleSorts[j];
-                        bubbleSorts[j] = bubbleSorts[j + 1];
-                        bubbleSorts[j + 1] = number;
-                    }
-            }
-        }
+//        static void bubbleSort(int[] arr){
+//            int n = bubbleSorts.length;
+//            int number = 0;
+//            // Must compare each number and determine if < or > previous
+//            // If < previous, switch them; if > previous, do not
+//            for (int i = 0; i < n; i++) {
+//                for (int j = 0; j < bubbleSorts.length; j++)
+//                    if (bubbleSorts[j] > bubbleSorts[j + 1]) {
+//                        number = bubbleSorts[j];
+//                        bubbleSorts[j] = bubbleSorts[j + 1];
+//                        bubbleSorts[j + 1] = number;
+//                    }
+//            }
+//        }
     }
 }

@@ -2,12 +2,12 @@ package mainpackage;
 
 public class Fibonacci {
 
-    Fibonacci x; // Set class attribute
+    int[] fibonacciArray;
 
-    public Fibonacci[] Fibonacci() {
-        x = 0;
+    public Fibonacci() {
+        int x = 0;
         // First, set up an array with length 25
-        Fibonacci[] fibonacciArray = new Fibonacci[25];
+        fibonacciArray = new int[25];
 
         // Begin with the value of zero
         fibonacciArray[0] = x;
@@ -19,17 +19,15 @@ public class Fibonacci {
         for(int i = 2; i < fibonacciArray.length; i++)
             fibonacciArray[i] = fibonacciArray[i-1] + fibonacciArray[i-2];
 
-        // Generate getters and setters
-        public Fibonacci[] getFibonacciArray() {
-            return fibonacciArray;
-        }
-
-        public void setFibonacciArray(Fibonacci[] fibonacciArray) {
-            this.fibonacciArray = fibonacciArray;
-        }
-
+    }
+    // Generate getters and setters
+    public int[] getFibonacciArray() {
+        return fibonacciArray;
     }
 
+    public void setFibonacciArray(int[] fibonacciArray) {
+        this.fibonacciArray = fibonacciArray;
+    }
 }
 
 

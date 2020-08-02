@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,26 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jason\200727-java-ng-usf\assignments\jason_hernandez_code\java" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainpackage.AppDriver" />
+      <module name="assignment_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mainpackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppDriver" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
