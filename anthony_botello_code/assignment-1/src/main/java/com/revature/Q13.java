@@ -6,12 +6,9 @@ public class Q13{
 
         String[] triangles = new String[4];
 
-        int n = 0;
+        int k = 0;
         for(int i = 0; i < 4; i++){
-
-            n += i;
-
-            int k = n;
+            
             StringBuilder sb = new StringBuilder();
 
             for(int j = 0; j < i + 1; j++){

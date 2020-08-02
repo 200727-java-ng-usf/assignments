@@ -3,6 +3,7 @@ package com.revature;
 public class Q3{
 
     public static String reverseString(String str){
+        
         if(str == null) return null;
         
         int len = str.length();
