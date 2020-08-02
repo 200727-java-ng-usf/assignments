@@ -1,11 +1,25 @@
 package mainpackage;
 
+import java.util.List;
+
 public class SubStringerMethod {
 
     public SubStringerMethod() {
 
         // Begin with a string
         String str = "Substringing a string";
+
+        // Break it down into chars
+        List<Character> chars = new <>();
+
+        // Convert to arraylist
+        for(char ch: str.toCharArray()) {
+            chars.add(ch);
+        }
+
+        // Get the chars between the specified indices
+        String substr = chars.toString(0, -1);
+        System.out.println(substr);
     }
 }
 
