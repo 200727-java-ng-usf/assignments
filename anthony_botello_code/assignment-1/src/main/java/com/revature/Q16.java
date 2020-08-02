@@ -2,11 +2,14 @@ package com.revature;
 
 public class Q16{
 
-    public static void main(String[] args){
+    private static int stringLength;
 
-        for(String s : args){
+    public static void main(String... args){
+        stringLength = args[0].length();
+        System.out.println(stringLength);
+    }
 
-            System.out.println("There are " + s.length() + " character(s) in '" + s + "'");
-        }
+    public static int getStringLength() {
+        return stringLength;
     }
 }
