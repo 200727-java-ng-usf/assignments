@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Nfactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Nfactorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Palindromes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Palindromes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,17 +112,17 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="560" y="8" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1596315791812" />
-    <state x="640" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1596311954135">
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1596384476191">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="640" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596311954135" />
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596384476191" />
     <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1596310350451">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1596310350451" />
-    <state x="283" y="100" key="Maven.ArtifactSearchDialog" timestamp="1596384020053">
+    <state x="283" y="100" key="Maven.ArtifactSearchDialog" timestamp="1596386126353">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="283" y="100" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1596384020053" />
+    <state x="283" y="100" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1596386126353" />
   </component>
 </project>

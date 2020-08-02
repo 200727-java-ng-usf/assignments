@@ -4,10 +4,10 @@ public class IntEven {
 
     public IntEven() {
         // Begin with the number to be determined
-        float[] intEven = new float[1];
+        float intEven = new float;
 
         // Divide the number by 2
-        float quotient2 = intEven/2;
+        float quotient2 = intEven/2f;
 
         // Then, check whether the quotient is an integer
         if (quotient2 == (int)quotient2) {

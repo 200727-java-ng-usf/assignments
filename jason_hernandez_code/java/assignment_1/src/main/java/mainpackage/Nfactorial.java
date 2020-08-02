@@ -1,12 +1,15 @@
 package mainpackage;
 
+import java.util.ArrayList;
+
 public class Nfactorial {
 
     public Nfactorial() {
 
-        // First, set up an array with length unknown
+        //  Code suggested by a Slack user:
+        ArrayList<Integer> nFactorials = new ArrayList<Integer>();
         int n;
-        int[] nfactorials = new Nfactorial[n];
+        nFactorials.addAll(new Nfactorial[n]);
 
         // Begin with the value of n
 
