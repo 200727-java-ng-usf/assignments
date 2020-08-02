@@ -2,7 +2,9 @@ package com.revature;
 
 public class Q13{
 
-    public static void main(String[] args){
+    public static String[] printTriangle(){
+
+        String[] triangles = new String[4];
 
         int n = 0;
         for(int i = 0; i < 4; i++){
@@ -10,13 +12,18 @@ public class Q13{
             n += i;
 
             int k = n;
+            StringBuilder sb = new StringBuilder();
+
             for(int j = 0; j < i + 1; j++){
-                
-                System.out.print(k % 2);
+
+                sb.append(k % 2);
                 k++;
             }
 
-            System.out.println();
+            triangles[i] = sb.toString();
+            System.out.println(triangles[i]);
         }
+
+        return triangles;
     }
 }
