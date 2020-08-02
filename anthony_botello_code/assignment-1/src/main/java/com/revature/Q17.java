@@ -4,23 +4,38 @@ import java.util.Scanner;
 
 public class Q17{
 
-    public static void main(String[] args){
+    // Save console inputs for testing
+    private static double principal;
+    private static double rate;
+    private static double time;
+
+    public static double calculateSimpleInterest(){
 
         Scanner scan = new Scanner(System.in);
 
-        double simpleInterest;
-
         System.out.print("Enter principal: ");
-        simpleInterest = scan.nextDouble();
+        principal = scan.nextDouble();
 
         System.out.print("Enter rate of interest: ");
-        simpleInterest *= scan.nextDouble();
+        rate = scan.nextDouble();
 
         System.out.print("Enter number of years: ");
-        simpleInterest *= scan.nextDouble();
-
-        System.out.println("The simple interest is " + simpleInterest);
+        time = scan.nextDouble();
 
         scan.close();
+
+        return principal * rate * time;
+    }
+
+    public static double getPrincipal() {
+        return principal;
+    }
+
+    public static double getRate() {
+        return rate;
+    }
+
+    public static double getTime() {
+        return time;
     }
 }
