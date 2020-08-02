@@ -1,5 +1,9 @@
 package com.revature;
-import java.util.*;
+import com.revature.Q15.Calculator;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.TreeSet;
 
 public class AssignmentDriver {
     public static void main(String[] args) {
@@ -30,7 +34,10 @@ public class AssignmentDriver {
 
         // q13();
 
-        q14();
+        // q14();
+
+        // q15();
+
     	
 
 
@@ -182,5 +189,10 @@ public class AssignmentDriver {
                     break;
             }
         }
+    }
+    static void  q15(){
+        Calculator showResult = new Calculator();
+        System.out.println("2 + 3 = "+ showResult.add(2, 3));
+        System.out.println("3 X 3 = " + showResult.mul(3, 3));
     }
 }
