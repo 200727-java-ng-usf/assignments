@@ -22,10 +22,14 @@
     <list default="true" id="60a8f89f-2281-49f5-8832-e4f08095baf8" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q11.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q14.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q15.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q15Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q20.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/Q20_text.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/Q15Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Q20_text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/Q9.java" afterDir="false" />
