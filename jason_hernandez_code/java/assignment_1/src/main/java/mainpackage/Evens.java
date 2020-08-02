@@ -6,7 +6,7 @@ public class Evens {
     public Evens() {
         // Initialize two arrays
         ArrayList<Integer> numbers2 = new ArrayList<Integer>(100);
-        ArrayList<Integer> evenNumbers = new ArrayList<Integer>(100);
+        ArrayList<Integer> evenNumbers = new ArrayList<Integer>(50);
 
         // Populate the first array with integers 1 to 100
         for (int i = 1; i <= 100; i++)

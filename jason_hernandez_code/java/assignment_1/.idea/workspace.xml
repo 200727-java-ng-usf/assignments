@@ -24,7 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Arithmetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Arithmetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Evens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Evens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PackageFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PackageFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/secondpackage/StoreFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/secondpackage/StoreFloat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,10 +125,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="560" y="8" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1596315791812" />
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1596389425782">
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1596401849424">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596389425782" />
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596401849424" />
     <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1596310350451">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

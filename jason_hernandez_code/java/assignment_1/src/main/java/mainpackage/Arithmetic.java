@@ -1,7 +1,8 @@
 package mainpackage;
 
 public interface Arithmetic {
-    default public void addUp() {
-
-    }
+    public void addUp();
+    public void subtract();
+    public void multiply();
+    public void divideBy();
 }
