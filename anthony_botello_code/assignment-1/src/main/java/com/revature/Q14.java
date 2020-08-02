@@ -1,39 +1,33 @@
 package com.revature;
 
 import java.time.LocalDate;
-import java.util.Scanner;
-import java.util.Arrays;
+import java.util.Random;
 
 public class Q14{
 
-    public static void switchDemo(int var){
+    public static Object switchDemo(int n){
 
-        switch(var){
+        if(n > 3 || n < 1) return null;
+
+        Object result = new Object();
+
+        switch(n){
 
             case 1:
-                Scanner scan = new Scanner(System.in);
-                System.out.println("Enter a number: ");
-                int num = scan.nextInt();
-                System.out.println("The square root of " + num + " is " + Math.sqrt(num));
+                int i = (new Random()).nextInt(1000);
+                double sqrt = Math.sqrt(i);
+                result = new double[] {i, sqrt};
                 break;
             
             case 2:
-                LocalDate date = LocalDate.now();
-                System.out.println("Today is " + date.toString());
+                result = LocalDate.now();
                 break;
             
             case 3:
-                String str = "I am learning Core Java";
-                String[] strArr = str.split(" ");
-                System.out.println(Arrays.toString(strArr));
+                result = "I am learning Core Java".split("");
                 break;
         }
-    }
 
-    public static void main(String[] args){
-
-        switchDemo(1);
-        switchDemo(2);
-        switchDemo(3);
+        return result;
     }
 }
