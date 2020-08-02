@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Fibonacci.java" afterDir="false" />
