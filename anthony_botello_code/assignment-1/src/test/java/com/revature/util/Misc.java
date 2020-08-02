@@ -55,10 +55,41 @@ public class Misc{
     }
     
     /********** String Utility Methods **********/
+
+    // returns a random UTF-8 character
+    private static char getRandomCharacter(){
+
+        int ch;
+        do{
+            ch = getRandomInt(0x00FF);
+        }
+        while(Character.isISOControl(ch));
+
+        return (char) ch;
+    }
+
+    // returns a random lower case letter
+    private static char getRandomLetter(){
+        return (char) getRandomInt((int) 'a', (int) 'z' + 1);
+    }
+
+    // returns a random non-alphabetic character
+    private static char getRandomNonAlphaCharacter(){
+
+        char ch;
+        do{
+            ch = getRandomCharacter();
+        }
+        while(Character.isLetter(ch));
+
+        return ch;
+    }
     
     // returns a random String of random length such that 0 <= length < 1000
     public static String getRandomString(){
+
         int length = getRandomInt(1000);
+
         return getRandomString(length);
     }
 
@@ -68,15 +99,7 @@ public class Misc{
         char[] string = new char[length];
 
         for(int i = 0; i < length; i++){
-
-            int ch;
-            
-            do{
-                ch = getRandomInt(0x00FF);
-            }
-            while(ch <= 0x001F || (0x007F <= ch && ch <= 0x009F));
-
-            string[i] = (char) ch;
+            string[i] = getRandomCharacter();
         }
         
         return new String(string);
@@ -84,7 +107,9 @@ public class Misc{
 
     // returns a random alphabetic String of random length such that 0 <= length < 1000
     public static String getRandomAlphaString(){
+
         int length = getRandomInt(1000);
+
         return getRandomAlphaString(length);
     }
 
@@ -95,25 +120,61 @@ public class Misc{
 
         for(int i = 0; i < length; i++){
 
-            int n = getRandomInt(26);
+            string[i] = getRandomLetter();
 
-            string[i] = (char) ('A' + n);
-
-            if(getRandomInt() % 2 == 0){
-                string[i] = (char) (string[i] + ('a' - 'A'));
+            boolean upperCase = random.nextBoolean();
+            if(upperCase){
+                string[i] = Character.toUpperCase(string[i]);
             }
         }
 
         return new String(string);
     }
 
-    // public static void main(String[] args){
-    //     String testString = Misc.getRandomAlphaString();
-    //     String reversedTestString = new String(testString);
+    // returns a random palindrome
+    public static String getRandomPalindrome(){
 
-    //     // System.out.println(testString);
-    //     // System.out.println(reversedTestString);
-    //     System.out.println(testString == reversedTestString);
-    //     System.out.println(testString.equals(reversedTestString));
-    // }
+        int length = getRandomInt(100);
+
+        String str = getRandomAlphaString(length/2);
+        StringBuilder sb = new StringBuilder();
+
+        int i = 0;
+        while(i < str.length()){
+
+            boolean addLetter = random.nextBoolean();
+            if(addLetter){
+                sb.append(str.charAt(i));
+                i++;
+            }
+            else{
+                sb.append(getRandomNonAlphaCharacter());
+            }
+        }
+
+        i--;
+
+        boolean odd = random.nextBoolean();
+        if(odd) i--;
+
+        while(i >= 0){
+
+            boolean addLetter = random.nextBoolean();
+            if(addLetter){
+                sb.append(str.charAt(i));
+                i++;
+            }
+            else{
+                sb.append(getRandomNonAlphaCharacter());
+            }
+
+        }
+
+        return sb.toString();
+    }
+
+    // returns a random alphabetic palindrome
+    public static String getRandomAlphaPalindrome(){
+        return getRandomPalindrome().replaceAll("[^A-Za-z]","");
+    }
 }
