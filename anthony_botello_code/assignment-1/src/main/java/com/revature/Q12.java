@@ -1,18 +1,18 @@
 package com.revature;
 
-public class Q12{
+import java.util.Arrays;
 
-    public static void main(String[] args){
+public class Q12 {
 
-        int[] ints = new int[100];
-        for(int i = 0; i < 100; i++){
+    public static int[] getEvens(int[] arr){
+        int[] evens = Arrays.stream(arr)
+                            .filter(i -> i % 2 == 0)
+                            .toArray();
 
-            ints[i] = i + 1;
+        for(int i : evens){
+            System.out.println(i);
         }
 
-        for(int n : ints){
-
-            if(n % 2 == 0) System.out.println(n);
-        }
+        return evens;
     }
 }
