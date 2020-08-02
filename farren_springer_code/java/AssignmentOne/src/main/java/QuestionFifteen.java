@@ -45,24 +45,28 @@ public class QuestionFifteen implements QuestionFifteenInterface{
     @Override
     public void add() {
         this.ans = this.num1 + this.num2;
-        System.out.println("You invoked add method");
+        System.out.println("Invoking add method");
+        System.out.println(ans);
     }
 
     @Override
     public void subtract() {
         this.ans = this.num1 - this.num2;
-        System.out.println("You invoked subtract method");
+        System.out.println("Invoking subtract method");
+        System.out.println(ans);
     }
 
     @Override
     public void multiply() {
         this.ans = this.num1 * this.num2;
-        System.out.println("You invoked multiply method");
+        System.out.println("Invoking multiply method");
+        System.out.println(ans);
     }
 
     @Override
     public void divide() {
         this.ans = this.num1 / this.num2;
-        System.out.println("You invoked divide method");
+        System.out.println("Invoking divide method");
+        System.out.println(ans);
     }
-}
+} // done
