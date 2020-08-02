@@ -6,34 +6,35 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ReverseString {
-    private List;
+    private List<T> List() {
 
-    public ReverseString(Object list) {
-        List = list;
+        ReverseString(Object list) {
+            List = list;
 
-        // Begin with a string, convert to arraylist
-        String string = "Revature Java";
-        List<Character> chars = new <>();
+            // Begin with a string
+            String string = "Revature Java";
+            System.out.println(string);
+            List<Character> chars = new <>();
 
-        for(char ch: string.toCharArray()) {
-            chars.add(ch);
-        }
+            // Convert to arraylist
+            for(char ch: string.toCharArray()) {
+                chars.add(ch);
+            }
 
-        System.out.println(chars);
+            System.out.println(chars);
 
-        // Next, reverse the arraylist
-        public static<T> List<T> reverseList(List<T> list) {
-            List<T> reverse = new ArrayList<>(list.size());
-            list.stream()
-                    .collect(Collectors.toCollection(LinkedList::new))
-                    .descendingIterator()
-                    .forEachRemaining(reverse::add);
+            // Next, reverse the arraylist
+            public static<T> List<T> reverseList(List<T> list) {
+                List<T> reverse = new ArrayList<>(list.size());
+                list.stream()
+                        .collect(Collectors.toCollection(LinkedList::new))
+                        .descendingIterator()
+                        .forEachRemaining(reverse::add);
 
-            return reverse;
-        }
-
-        List<> reverse = reverseList(list);
-        System.out.println(reverse);
-
+                return reverse;
+            }
+            List<> reverse = reverseList(list);
+            System.out.println(reverse);
+    }
     }
 }

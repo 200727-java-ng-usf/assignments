@@ -5,9 +5,11 @@ public class Nfactorial {
     public Nfactorial() {
 
         // First, set up an array with length unknown
-        Nfactorial[] nfactorials = new Nfactorial[];
+        int n;
+        int[] nfactorials = new Nfactorial[n];
 
         // Begin with the value of n
+
         nfactorials[0] = n;
 
         // Factorial means n * (n-1) * (n-2) etc. for as many iterations as the initial value n
@@ -17,8 +19,8 @@ public class Nfactorial {
 
         // Multiply each new number by the previous product
         int runningProduct;
-        for(int i = 1; i < nfactorials.length; i++)
-            runningProduct = nfactorials[i-1] * nfactorials[i];
+        for(int j = 1; j < nfactorials.length; j++)
+            runningProduct = nfactorials[j-1] * nfactorials[j];
 
 
     }

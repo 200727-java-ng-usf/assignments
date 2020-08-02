@@ -13,14 +13,39 @@ public class SwitchDemo {
     // And have the string
     String string = "I am learning Core Java";
 
+    // Getters and Setters
+    public DateTimeFormatter getDtf() {
+        return dtf;
+    }
+
+    public void setDtf(DateTimeFormatter dtf) {
+        this.dtf = dtf;
+    }
+
+    public LocalDateTime getNow() {
+        return now;
+    }
+
+    public void setNow(LocalDateTime now) {
+        this.now = now;
+    }
+
+    public String getString() {
+        return string;
+    }
+
+    public void setString(String string) {
+        this.string = string;
+    }
+
     // Build the cases in the switcher
     public SwitchDemo() {
         switch (expression) {
-            sqrtcase: System.out.println(Math.sqrt(double a));
+            case "sqrt": System.out.println(Math.sqrt(double a));
             break;
-            datecase: System.out.println(dtf.format(now));
+            case "date": System.out.println(dtf.format(now));
             break;
-            splitcase: System.out.println(string[] = string.split(" "));
+            case "split": System.out.println(string[] = string.split(" "));
             break;
 
         }
