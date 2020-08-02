@@ -10,7 +10,7 @@ public class Q15{
         public int divide(int a, int b);
     }
 
-    public class ArithmeticOperations implements Arithmetic{
+    public static class Calculator implements Arithmetic{
 
         public int add(int a, int b){
             return a + b;
