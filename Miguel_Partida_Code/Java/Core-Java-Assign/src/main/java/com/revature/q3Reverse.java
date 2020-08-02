@@ -11,12 +11,10 @@ public class q3Reverse {
         //This will give me the length of ReverseString
         int lengthOfString = chars.length;
 
-       // System.out.println(chars.length); The ans
+       // System.out.println(chars.length); The answer is 13
         for (int i = lengthOfString - 1; i >= 0; i--) {
-            //This will print all the chars
+            //This will print all the chars starting at the 12th array spot moving backwards
             System.out.print(chars[i]);
-
         }
-
     }
 }

@@ -3,6 +3,7 @@ package com.revature;
 import static com.revature.q1bubbleSort.bubbleSort;
 import static com.revature.q2Fibonacci.*;
 import static com.revature.q3Reverse.reverseString;
+import static com.revature.q4NFactorial.*;
 
 public class AppDriver {
 
@@ -31,9 +32,20 @@ public class AppDriver {
         
         System.out.println("+--------------+");
 
+        //This is the string that will be reversed
         String reverseString = "ReverseString";
 
         reverseString(reverseString);
+
+        System.out.println("+--------------+");
+
+        // Here we will throw a previously used FibonacciNumber to example the factorial method
+        factorial(FibonacciNumber);
+
+        System.out.println("Factorial of " + FibonacciNumber + " is " + factorial(FibonacciNumber));
+
+        System.out.println("+--------------+");
+
 
     }
 
