@@ -38,6 +38,10 @@ public class AssignmentDriver {
 
         // q15();
 
+        // q16(args);
+
+        // q17();
+
     	
 
 
@@ -194,5 +198,22 @@ public class AssignmentDriver {
         Calculator showResult = new Calculator();
         System.out.println("2 + 3 = "+ showResult.add(2, 3));
         System.out.println("3 X 3 = " + showResult.mul(3, 3));
+    }
+
+    static void q16(String arg[]) {
+        Q16 showResult = new Q16();
+        showResult.commandLine(arg);
+    }
+
+    static void  q17() {
+        Q17 showResult = new Q17();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please Enter Your Principle : ");
+        double userPrinciple = sc.nextDouble();
+        System.out.println("Please Enter the time by years : ");
+        int userTime = sc.nextInt();
+        System.out.println("Please Enter the rate : ");
+        double userRate = sc.nextDouble();
+        showResult.showInterest(userPrinciple,userTime,userRate);
     }
 }
