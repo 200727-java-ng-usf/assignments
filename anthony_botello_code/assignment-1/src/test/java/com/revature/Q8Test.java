@@ -28,7 +28,7 @@ public class Q8Test {
 
         List<String> expectedList = Arrays.asList("madam","civic","radar","kayak","refer","did");
 
-        List<String> resultList = Q8.getPalindromesFromList(originalList);
+        List<String> resultList = Q8.getPalindromes(originalList);
 
         assertEquals(expectedList,resultList);
     }

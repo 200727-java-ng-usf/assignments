@@ -23,7 +23,7 @@ public class Q8{
         return true;
     }
 
-    public static List<String> getPalindromesFromList(List<String> list){
-        return list.stream().filter((String s) -> isPalindrome(s)).collect(Collectors.toList());
+    public static List<String> getPalindromes(List<String> list){
+        return list.stream().filter(Q8::isPalindrome).collect(Collectors.toList());
     }
 }
