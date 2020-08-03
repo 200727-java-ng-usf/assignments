@@ -8,7 +8,7 @@ public class q2Fibonacci {
             f3 = f2 + f1;
             f1 = f2;
             f2 = f3;
-            System.out.println(" " + f3);
+            System.out.print(" " + f3);
             FibonacciN(count - 1);
 
         }

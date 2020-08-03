@@ -1,7 +1,15 @@
 package com.revature;
 
 public class q3Reverse {
+    /*
+        What is it asking me to do ?
+        -to take in a string and give back the letters
+        in reverse order
+
+     */
     static void reverseString(String gnirtSesreveR) {
+        // accumulator
+        int i;
         //Here I have my string ReverseString
         System.out.println(gnirtSesreveR);
 
@@ -12,7 +20,9 @@ public class q3Reverse {
         int lengthOfString = chars.length;
 
        // System.out.println(chars.length); The answer is 13
-        for (int i = lengthOfString - 1; i >= 0; i--) {
+
+        //the iterations is - 1 of the length of ReverseString
+        for ( i = lengthOfString - 1; i >= 0; i--) {
             //This will print all the chars starting at the 12th array spot moving backwards
             System.out.print(chars[i]);
         }

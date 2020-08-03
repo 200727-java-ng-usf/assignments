@@ -1,6 +1,9 @@
 package com.revature;
 
 public class q4NFactorial {
+    /*
+        What is it asking me to do ?
+     */
     static int factorial (int n) {
 //        int fact, i ;
 //

@@ -1,50 +1,77 @@
 package com.revature;
 
-import static com.revature.q1bubbleSort.bubbleSort;
+import static com.revature.q1bubbleSort.*;
 import static com.revature.q2Fibonacci.*;
-import static com.revature.q3Reverse.reverseString;
+import static com.revature.q3Reverse.*;
 import static com.revature.q4NFactorial.*;
+import static com.revature.q5SubToIdx.*;
 
 public class AppDriver {
 
     public static void main(String[] args){
 
+        //Bubble Sort start
         System.out.println("This is the bubble sort");
         //this is the array
         int[] arr ={1,0,5,6,3,2,3,7,9,8,4};
         //this is the array before the bubble sort
         for (int j : arr) {
-            System.out.println(j + " ");
+            System.out.print(j);
         }
+        System.out.println(" ");
         System.out.println("+--------------+");
         //this here will bubble sort the numbers
         bubbleSort(arr);
 
         for (int j : arr) {
-            System.out.println(j + " ");
+            System.out.print(j);
         }
+        //Bubble Sort end
+        System.out.println(" ");
         System.out.println("+--------------+");
+        //Fiboancci start
         System.out.println("This is the first 25 Fibonacci Numbers ");
 
         int FibonacciNumber = 25;//This is the number of times that the Fibonacci number will incriment
 
         FibonacciN(FibonacciNumber);
-        
+
+        //Fiboancci end
+        System.out.println(" ");
         System.out.println("+--------------+");
+        //Reverse String start
 
         //This is the string that will be reversed
         String reverseString = "ReverseString";
 
         reverseString(reverseString);
 
+        //Reverse String end
+        System.out.println(" ");
         System.out.println("+--------------+");
+        //Factorial Start
 
         // Here we will throw a previously used FibonacciNumber to example the factorial method
         factorial(FibonacciNumber);
 
         System.out.println("Factorial of " + FibonacciNumber + " is " + factorial(FibonacciNumber));
 
+        //Factorial End
+
         System.out.println("+--------------+");
+        // Substring index method starts here
+
+        // this is the index number that the method will use
+        // we will be using reverseString
+        int idx = 7;
+        System.out.println("idx: " + idx + " " + "String: " +  reverseString);
+
+        String newSubString = subString(idx,reverseString);
+
+        System.out.println(newSubString);
+        //Substring index method ends here
+        System.out.println("+--------------+");
+
 
 
     }
