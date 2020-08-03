@@ -18,7 +18,7 @@ public class SubStringerMethod {
         }
 
         // Get the chars between the specified indices
-        String substr = chars.toString(0, -1);
+        String substr = chars.toString();
         System.out.println(substr);
     }
 }

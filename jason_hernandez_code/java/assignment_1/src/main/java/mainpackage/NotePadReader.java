@@ -12,4 +12,7 @@ public class NotePadReader {
         parser.processLineByLine();
 
     }
+
+    private void processLineByLine() {
+    }
 }

@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BubbleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/NotePadReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/NotePadReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../demos/jason_hernandez_code/java/day-4-demos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -70,7 +73,7 @@
       <recent name="C:\Users\jason\200727-java-ng-usf\assignments\jason_hernandez_code\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BubbleSort">
     <configuration name="AppDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mainpackage.AppDriver" />
       <module name="assignment_1" />
@@ -84,8 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainpackage.BubbleSort" />
+      <module name="assignment_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mainpackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.AppDriver" />
       </list>
     </recent_temporary>
@@ -121,14 +138,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="560" y="8" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1596315791812" />
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1596401849424">
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1596493557531">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596401849424" />
-    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1596310350451">
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1596493557531" />
+    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1596471714808">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1596310350451" />
+    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1596471714808" />
     <state x="283" y="100" key="Maven.ArtifactSearchDialog" timestamp="1596386126353">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
