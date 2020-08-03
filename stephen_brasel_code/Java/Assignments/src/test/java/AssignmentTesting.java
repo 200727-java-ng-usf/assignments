@@ -66,6 +66,25 @@ public class AssignmentTesting {
             }
         }
     }
+
+    public static void printStrArray(String[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) {
+                System.out.print(", ");
+            }
+        }
+    }
+
+    private void printStr(String str) {
+        for (int j = 0; j < str.length(); j++) {
+            System.out.print(str.charAt(j));
+            if (j < str.length() - 1) {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
     //endregion
 
     @Test
@@ -207,6 +226,56 @@ public class AssignmentTesting {
     }
     @Test
     public void t13TrianglePoint(){
-        q13.triWhile(80);
+        String[] strs = q13.triWhile(4);
+        for (String str : strs) {
+            printStr(str);
+        }
+        assertArrayEquals(new String[]{"0", "10", "101", "0101"}, strs);
+    }
+
+    @Test
+    public void t14SwitchCasesSqrt(){
+        long x = rand.nextLong();
+        q14.setSqrnum(x);
+        q14.switcher(1);
+        assertEquals(q14.getSqrrt(), Math.sqrt(x), 0.001F);
+    }
+
+    @Test
+    public void t14SwitchCasesDate(){
+        q14.switcher(2);
+        assertEquals(now().toLocalDate(), q14.getToday());
+    }
+
+    @Test
+    public void t14SwitchCasesSplit(){
+        String[] strs = {"hi", "tom", "I", "know", "right"};
+        String sentence = "";
+        for (int i = 0; i < strs.length; i++) {
+            int index = rand.nextInt() % strs.length;
+            index = index < 0 ? -index : index;
+
+            //swap
+            String temp = strs[i];
+            strs[i] = strs[index];
+            strs[index] = temp;
+        }
+        for (int i = 0; i < strs.length; i++) {
+            sentence = sentence.concat(strs[i]);
+            if(i < strs.length - 1){
+                sentence = sentence.concat(" ");
+            }
+        }
+        q14.setSplitter(sentence);
+        q14.switcher(3);
+        printStrArray(strs);
+        System.out.println();
+        printStrArray(q14.getSplits());
+        assertArrayEquals(strs, q14.getSplits());
+    }
+
+    @Test
+    public void t15MathInterface(){
+
     }
 }
