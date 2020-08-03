@@ -7,6 +7,8 @@ import static com.revature.q4NFactorial.*;
 import static com.revature.q5SubToIdx.*;
 import static com.revature.q6EvenNumber.*;
 
+import static com.revature.q10Minimum.*;
+
 public class AppDriver {
 
     public static void main(String[] args){
@@ -30,6 +32,7 @@ public class AppDriver {
         //Bubble Sort end
         System.out.println(" ");
         System.out.println("+--------------+");
+
         //Fiboancci start
         System.out.println("This is the first 25 Fibonacci Numbers ");
 
@@ -40,8 +43,9 @@ public class AppDriver {
         //Fiboancci end
         System.out.println(" ");
         System.out.println("+--------------+");
-        //Reverse String start
 
+
+        //Reverse String start
         //This is the string that will be reversed
         String reverseString = "ReverseString";
 
@@ -72,6 +76,8 @@ public class AppDriver {
         System.out.println(newSubString);
         //Substring index method ends here
         System.out.println("+--------------+");
+
+
         //Even Number method starts here
         // will be using FibonacciNumber for int
         isItEven(FibonacciNumber);
@@ -79,7 +85,13 @@ public class AppDriver {
         //Even Number method ends here
         System.out.println("+--------------+");
 
+        //Minimum number method starts here
 
+        minNumber(FibonacciNumber, idx);
+
+        //Minimum Number method ends here
+
+        System.out.println("+--------------+");
 
 
 
