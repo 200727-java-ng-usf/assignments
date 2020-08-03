@@ -5,6 +5,7 @@ import static com.revature.q2Fibonacci.*;
 import static com.revature.q3Reverse.*;
 import static com.revature.q4NFactorial.*;
 import static com.revature.q5SubToIdx.*;
+import static com.revature.q6EvenNumber.*;
 
 public class AppDriver {
 
@@ -71,6 +72,14 @@ public class AppDriver {
         System.out.println(newSubString);
         //Substring index method ends here
         System.out.println("+--------------+");
+        //Even Number method starts here
+        // will be using FibonacciNumber for int
+        isItEven(FibonacciNumber);
+
+        //Even Number method ends here
+        System.out.println("+--------------+");
+
+
 
 
 
