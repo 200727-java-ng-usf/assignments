@@ -1,6 +1,10 @@
 package com.revature;
 
 public class BubbleSort {
+    public BubbleSort(int[] sort1) {
+
+    }
+
     public static void main(String[] args) {
         int temp;
         int[] arr = {1,0,5,6,3,2,3,7,9,8,4};
@@ -24,7 +28,6 @@ public class BubbleSort {
             System.out.print(arr[i]);
 
         }
-
 
 
     }
