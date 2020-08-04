@@ -1,6 +1,6 @@
 package com.revature.coreJavaAssign;
 
-import static com.revature.coreJavaAssign.q12StoreArray.even100;
+import static com.revature.coreJavaAssign.q12StoreArray.*;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
 import static com.revature.coreJavaAssign.q2Fibonacci.*;
 import static com.revature.coreJavaAssign.q3Reverse.*;
@@ -9,16 +9,17 @@ import static com.revature.coreJavaAssign.q5SubToIdx.*;
 import static com.revature.coreJavaAssign.q6EvenNumber.*;
 import static com.revature.coreJavaAssign.q10Minimum.*;
 import static com.revature.coreJavaAssign.q11Float.*;
+import static com.revature.coreJavaAssign.q13Triangle.*;
 
 public class AppDriver {
 
     public static void main(String[] args) {
 
-        //Bubble Sort start
+    //    Bubble Sort start
         System.out.println("This is the bubble sort");
         //this is the array
         int[] arr = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        //this is the array before the bubble sort
+       // this is the array before the bubble sort
         for (int j : arr) {
             System.out.print(j);
         }
@@ -27,9 +28,9 @@ public class AppDriver {
         //this here will bubble sort the numbers
         bubbleSort(arr);
 
-        for (int j : arr) {
-            System.out.print(j);
-        }
+//        for (int j : arr) {
+//            System.out.print(j);
+//        }
         //Bubble Sort end
         System.out.println(" ");
         System.out.println("+--------------+");
@@ -106,6 +107,13 @@ public class AppDriver {
 
         System.out.println(" ");
         System.out.println("+--------------+");
+        //The triangle will be made here
+        makeTriangle();
+
+        System.out.println(" ");
+        System.out.println("+--------------+");
+
+
 
 
     }

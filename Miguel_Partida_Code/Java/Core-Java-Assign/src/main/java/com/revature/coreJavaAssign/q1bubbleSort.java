@@ -1,10 +1,16 @@
 package com.revature.coreJavaAssign;
 
+import java.util.Arrays;
+
 public class q1bubbleSort {
 
 
+
 //this is the bubble sort question
-    static void bubbleSort(int[] arr){
+    static int[] bubbleSort(int[] arr){
+
+
+
         //length of the array
         int n = arr.length;
         //these here are the accumulator
@@ -22,7 +28,15 @@ public class q1bubbleSort {
                     arr[j] = temp;
                 }
             }
+
         }
+//        for (int k: arr) {
+//            System.out.print(k);
+        System.out.println(Arrays.toString(arr));
+        return arr;
     }
 
-}
+    }
+
+
+
