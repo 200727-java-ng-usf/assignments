@@ -11,20 +11,34 @@
  */
 
 import com.revature.Q15;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class Q15Test {
 
-    public static void main(String[] args) {
-        double num1 = 8;
-        double num2 = 4;
+    double num1 = 8.0;
+    double num2 = 4.0;
 
-        Q15 newObj = new Q15();
+    Q15 newObj = new Q15();
 
-        assertEquals(12.0,(newObj.addition(num1, num2)));
-        assertEquals(4.0,(newObj.subtraction(num1, num2)));
-        assertEquals(32.0, (newObj.multiplication(num1, num2)));
-        assertEquals(2.0, (newObj.division(num1, num2)));
-
+    @Test
+    public void testingAddition(){
+        assertEquals("msg", 12.0,(newObj.addition(num1, num2)), 0.001);
     }
+    @Test
+    public void testingSubtraction(){
+        assertEquals(4.0,(newObj.subtraction(num1, num2)), 0.001);
+    }
+
+    @Test
+    public void testingMultiplication(){
+        assertEquals(32.0, (newObj.multiplication(num1, num2)), 0.001);
+    }
+
+    @Test
+    public void testingDivision(){
+        assertEquals(2.0, (newObj.division(num1, num2)), 0.001);
+    }
+
 }
