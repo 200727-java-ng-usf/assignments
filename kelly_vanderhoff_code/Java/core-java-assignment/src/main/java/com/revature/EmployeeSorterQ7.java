@@ -1,6 +1,7 @@
 package com.revature;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Objects;
 import java.util.function.Function;
@@ -16,9 +17,10 @@ public class EmployeeSorterQ7 implements Comparator {
     public EmployeeSorterQ7() {
     }
 
-    public EmployeeSorterQ7(ArrayList<Employee> employeeRoster, int numEmployees) {
+    public EmployeeSorterQ7(ArrayList<Employee> employeeRoster) {
         this.employeeRoster = employeeRoster;
-        this.numEmployees = numEmployees;
+        this.employeeRoster.trimToSize();
+        this.numEmployees = this.employeeRoster.size();
     }
 
     public ArrayList<Employee> getEmployeeRoster() {
@@ -56,7 +58,7 @@ public class EmployeeSorterQ7 implements Comparator {
         if (o == null || getClass() != o.getClass()) return false;
         EmployeeSorterQ7 that = (EmployeeSorterQ7) o;
         return numEmployees == that.numEmployees &&
-                Objects.equals(employeeRoster, that.employeeRoster);
+                Arrays.equals(this.employeeRoster.toArray(), that.employeeRoster.toArray());
     }
 
     @Override
@@ -100,11 +102,35 @@ public class EmployeeSorterQ7 implements Comparator {
     }
 
     public void addEmployee(String name, String department, int age) {
-        employeeRoster.ensureCapacity(++numEmployees);
-        employeeRoster.add(numEmployees, new Employee(name, department, age));
+        employeeRoster.ensureCapacity(numEmployees + 1);
+        employeeRoster.add(numEmployees++, new Employee(name, department, age));
     }
 
-    public void sort() {
+    public int sort(String sortType) {
+        switch(sortType) {
+            case "Department":
+            case "department":
+            case "DEPARTMENT":
+            case "Dept":
+            case "dept":
+            case "DEPT":
+            case "dept.":
+            case "Dept.":
+            case "DEPT.":
+                // TODO: sort by department
+                return 0;
+            case "Age":
+            case "age":
+            case "AGE":
+                // TODO: sort by age
+                return 0;
+            case "Name":
+            case "name":
+            case "NAME":
+            default:
+                // TODO: sort by name
+                return 0;
+        }
     }
 
     private class Employee {
@@ -141,6 +167,21 @@ public class EmployeeSorterQ7 implements Comparator {
 
         public void setAge(int age) {
             this.age = age;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Employee employee = (Employee) o;
+            return age == employee.age &&
+                    name.equals(employee.name) &&
+                    department.equals(employee.department);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name, department, age);
         }
     }
 }

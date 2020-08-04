@@ -1,5 +1,7 @@
 package com.revature;
 
+import java.util.Arrays;
+
 public class AssignmentDriver {
 
     public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class AssignmentDriver {
         BubbleSortQ1 bubSort = new BubbleSortQ1(sample);
         bubSort.sort();
         System.out.println("Sorted array: ");
-        bubSort.print();
+        System.out.println(bubSort);
 
         System.out.println("+---------------------------+");
         System.out.println("Question 3: ");
@@ -49,10 +51,17 @@ public class AssignmentDriver {
         EmployeeSorterQ7 roster = new EmployeeSorterQ7();
         roster.addEmployee("Mary Sue", "Consumer Relations", 37);
         roster.addEmployee("Mark Twain", "Enterprise Resource Planning", 21);
-        roster.sort();
+        // TODO: finish this after implementing Comparator
 
         System.out.println("+---------------------------+");
         System.out.println("Question 8: ");
+        PalindromeQ8 pali = new PalindromeQ8("karan","madam","tom","civic",
+                "radar","jimmy","kayak","john","refer","billy","did");
+        System.out.println("Palindrome after initializing word list: ");
+        System.out.println(pali);
+        pali.isPalindrome();
+        System.out.println("Result after filtering for palindromes: ");
+        System.out.println(pali);
 
         System.out.println("+---------------------------+");
         System.out.println("Question 9: ");

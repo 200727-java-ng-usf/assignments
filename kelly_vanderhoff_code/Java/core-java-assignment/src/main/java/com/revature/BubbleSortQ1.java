@@ -12,8 +12,9 @@ public class BubbleSortQ1 {
 
     }
 
-    public void loadArray(int[] source) {
+    public void loadArray(int... source) {
         if (source.length < 1) {
+            this.arr = new int[0];
             return;
         }
         this.arr = new int[source.length];
@@ -40,17 +41,14 @@ public class BubbleSortQ1 {
         } while (swapped & i < this.arr.length);
     }
 
-    public void print() {
-        System.out.println(Arrays.toString(arr));
-    }
 
-    public static void main(String[] args) {
-        int[] sample = { 1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4 };
-        BubbleSortQ1 bubSort = new BubbleSortQ1(sample);
-        bubSort.sort();
-        System.out.println("Sorted array: ");
-        bubSort.print();
-    }
+//    public static void main(String[] args) {
+//        int[] sample = { 1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4 };
+//        BubbleSortQ1 bubSort = new BubbleSortQ1(sample);
+//        bubSort.sort();
+//        System.out.println("Sorted array: ");
+//        System.out.println(bubSort);
+//    }
 
     public int[] getArr() {
         return arr;
@@ -76,7 +74,10 @@ public class BubbleSortQ1 {
         return Arrays.hashCode(arr);
     }
 
+    // redundant: loadArray does the same function (more effectively)
     public void setArr(int[] arr) {
-        this.arr = arr;
+        this.arr = new int[arr.length];
+        System.arraycopy(arr, 0, this.arr, 0, arr.length);
     }
+
 }
