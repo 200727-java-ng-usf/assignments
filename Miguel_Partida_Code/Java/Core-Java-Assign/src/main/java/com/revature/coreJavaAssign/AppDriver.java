@@ -1,5 +1,6 @@
 package com.revature.coreJavaAssign;
 
+import static com.revature.coreJavaAssign.q12StoreArray.even100;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
 import static com.revature.coreJavaAssign.q2Fibonacci.*;
 import static com.revature.coreJavaAssign.q3Reverse.*;
@@ -11,12 +12,12 @@ import static com.revature.coreJavaAssign.q11Float.*;
 
 public class AppDriver {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //Bubble Sort start
         System.out.println("This is the bubble sort");
         //this is the array
-        int[] arr ={1,0,5,6,3,2,3,7,9,8,4};
+        int[] arr = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
         //this is the array before the bubble sort
         for (int j : arr) {
             System.out.print(j);
@@ -69,9 +70,9 @@ public class AppDriver {
         // this is the index number that the method will use
         // we will be using reverseString
         int idx = 7;
-        System.out.println("idx: " + idx + " " + "String: " +  reverseString);
+        System.out.println("idx: " + idx + " " + "String: " + reverseString);
 
-        String newSubString = subString(idx,reverseString);
+        String newSubString = subString(idx, reverseString);
 
         System.out.println(newSubString);
         //Substring index method ends here
@@ -96,13 +97,16 @@ public class AppDriver {
 
         floatsFromThere();
 
+        //Access floats from another package end here
+        System.out.println("+--------------+");
+
+        // Store Away starts here
+
+        even100();
+
+        System.out.println(" ");
         System.out.println("+--------------+");
 
 
-
-
-
     }
-
-
 }
