@@ -11,8 +11,10 @@ public class Assignment1TestDriver {
             System.out.println(failure.toString());
         }
 
-        System.out.println("LSKDJFLKSDJFKL");
+        System.out.println(result.getFailureCount());
+        System.out.println(result.getIgnoreCount());
         System.out.println(result.wasSuccessful());
+
         /*
         System.out.println("BEGINNING ASSIGNMENT1 TESTS");
 

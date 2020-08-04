@@ -2,7 +2,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Question14 {
-    public String switchDemo(int num) {
+    public String switchDemo(int num, int num2) {
         String strResult = "I am learning core java";
         String[] words;
         Date date = Calendar.getInstance().getTime();
@@ -11,8 +11,8 @@ public class Question14 {
         String returnString = "";
         switch(num){
             case 1 :
-                System.out.println(Math.sqrt(16));
-                returnString = Double.toString(Math.sqrt(16));
+                System.out.println(Math.sqrt(num2));
+                returnString = Double.toString(Math.sqrt(num2));
                 break;
             case 2 :
                 System.out.println(date);
@@ -22,7 +22,7 @@ public class Question14 {
                 words = strResult.split(" ");
                 for(String word : words) {
                     System.out.print(word + " ");
-                    stringBuilder.append(word + " s");
+                    stringBuilder.append(word + " ");
                 }
                 returnString = stringBuilder.toString();
                 System.out.println();

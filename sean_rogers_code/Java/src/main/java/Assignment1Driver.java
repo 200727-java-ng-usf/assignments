@@ -130,13 +130,6 @@ public class Assignment1Driver {
                     expectedOutput6[0].getAge() == twoEmployees6[0].getAge());
             System.out.println();// new line
 
-
-
-
-
-
-
-
         }
 
         {
@@ -222,9 +215,9 @@ public class Assignment1Driver {
         {
             //Question 14 test?
             Question14 question14 = new Question14();
-            question14.switchDemo(1);
-            question14.switchDemo(2);
-            question14.switchDemo(3);
+            question14.switchDemo(1, 16);
+            question14.switchDemo(2, 16);
+            question14.switchDemo(3, 16);
         }
 
         {

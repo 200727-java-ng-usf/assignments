@@ -3,7 +3,6 @@ import org.junit.Test;
 public class Question20Test {
     @Test
     public void question20Test(){
-        System.out.println("Question 20 running");
         //Question 20 test
         Question20 question20 = new Question20();
             /*
@@ -27,13 +26,11 @@ public class Question20Test {
                 "Name: Roger Rabbit\nAge: 22 years\nState: California State\n\n" +
                 "Name: Wonder Woman\nAge: 18 years\nState: Montana State\n\n");
         assert(question20.fileOutput().toString().equals(expectedOutput.toString()));
-        System.out.println("Question 20 stopped");
     }
 
     // ensure the input does not equal the output
     @Test
     public void question20Test2(){
-        System.out.println("Question 20 running");
         //Question 20 test
         Question20 question20 = new Question20();
             /*
@@ -57,6 +54,5 @@ public class Question20Test {
                 "            Roger:Rabbit:22:California\n" +
                 "            Wonder:Woman:18:Montana");
         assert(question20.fileOutput().toString().equals(unExpectedOutput.toString()));
-        System.out.println("Question 20 stopped");
     }
 }
