@@ -3,7 +3,7 @@ package com.revature.questions;
 public class Question1 {
 
 
-    public int[] bubbleSort(int q1array[]) {
+    public int[] bubbleSort() {
         int[] q1Array = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
 
         for(int i = 0; i < q1Array.length; ++i) {
