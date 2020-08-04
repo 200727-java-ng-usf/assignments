@@ -1,6 +1,9 @@
 package mainpackage;
 
 public class Triangle {
+    private String binaries = "0101010101";
+
+
 }
 
 //  General pattern suggested by teammate
