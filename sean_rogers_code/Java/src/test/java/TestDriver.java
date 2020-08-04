@@ -5,6 +5,9 @@ import org.junit.runner.notification.Failure;
 
 public class TestDriver {
     public static void main(String[] args) {
+
+        System.out.println("BEGINNING TESTS");
+
         Result result = JUnitCore.runClasses(Assignment1TestSuite.class);
 
         for(Failure failure : result.getFailures()) {
