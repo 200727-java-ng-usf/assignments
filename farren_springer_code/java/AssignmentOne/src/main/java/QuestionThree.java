@@ -1,4 +1,3 @@
-import jdk.internal.util.xml.impl.Input;
 import java.util.Scanner;
 
 public class QuestionThree {
@@ -17,9 +16,9 @@ public class QuestionThree {
 
         System.out.println("Enter your word: ");
         Scanner scanner = new Scanner(System.in);
-        String yourWord = scanner.next();
-        System.out.println("Here is what you typed: " + yourWord); // test
-        reverseIt(yourWord);
+        String userString = scanner.nextLine();
+        System.out.println("Here is what you typed: " + userString); // test
+        reverseIt(userString);
 
     }
 

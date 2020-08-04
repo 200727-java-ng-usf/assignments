@@ -1,23 +1,17 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 public class QuestionEighteenSubclass extends QuestionEighteen {
 
     private String word;
 
     public QuestionEighteenSubclass() {
-        System.out.println("QuestionEighteenSubclass no-args constructor called!");
         this.word = "Hey thErE how yoU DoIn";
     }
 
     public QuestionEighteenSubclass(String word) {
-        super();
-        System.out.println("QuestionEighteenSubclass parameterized constructor called!");
         this.word = word;
     }
 
     @Override
     public boolean hasUpperCaseLetters() {
-        System.out.println("Does it have upper case letters? The code for that would go here.");
         int counter = 0;
         for(int i = 0; i < word.length(); i++) {
 
@@ -26,9 +20,11 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
             }
         }
         if(counter == 0) {
+            System.out.println("The string does not have upper-case letters.");
             return false;
         }
         else {
+            System.out.println("The string does have upper-case letters.");
             return true;
         }
     }
@@ -38,6 +34,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
         String result;
         result = word.toUpperCase();
+        System.out.println("Here is the string in all upper-case: ");
         return result;
 
     }
@@ -45,8 +42,13 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
     @Override
     public int convertToIntAndAddTen() {
-
-        return 4;
+        int result = 0;
+        for(int i = 0; i < word.length(); i++) {
+            result += Character.getNumericValue(word.charAt(i));
+        }
+        result += 10;
+        System.out.println("Here is the string converted to an integer + 10: ");
+        return result;
 
     }
 

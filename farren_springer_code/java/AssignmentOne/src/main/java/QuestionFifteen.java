@@ -45,28 +45,31 @@ public class QuestionFifteen implements QuestionFifteenInterface{
     @Override
     public void add() {
         this.ans = this.num1 + this.num2;
-        System.out.println("Invoking add method");
+        System.out.println("Here is " +this.num1 + " and " + this.num2 + " added.");
         System.out.println(ans);
     }
 
     @Override
     public void subtract() {
         this.ans = this.num1 - this.num2;
-        System.out.println("Invoking subtract method");
+        System.out.println("Here is " + this.num1 + " and " + this.num2 + " subtracted.");
         System.out.println(ans);
     }
 
     @Override
     public void multiply() {
         this.ans = this.num1 * this.num2;
-        System.out.println("Invoking multiply method");
+        System.out.println("Here is " + this.num1 + " and " + this.num2 + " multiplied.");
         System.out.println(ans);
     }
 
     @Override
     public void divide() {
         this.ans = this.num1 / this.num2;
-        System.out.println("Invoking divide method");
+        System.out.println("Here is " + this.num1 + " and " + this.num2 + " divided.");
         System.out.println(ans);
     }
-} // done
+} // done except tests
+// two tests per if statement
+// at least two unit tests. One for if it works with goode value.
+// One that tests for values that shouldn't work. Positive and negative case as a minimum.

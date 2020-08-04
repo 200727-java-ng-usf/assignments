@@ -43,9 +43,12 @@ public class QuestionEight {
         String[] palindromes = new String[counter];
 
         // test
-        System.out.println(Arrays.toString(reverse_Of_The_List));
-        System.out.println(Arrays.toString(originalList));
-        System.out.println(counter);
+        System.out.println("Original words: " + Arrays.toString(originalList));
+        System.out.println("");
+        System.out.println("Words in reverse order: " + Arrays.toString(reverse_Of_The_List));
+        System.out.println("");
+        System.out.println("After comparing the words and their reverses, there are: " + counter + " palindromes");
+        System.out.println("");
 
         // store the palindromes in the palindromes array
         // parse through the list of reverses.
@@ -57,11 +60,8 @@ public class QuestionEight {
                 anotherCounter++;
             }
         }
-        System.out.println(Arrays.toString(palindromes));
+        System.out.println("The palindromes are: " + Arrays.toString(palindromes));
 
     }
 
-
-
-
-}
+} // use ArrayList instead of Array
