@@ -6,6 +6,11 @@ public class BubbleSortQ1 {
 
     private int[] arr;
 
+    public BubbleSortQ1() {
+        super();
+        arr = new int[0];
+    }
+
     public BubbleSortQ1(int[] source) throws NegativeArraySizeException, NullPointerException {
         this.arr = new int[source.length];
         System.arraycopy(source, 0, this.arr, 0, arr.length);

@@ -2,10 +2,9 @@ package com.revature;
 
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
-
-import static org.junit.Assert.*;
 
 public class TestQ1 {
 
@@ -15,7 +14,7 @@ public class TestQ1 {
     private static final int[] test3 = {32, 47, 53, 18, 7, 42, 103, 9000, 12344, 2938};
     private static final int[] sort3 = {7, 18, 32, 42, 47, 53, 103, 2938, 9000, 12344};
 
-    private BubbleSortQ1 sortMe = new BubbleSortQ1(test1);
+    private BubbleSortQ1 sortMe;
 
 //    @BeforeClass
 //    public static void beforeAll() {
