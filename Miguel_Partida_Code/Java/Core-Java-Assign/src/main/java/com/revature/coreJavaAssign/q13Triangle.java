@@ -3,21 +3,27 @@ package com.revature.coreJavaAssign;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class q13Triangle {
+    public static void main(String[] args) {
+        makeTriangle();
+    }
 
     static void makeTriangle() {
         //the number of rows that will be made
         int rows = 8;
-
-        for (int p = 1; p <= rows; p++) {
-            for (int j = 1; j <= p; j++) {
+        //this is the number of rows it will iterate
+        for (int r = 1; r <= rows; r++) {
+            //this is the number of columns it will iterate
+            for (int c = 1; c<=r; c++) {
                 //int k = j + p;
-                if((p+j) % 2 == 1){
+                if((r+c) % 2 == 1){
                     System.out.print("1");
-                }else
+                }else {
                     System.out.print("0");
-
+                }
             }
+            //this will make the line skip down after the second for loop is finished iterating
+            System.out.println(" ");
+
         }
-        System.out.println();
     }
 }
