@@ -1,5 +1,7 @@
 package com.revature;
+
 import com.revature.Q15.Calculator;
+import com.revature.Q18.stringImplement;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,6 +12,8 @@ public class AssignmentDriver {
         mainMenu();
 
     }
+
+
 
 
 
@@ -45,6 +49,9 @@ public class AssignmentDriver {
                 case 15:q15();break;
                 case 16:q16(new String[]{"aaa","bbb"});break;
                 case 17:q17();break;
+                case 18:q18();break;
+                default:
+                    System.out.println("Wrong number try again please......");
 
             }
         }
@@ -219,6 +226,17 @@ public class AssignmentDriver {
             double userRate = sc.nextDouble();
             showResult.showInterest(userPrinciple, userTime, userRate);
         }
+
+    static void q18 () {
+        stringImplement showResult = new stringImplement();
+        System.out.println("Method 1) if Check Uppercase in the string ");
+        System.out.println("The String is 'checkThis'  Result is "+ showResult.checkIfUpperCase("checkThis"));
+        System.out.println("Method 2) Convert String to Uppercase");
+        System.out.println("The String is 'check'.  Result is "+showResult.uppercaseConverter("check"));
+        System.out.println("Method 3) is add ten to a string parameter ");
+        System.out.print("The string is 'ten'  The result is  ");
+        showResult.addTen("10");
+    }
     }
 
 
