@@ -24,21 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AddUpArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AddUpArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ArithmeticImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/EmployeeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/EmployeeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Evens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Evens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Nfactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Nfactorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PackageFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PackageFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ReverseString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SubStringerMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SubStringerMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/secondpackage/StoreFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/secondpackage/StoreFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BubbleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BubbleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ArithmeticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArithmeticTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +159,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1596471714808" />
+    <state width="1340" height="185" key="GridCell.Tab.0.bottom" timestamp="1596570007362">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="185" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1596570007362" />
+    <state width="1340" height="185" key="GridCell.Tab.0.center" timestamp="1596570007361">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="185" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1596570007361" />
+    <state width="1340" height="185" key="GridCell.Tab.0.left" timestamp="1596570007361">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="185" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1596570007361" />
+    <state width="1340" height="185" key="GridCell.Tab.0.right" timestamp="1596570007362">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="185" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1596570007362" />
     <state x="283" y="100" key="Maven.ArtifactSearchDialog" timestamp="1596386126353">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
