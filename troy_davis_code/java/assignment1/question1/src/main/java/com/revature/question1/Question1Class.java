@@ -1,20 +1,11 @@
-package com.revature;
+/*
+    Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
+ */
+package com.revature.question1;
 
-public class Question1 {
-    public static void main(String[] args) {
-        int[] givenArray = {1,0,5,6,3,2,3,7,9,8,4};
-        bubbleSort(givenArray);
-        System.out.println("/n");
-        System.out.println("All done, final array is: ");
-        printValues(givenArray);
-    }
-    public static void printValues(int[] arr){
-        for(int i : arr) {
-            System.out.print(i + ", ");
-        }
-    }
-
-    public static void bubbleSort(int[] arr2){
+public class Question1Class {
+    public static int[] bubbleSort(int[] arr){
+        int[] arr2 = arr;
         int temp;
         boolean done = false;
         while (!done){
@@ -28,12 +19,11 @@ public class Question1 {
                     arr2[i] = arr2[i+1];
                     //bubble the current number up to the next slot
                     arr2[i+1] = temp;
-                    System.out.println("The array values are");
-                    printValues(arr2);
                     //since we had to do this, we are not done
                     done = false;
                 }
             }
         }
+        return arr2;
     }
 }
