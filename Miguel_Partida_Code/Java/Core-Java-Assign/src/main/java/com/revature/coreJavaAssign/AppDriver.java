@@ -1,13 +1,13 @@
-package com.revature;
+package com.revature.coreJavaAssign;
 
-import static com.revature.q1bubbleSort.*;
-import static com.revature.q2Fibonacci.*;
-import static com.revature.q3Reverse.*;
-import static com.revature.q4NFactorial.*;
-import static com.revature.q5SubToIdx.*;
-import static com.revature.q6EvenNumber.*;
-
-import static com.revature.q10Minimum.*;
+import static com.revature.coreJavaAssign.q1bubbleSort.*;
+import static com.revature.coreJavaAssign.q2Fibonacci.*;
+import static com.revature.coreJavaAssign.q3Reverse.*;
+import static com.revature.coreJavaAssign.q4NFactorial.*;
+import static com.revature.coreJavaAssign.q5SubToIdx.*;
+import static com.revature.coreJavaAssign.q6EvenNumber.*;
+import static com.revature.coreJavaAssign.q10Minimum.*;
+import static com.revature.coreJavaAssign.q11Float.*;
 
 public class AppDriver {
 
@@ -92,6 +92,13 @@ public class AppDriver {
         //Minimum Number method ends here
 
         System.out.println("+--------------+");
+        // Access floats from another package
+
+        floatsFromThere();
+
+        System.out.println("+--------------+");
+
+
 
 
 

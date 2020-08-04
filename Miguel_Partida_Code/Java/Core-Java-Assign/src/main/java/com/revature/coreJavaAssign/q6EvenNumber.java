@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.coreJavaAssign;
 
 public class q6EvenNumber {
     static void isItEven(int number){

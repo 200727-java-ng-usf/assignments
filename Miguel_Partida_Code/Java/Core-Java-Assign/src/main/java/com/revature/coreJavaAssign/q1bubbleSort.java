@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.coreJavaAssign;
 
 public class q1bubbleSort {
 
