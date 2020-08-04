@@ -39,4 +39,21 @@ public class Question19Test {
         assert(!question19.removePrimesAndDisplay().equals(unExpectedOutput.toString()));
         System.out.println("Question 19 stopped");
     }
+
+    @Test
+    public void question19TestAddEvens(){
+        System.out.println("Question 19 running");
+        //Question 19 test
+        Question19 question19 = new Question19();
+        ArrayList<Integer> expectedOutput = new ArrayList<Integer>();
+
+        System.out.println(question19.addEvens());
+        assert(question19.addEvens() == 2 + 4 + 6 + 8 + 10);
+    }
+
+    @Test
+    public void question19TestAddOdds(){
+        Question19 question19 = new Question19();
+        assert(question19.addOdds() == 1 + 3 + 5 + 7 + 9);
+    }
 }

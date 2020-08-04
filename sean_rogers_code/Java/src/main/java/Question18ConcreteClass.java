@@ -1,3 +1,8 @@
+/**
+ * inherits three abstract methods from
+ * a superclass. Provides the following three implementations in the subclass corresponding to
+ * the abstract methods in the superclass:
+ */
 public class Question18ConcreteClass extends Question18AbstractClass{
 
     @Override

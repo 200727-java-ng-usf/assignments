@@ -1,3 +1,7 @@
+/**
+ *  Question15 implements the IAddSubMultiDiv following methods: addition,
+ * subtraction, multiplication, and division.
+ */
 public class Question15 implements IAddSubMultiDiv{
 
     @Override

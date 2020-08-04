@@ -1,7 +1,25 @@
 import java.util.Calendar;
 import java.util.Date;
 
+
+/**
+ * Question14 demonstrates the switch case. Implement the following
+ * functionalities in the cases:java
+ * Case 1: Find the square root of a number using the Math class method.
+ * Case 2: Display today’s date.
+ * Case 3: Split the following string and store it in a string array.
+ * “I am learning Core Java”
+ *
+ *
+ */
 public class Question14 {
+
+    /**
+     *
+     * @param num for the switch case
+     * @param num2 for the sqrt method
+     * @return returns the output retrieved from each test case
+     */
     public String switchDemo(int num, int num2) {
         String strResult = "I am learning core java";
         String[] words;

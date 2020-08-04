@@ -1,3 +1,7 @@
+/**
+ * stores numbers from 1 to 100 in an array. Prints out all the even
+ * numbers from the array. Uses the enhanced FOR loop for printing out the numbers
+ */
 public class Question12 {
     public int[] displayEvenNumbers() {
         int[] numbers = new int[100];

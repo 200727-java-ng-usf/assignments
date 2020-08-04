@@ -234,7 +234,7 @@ public class Assignment1Driver {
         {
             //Question 17 test?
             Question17 question17 = new Question17();
-            //System.out.println(question17.calculateInterest());
+            System.out.println(question17.calculateInterest());
         }
 
         {

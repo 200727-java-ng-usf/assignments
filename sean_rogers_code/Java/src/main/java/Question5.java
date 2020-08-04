@@ -1,6 +1,7 @@
 /**
  * Question5 simulates a substring method. The input takes in a String str, and an int idx.
  * the output is a substring of str that goes from the first letter to idx (exclusive)
+ * the substring of str is stored in StringBuilder sb and returned
  */
 public class Question5 {
     public StringBuilder subString(String str, int idx) {

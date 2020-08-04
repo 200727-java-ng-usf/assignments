@@ -1,8 +1,14 @@
 import java.util.ArrayList;
 
+/**
+ * Creates an ArrayList and inserts integers 1 through 10. Displays the ArrayList. Adds all the
+ * even numbers up and displays the result. Adds all the odd numbers up and displays the result.
+ * Removes the prime numbers from the ArrayList and print out the remaining ArrayList
+ */
 public class Question19 {
     ArrayList<Integer> alNumbers = new ArrayList<Integer>();
     public Question19() {
+        // set alNumbers with elements 1 throught 10 (inclusive)
         for(int i = 1; i <= 10; i++) {
             alNumbers.add(i);
         }
@@ -43,7 +49,6 @@ public class Question19 {
             if(isPrime){
                 primeNumbers.add(i);
             }
-
         }
 
         //remove prime numbers from alNumbers

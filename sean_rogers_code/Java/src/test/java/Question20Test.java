@@ -53,6 +53,6 @@ public class Question20Test {
                 "            Hulk:Hogan:50:Virginia\n" +
                 "            Roger:Rabbit:22:California\n" +
                 "            Wonder:Woman:18:Montana");
-        assert(question20.fileOutput().toString().equals(unExpectedOutput.toString()));
+        assert(!question20.fileOutput().toString().equals(unExpectedOutput.toString()));
     }
 }

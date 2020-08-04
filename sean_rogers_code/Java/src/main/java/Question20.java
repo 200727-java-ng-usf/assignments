@@ -2,20 +2,21 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ *     Mickey:Mouse:35:Arizona
+ *     Hulk:Hogan:50:Virginia
+ *     Roger:Rabbit:22:California
+ *     Wonder:Woman:18:Montana
+ *
+ *     Write a program that would read from the file and print it out to the screen in the following
+ *     format:
+ *
+ *     Name: Mickey Mouse
+ *     Age: 35 years
+ *     State: Arizona State
+ */
 public class Question20 {
-    /*
-    Mickey:Mouse:35:Arizona
-    Hulk:Hogan:50:Virginia
-    Roger:Rabbit:22:California
-    Wonder:Woman:18:Montana
-
-    Write a program that would read from the file and print it out to the screen in the following
-    format:
-
-    Name: Mickey Mouse
-    Age: 35 years
-    State: Arizona State
-     */
     public StringBuilder fileOutput() {
         File file = new File("textfile.txt");
         StringBuilder stringBuilder = new StringBuilder();

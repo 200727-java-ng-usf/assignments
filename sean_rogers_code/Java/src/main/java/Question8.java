@@ -1,5 +1,11 @@
 import java.util.ArrayList;
 
+
+/**
+ * Question8 is dedicated to finding all the palindromes in input ArrayList<String> al
+ * then storing them into ArrayList<String> palindromes
+ * palindromes is then returned
+ */
 public class Question8 {
     public ArrayList<String> getPalindromes(ArrayList<String> al) {
         ArrayList<String> palindromes = new ArrayList<String>();
