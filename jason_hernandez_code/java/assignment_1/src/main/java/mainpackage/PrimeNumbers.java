@@ -17,9 +17,9 @@ public class PrimeNumbers {
         int temp;
         boolean isPrime=true;
 
-        for(int j=2; j<=numbers/2; j++)
+        for(int j=2; j<=numbers.size()/2; j++)
         {
-            temp = numbers%j;
+            temp = numbers.size()%j;
             if(temp==0)
             {
                 isPrime=false;

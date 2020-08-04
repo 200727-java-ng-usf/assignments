@@ -6,35 +6,38 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ReverseString {
-    private List<T> List() {
+    private List<Character> listOfCharacters;
 
-        ReverseString(Object list) {
-            List = list;
+    ReverseString(List<Character> list) {
+        listOfCharacters = list;
 
-            // Begin with a string
-            String string = "Revature Java";
-            System.out.println(string);
-            List<Character> chars = new <>();
+        // Begin with a string
+        String string = "Revature Java";
+        System.out.println(string);
+        List<Character> chars = new ArrayList<Character> ();
 
-            // Convert to arraylist
-            for(char ch: string.toCharArray()) {
-                chars.add(ch);
-            }
-
-            System.out.println(chars);
-
-            // Next, reverse the arraylist
-            public static<T> List<T> reverseList(List<T> list) {
-                List<T> reverse = new ArrayList<>(list.size());
-                list.stream()
-                        .collect(Collectors.toCollection(LinkedList::new))
-                        .descendingIterator()
-                        .forEachRemaining(reverse::add);
-
-                return reverse;
-            }
-            List<> reverse = reverseList(list);
-            System.out.println(reverse);
+        // Convert to arraylist
+        for (char ch : string.toCharArray()) {
+            chars.add(ch);
+        }
+        System.out.println(chars);
     }
+
+    // Next, reverse the arraylist
+    public static List<Character> reverseList(List<Character> list) {
+        List<Character> reverse = new ArrayList<>(list.size());
+        list.stream()
+                .collect(Collectors.toCollection(LinkedList::new))
+                .descendingIterator()
+                .forEachRemaining(reverse::add);
+
+        return reverse;
+    }
+
+    public void reverseString() {
+        List<Character> reverse = reverseList(listOfCharacters);
+        System.out.println(reverse);
     }
 }
+
+

@@ -2,16 +2,18 @@ package mainpackage;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 
 public class SwitchDemo {
-
+    // Number to find the sqrt
+    double a;
 
     // Need to have the datetime available
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
     LocalDateTime now = LocalDateTime.now();
 
     // And have the string
-    String string = "I am learning Core Java";
+    String theString = "I am learning Core Java";
 
     // Getters and Setters
     public DateTimeFormatter getDtf() {
@@ -31,21 +33,21 @@ public class SwitchDemo {
     }
 
     public String getString() {
-        return string;
+        return theString;
     }
 
     public void setString(String string) {
-        this.string = string;
+        this.theString = string;
     }
 
     // Build the cases in the switcher
-    public SwitchDemo() {
-        switch (expression) {
-            case "sqrt": System.out.println(Math.sqrt(double a));
+    public SwitchDemo(String dataPoint) {
+        switch (dataPoint) {
+            case "sqrt": System.out.println(Math.sqrt(a));
             break;
             case "date": System.out.println(dtf.format(now));
             break;
-            case "split": System.out.println(string[] = string.split(" "));
+            case "split": System.out.println(Arrays.toString(theString.split(" ")));
             break;
 
         }

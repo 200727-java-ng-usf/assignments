@@ -17,8 +17,8 @@ public class AddUpArrayList {
         int temp;
         boolean isEven = true;
 
-        for (int j = 2; j <= numbers3 / 2; j++) {
-            temp = numbers3 % 2;
+        for (int j = 2; j <= numbers3.size() / 2; j++) {
+            temp = numbers3.size() % 2;
             if (temp == 0) {
                 isEven = false;
                 break;

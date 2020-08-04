@@ -1,5 +1,7 @@
 package mainpackage;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class SubStringerMethod {
@@ -10,7 +12,7 @@ public class SubStringerMethod {
         String str = "Substringing a string";
 
         // Break it down into chars
-        List<Character> chars = new <>();
+        List<Character> chars = new ArrayList<>();
 
         // Convert to arraylist
         for(char ch: str.toCharArray()) {

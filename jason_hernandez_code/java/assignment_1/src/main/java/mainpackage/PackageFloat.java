@@ -3,8 +3,9 @@ package mainpackage;
 import secondpackage.*;
 
 public class PackageFloat {
-    public void StoreFloat() {
-        System.out.println("The value of pi is " + a);
-        System.out.println("The value of e is " + b);
+
+    public void storeFloat() {
+        System.out.println("The value of pi is " + StoreFloat.a);
+        System.out.println("The value of e is " + StoreFloat.b);
     }
 }

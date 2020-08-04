@@ -3,16 +3,18 @@ package mainpackage;
 import java.util.Scanner;
 
 public class ArithmeticImpl implements Arithmetic {
+    float firstNumber;
+    float secondNumber;
 
-
+    public ArithmeticImpl() {
         Scanner firstNum = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter first number ");
-        float firstNumber = firstNum.nextFloat();  // Read user input
+        firstNumber = firstNum.nextFloat();  // Read user input
 
         Scanner secNum = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter first number ");
-        float secondNumber = secNum.nextFloat();  // Read user input
-
+        secondNumber = secNum.nextFloat();  // Read user input
+    }
         @Override
         public void addUp() {
             float sumUp = firstNumber + secondNumber;
@@ -37,12 +39,12 @@ public class ArithmeticImpl implements Arithmetic {
             System.out.println("Quotient: " + quotient);
         }
 
-    public Scanner getFirstNum() {
-        return firstNum;
+    public float getFirstNum() {
+        return firstNumber;
     }
 
-    public void setFirstNum(Scanner firstNum) {
-        this.firstNum = firstNum;
+    public void setFirstNum(float firstNum) {
+        this.firstNumber = firstNum;
     }
 
     public float getFirstNumber() {
@@ -53,12 +55,12 @@ public class ArithmeticImpl implements Arithmetic {
         this.firstNumber = firstNumber;
     }
 
-    public Scanner getSecNum() {
-        return secNum;
+    public float getSecNum() {
+        return secondNumber;
     }
 
-    public void setSecNum(Scanner secNum) {
-        this.secNum = secNum;
+    public void setSecNum(float secNum) {
+        this.secondNumber = secNum;
     }
 
     public float getSecondNumber() {

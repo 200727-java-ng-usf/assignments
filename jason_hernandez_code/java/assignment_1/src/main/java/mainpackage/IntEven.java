@@ -4,7 +4,7 @@ public class IntEven {
 
     public IntEven() {
         // Begin with the number to be determined
-        float intEven = new float;
+        float intEven = 5.3f;
 
         // Divide the number by 2
         float quotient2 = intEven/2f;

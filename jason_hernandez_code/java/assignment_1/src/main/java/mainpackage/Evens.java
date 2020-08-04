@@ -16,9 +16,9 @@ public class Evens {
         int temp;
         boolean isEven=true;
 
-        for(int j=2; j<=numbers2/2; j++)
+        for(int j=2; j<=numbers2.size()/2; j++)
         {
-            temp = numbers2%2;
+            temp = numbers2.size()%2;
             if(temp==0)
             {
                 isEven=false;
@@ -33,4 +33,4 @@ public class Evens {
 
     }
     }
-}
+
