@@ -1,11 +1,20 @@
 package com.revature;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Q11Test {
-    Q11 showTest = new Q11();
+    Q11 showTest;
+
+    @Before
+    public void setShowTest(){
+        this.showTest = new Q11();
+    }
+    @After
+    public void cutShowTest(){
+        this.showTest = null;
+    }
     @Test
     public void printFloat() {
         showTest.printFloat();
