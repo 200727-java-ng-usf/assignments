@@ -1,7 +1,7 @@
 package com.revature;
 import java.util.Scanner;
 
-public class Question6 {
+public class Q6Main {
 
     private static void answer() {
         // Constructing input, assigning it, and closing it.

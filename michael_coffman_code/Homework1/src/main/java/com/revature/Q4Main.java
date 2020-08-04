@@ -2,7 +2,7 @@ package com.revature;
 
 import java.util.Scanner;
 
-public class Question4 {
+public class Q4Main {
 
     private static void answer() {
 

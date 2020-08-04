@@ -2,7 +2,7 @@ package com.revature;
 
 import java.util.Arrays;
 
-public class Question1 {
+public class Q1Main {
 
     private static void answer(){
 
@@ -16,13 +16,11 @@ public class Question1 {
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
-
                 }
             }
         }
-
+        System.out.println("This is the sorted array.");
         System.out.println(Arrays.toString(array));
-
     }
 
     public static void main(String[] args) {

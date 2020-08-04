@@ -2,7 +2,7 @@ package com.revature;
 
 import java.util.Arrays;
 
-public class Question2 {
+public class Q2Main {
 
     private static void answer() {
 
@@ -12,11 +12,7 @@ public class Question2 {
         for (int i = 2; i < (fibonacci.length); i++) {
             fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
         }
-
-
         System.out.println(Arrays.toString(fibonacci));
-
-
     }
 
     public static void main(String[] args) {

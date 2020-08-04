@@ -3,7 +3,7 @@ package com.revature;
 // Importing Scanner
 import java.util.Scanner;
 
-public class Question5 {
+public class Q5Main {
 
     private static void answer() {
 
