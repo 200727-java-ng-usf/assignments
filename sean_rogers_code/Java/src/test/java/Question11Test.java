@@ -7,9 +7,14 @@ public class Question11Test {
         //Question 11 test
         Question11 question11 = new Question11();
         float f1 = question11.getFloat1();
-        float f2 = question11.getFloat2();
-        // replace System.out.println with assert
         assert(f1 == question11.getFloat1());
+    }
+
+    @Test
+    public void question11Test2(){
+        //Question 11 test
+        Question11 question11 = new Question11();
+        float f2 = question11.getFloat2();
         assert(f2 == question11.getFloat2());
     }
 }

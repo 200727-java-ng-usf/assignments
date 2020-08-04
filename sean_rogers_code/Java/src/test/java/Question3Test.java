@@ -1,15 +1,27 @@
 import org.junit.Test;
 
 public class Question3Test {
+
+
     @Test
     public void question3Test(){
         //Question 3 test
-        System.out.println("Test 3 running");
+        Question3 question3 = new Question3();
+
+        //Test input
+        String input = "This is a Str!ng";
+
+        //Expected output
+        StringBuilder expectedOutput = new StringBuilder("gn!rtS a si sihT");
+        assert(question3.reverseString(input).toString().equals(expectedOutput.toString()));
+    }
+
+    //Negative test. The output should not match unexpected output
+    @Test
+    public void question3Test2() {
         Question3 question3 = new Question3();
         String input = "This is a Str!ng";
-        StringBuilder expectedOutput = new StringBuilder(input);
-        expectedOutput.reverse(); // THE REVERSE METHOD IS NOT USED IN THE ACTUAL SOLUTION! JUST THE TEST CASE!
-        assert(question3.reverseString(input).toString().equals(expectedOutput.toString()));
-        System.out.println("Test 3 stopped");
+        StringBuilder unExpectedOutput = new StringBuilder("This should not work");
+        assert(!question3.reverseString(input).toString().equals(unExpectedOutput.toString()));
     }
 }

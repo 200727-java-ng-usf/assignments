@@ -26,8 +26,6 @@ import org.junit.runners.Suite;
 })
 
 public class Assignment1TestSuite {
-    // Question 14 needs a single return type
     // Question16Test tests a class with a main method. How do you test the length of String[] args using JUnit?
     // Question17Test uses Scanner and requires user input. How do you automate this?
-
 }
