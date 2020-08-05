@@ -51,6 +51,7 @@ public class AssignmentDriver {
                 case 17:q17();break;
                 case 18:q18();break;
                 case 19:q19();break;
+                case 20:q20();break;
                 default:
                     System.out.println("Wrong number try again please......");
 
@@ -245,6 +246,10 @@ public class AssignmentDriver {
 
         showResult.integerArrayList();
 }
+    static void q20 () {
+        Q20 showResult = new Q20();
+        showResult.readTxtFile("String filePath");
+    }
 
 
 }

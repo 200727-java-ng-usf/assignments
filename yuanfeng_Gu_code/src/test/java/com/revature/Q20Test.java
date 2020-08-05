@@ -11,6 +11,6 @@ public class Q20Test {
 
     @Test
     public void readTxtFile() {
-        showTest.readTxtFile("/Users/yuanfenggu/Desktop/200727-java-ng-usf/assignments/yuanfeng_Gu_code/src/main/resources/Data.txt");
+        showTest.readTxtFile("/200727-java-ng-usf/assignments/yuanfeng_Gu_code/src/main/resources/Data.txt");
     }
 }
