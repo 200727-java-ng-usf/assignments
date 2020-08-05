@@ -7,7 +7,7 @@ public class Question2 {
     Assignment1Driver printValues = new Assignment1Driver();
 
     public void fibonacciSequence() {
-        int[] fibonacciArray = new int[25];
+        Integer[] fibonacciArray = new Integer[25];
 
         for(int i = 0; i < 25; ++i) {
             if (i == 0) {

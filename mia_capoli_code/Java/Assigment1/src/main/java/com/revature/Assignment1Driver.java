@@ -34,11 +34,11 @@ public class Assignment1Driver {
 //        Question13 question13 = new Question13();
 //        question13.pyramid();
         Question14  question14 = new Question14();
-        question14.switchCase();
+        question14.switchCase(3);
 
     }
 
-    public void printValues(int[] arr) {
+    public void printValues(Object[] arr) {
         for(int i = 0; i < arr.length; ++i) {
             System.out.println(arr[i]);
         }
