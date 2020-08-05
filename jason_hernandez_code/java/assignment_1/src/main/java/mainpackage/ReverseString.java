@@ -8,8 +8,7 @@ import java.util.stream.Collectors;
 public class ReverseString {
     private List<Character> listOfCharacters;
 
-    ReverseString(List<Character> list) {
-        listOfCharacters = list;
+    ReverseString() {
 
         // Begin with a string
         String string = "Revature Java";
@@ -21,6 +20,8 @@ public class ReverseString {
             chars.add(ch);
         }
         System.out.println(chars);
+
+        listOfCharacters = chars;
     }
 
     // Next, reverse the arraylist
