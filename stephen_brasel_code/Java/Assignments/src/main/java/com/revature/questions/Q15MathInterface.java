@@ -9,22 +9,25 @@ public class Q15MathInterface implements MathInterface {
 //    to carry out the required operations.
 //    Hard code two operands in a test class having a main method that calls the implementing class.
     @Override
-    public double add(double x, double b) {
-        return 0;
+    public double add(double a, double b) {
+        return a+b;
     }
 
     @Override
-    public double subtract(double x, double b) {
-        return 0;
+    public double subtract(double a, double b) {
+        return a-b;
     }
 
     @Override
-    public double multiply(double x, double b) {
-        return 0;
+    public double multiply(double a, double b) {
+        return a*b;
     }
 
     @Override
-    public double divide(double x, double b) {
-        return 0;
+    public double divide(double a, double b) throws Exception {
+        if(b == 0.0D){
+            throw new IllegalArgumentException("Singularity averted, do not divide by zero.");
+        }
+        return a/b;
     }
 }

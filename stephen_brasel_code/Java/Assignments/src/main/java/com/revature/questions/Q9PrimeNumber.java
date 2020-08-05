@@ -17,7 +17,7 @@ public class Q9PrimeNumber {
             hundred.add(i+1);
         }
     }
-    private boolean isPrime(int x){
+    public static boolean isPrime(int x){
         if(x <= 1) return false;
         int halflen = x/2;
         for(int i = 2; i < halflen+1; i++){

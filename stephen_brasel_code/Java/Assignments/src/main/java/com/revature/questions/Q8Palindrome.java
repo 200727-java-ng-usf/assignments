@@ -15,16 +15,8 @@ public class Q8Palindrome {
         return allStr;
     }
 
-    public void setAllStr(ArrayList<String> allStr) {
-        this.allStr = allStr;
-    }
-
     public ArrayList<String> getPalindromes() {
         return palindromes;
-    }
-
-    public void setPalindromes(ArrayList<String> palindromes) {
-        this.palindromes = palindromes;
     }
 
     private boolean isPalindrome(String str){
