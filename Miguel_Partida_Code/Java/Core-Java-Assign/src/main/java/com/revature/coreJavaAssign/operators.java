@@ -2,9 +2,11 @@ package com.revature.coreJavaAssign;
 
 public interface operators {
 
-    abstract void addition();
-    abstract void subtraction();
-    abstract void multiplacation();
-    abstract void division();
+    int addition(int x, int y);
 
+    int subtraction(int x, int y);
+
+    int multiplacation(int x, int y);
+
+    int division(int x, int y);
 }

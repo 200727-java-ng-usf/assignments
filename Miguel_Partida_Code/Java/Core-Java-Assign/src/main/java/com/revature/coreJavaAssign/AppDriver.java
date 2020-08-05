@@ -11,7 +11,7 @@ import static com.revature.coreJavaAssign.q10Minimum.*;
 import static com.revature.coreJavaAssign.q11Float.*;
 import static com.revature.coreJavaAssign.q13Triangle.*;
 
-public class AppDriver {
+public class AppDriver extends q15Operators{
 
     public static void main(String[] args) {
 
@@ -112,6 +112,20 @@ public class AppDriver {
 
         System.out.println(" ");
         System.out.println("+--------------+");
+
+        // q15 Operators Method
+
+        AppDriver operators = new AppDriver();
+        int x = 555;
+        int y = 555;
+        System.out.println(operators.addition(x,y));
+        System.out.println(operators.subtraction(x,y));
+        System.out.println(operators.division(x,y));
+        System.out.println(operators.multiplacation(x,y));
+        System.out.println("+--------------+");
+
+
+
 
 
 
