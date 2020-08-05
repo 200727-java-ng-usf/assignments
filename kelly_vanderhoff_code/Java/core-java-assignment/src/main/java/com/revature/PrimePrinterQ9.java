@@ -5,12 +5,18 @@ import java.util.ArrayList;
 public class PrimePrinterQ9 {
 
     private int bounds;
+    private ArrayList<Integer> numList;
+    private ArrayList<Integer> primeList;
 
-    public ArrayList<Integer> getPrimeList() {
-        return primeList;
+    public PrimePrinterQ9 () {
+        this(100);
     }
 
-    private ArrayList<Integer> primeList = new ArrayList<>();
+    public PrimePrinterQ9(int bounds) {
+        this.bounds = bounds;
+        this.numList = new ArrayList<>(bounds);
+        for (int i = 0; i < bounds; i++) this.numList.add(i + 1);
+    }
 
     public void setBounds(int bounds) {
         this.bounds = bounds;
@@ -24,17 +30,18 @@ public class PrimePrinterQ9 {
         int index = this.primeList.size() - 1;
         int start = 3; // our default prime calculation start point
         if (!this.primeList.isEmpty()) {
-            if (this.primeList.get(index) > this.bounds){
-                while (this.primeList.get(index) > this.bounds) index--;
-                // set start value for last found prime + 2
-                start = this.primeList.get(index) + 2;
+            if (this.primeList.get(index) >= this.bounds){
+                while (this.primeList.get(index) > this.bounds) this.primeList.remove(index--);
+                return; // primeList already contained a list of primes, so we only needed
+                        // to trim that list down to values <= our upper bounds
             }
-
+            // set start value for last found prime + 2
+            start = this.primeList.get(index) + 2;
         } else if (bounds >= 2) {
             // 2 is the smallest prime number, so as long as our bounds is >= 2,
             // add 2 to our primes list
             this.primeList.add(2);
-        }
+        } else return; // if bounds < 2
         // since the only even prime is 2, iterate through only odd numbers
         // between 3 and our upper bounds
         for (int i = start; i <= bounds; i += 2) {

@@ -7,7 +7,7 @@ public class BubbleSortQ1 {
     private int[] arr;
 
     public BubbleSortQ1() {
-        super();
+        super();  // implicitly called when not explicitly called
         arr = new int[0];
     }
 

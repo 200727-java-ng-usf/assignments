@@ -65,7 +65,7 @@ public class AssignmentDriver {
 
         System.out.println("+---------------------------+");
         System.out.println("Question 9: ");
-
+        PrimePrinterQ9 myPrimes = new PrimePrinterQ9();
         System.out.println("+---------------------------+");
         System.out.println("Question 10: ");
 

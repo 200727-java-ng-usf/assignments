@@ -5,6 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
+import java.lang.ArrayIndexOutOfBoundsException;
 
 public class TestQ1 {
 
@@ -112,5 +113,20 @@ public class TestQ1 {
     @Test
     public void test15 () {
         assertFalse(sortMe.equals("Happy"));
+    }
+
+    @Test
+    public void test16 () {
+        BubbleSortQ1 testMe = new BubbleSortQ1();
+        int[] testArr = new int[0];
+        assertArrayEquals(testArr, testMe.getArr());
+    }
+
+    @Test
+    public void test17 () {
+        BubbleSortQ1 testMe = new BubbleSortQ1();
+        assertThrows("Should generate an ArrayIndexOutOfBoundsException",
+                ArrayIndexOutOfBoundsException.class,
+                () -> {int firstPrime = testMe.getArr()[0];});
     }
 }
