@@ -17,15 +17,6 @@ public class QuestionNineteen {
         return result;
     }
 
-    // Create an isOdd method
-    static boolean isOdd (int theInt) {
-        if(theInt/2*2 == theInt){
-            return false;
-        } else {
-            return true;
-        }
-    }
-
     // Create a method to add the odd numbers in an int array
     static int addOddNumbers (ArrayList<Integer> intArr) {
         int result = 0;
@@ -33,7 +24,7 @@ public class QuestionNineteen {
         // Parse through the array
         for (int i = 0; i < intArr.size(); i++) {
             // If a number is odd, add it to result
-            if (isOdd(intArr.get(i))) {
+            if (!QuestionSix.isEven(intArr.get(i))) {
                 result += intArr.get(i);
             }
         }
