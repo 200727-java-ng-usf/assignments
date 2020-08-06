@@ -248,7 +248,7 @@ public class AssignmentDriver {
 }
     static void q20 () {
         Q20 showResult = new Q20();
-        showResult.readTxtFile("String filePath");
+        showResult.readTxtFile("src/main/resources/Data.txt");
     }
 
 
