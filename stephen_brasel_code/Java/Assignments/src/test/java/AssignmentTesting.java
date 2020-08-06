@@ -13,6 +13,12 @@ import java.util.Random;
 
 
 public class AssignmentTesting {
+    //    Due: Pushed to your personal branch on the batch “Assignments” repository by Friday, August 07, at 10am EST.
+
+    //    Directions: In an IDE, create one Maven project for the homework with a separate class for each question,
+//    use comments liberally in your code.
+//    In addition, write a JUnit test suite for each question,
+//    writing multiple test cases for each method you create.
 
     //region INITIALIZERS
     Q1BubbleSort q1 = new Q1BubbleSort();
