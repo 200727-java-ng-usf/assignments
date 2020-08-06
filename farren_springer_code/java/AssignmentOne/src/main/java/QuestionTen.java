@@ -24,7 +24,7 @@ public class QuestionTen {
          */
 
         temp = num1 < num2 ? num1:num2;
-        System.out.println("Smallest Number is:"+temp);
+        System.out.println("Smallest Number is: "+temp);
 
     }
 

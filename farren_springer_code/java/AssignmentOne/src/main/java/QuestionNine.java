@@ -29,8 +29,9 @@ public class QuestionNine {
         for(int i = 1; i < 101; i++) {
             hundredArray[i-1] = i;
         }
-        // parse through the hundredArray.
-        // is the number isPrime, print it. Else, do nothing.
+
+        // Parse through the hundredArray.
+        // If the number isPrime, print it. Else, do nothing.
         for(int i = 0; i < hundredArray.length; i++) {
             if(isPrime(hundredArray[i])){
                 System.out.print(hundredArray[i] + " ");

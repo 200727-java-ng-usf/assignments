@@ -2,22 +2,33 @@ import java.util.Scanner;
 
 public class QuestionFive {
 
-    static void concatIt(String str, int idx) {
-        System.out.println("Here is the word '" + str + "' concatenated to " + idx + " letters: ");
+    // Create a method that creates a substring from a string to a specified char index
+    static String substring(String str, int idx) {
+
+        // result string
+        String result = "";
         for(int i = 0; i < idx; i++) {
-            System.out.print(str.charAt(i));
+            result = result.concat(String.valueOf(str.charAt(i)));
         }
+        return result;
     }
 
+    // Main method
     public static void main(String[] args) {
 
-        // take in a value from the scanner
-        System.out.println("Enter your word: ");
+        // Take in a value from the scanner
+        System.out.print("Enter your word: ");
+
+        // Create a Scanner object to take in user input
         Scanner scanner = new Scanner(System.in);
+
+        // Assign user input to the corresponding fields
         String yourWord = scanner.next();
-        System.out.println("Enter the number of letters from the word that you would like to be displayed: ");
+        System.out.print("Enter the number of letters from the word that you would like to be displayed: ");
         int yourNumber = scanner.nextInt();
-        concatIt(yourWord, yourNumber);
+
+        // Call substring method
+        System.out.println("Here is the first " + yourNumber + " letters of " + yourWord + ": " + substring(yourWord, yourNumber));
 
     }
 } // done

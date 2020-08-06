@@ -1,6 +1,57 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class QuestionNineteen {
+
+    // Create a method to add the even numbers in an int array
+    static int addEvenNumbers (ArrayList<Integer> intArr) {
+        int result = 0;
+
+        // Parse through the int array
+        for(int i = 0; i < intArr.size(); i++) {
+            // If a number is even, add it to result
+            if(QuestionSix.isEven(intArr.get(i))) {
+                result += intArr.get(i);
+            }
+        }
+        return result;
+    }
+
+    // Create an isOdd method
+    static boolean isOdd (int theInt) {
+        if(theInt/2*2 == theInt){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    // Create a method to add the odd numbers in an int array
+    static int addOddNumbers (ArrayList<Integer> intArr) {
+        int result = 0;
+
+        // Parse through the array
+        for (int i = 0; i < intArr.size(); i++) {
+            // If a number is odd, add it to result
+            if (isOdd(intArr.get(i))) {
+                result += intArr.get(i);
+            }
+        }
+        return result;
+    }
+
+    // Create a method to add the prime numbers
+    static int addPrimeNumbers (ArrayList<Integer> intArr) {
+        int result = 0;
+
+        // Parse through the array
+        for (int i = 0; i < intArr.size(); i++) {
+            if(QuestionNine.isPrime(intArr.get(i))){
+                result += intArr.get(i);
+            }
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
 
@@ -12,41 +63,25 @@ public class QuestionNineteen {
        the remaining ArrayList.
         */
 
-        int[] myArray = new int[10];
+        // Create an ArrayList object
+        ArrayList<Integer> theArray = new ArrayList<>();
 
-        for(int i = 0; i < 10; i++) {
-            myArray[i] = i + 1;
+        // Add numbers 1 through 10 to the array
+        for (int i = 0; i < 10; i++) {
+            theArray.add(i + 1);
         }
+        System.out.println("These are the Integer ArrayList object's values: " + theArray.toString());
 
-        System.out.println(Arrays.toString(myArray));
 
-        int sumEven = myArray[1] + myArray[3] + myArray[5] + myArray[7] + myArray[9];
-        System.out.println(sumEven);
+        // Print the sum of the even numbers
+        System.out.println("Here is the sum of all of the even numbers: " + addEvenNumbers(theArray));
 
-        int sumOdd = myArray[0] + myArray[2] + myArray[4] + myArray[6] + myArray[8];
-        System.out.println(sumOdd);
+        // Print the sum of the odd numbers
+        System.out.println("Here is the sum of all of the odd numbers: " + addOddNumbers(theArray));
 
-        // check for prime numbers
-        // instead of num, parse through the numbers in the array
-        int num = 29; // this would be a temp variable where the numbers are stored
-        boolean flag = false;
-        for(int i = 2; i <= num/2; ++i)
-        {
-            // condition for nonprime number
-            if(num % i == 0)
-            {
-                flag = true;
-                break;
-            }
-        }
-
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-
-        // remove prime numbers from the ArrayList and print the remaining.
+        // Print the sum of the prime numbers
+        System.out.println("Here is the sum of all of the prime numbers: " + addPrimeNumbers(theArray));
 
     }
 
-}
+} // done

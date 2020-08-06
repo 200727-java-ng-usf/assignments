@@ -13,12 +13,12 @@ public class QuestionSeventeen {
         int principal, rate, time;
         double simpleInterest;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the principal:");
+        System.out.print("Enter the principal:");
         principal = scanner.nextInt();
-        System.out.println("Enter the rate as a percent without the % sign: ");
+        System.out.print("Enter the rate as a percent without the % sign: ");
         rate = scanner.nextInt();
         double rateDouble = (double) rate/100;
-        System.out.println("Enter the time in years:");
+        System.out.print("Enter the time in years:");
         time = scanner.nextInt();
         System.out.println("Principal: " + principal + " rate: " + rateDouble + " time: " + time);
         simpleInterest = principal*rateDouble*time;

@@ -49,6 +49,6 @@ public class QuestionFourteen {
         }
     }
 
-} // not done. Write for case 3.
+} // done
 
 

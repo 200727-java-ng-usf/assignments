@@ -1,6 +1,7 @@
 public class QuestionThirteen {
 
     public static void main(String[] args) {
+
         System.out.println("Here is the series of 0s and 1s: ");
         int counter = 0;
         String theZero = "0";

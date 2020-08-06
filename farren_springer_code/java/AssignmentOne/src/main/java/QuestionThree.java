@@ -2,23 +2,29 @@ import java.util.Scanner;
 
 public class QuestionThree {
 
-    static String rev = "";
-
-    public static void reverseIt(String str) {
+    // Create a method that takes in a string and returns a string
+    public static String reverseIt(String str) {
+        String rev = "";
         for(int i = str.length() -1; i >= 0; i--) {
 
             rev += str.charAt(i);
         }
-        System.out.println("This is the string backwards: " + rev);
+        return rev;
     }
 
     public static void main(String[] args) {
 
-        System.out.println("Enter your word: ");
+        // Ask the user for a word to reverse
+        System.out.print("Enter your word: ");
+
+        // Create a Scanner object to take in user input
         Scanner scanner = new Scanner(System.in);
+
+        // Assign the string to a String object
         String userString = scanner.nextLine();
-        System.out.println("Here is what you typed: " + userString); // test
-        reverseIt(userString);
+
+        // Run the method
+        System.out.println("Here is your word reversed: " + reverseIt(userString));
 
     }
 

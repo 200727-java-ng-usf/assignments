@@ -7,7 +7,7 @@ import java.util.*;
 import java.lang.*;
 
 
-public class QuestionSeven implements Comparator {
+public class QuestionSeven {
 
     // establish two employee objects with string, string, and int
     private String name;
@@ -16,13 +16,13 @@ public class QuestionSeven implements Comparator {
 
     // main method
     public static void main(String[] args) {
-        QuestionSeven employee1 = new QuestionSeven("Bill", "Management", 37);
-        System.out.println(employee1.getName()); // test
 
+        // Create an ArrayList object to store the employees
         ArrayList employeeArray = new ArrayList();
-        employeeArray.add(new QuestionSeven("Karen", "Human Resources", 27));
+
+        // Add two employees to the ArrayList
+        employeeArray.add(new QuestionSeven("Susan", "Human Resources", 27));
         employeeArray.add(new QuestionSeven("Henry", "Public Relations", 32));
-        employeeArray.add(new QuestionSeven("Rebecca", "Accounting", 41));
 
         System.out.println("+----------------------+");
         for (int i = 0; i < employeeArray.size(); i++) {
@@ -80,44 +80,4 @@ public class QuestionSeven implements Comparator {
                 '}';
     }
 
-    // Comparator method overrides
-    @Override
-    public int compare(Object o1, Object o2) {
-        return 0;
-    }
-
-    @Override
-    public Comparator reversed() {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparing(Comparator other) {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparingInt(ToIntFunction keyExtractor) {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparingLong(ToLongFunction keyExtractor) {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparingDouble(ToDoubleFunction keyExtractor) {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparing(Function keyExtractor) {
-        return null;
-    }
-
-    @Override
-    public Comparator thenComparing(Function keyExtractor, Comparator keyComparator) {
-        return null;
-    }
-} // not done
+} // not done. Implement Comparator Interface

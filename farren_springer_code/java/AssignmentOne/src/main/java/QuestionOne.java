@@ -1,28 +1,37 @@
+import java.util.Arrays;
+
 public class QuestionOne {
 
-    // main method
     public static void main(String[] args) {
-        // establish the string to be used from the worksheet
+        // Establish the string to be used from the worksheet
         int someInts[] = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        // create a temporary int variable to store for comparisons
+
+        // Create a temporary int variable to store for comparisons
         int temp;
-        System.out.println("These are the bubble-sorted numbers: ");
-        // use loops to compare the integers in the array
+
+        // Print the unsorted array
+        System.out.println("This is the unsorted array: " + Arrays.toString(someInts) + "\n");
+        System.out.print("This is the bubble sorted array: ");
+
+        // Use loops to compare the integers in the array
         for (int i = someInts.length - 1; i > 0; i--) {
-            // parses through the integers from the end to the beginning
+            // For each index value, compare it to each other value in the array
             for (int j = 0; j < i; j++) {
-                // parses through the integers from the beginning to end
-                // until they meet in the middle
+                // If the current array index value is greater
                 if (someInts[j] > someInts[j + 1]) {
-                    // if a value at index j is greater than the one after it,
-                    // then store that in a temporary location and then move
-                    // that variable to the location it was replaced with.
+                    // Then store that in a temporary location
                     temp = someInts[j];
+                    // Move the compared value to the location it was compared to
                     someInts[j] = someInts[j + 1];
+                    // Assign the temp variable that held the greater value to its rightful place
                     someInts[j + 1] = temp;
                 }
             }
-            System.out.print(someInts[i]);
         }
-    }
-} // done
+
+        // Print the bubble sorted array
+        System.out.println(Arrays.toString(someInts));
+
+    } // end main
+} // end class
+// done
