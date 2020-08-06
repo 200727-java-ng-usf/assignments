@@ -7,7 +7,7 @@ public class q1bubbleSort {
 
 
 //this is the bubble sort question
-    static int[] bubbleSort(int[] arr) {
+    static int[] q1bubbleSort(int[] arr) {
 
 
         //length of the array

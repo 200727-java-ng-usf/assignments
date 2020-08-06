@@ -26,7 +26,7 @@ public class AppDriver extends q15Operators{
         System.out.println(" ");
         System.out.println("+--------------+");
         //this here will bubble sort the numbers
-        bubbleSort(arr);
+        q1bubbleSort(arr);
 
 //        for (int j : arr) {
 //            System.out.print(j);

@@ -12,7 +12,7 @@ public class q1bubbleSortTest {
         int[] arr = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
         int[] expected = {0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9};
 
-        assertArrayEquals(expected,q1bubbleSort.bubbleSort(arr));
+        assertArrayEquals(expected,q1bubbleSort.q1bubbleSort(arr));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class q1bubbleSortTest {
         int[] test2A1 = {8,7,2,1,7,8,2};
         int[] expected2 = {1,2,2,7,7,8,8};
 
-        assertArrayEquals(expected2,q1bubbleSort.bubbleSort(test2A1));
+        assertArrayEquals(expected2,q1bubbleSort.q1bubbleSort(test2A1));
 
     }
 }
