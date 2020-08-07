@@ -3,7 +3,7 @@ package com.revature.coreJavaAssign;
 public abstract class q15Operators implements operators {
     @Override
     public int addition(int x, int y) {
-        return x +y;
+        return x + y;
     }
 
     @Override

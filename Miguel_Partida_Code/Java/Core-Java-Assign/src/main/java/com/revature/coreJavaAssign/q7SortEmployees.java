@@ -1,6 +1,6 @@
 package com.revature.coreJavaAssign;
 
-public class q7SortEmployees {
+public class q7SortEmployees  {
     private String name;
     private String department;
     private int age;

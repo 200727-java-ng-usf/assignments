@@ -7,13 +7,12 @@ import java.util.Scanner;
 
 public class q14Cases {
 
-    public static void main(String[] args) {
-        cases();
-    }
+//    public static void main(String[] args) {
+//        q14Cases();
+//    }
 
-    static void cases(){
+    static void q14Cases(int casePick){
         Scanner scanner = new Scanner(System.in);
-        int casePick = 1;
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss") ;
         Date todaydate = new Date();
 

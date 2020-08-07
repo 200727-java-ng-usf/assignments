@@ -40,7 +40,7 @@ public class AppDriver extends q15Operators{
 
         int FibonacciNumber = 25;//This is the number of times that the Fibonacci number will incriment
 
-        FibonacciN(FibonacciNumber);
+        q2Fibonacci(FibonacciNumber);
 
         //Fiboancci end
         System.out.println(" ");
