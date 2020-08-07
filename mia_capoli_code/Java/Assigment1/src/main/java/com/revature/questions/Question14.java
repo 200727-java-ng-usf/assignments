@@ -18,7 +18,7 @@ public class Question14 {
             case 3:
                 String javaCore = "I am learning Core Java";
                 String[] stringArray = javaCore.split(" ", 5);
-                printValues.printValues(stringArray);
+                printValues.printObjs(stringArray);
 
             }
         }

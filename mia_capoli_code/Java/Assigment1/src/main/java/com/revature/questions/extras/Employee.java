@@ -3,19 +3,22 @@ package com.revature.questions.extras;
 import java.util.Objects;
 
 public class Employee {
+    //employee pojo!
+    //initialize values
 
     private String firstName;
     private String lastName;
     private int age;
 
 
-
+    //constructor
     public Employee(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
+    // getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -40,6 +43,7 @@ public class Employee {
         this.age = age;
     }
 
+    // override .equals, .hashcode, and .toString
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
