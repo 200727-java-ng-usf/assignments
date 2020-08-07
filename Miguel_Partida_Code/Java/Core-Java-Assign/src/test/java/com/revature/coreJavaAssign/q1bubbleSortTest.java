@@ -1,27 +1,32 @@
 package com.revature.coreJavaAssign;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class q1bubbleSortTest {
 
+    private q1bubbleSort sut;
 
+    @Before
+    public void setUp() {
+        sut = new q1bubbleSort();
+    }
     @Test
     public void testBubbleSort1() {
-        int[] arr = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        int[] expected = {0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9};
+        int[] actual = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        int[] expected =  sut.q1bubbleSort(actual);
 
-        assertArrayEquals(expected,q1bubbleSort.q1bubbleSort(arr));
+        assertArrayEquals(expected,actual);
     }
 
     @Test
     public void testBubbleSort2() {
-        int[] test2A1 = {8,7,2,1,7,8,2};
-        int[] expected2 = {1,2,2,7,7,8,8};
+        int[] actual = {8,7,2,1,7,8,2};
+        int[] expected = sut.q1bubbleSort(actual);
 
-        assertArrayEquals(expected2,q1bubbleSort.q1bubbleSort(test2A1));
-
+        assertArrayEquals(expected,actual);
     }
 }
 

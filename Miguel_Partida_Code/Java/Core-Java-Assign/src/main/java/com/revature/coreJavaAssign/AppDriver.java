@@ -51,7 +51,11 @@ public class AppDriver extends q15Operators{
         //This is the string that will be reversed
         String reverseString = "ReverseString";
 
-        reverseString(reverseString);
+        String charReverse = "";
+
+        charReverse =  q3reverse(reverseString);
+
+        System.out.println(charReverse);
 
         //Reverse String end
         System.out.println(" ");

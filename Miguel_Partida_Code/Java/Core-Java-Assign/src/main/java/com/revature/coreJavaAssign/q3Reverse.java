@@ -7,7 +7,7 @@ public class q3Reverse {
         in reverse order
 
      */
-    static void reverseString(String gnirtSesreveR) {
+    static String q3reverse(String gnirtSesreveR) {
         // accumulator
         int i;
         //Here I have my string ReverseString
@@ -22,9 +22,11 @@ public class q3Reverse {
        // System.out.println(chars.length); The answer is 13
 
         //the iterations is - 1 of the length of ReverseString
-        for ( i = lengthOfString - 1; i >= 0; i--) {
-            //This will print all the chars starting at the 12th array spot moving backwards
-            System.out.print(chars[i]);
-        }
+//        for ( i = lengthOfString - 1; i >= 0; i--) {
+//            //This will print all the chars starting at the 12th array spot moving backwards
+//            System.out.print(chars[i]);
+//        }
+        String reverse = String.valueOf(chars);
+        return reverse;
     }
 }
