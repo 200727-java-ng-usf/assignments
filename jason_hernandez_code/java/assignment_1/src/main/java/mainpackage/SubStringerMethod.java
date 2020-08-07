@@ -23,6 +23,9 @@ public class SubStringerMethod {
         String substr = chars.toString();
         System.out.println(substr);
     }
+
+    public void subStringerMethod() {
+    }
 }
 
 // Example of using the forbidden substring methods, from tutorials point

@@ -40,8 +40,14 @@ public class SwitchDemo {
         this.theString = string;
     }
 
+
     // Build the cases in the switcher
     public SwitchDemo(String dataPoint) {
+
+        dataPoint = "sqrt";
+        // dataPoint = "date";
+        // dataPoint = "split";
+
         switch (dataPoint) {
             case "sqrt": System.out.println(Math.sqrt(a));
             break;

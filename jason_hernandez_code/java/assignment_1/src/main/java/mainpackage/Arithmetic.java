@@ -2,7 +2,7 @@ package mainpackage;
 
 public interface Arithmetic {
     public void addUp();
-    public void subtract();
-    public void multiply();
+    public void subtractIt();
+    public void multiplyIt();
     public void divideBy();
 }
