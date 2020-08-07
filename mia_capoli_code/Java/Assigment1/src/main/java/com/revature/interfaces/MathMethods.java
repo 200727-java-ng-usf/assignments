@@ -1,11 +1,12 @@
 package com.revature.interfaces;
 
 public interface MathMethods {
-    int additionM(int a, int b);
 
-    int subtractionM(int a, int b);
+    double additionM(double a, double b);
 
-    int multiplicationM(int a, int b);
+    double subtractionM(double a, double b);
 
-    int divisionM(int a, int b);
+    double multiplicationM(double a, double b);
+
+    double divisionM(double a, double b);
 }

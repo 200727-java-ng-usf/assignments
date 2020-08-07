@@ -1,22 +1,20 @@
 package com.revature;
 
-import com.revature.questions.*;
+import com.revature.questions.Question18;
+import com.revature.questions.Question19;
+import com.revature.questions.Question20;
 
 public class Assignment1Driver {
 
     public static void main(String[] args) {
 //        Question1 questionOne = new Question1();
 //        System.out.println(questionOne.bubbleSort());
-//        System.out.println("+---------------------");
 //        Question2 questionTwo = new Question2();
 //        questionTwo.fibonacciSequence();
-//        System.out.println("+---------------------");
 //        Question3 questionThree = new Question3();
 //        questionThree.stringReverse("Princess");
-//        System.out.println("+---------------------");
 //        Question4 questionFour = new Question4();
 //        System.out.println(questionFour.computeFactorial(5));
-//        System.out.println("+---------------------");
 //        Question5 questionFive = new Question5();
 //        System.out.println(questionFive.substringMethod("Hogwarts", 3));
 //        Question6 questionSix = new Question6();
@@ -33,16 +31,39 @@ public class Assignment1Driver {
 //        question12.getEvenNumbers();
 //        Question13 question13 = new Question13();
 //        question13.pyramid();
-        Question14  question14 = new Question14();
-        question14.switchCase(3);
+//        Question14  question14 = new Question14();
+//        question14.switchCase(3);
 
+//        Employee emp1 = new Employee("Wezley", "Singleton", 30);
+//        Employee emp2 = new Employee("Matt", "Knighten", 30);
+//        Employee emp3 = new Employee("Blake", "Kruppa", 28);
+//        Employee emp4 = new Employee("Mia", "Capoli", 22);
+//
+//        ArrayList<Employee> employees = new ArrayList<>();
+//        employees.add(emp1);
+//        employees.add(emp2);
+//        employees.add(emp3);
+//        employees.add(emp4);
+//
+//        employees.forEach(System.out::println); // <------ method reference
+//        employees.sort(new Question7());
+//
+//        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
+//
+//        employees.forEach(System.out::println);
+//        Question17 question17 = new Question17();
+//        question17.simpleInterest();
+//        Question19 question19 = new Question19();
+//        question19.addOddAndEvenRemovePrime();
+//        Question20 question20 = new Question20();
+//        question20.readFromFile();
     }
-
     public void printValues(Object[] arr) {
         for(int i = 0; i < arr.length; ++i) {
             System.out.println(arr[i]);
         }
 
     }
+
 
 }
