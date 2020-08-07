@@ -18,10 +18,10 @@ public class Q20DataBaseParsing {
 //    Age: 35 years
 //    State: Arizona State
     public class Person{
-        String fname;
-        String lname;
-        String state;
-        int age;
+        private String fname;
+        private String lname;
+        private String state;
+        private int age;
 
     public Person(String fname, String lname, int age, String state) {
         this.fname = fname;
@@ -38,37 +38,37 @@ public class Q20DataBaseParsing {
                     ;
         }
 
-        public String getFname() {
-            return fname;
-        }
-
-        public void setFname(String fname) {
-            this.fname = fname;
-        }
-
-        public String getLname() {
-            return lname;
-        }
-
-        public void setLname(String lname) {
-            this.lname = lname;
-        }
-
-        public String getState() {
-            return state;
-        }
-
-        public void setState(String state) {
-            this.state = state;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
+//        public String getFname() {
+//            return fname;
+//        }
+//
+//        public void setFname(String fname) {
+//            this.fname = fname;
+//        }
+//
+//        public String getLname() {
+//            return lname;
+//        }
+//
+//        public void setLname(String lname) {
+//            this.lname = lname;
+//        }
+//
+//        public String getState() {
+//            return state;
+//        }
+//
+//        public void setState(String state) {
+//            this.state = state;
+//        }
+//
+//        public int getAge() {
+//            return age;
+//        }
+//
+//        public void setAge(int age) {
+//            this.age = age;
+//        }
     }
 
     private ArrayList<Person> people;
@@ -81,7 +81,7 @@ public class Q20DataBaseParsing {
         people = new ArrayList<>();
         String filepath = new File("").getAbsolutePath();
         filepath = filepath.concat(_filepath);
-        System.out.println(filepath);
+//        System.out.println(filepath);
         File file = new File(filepath);
         try{
             Scanner scanner = new Scanner(file);

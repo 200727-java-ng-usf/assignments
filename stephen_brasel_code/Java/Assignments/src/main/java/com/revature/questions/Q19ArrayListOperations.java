@@ -9,35 +9,42 @@ public class Q19ArrayListOperations {
 //    Add all the odd numbers up and display the result.
 //    Remove the prime numbers from the ArrayList and print out the remaining ArrayList.
 
-    ArrayList<Integer> ints = new ArrayList<>();
-    Integer evens, odds;
+    private ArrayList<Integer> ints = new ArrayList<>();
+    private Integer evens = 0, odds = 0;
+
+    public ArrayList<Integer> getInts() {
+        return ints;
+    }
+
+    public Integer getEvens() {
+        return evens;
+    }
+
+    public Integer getOdds() {
+        return odds;
+    }
 
     public Q19ArrayListOperations() {
         this(10);
     }
 
     public Q19ArrayListOperations(int count) {
-        ints.ensureCapacity(count);
         insertNums(count);
         Init();
     }
 
-    public Q19ArrayListOperations(ArrayList<Integer> ints) {
-        this.ints = ints;
-        Init();
-    }
-
     private void insertNums(int count){
+        ints.clear();
         for (int i = 0; i < count; i++) {
-            ints.set(i, i);
+            ints.add(i);
         }
     }
 
     private void Init(){
         addEvens();
         addOdds();
-        returnNONPrimes();
-        System.out.println(ints.toString());
+//        returnNONPrimes();
+//        System.out.println(ints.toString());
     }
 
     public void addEvens(){
@@ -50,15 +57,17 @@ public class Q19ArrayListOperations {
     public void addOdds(){
         for (Integer anInt : ints) {
             if (anInt % 2 == 1) {
-                evens += anInt;
+                odds += anInt;
             }
         }
     }
-    public void returnNONPrimes(){
+    public ArrayList<Integer> returnNONPrimes(){
+        ArrayList<Integer> ret = new ArrayList<>();
         for (int i = 0; i < ints.size(); i++) {
-            if(Q9PrimeNumber.isPrime(ints.get(i))){
-                ints.remove(i--);
+            if(!Q9PrimeNumber.isPrime(ints.get(i))){
+                ret.add(i);
             }
         }
+        return ret;
     }
 }

@@ -41,6 +41,7 @@ public class Q18StringSubClasses extends Q18SuperClass {
         } catch(NumberFormatException e){
             System.out.println("Integer not found!");
             e.printStackTrace();
+            throw e;
         }
         return ret + N;
     }

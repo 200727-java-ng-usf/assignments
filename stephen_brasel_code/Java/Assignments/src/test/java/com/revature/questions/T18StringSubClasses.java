@@ -1,15 +1,91 @@
 package com.revature.questions;
 
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-public class T18StringSubClasses extends TestCase {
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-    public void testHasUpper() {
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+public class T18StringSubClasses {
+    Q18StringSubClasses q18;
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+    private final PrintStream originalErr = System.err;
+
+    @Before
+    public void t19setupTest() {
+        q18 = new Q18StringSubClasses();
     }
 
-    public void testSwapCase() {
+    @After
+    public void t19tearDownTest(){
+        System.out.println();
     }
 
-    public void testToIntAddN() {
+    //region UTILITYTESTS
+    @Test
+    public void t19NotNull(){
+        assertNotNull(q18);
     }
+    //endregion
+
+    //region POSITIVE
+    @Test
+    public void t19HasUpperNo() {
+        assertEquals(false, q18.hasUpper("this is a test."));
+    }
+    @Test
+    public void t19HasUpperYes() {
+        assertEquals(true, q18.hasUpper("This is a test."));
+    }
+    @Test
+    public void t19HasUpperYesEnd() {
+        assertEquals(true, q18.hasUpper("this is a test. I"));
+    }
+
+    @Test
+    public void t19SwapCaseNo() {
+        String result = q18.swapCase("hello");
+        assertEquals("HELLO", result);
+    }
+
+    @Test
+    public void t19SwapCaseYes() {
+        String result = q18.swapCase("HELLO12");
+        assertEquals("HELLO12", result);
+    }
+
+    @Test
+    public void t19ToIntAddN() {
+        Integer i = q18.toIntAddN("31", 10);
+        assert(Integer.compare(41, i) == 0);
+    }
+    //endregion
+
+    //region NEGATIVE
+    @Test
+    public void t19HasUpperNothing() {
+        assertEquals(false, q18.hasUpper(""));
+    }
+
+    @Test
+    public void t19SwapCaseNothing() {
+        String result = q18.swapCase("");
+        assertEquals("", result);
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void t19ToIntAddNExcept() {
+        Integer i = q18.toIntAddN("Seven", 10);
+    }
+
+    //endregion
 }
