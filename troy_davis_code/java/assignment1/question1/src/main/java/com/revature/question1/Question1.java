@@ -8,34 +8,37 @@ package com.revature.question1;
 import java.util.Arrays;
 
 public class Question1 {
-    //int-array to hold the sorted array
+    private int[] givenArray;
     private int[] sortedArray;
 
     public Question1(int[] givenArray){
-        //default constructor. this class must be instantiated with an array which it will sort and store
-        if (givenArray == null){
-            this.sortedArray = givenArray;
-        }else{
-            this.sortedArray = sortThisArray(givenArray);
-        }
+        this.givenArray = givenArray;
+        this.sortedArray = sortThisArray(this.givenArray);
     }
 
-    //method to sort an array
     private int[] sortThisArray(int[] anArray){
-        for(int i = anArray.length-1; i > 0; i--){//iterate through the array backwards
-            for (int j = 0; j < i; j++){ //iterate each element and do the comparison/moving
-                if (anArray[j] > anArray[j+1]) {
-                    int n = anArray[j]; //store the value
-                    anArray[j] = anArray[j + 1]; //move the element to the next position
-                    anArray[j + 1] = n;// swap the next element to the previous element
+        int[] tempArray = anArray;
+        for(int i = tempArray.length-1; i > 0; i--){
+            for (int j = 0; j < 1; j++){
+                if (tempArray[j] > tempArray[j+1]) {
+                    int n = tempArray[j];
+                    tempArray[j] = tempArray[j + 1];
+                    tempArray[j + 1] = n;
                 }
             }
         }
-        //return the array
-        return anArray;
+
+        return tempArray;
     }
 
-    //Auto-Generated getter, setter, to string, hashCode and equals:
+    public int[] getGivenArray() {
+        return givenArray;
+    }
+
+    public void setGivenArray(int[] givenArray) {
+        this.givenArray = givenArray;
+    }
+
     public int[] getSortedArray() {
         return sortedArray;
     }
@@ -47,22 +50,8 @@ public class Question1 {
     @Override
     public String toString() {
         return "Question1{" + "\n"+
+                "givenArray=" + Arrays.toString(givenArray) + "\n"+
                 "sortedArray=" + Arrays.toString(sortedArray) + "\n"+
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Question1)) return false;
-
-        Question1 question1 = (Question1) o;
-
-        return Arrays.equals(sortedArray, question1.sortedArray);
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(sortedArray);
     }
 }
