@@ -7,6 +7,12 @@ public class QuestionTwoTests {
      * fibonacciGenerator(int n)
      */
 
+    /*
+     Tests to run in this class
+        - fibonacciGenerator passed a negative number
+        - argument is a double
+     */
+
     private QuestionTwo sut; // SUT = System Under Test
 
     @Before

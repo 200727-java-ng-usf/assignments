@@ -1,11 +1,12 @@
+import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 
-public class QuestionFourTests {
+public class QuestionFiveTests {
 
     /*
-        - factorial passed 0
-        - factorial passed null
+        - substring passed null
+        - substring passed " "
      */
     @Before
     public void setUp() throws Exception {
