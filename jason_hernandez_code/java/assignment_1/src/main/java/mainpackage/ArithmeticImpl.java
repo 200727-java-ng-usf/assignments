@@ -22,20 +22,20 @@ public class ArithmeticImpl implements Arithmetic {
 
     @Override
     public void addUp() {
-        return firstNumber + secondNumber;
+        float sum = firstNumber + secondNumber;
     }
     @Override
-    public double subtractIt() {
-        return firstNumber - secondNumber;
+    public void subtractIt() {
+       float difference = firstNumber - secondNumber;
     }
     @Override
-    public double multiplyIt() {
-        return firstNumber * secondNumber;
+    public void multiplyIt() {
+        float product = firstNumber * secondNumber;
     }
 
     @Override
-    public double divideBy() {
-        return firstNumber / secondNumber;
+    public void divideBy() {
+        float quotient = firstNumber / secondNumber;
     }
 
 }
