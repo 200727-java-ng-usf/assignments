@@ -1,6 +1,6 @@
 package com.revature.questions;
 
-import com.revature.testHelpers.Q18SuperClass;
+import com.revature.util.Q18SuperClass;
 
 public class Q18StringSubClasses extends Q18SuperClass {
 //    Q18. Write a program having a concrete ;subclass that inherits three abstract methods from a superclass.

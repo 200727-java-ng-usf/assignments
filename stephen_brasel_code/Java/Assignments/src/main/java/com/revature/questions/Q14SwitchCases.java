@@ -77,13 +77,14 @@ public class Q14SwitchCases {
                 break;
             case 2:
 //    Case 2: Display today’s date.
-                System.out.println(now);
+                System.out.print(now);
                 break;
             case 3:
 //    Case 3: Split the following string and store it in a string array.
                 splits = splitter.split(" ");
                 break;
             default:
+                System.out.print("This is supposed to do nothing.");
                 break;
         }
     }

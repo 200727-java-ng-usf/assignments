@@ -9,11 +9,11 @@ public class Q12EnhancedFor {
 //    Use the enhanced FOR loop for printing out the numbers.
     private int[] arr;
 
+    private int[] arrEven;
+
     public int[] getArrEven() {
         return arrEven;
     }
-
-    private int[] arrEven;
 
     public Q12EnhancedFor() {
         this(100);
@@ -29,7 +29,7 @@ public class Q12EnhancedFor {
             }
         }
     }
-    public void enhancedFor(){
+    public void printEnhancedForEven(){
         boolean firstElem = true;
         for (int val : arr) {
             if(val % 2 == 0) {

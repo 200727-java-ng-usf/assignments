@@ -1,4 +1,4 @@
-package com.revature.testHelpers;
+package com.revature.util;
 
 public class FloatPoints {
     private float x = 42.0F;

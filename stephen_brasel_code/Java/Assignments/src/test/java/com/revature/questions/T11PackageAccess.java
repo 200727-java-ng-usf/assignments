@@ -1,6 +1,6 @@
 package com.revature.questions;
 
-import com.revature.testHelpers.FloatPoints;
+import com.revature.util.FloatPoints;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -45,6 +45,16 @@ public class T11PackageAccess {
         FloatPoints fp = new FloatPoints(x, y);
         q11.printFloats(fp);
         assertEquals(x, q11.getA(), 0.001F);
+    }
+
+    @Test
+    public void t11PackageAccessY(){
+//        q11
+        float x = rand.nextFloat();
+        float y = rand.nextFloat();
+        FloatPoints fp = new FloatPoints(x, y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
     }
     //endregion
 

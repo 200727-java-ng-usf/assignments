@@ -1,4 +1,4 @@
-package com.revature.testHelpers;
+package com.revature.util;
 
 public abstract class Q18SuperClass {
 

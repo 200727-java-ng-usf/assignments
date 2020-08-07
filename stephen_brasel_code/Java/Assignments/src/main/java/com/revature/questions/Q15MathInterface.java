@@ -1,6 +1,6 @@
 package com.revature.questions;
 
-import com.revature.testHelpers.MathInterface;
+import com.revature.util.MathInterface;
 
 public class Q15MathInterface implements MathInterface {
 //    Q15. Write a program that defines an interface having the following methods:
@@ -24,9 +24,9 @@ public class Q15MathInterface implements MathInterface {
     }
 
     @Override
-    public double divide(double a, double b) throws Exception {
+    public double divide(double a, double b) throws ArithmeticException {
         if(b == 0.0D){
-            throw new IllegalArgumentException("Singularity averted, do not divide by zero.");
+            throw new ArithmeticException("Singularity averted, do not divide by zero.");
         }
         return a/b;
     }

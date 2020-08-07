@@ -1,6 +1,6 @@
 package com.revature.questions;
 
-import com.revature.testHelpers.FloatPoints;
+import com.revature.util.FloatPoints;
 
 public class Q11PackageAccess {
 //    Q11. Write a program that would access two float-variables from a class that exists in another package.

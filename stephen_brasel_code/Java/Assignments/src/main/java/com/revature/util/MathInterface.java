@@ -1,4 +1,4 @@
-package com.revature.testHelpers;
+package com.revature.util;
 
 public interface MathInterface {
 //    Q15. Write a program that defines an interface having the following methods:

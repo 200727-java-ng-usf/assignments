@@ -12,7 +12,7 @@ public class Q16NumChars {
     public static void main(String[] args){
         if(args.length > 0){
             len = args[0].length();
-            System.out.println(len);
+            System.out.print(len);
         }
     }
 }

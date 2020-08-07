@@ -27,9 +27,9 @@ public class Q13TrianglePrint {
     private String a = "0";
     private String b = "1";
 
-    private String strPrepend(String str, String ins) {
-        return ins + str;
-    }
+//    private String strPrepend(String str, String ins) {
+//        return ins + str;
+//    }
 
     private void swap(){
         String temp = a;
@@ -52,9 +52,20 @@ public class Q13TrianglePrint {
         }
         return ret;
     }
-    public String triDoWhile(){
-        return str;
+
+    public static void printStr(String str) {
+        for (int j = 0; j < str.length(); j++) {
+            System.out.print(str.charAt(j));
+            if (j < str.length() - 1) {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
     }
+
+//    public String triDoWhile(){
+//        return str;
+//    }
 //    public String triFor(){
 //
 //    }

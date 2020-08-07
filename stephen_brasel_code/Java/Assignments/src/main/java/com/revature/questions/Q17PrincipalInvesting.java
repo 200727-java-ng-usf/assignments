@@ -1,5 +1,8 @@
 package com.revature.questions;
 
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -12,34 +15,36 @@ public class Q17PrincipalInvesting {
     double rate = 0.0D;
     int time = 0;
 
-    public double UserEntry(){
-        Scanner scanner = new Scanner(System.in);
+    public double UserEntry(InputStream in, PrintStream out, Double... args) throws InputMismatchException {
+        Scanner scanner = new Scanner(in);
         try {
-            System.out.println("Enter principal: ");
+            out.println("Enter principal: ");
             principal = scanner.nextDouble();
         } catch (InputMismatchException e){
-            System.out.println("Principal needs to be a double.");
+            out.print("Principal needs to be a double.");
             e.printStackTrace();
         }
         try {
-            System.out.println("Enter rate: ");
+            out.println("Enter rate: ");
             rate = scanner.nextDouble();
         } catch (InputMismatchException e){
-            System.out.println("Rate needs to be a double.");
+            out.print("Rate needs to be a double.");
             e.printStackTrace();
         }
         try {
-            System.out.println("Enter time in years: ");
+            out.println("Enter time in years: ");
             time = scanner.nextInt();
         } catch (InputMismatchException e){
-            System.out.println("Time in Years needs to be an int.");
+            out.print("Time in Years needs to be an int.");
             e.printStackTrace();
         }
         return getInterest(principal, rate, time);
     }
 
-    public double getInterest(double _principal, double _rate, double _time){
-        return _principal * _rate * _time;
+    public double getInterest(double _principal, double _rate, int _time) throws ArithmeticException{
+        double result = _principal * _rate * _time;
+        if(Double.isInfinite(result)) throw new ArithmeticException();
+        return result;
     }
 
 //    public double getTotal(double _principal, double _rate, int timeInYears){
