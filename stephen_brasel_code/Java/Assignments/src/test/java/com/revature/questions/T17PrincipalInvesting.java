@@ -63,13 +63,13 @@ public class T17PrincipalInvesting {
 		double result = (q17.getInterest(100.0d, 0.07d, 2));
 		assertNotEquals(140.0d, result, 0.001D);
 	}
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void t17PrincipalInvestingMaxPos() {
 		double result = (q17.getInterest(Double.MAX_VALUE, 1.1d, 1));
 		System.out.println(result);
 		assertNotEquals(140.0d, result, 0.001D);
 	}
-	@Test
+	@Test(expected = ArithmeticException.class)
 	public void t17PrincipalInvestingMaxNeg() {
 		double result = (q17.getInterest(Double.MAX_VALUE, -1.1d, 1));
 		System.out.println(result);

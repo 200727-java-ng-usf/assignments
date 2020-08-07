@@ -19,17 +19,17 @@ public class T1BubbleSort {
     int[] unsorted = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
     Random rand;
 
-    T1BubbleSort(){
-        rand = new Random();
-    }
 
     @Before
     public void t1setupTest() {
+        rand = new Random();
         q1 = new Q1BubbleSort();
         bubbles = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
         rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
         for (int i = 0; i < unsorted.length; i++) {
             int index = rand.nextInt() % unsorted.length;
+            index = index < 0 ? -index : index;
+
             int temp = unsorted[i];
             unsorted[i] = unsorted[index];
             unsorted[index] = temp;

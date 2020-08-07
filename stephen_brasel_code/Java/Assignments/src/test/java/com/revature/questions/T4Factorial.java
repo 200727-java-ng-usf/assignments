@@ -10,11 +10,13 @@ import static org.junit.Assert.*;
 
 public class T4Factorial {
     Q4Factorial q4;
-    int[] result = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800};
-    int facN = 3628800, n = 11;
+    int[] result = {1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800};
+    int facN = 39916800, n = 11;
 
     @Before
     public void t4setupTest() {
+        facN = 39916800;
+        n = 11;
         q4 = new Q4Factorial();
         System.out.println();
     }
@@ -38,9 +40,9 @@ public class T4Factorial {
         int n = 11;
         int[] ar = new int[n];
         for (int i = 0; i < n; i++) {
-            ar[i] = q4.Factorial(i);
+            ar[i] = q4.Factorial(i+1);
             System.out.print(ar[i]);
-            if (i < n) {
+            if (i < n - 1) {
                 System.out.print(", ");
             }
         }
