@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7bb84f1c-d0d9-429c-a58d-3c5dc1018888" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1feyxiLWssuJyLHwLfviKllmJWe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Testing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SwitchExampleTest">
+    <configuration name="FibonacciNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciNumbersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FloatExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FloatExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumTwoNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MinimumTwoNumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SwitchExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAssignment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TriangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SwitchExampleTest" />
+        <item itemvalue="JUnit.FloatExampleTest" />
+        <item itemvalue="JUnit.FibonacciNumbersTest" />
+        <item itemvalue="JUnit.MinimumTwoNumberTest" />
+        <item itemvalue="JUnit.TriangleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bb84f1c-d0d9-429c-a58d-3c5dc1018888" name="Default Changelist" comment="" />
+      <created>1596593100464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596593100464</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="558" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1596600436002">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="558" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1504.963@0.0.1504.963" timestamp="1596600436002" />
+    <state x="750" y="377" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596595806320">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="750" y="377" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1504.963@0.0.1504.963" timestamp="1596595806320" />
+    <state x="803" y="467" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596595809930">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="803" y="467" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1504.963@0.0.1504.963" timestamp="1596595809930" />
+    <state x="533" y="236" key="FileChooserDialogImpl" timestamp="1596636804924">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="533" y="236" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1596636804924" />
+    <state width="1461" height="252" key="GridCell.Tab.0.bottom" timestamp="1596811865177">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="252" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1596811865177" />
+    <state width="1461" height="252" key="GridCell.Tab.0.center" timestamp="1596811865175">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="252" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1596811865175" />
+    <state width="1461" height="252" key="GridCell.Tab.0.left" timestamp="1596811865175">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="252" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1596811865175" />
+    <state width="1461" height="252" key="GridCell.Tab.0.right" timestamp="1596811865176">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="252" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1596811865176" />
+    <state width="1461" height="317" key="GridCell.Tab.1.bottom" timestamp="1596764482665">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="317" key="GridCell.Tab.1.bottom/0.0.1504.963@0.0.1504.963" timestamp="1596764482665" />
+    <state width="1461" height="317" key="GridCell.Tab.1.center" timestamp="1596764482665">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="317" key="GridCell.Tab.1.center/0.0.1504.963@0.0.1504.963" timestamp="1596764482665" />
+    <state width="1461" height="317" key="GridCell.Tab.1.left" timestamp="1596764482664">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="317" key="GridCell.Tab.1.left/0.0.1504.963@0.0.1504.963" timestamp="1596764482664" />
+    <state width="1461" height="317" key="GridCell.Tab.1.right" timestamp="1596764482665">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="317" key="GridCell.Tab.1.right/0.0.1504.963@0.0.1504.963" timestamp="1596764482665" />
+    <state x="830" y="379" key="chooseDestDirectoryDialog" timestamp="1596595771581">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="830" y="379" key="chooseDestDirectoryDialog/0.0.1504.963@0.0.1504.963" timestamp="1596595771581" />
+    <state x="724" y="162" width="589" height="801" key="find.popup" timestamp="1596595995334">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="724" y="162" width="589" height="801" key="find.popup/0.0.1504.963@0.0.1504.963" timestamp="1596595995334" />
+    <state x="114" y="122" key="new project wizard" timestamp="1596811855627">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="114" y="122" key="new project wizard/0.0.1504.963@0.0.1504.963" timestamp="1596811855627" />
+    <state x="460" y="239" key="refactoring.ChangeSignatureDialog" timestamp="1596764217000">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="460" y="239" key="refactoring.ChangeSignatureDialog/0.0.1504.963@0.0.1504.963" timestamp="1596764217000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ReadFile.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FibonacciNumbers.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
