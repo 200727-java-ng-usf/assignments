@@ -10,17 +10,15 @@ public class Question11FloatStorage {
 
     public Question11FloatStorage() {
         //generate pseudo-random floats(mutated by instance Hashcode) to be accessed upon instantiation
-        this.float1 = ((float) Math.random())*this.hashCode();
-        this.float2 = ((float) Math.random())*this.hashCode();
+        this.float1 = (float) Math.random() *this.hashCode();
+        this.float2 = (float) Math.random() *this.hashCode();
     }
 
     public float getFloat1() {
         return float1;
     }
 
-    public void setFloat1(float float1) {
-        this.float1 = float1;
-    }
+    public void setFloat1(float float1) { this.float1 = float1; }
 
     public float getFloat2() {
         return float2;
