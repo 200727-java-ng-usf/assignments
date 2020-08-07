@@ -1,5 +1,10 @@
 package com.revature.coreJavaAssign;
 
+
+import com.revature.coreJavaAssign.q7SortEmployees;
+
+import java.util.ArrayList;
+
 import static com.revature.coreJavaAssign.q12StoreArray.*;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
 import static com.revature.coreJavaAssign.q2Fibonacci.*;
@@ -11,7 +16,7 @@ import static com.revature.coreJavaAssign.q10Minimum.*;
 import static com.revature.coreJavaAssign.q11Float.*;
 import static com.revature.coreJavaAssign.q13Triangle.*;
 
-public class AppDriver extends q15Operators{
+public class AppDriver extends q15Operators  {
 
     public static void main(String[] args) {
 
@@ -25,29 +30,33 @@ public class AppDriver extends q15Operators{
         }
         System.out.println(" ");
         System.out.println("+--------------+");
-        //this here will bubble sort the numbers
+        //Q1 this here will bubble sort the numbers
         q1bubbleSort(arr);
 
 //        for (int j : arr) {
 //            System.out.print(j);
 //        }
-        //Bubble Sort end
+
         System.out.println(" ");
         System.out.println("+--------------+");
 
-        //Fiboancci start
+        System.out.println("This is the Fibonacci number is");
+
+        //Q2 Fiboancci start
         System.out.println("This is the first 25 Fibonacci Numbers ");
 
         int FibonacciNumber = 25;//This is the number of times that the Fibonacci number will incriment
 
         q2Fibonacci(FibonacciNumber);
 
-        //Fiboancci end
+
         System.out.println(" ");
         System.out.println("+--------------+");
 
+        System.out.println("This is the Reverse String");
 
-        //Reverse String start
+
+        //Q3 Reverse String start
         //This is the string that will be reversed
         String reverseString = "ReverseString";
 
@@ -57,20 +66,20 @@ public class AppDriver extends q15Operators{
 
         System.out.println(charReverse);
 
-        //Reverse String end
+
         System.out.println(" ");
         System.out.println("+--------------+");
-        //Factorial Start
+        //Q4 Factorial Start
+
+        System.out.println("This is the Factorial method");
 
         // Here we will throw a previously used FibonacciNumber to example the factorial method
         factorial(FibonacciNumber);
 
         System.out.println("Factorial of " + FibonacciNumber + " is " + factorial(FibonacciNumber));
 
-        //Factorial End
-
         System.out.println("+--------------+");
-        // Substring index method starts here
+        //Q5 Substring index method starts here
 
         // this is the index number that the method will use
         // we will be using reverseString
@@ -80,18 +89,48 @@ public class AppDriver extends q15Operators{
         String newSubString = subString(idx, reverseString);
 
         System.out.println(newSubString);
-        //Substring index method ends here
+
         System.out.println("+--------------+");
 
-
-        //Even Number method starts here
+        //Q6Even Number method starts here
         // will be using FibonacciNumber for int
         isItEven(FibonacciNumber);
 
-        //Even Number method ends here
+
+        System.out.println("+--------------+");
+        //Q7 Starts here
+        q7SortEmployees emp1 = new q7SortEmployees("Goku","Marketing",25);
+        q7SortEmployees emp2 = new q7SortEmployees("Vegeta","Customer-Service",24);
+
+        ArrayList<q7SortEmployees> employees = new ArrayList<>();
+        employees.add(emp1);
+        employees.add(emp2);
+
+        System.out.println("This compares Names");
+        employees.sort(new q7SortEmployees.compareName());
+        for(q7SortEmployees E: employees){
+            System.out.println(E);
+        }
+        System.out.println("\n");
+
+        System.out.println("This compares Department");
+        employees.sort(new q7SortEmployees.compareDepartment());
+        for(q7SortEmployees E: employees){
+            System.out.println(E);
+        }
+        System.out.println("\n");
+
+        System.out.println("This compares Age");
+        employees.sort(new q7SortEmployees.compareAge());
+        for(q7SortEmployees E: employees){
+            System.out.println(E);
+        }
+
         System.out.println("+--------------+");
 
-        //Minimum number method starts here
+
+
+        //Q10 Minimum number method starts here
 
         minNumber(FibonacciNumber, idx);
 
