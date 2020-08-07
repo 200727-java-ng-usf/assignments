@@ -1,0 +1,8 @@
+#ide-specific garbage
+.idea/
+*.iml
+
+#build folders, files
+*.class
+target/
+out/
