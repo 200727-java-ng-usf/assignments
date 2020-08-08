@@ -2,18 +2,22 @@ import java.util.Scanner;
 
 public class QuestionTen {
 
+    public static int smallerInt(int a, int b) {
+        int temp = a < b ? a:b;
+        return temp;
+    }
+
     public static void main(String[] args) {
 
-        int num1, num2, temp;
         /* Scanner is used for getting user input.
          * The nextInt() method of scanner reads the
          * integer entered by user.
          */
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter First Number:");
-        num1 = scanner.nextInt();
+        int num1 = scanner.nextInt();
         System.out.println("Enter Second Number:");
-        num2 = scanner.nextInt();
+        int num2 = scanner.nextInt();
 
         scanner.close();
 
@@ -23,8 +27,7 @@ public class QuestionTen {
          * num3 to get final result.
          */
 
-        temp = num1 < num2 ? num1:num2;
-        System.out.println("Smallest Number is: "+temp);
+        System.out.println("Smallest Number is: "+ smallerInt(num1, num2));
 
     }
 

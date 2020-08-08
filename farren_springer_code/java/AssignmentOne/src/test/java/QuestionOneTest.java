@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class QuestionOneTests {
+public class QuestionOneTest {
 
     /**
      * methods to test in QuestionOne

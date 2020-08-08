@@ -11,7 +11,7 @@ public class QuestionTwo {
     // takes an int as a parameter. This int will be the number of Fibonacci numbers
     // the method will return.
 
-    static int[] fibonacciGenerator(int numberOfNumbers) {
+    public static int[] fibonacciGenerator(int numberOfNumbers) {
 
         // Instantiate an int array of the size specified in the parameter
         int[] fibonacciArray = new int[numberOfNumbers];
@@ -34,7 +34,6 @@ public class QuestionTwo {
             now = thenthen + then;
             fibonacciArray[i] = now;
         }
-        System.out.print("Here are the first " + numberOfNumbers + " Fibonacci numbers: ");
         return fibonacciArray;
     } // end method
 
@@ -51,7 +50,7 @@ public class QuestionTwo {
         int userNumber = scanner.nextInt();
 
         // Call the method using the userNumber
-        System.out.println(Arrays.toString(fibonacciGenerator(userNumber)));
+        System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(fibonacciGenerator(userNumber)));
 
         } // end main
     } // end class
