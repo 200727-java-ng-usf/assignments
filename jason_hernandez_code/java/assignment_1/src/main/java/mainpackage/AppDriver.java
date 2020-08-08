@@ -8,7 +8,7 @@ public class AppDriver {
         System.out.println("1. Bubble Sort an array");
         System.out.println("Array Before Bubble Sort");
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.bubbleSort();
+
         System.out.println("Array After Bubble Sort");
         System.out.println(bubbleSort);
         System.out.println("+------------------------+");
@@ -53,10 +53,10 @@ public class AppDriver {
         primeNumbers.primeNumbers();
         System.out.println("+------------------------+");
 
-        System.out.println("10. Find the minimum of two numbers");
-        FindMinimum findMinimum = new FindMinimum();
-        findMinimum.findMinimum(new int 11, 4);
-        System.out.println("+------------------------+");
+//        System.out.println("10. Find the minimum of two numbers");
+//        FindMinimum findMinimum = new FindMinimum();
+//        findMinimum.findMinimum(new int11, 4);
+//        System.out.println("+------------------------+");
 
         System.out.println("11. Access another package");
         PackageFloat packageFloat = new PackageFloat();
@@ -103,8 +103,8 @@ public class AppDriver {
         addUpArrayList.addUpArraylist();
         System.out.println("+------------------------+");
 
-        System.out.println("20. Read from NotePad");
-        NotePadReader notePadReader = new NotePadReader();
-        notePadReader.notePadReader();
+//        System.out.println("20. Read from NotePad");
+//        NotePadReader notePadReader = new NotePadReader();
+//        notePadReader.notePadReader();
     }
 }

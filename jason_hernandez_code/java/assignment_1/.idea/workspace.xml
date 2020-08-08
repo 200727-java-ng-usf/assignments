@@ -22,7 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="" />
+    <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ArithmeticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArithmeticTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BubbleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BubbleTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +74,7 @@
       <recent name="C:\Users\jason\200727-java-ng-usf\assignments\jason_hernandez_code\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BubbleTest.test2">
+  <component name="RunManager" selected="JUnit.BubbleTest.nullArray">
     <configuration name="AppDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mainpackage.AppDriver" />
       <module name="assignment_1" />
@@ -95,6 +101,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BubbleTest.nullArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BubbleTest" />
+      <option name="METHOD_NAME" value="nullArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BubbleTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,8 +121,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SorterTests.nullArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SorterTests" />
+      <option name="METHOD_NAME" value="nullArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BubbleTest.nullArray" />
+        <item itemvalue="JUnit.SorterTests.nullArray" />
         <item itemvalue="JUnit.BubbleTest.test2" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.AppDriver" />

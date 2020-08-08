@@ -3,16 +3,11 @@ package mainpackage;
 import java.util.ArrayList;
 
 public class PrimeNumbers {
-    public PrimeNumbers() {
-
-        // Initialize two arrays
-        ArrayList<Integer> numbers = new ArrayList<Integer>(100);
-        ArrayList<Integer> primes = new ArrayList<Integer>(100);
-
-        // Populate the first array with integers 1 to 100
-        for (int i = 1; i <= 100; i++)
-            numbers.add(i);
-
+    public boolean isPrime(int candidateNumber) {
+        if(candidateNumber < 1) return false;
+        for(int i=2; i <= candidateNumber; i++) {
+            candidateNumber.add(i);
+        }
         // Check each number to see if it is prime
         int temp;
         boolean isPrime=true;
