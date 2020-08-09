@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Palindromes {
 
-    public Palindromes() {
+    ArrayList checkForPalindromes() {
 
         // Start with two ArrayLists, original and palindromes
         ArrayList originalStrings = new ArrayList<String>();
@@ -41,5 +41,7 @@ public class Palindromes {
             palindromeStrings.add(reverse);
 
         System.out.println(palindromeStrings);
+
+        return palindromeStrings;
     }
 }

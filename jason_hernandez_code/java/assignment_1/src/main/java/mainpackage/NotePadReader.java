@@ -14,7 +14,7 @@ import java.util.List;
 public class NotePadReader {
 
     // Access the filepath
-    public NotePadReader() {
+    public void readFromNotePad() {
         File listOfEmployees = new File("src/main/resources/Data.txt");
 
         // Check that there is such a file
@@ -35,7 +35,7 @@ public class NotePadReader {
                 String[] userFields = currentLine.split(":");
 
                 // Create an instance
-                User user = new User();
+                User user = new User("", "", 0, "");
 
                 // The setters from the model supply the fields
                 user.setFirstname(userFields[0]);

@@ -3,7 +3,7 @@ package mainpackage;
 import java.util.Scanner;  // Import the Scanner class
 
 public class InterestCalculator {
-    public InterestCalculator() {
+    public float calculateTheInterest() {
 
         // Begin by taking input
         Scanner principal = new Scanner(System.in);  // Create a Scanner object
@@ -21,6 +21,8 @@ public class InterestCalculator {
         // Calculate the interest
         float interest = amtPrincipal * interestRate * amtTime;
         System.out.println("Interest earned this period is: " + interest);  // Output calculated amount
+
+        return interest;
     }
 
     }

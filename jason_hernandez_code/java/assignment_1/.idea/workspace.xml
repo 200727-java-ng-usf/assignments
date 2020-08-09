@@ -23,10 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SubChangeCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/AppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/ChangeCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/ChangeCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/EmployeeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/EmployeeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/FindMinimum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/FindMinimum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/IntEven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/NotePadReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/NotePadReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/Palindromes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/Palindromes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

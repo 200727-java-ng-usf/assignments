@@ -2,7 +2,7 @@ package mainpackage;
 import java.util.ArrayList;
 
 public class AddUpArrayList {
-    public AddUpArrayList() {
+    public void addUpArrayList() {
 
         // Initialize three arrayLists
         ArrayList<Integer> numbers3 = new ArrayList<Integer>(100);
@@ -43,6 +43,6 @@ public class AddUpArrayList {
             System.out.println("Sum of Even numbers: " + sumEven);
             System.out.println("Sum of odd numbers: " + sumOdd);
 
+            return;
         }
-
     }}

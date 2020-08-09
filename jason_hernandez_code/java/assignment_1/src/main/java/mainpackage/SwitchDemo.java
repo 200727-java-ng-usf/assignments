@@ -17,7 +17,7 @@ public class SwitchDemo {
     String theString;
 
     // Build the cases in the switcher
-    public SwitchDemo(String dataPoint) {
+    public void buildSwitchDemo(String dataPoint) {
 
         switch (dataPoint) {
             case "sqrt": System.out.println(Math.sqrt(a));

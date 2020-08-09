@@ -3,7 +3,7 @@ package mainpackage;
 import java.util.ArrayList;
 
 public class Evens {
-    public Evens() {
+    public ArrayList<Integer> getEvens() {
         // Initialize two arrays
         ArrayList<Integer> numbers2 = new ArrayList<Integer>(100);
         ArrayList<Integer> evenNumbers = new ArrayList<Integer>(50);
@@ -14,23 +14,22 @@ public class Evens {
 
         // Check each number to see if it is even
         int temp;
-        boolean isEven=true;
+        boolean isEven = true;
 
-        for(int j=2; j<=numbers2.size()/2; j++)
-        {
-            temp = numbers2.size()%2;
-            if(temp==0)
-            {
-                isEven=false;
+        for (int j = 2; j <= numbers2.size() / 2; j++) {
+            temp = numbers2.size() % 2;
+            if (temp == 0) {
+                isEven = false;
                 break;
             }
             //If isEven is true then the number is even else not
-            if(isEven)
+            if (isEven)
                 evenNumbers.add(j);
-
+            return evenNumbers;
         }
         System.out.println("The Even Numbers are " + evenNumbers);
 
+        return numbers2;
     }
-    }
+}
 

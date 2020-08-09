@@ -35,67 +35,69 @@ public class AppDriver {
 
         System.out.println("6. Determine if int is even without using modulo");
         IntEven intEven = new IntEven();
-        intEven.intEven();
+        intEven.determineIfEven(5f);
         System.out.println("+------------------------+");
 
         System.out.println("7. Sort employees by name, department, and age");
         EmployeeSort employeeSort = new EmployeeSort();
-        employeeSort.employeeSort();
+        employeeSort.sortEmployee("", "", 0);
         System.out.println("+------------------------+");
 
         System.out.println("8. Extract palindromes from an array list");
         Palindromes palindromes = new Palindromes();
-        palindromes.palindromes();
+        palindromes.checkForPalindromes();
         System.out.println("+------------------------+");
 
         System.out.println("9. Print out prime numbers");
         PrimeNumbers primeNumbers = new PrimeNumbers();
-        primeNumbers.primeNumbers();
+        primeNumbers.isPrime();
         System.out.println("+------------------------+");
 
         System.out.println("10. Find the minimum of two numbers");
         FindMinimum findMinimum = new FindMinimum();
-        findMinimum.findMinimum(new int11, 4);
+        findMinimum.findTheMinimum(0, 0);
         System.out.println("+------------------------+");
 
         System.out.println("11. Access another package");
         PackageFloat packageFloat = new PackageFloat();
-        packageFloat.packageFloat();
+        packageFloat.storeFloat();
         System.out.println("+------------------------+");
 
         System.out.println("12. Print even numbers");
         Evens evens = new Evens();
-        evens.evens();
+        evens.getEvens();
         System.out.println("+------------------------+");
 
         System.out.println("13. Generate triangle using loop");
         Triangle triangle = new Triangle();
-        triangle.triangle();
+        triangle.createTriangle();
         System.out.println("+------------------------+");
 
         System.out.println("14. Demonstrate the switch case");
         SwitchDemo switchDemo = new SwitchDemo();
-        switchDemo.switchDemo();
+        switchDemo.buildSwitchDemo("");
         System.out.println("+------------------------+");
 
         System.out.println("15. Implement an interface");
         ArithmeticImpl arithmetic = new ArithmeticImpl();
-        arithmetic.arithmetic();
+        arithmetic.implementArithmetic();
         System.out.println("+------------------------+");
 
         System.out.println("16. Count number of characters in a string");
         NumberOfCharacters numberOfCharacters = new NumberOfCharacters();
-        numberOfCharacters.numberOfCharacters();
+        numberOfCharacters.count("");
         System.out.println("+------------------------+");
 
         System.out.println("17. Calculate principal, rate, and time");
         InterestCalculator interestCalculator = new InterestCalculator();
-        interestCalculator.interestCalculator();
+        interestCalculator.calculateTheInterest();
         System.out.println("+------------------------+");
 
         System.out.println("18. Change the case of characters using subclass");
         SubChangeCase changeCase = new SubChangeCase();
-        changeCase.changeCase();
+        changeCase.checkForUppercase();
+        changeCase.convertToUppercase();
+        changeCase.convertToIntPlusTen();
         System.out.println("+------------------------+");
 
         System.out.println("19. From array list, add up evens and add up odds, remove prime numbers");
@@ -105,6 +107,6 @@ public class AppDriver {
 
         System.out.println("20. Read from NotePad");
         NotePadReader notePadReader = new NotePadReader();
-        notePadReader.notePadReader();
+        notePadReader.readFromNotePad();
     }
 }

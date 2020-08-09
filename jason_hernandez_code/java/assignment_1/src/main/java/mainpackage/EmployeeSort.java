@@ -12,12 +12,9 @@ public class EmployeeSort implements Comparator {
     private String name;
     private String department;
     private int age;
-    void Employee(){
-
-    }
 
     // Plug the params into the variable
-    void Employee(String n, String d, int a) {
+    void sortEmployee(String n, String d, int a) {
         name = n;
         department = d;
         age = a;

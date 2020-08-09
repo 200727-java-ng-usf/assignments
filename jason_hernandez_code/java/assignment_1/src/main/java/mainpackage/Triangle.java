@@ -1,7 +1,7 @@
 package mainpackage;
 
 public class Triangle<rows> {
-    public void Triangle() {
+    public void createTriangle() {
         Triangle triangle = new Triangle();
         // Adapted from codeforcoding.com/java-program-to-display-triangle-binary-pattern/
 
