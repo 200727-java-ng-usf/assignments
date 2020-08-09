@@ -10,8 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 public class T18StringSubClasses {
     Q18StringSubClasses q18;
@@ -27,7 +26,7 @@ public class T18StringSubClasses {
 
     @After
     public void t19TearDown(){
-
+        q18 = null;
     }
 
     //region UTILITYTESTS
@@ -73,7 +72,7 @@ public class T18StringSubClasses {
     //region NEGATIVE_TESTS
     @Test
     public void t19HasUpperNothing() {
-        assertEquals(false, q18.hasUpper(""));
+        assertFalse(q18.hasUpper(""));
     }
 
     @Test

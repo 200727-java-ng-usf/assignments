@@ -28,7 +28,7 @@ public class T19ArrayListOperations {
 
 	@After
 	public void t19TearDown(){
-
+		q19 = null;
 	}
 
 	//region UTILITYTESTS

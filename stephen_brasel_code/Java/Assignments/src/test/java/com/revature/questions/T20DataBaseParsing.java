@@ -24,7 +24,7 @@ public class T20DataBaseParsing {
 
     @After
     public void t20TearDown(){
-
+        q20 = null;
     }
 
     //region UTILITYTESTS
