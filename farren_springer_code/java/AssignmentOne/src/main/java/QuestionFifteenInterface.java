@@ -1,7 +1,7 @@
 public interface QuestionFifteenInterface {
 
-    abstract void add();
-    abstract void subtract();
-    abstract void multiply();
-    abstract void divide();
+    abstract int add();
+    abstract int subtract();
+    abstract double multiply();
+    abstract double divide();
 } // done

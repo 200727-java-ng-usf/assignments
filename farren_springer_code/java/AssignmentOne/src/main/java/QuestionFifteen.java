@@ -43,31 +43,35 @@ public class QuestionFifteen implements QuestionFifteenInterface{
     }
 
     @Override
-    public void add() {
+    public int add() {
         this.ans = this.num1 + this.num2;
         System.out.println("Here is " +this.num1 + " and " + this.num2 + " added.");
         System.out.println(ans);
+        return ans;
     }
 
     @Override
-    public void subtract() {
+    public int subtract() {
         this.ans = this.num1 - this.num2;
         System.out.println("Here is " + this.num1 + " and " + this.num2 + " subtracted.");
         System.out.println(ans);
+        return ans;
     }
 
     @Override
-    public void multiply() {
+    public double multiply() {
         this.ans = this.num1 * this.num2;
         System.out.println("Here is " + this.num1 + " and " + this.num2 + " multiplied.");
         System.out.println(ans);
+        return ans;
     }
 
     @Override
-    public void divide() {
+    public double divide() {
         this.ans = this.num1 / this.num2;
         System.out.println("Here is " + this.num1 + " and " + this.num2 + " divided.");
         System.out.println(ans);
+        return ans;
     }
 } // done except tests
 // two tests per if statement

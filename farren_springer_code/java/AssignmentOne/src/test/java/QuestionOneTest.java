@@ -40,12 +40,14 @@ public class QuestionOneTest {
         int[] expectedResult = {0,1,2,3,3,4,5,6,7,8,9};
         assertArrayEquals(msg, expectedResult, sut.bubbleSort(testArray));
     }
-    @Test
-    public void testSolutionWithNullArray() {
-        String msg = "IF a null array is provided, then impl should return an empty array.";
-        int[] expectedResult = {};
-        assertArrayEquals(msg, expectedResult, sut.bubbleSort(null));
-    }
+
+    @Test (expected = NullPointerException.class)
+        public void nullArrayThrowsException() {
+            int[] nullArray = null;
+            sut.bubbleSort(nullArray);
+        }
+
+
 
 
 

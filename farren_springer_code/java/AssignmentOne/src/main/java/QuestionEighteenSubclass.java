@@ -24,7 +24,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
             return false;
         }
         else {
-            System.out.println("The string does have upper-case letters.");
+            System.out.println("The string has " + counter + " upper-case letters.");
             return true;
         }
     }

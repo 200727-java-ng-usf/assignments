@@ -5,7 +5,6 @@ public abstract class QuestionEighteen {
     public String word = "Howdy Hi Hello";
 
     public QuestionEighteen() {
-        super(); // do not need this. Implicit
     }
 
     public QuestionEighteen(String astring) { word = astring; }
