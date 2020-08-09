@@ -12,10 +12,19 @@ public class QuestionThreeTest {
     @After
     public void tearDown()  {  sut = null;  }
 
-    @Test
     // Positive test
+    @Test
     public void HeyReversedIsYeh() {
         String expectedResult = "Yeh";
         String actualResult = sut.reverseIt("Hey");
     }
+
+    // Negative test
+    @Test (expected = NullPointerException.class)
+    public void nullStringPassedToReverseIt() {
+        String nullString = null;
+        sut.reverseIt(nullString);
+    }
+
+
 }
