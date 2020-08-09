@@ -41,6 +41,7 @@ public class QuestionOneTest {
         assertArrayEquals(msg, expectedResult, sut.bubbleSort(testArray));
     }
 
+    // Negative test
     @Test (expected = NullPointerException.class)
         public void nullArrayThrowsException() {
             int[] nullArray = null;
