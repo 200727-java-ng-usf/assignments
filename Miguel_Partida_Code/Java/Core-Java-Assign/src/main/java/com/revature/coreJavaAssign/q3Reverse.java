@@ -7,26 +7,33 @@ public class q3Reverse {
         in reverse order
 
      */
-    static String q3reverse(String gnirtSesreveR) {
+    static String q3reverse(String reverseString) {
+        if(reverseString==null){
+            return null;
+        }
         // accumulator
         int i;
-        //Here I have my string ReverseString
-        System.out.println(gnirtSesreveR);
+        //This will give me the length of ReverseString
+        int lengthOfString = reverseString.length();
 
         //This here will convert the string into a charArray
-        char[] chars = gnirtSesreveR.toCharArray();
+        char[] chars = new char[lengthOfString];
 
-        //This will give me the length of ReverseString
-        int lengthOfString = chars.length;
-
-       // System.out.println(chars.length); The answer is 13
-
-        //the iterations is - 1 of the length of ReverseString
+      // System.out.println("This is the length of the array: " + chars.length);// The answer is 13
+//          this was the method when i just printed a char[] reversed
+//        //the iterations is - 1 of the length of ReverseString
 //        for ( i = lengthOfString - 1; i >= 0; i--) {
 //            //This will print all the chars starting at the 12th array spot moving backwards
 //            System.out.print(chars[i]);
 //        }
-        String reverse = String.valueOf(chars);
+        //i will iterate the length of the string given
+        for( i = 0;i < lengthOfString ;i++){
+            //in the brackets it will start at index 12 and place the first letter of the string
+            //and while the index continues to go down the string letter will iterate through
+          chars[lengthOfString - i - 1] = reverseString.charAt(i);
+        }
+        // converts the char[] into a string
+        String reverse =  String.valueOf(chars);
         return reverse;
     }
 }

@@ -1,5 +1,6 @@
 package com.revature.coreJavaAssign;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,10 +15,21 @@ public class q3ReverseTest {
     }
 
     @Test
-    public void reverseString() {
-        String actual = "wowThisWorks";
-        String expected = sut.q3reverse(actual);
-        assertEquals(expected,actual);
+    public void reverseMiguel() {
+        String actual = "miguel";
+        String expected = "leugim";
+        assertEquals(expected,sut.q3reverse(actual));
+    }
+    @Test
+    public void reverseNothing() {
+        String actual = "";
+        String expected = "";
+        assertEquals(expected,sut.q3reverse(actual));
+    }
+
+    @After
+    public void tearDown(){
+        sut = null;
 
     }
 }

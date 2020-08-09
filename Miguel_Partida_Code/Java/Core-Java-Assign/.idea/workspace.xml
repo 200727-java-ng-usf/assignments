@@ -25,7 +25,17 @@
     <list default="true" id="0707e25b-7abd-4fda-9f08-6d81709c1b4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/AppDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/AppDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q7SortEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q7SortEmployees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q1bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q1bubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q2Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q2Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q3Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q3Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q4NFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q4NFactorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q5SubToIdx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q5SubToIdx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q8Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q8Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q1bubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q1bubbleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q2FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q2FibonacciTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q3ReverseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q3ReverseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q4NFactorialTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q4NFactorialTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q5SubToIdxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q5SubToIdxTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -76,7 +86,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppDriver">
+  <component name="RunManager" selected="JUnit.q8PalindromeTest.palindromeAndStingList">
     <configuration name="AppDriver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.AppDriver" />
       <module name="Core-Java-Assign" />
@@ -91,7 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="q15OperatorsTest.addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="q4NFactorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q4NFactorial" />
       <module name="Core-Java-Assign" />
       <extension name="coverage">
         <pattern>
@@ -99,15 +110,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q15OperatorsTest" />
-      <option name="METHOD_NAME" value="addition" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="q1bubbleSortTest.testBubbleSort1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="q3ReverseTest.reverseNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Core-Java-Assign" />
       <extension name="coverage">
         <pattern>
@@ -116,40 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q1bubbleSortTest" />
-      <option name="METHOD_NAME" value="testBubbleSort1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="q1bubbleSortTest.testBubbleSort2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Core-Java-Assign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revature.coreJavaAssign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q1bubbleSortTest" />
-      <option name="METHOD_NAME" value="testBubbleSort2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="q2FibonacciTest.fibonacciN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Core-Java-Assign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.revature.coreJavaAssign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
-      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q2FibonacciTest" />
-      <option name="METHOD_NAME" value="fibonacciN" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q3ReverseTest" />
+      <option name="METHOD_NAME" value="reverseNothing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,13 +146,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="q4NFactorialTest.factorial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Core-Java-Assign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.coreJavaAssign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q4NFactorialTest" />
+      <option name="METHOD_NAME" value="factorial" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="q8PalindromeTest.palindromeAndStingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Core-Java-Assign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.coreJavaAssign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.coreJavaAssign" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.coreJavaAssign.q8PalindromeTest" />
+      <option name="METHOD_NAME" value="palindromeAndStingList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.q8PalindromeTest.palindromeAndStingList" />
+        <item itemvalue="JUnit.q4NFactorialTest.factorial" />
+        <item itemvalue="Application.q4NFactorial" />
+        <item itemvalue="JUnit.q3ReverseTest.reverseNothing" />
         <item itemvalue="JUnit.q3ReverseTest.reverseString" />
-        <item itemvalue="JUnit.q1bubbleSortTest.testBubbleSort2" />
-        <item itemvalue="JUnit.q1bubbleSortTest.testBubbleSort1" />
-        <item itemvalue="JUnit.q15OperatorsTest.addition" />
-        <item itemvalue="JUnit.q2FibonacciTest.fibonacciN" />
       </list>
     </recent_temporary>
   </component>
@@ -213,19 +220,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596547822476" />
-    <state x="2408" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1596782528635">
+    <state x="2012" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596874815944">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2012" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596874815944" />
+    <state x="2408" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1596926212294">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="549" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596662294999" />
-    <state x="2408" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782528635" />
-    <state x="2333" y="140" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596562902744">
+    <state x="2408" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596926212294" />
+    <state x="2333" y="140" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596926240698">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
-    <state x="2333" y="140" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596562902744" />
-    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596511579247">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2333" y="140" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596926240698" />
+    <state x="2363" y="178" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596926266167">
+      <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596511579247" />
+    <state x="2363" y="178" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596926266167" />
     <state x="2307" y="200" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1596590306059">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
@@ -234,47 +246,72 @@
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2386" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596575159268" />
-    <state width="1323" height="209" key="GridCell.Tab.0.bottom" timestamp="1596782207811">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1596995479014">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596693246746" />
-    <state width="1323" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782207811" />
-    <state width="1323" height="209" key="GridCell.Tab.0.center" timestamp="1596782207811">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596995479014" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1597000475933">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596693246746" />
-    <state width="1323" height="209" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782207811" />
-    <state width="1323" height="209" key="GridCell.Tab.0.left" timestamp="1596782207811">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597000475933" />
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596874518583" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1597000475933">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596693246746" />
-    <state width="1323" height="209" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782207811" />
-    <state width="1323" height="209" key="GridCell.Tab.0.right" timestamp="1596782207811">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597000475933" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596874518582" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1597000475933">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="246" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596693246746" />
-    <state width="1323" height="209" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782207811" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597000475933" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596874518582" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1597000475933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1597000475933" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596874518582" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1596995059440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596995059440" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596872801897" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1596995059440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596995059440" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596872801897" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1596995059440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596995059440" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596872801897" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1596995059440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596995059440" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596872801897" />
     <state x="2104" y="9" key="SettingsEditor" timestamp="1596782258967">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2104" y="9" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782258967" />
-    <state x="2787" y="155" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596782539145">
-      <screen x="1920" y="0" width="1366" height="728" />
+    <state x="820" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596997959610">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="820" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596660949406" />
-    <state x="2787" y="155" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596782539145" />
+    <state x="820" y="209" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596997959610" />
+    <state x="2787" y="155" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596926277398" />
     <state x="2370" y="111" width="971" height="715" key="dock-window-1" timestamp="1596563408015">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2370" y="111" width="971" height="715" key="dock-window-1/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596563408015" />
-    <state x="2303" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1596566303112">
-      <screen x="1920" y="0" width="1366" height="728" />
-    </state>
-    <state x="2303" y="121" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596566303112" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596514983783">
+    <state x="431" y="137" key="refactoring.ChangeSignatureDialog" timestamp="1596993368243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596514983783" />
+    <state x="431" y="137" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596993368243" />
+    <state x="2303" y="121" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1596566303112" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596857915952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1596857915952" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,12 +325,22 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q2FibonacciTest.java</url>
-          <line>9</line>
-          <properties class="com.revature.coreJavaAssign.q2FibonacciTest" method="fibonacciN">
+          <url>file://$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q4NFactorialTest.java</url>
+          <line>16</line>
+          <properties class="com.revature.coreJavaAssign.q4NFactorialTest" method="factorialOf4">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/revature/coreJavaAssign/q8Palindrome.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/revature/coreJavaAssign/q8PalindromeTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

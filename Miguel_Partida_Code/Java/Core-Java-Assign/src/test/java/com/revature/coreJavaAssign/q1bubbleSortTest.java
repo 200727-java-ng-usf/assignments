@@ -1,5 +1,6 @@
 package com.revature.coreJavaAssign;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,21 +14,27 @@ public class q1bubbleSortTest {
     public void setUp() {
         sut = new q1bubbleSort();
     }
+
     @Test
     public void testBubbleSort1() {
         int[] actual = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        int[] expected =  sut.q1bubbleSort(actual);
+        int[] expected =  {0, 1, 2, 3, 3, 4, 5, 6, 7, 8 ,9};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected,sut.q1bubbleSort(actual));
     }
 
     @Test
     public void testBubbleSort2() {
         int[] actual = {8,7,2,1,7,8,2};
-        int[] expected = sut.q1bubbleSort(actual);
+        int[] expected = {1,2,2,7,7,8,8 };
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected,sut.q1bubbleSort(actual));
     }
+    @After
+    public void tearDown(){
+        sut = null;
+
+ }
 }
 
 //package com.revature;

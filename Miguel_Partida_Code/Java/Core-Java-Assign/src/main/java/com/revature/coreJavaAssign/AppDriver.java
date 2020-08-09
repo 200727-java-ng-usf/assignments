@@ -1,9 +1,7 @@
 package com.revature.coreJavaAssign;
 
-
-import com.revature.coreJavaAssign.q7SortEmployees;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static com.revature.coreJavaAssign.q12StoreArray.*;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
@@ -15,6 +13,7 @@ import static com.revature.coreJavaAssign.q6EvenNumber.*;
 import static com.revature.coreJavaAssign.q10Minimum.*;
 import static com.revature.coreJavaAssign.q11Float.*;
 import static com.revature.coreJavaAssign.q13Triangle.*;
+import static com.revature.coreJavaAssign.q8Palindrome.*;
 
 public class AppDriver extends q15Operators  {
 
@@ -40,20 +39,20 @@ public class AppDriver extends q15Operators  {
         System.out.println(" ");
         System.out.println("+--------------+");
 
-        System.out.println("This is the Fibonacci number is");
 
         //Q2 Fiboancci start
         System.out.println("This is the first 25 Fibonacci Numbers ");
 
         int FibonacciNumber = 25;//This is the number of times that the Fibonacci number will incriment
 
-        q2Fibonacci(FibonacciNumber);
+        int[] fibonacciArray = q2Fibonacci(FibonacciNumber);
 
+        System.out.println(Arrays.toString(fibonacciArray));
 
         System.out.println(" ");
         System.out.println("+--------------+");
 
-        System.out.println("This is the Reverse String");
+        System.out.println("This is the Reverse String Method");
 
 
         //Q3 Reverse String start
@@ -61,6 +60,8 @@ public class AppDriver extends q15Operators  {
         String reverseString = "ReverseString";
 
         String charReverse = "";
+
+        System.out.println("This is the string prior: " + reverseString);
 
         charReverse =  q3reverse(reverseString);
 
@@ -74,9 +75,9 @@ public class AppDriver extends q15Operators  {
         System.out.println("This is the Factorial method");
 
         // Here we will throw a previously used FibonacciNumber to example the factorial method
-        factorial(FibonacciNumber);
+        q4NFactorial(FibonacciNumber);
 
-        System.out.println("Factorial of " + FibonacciNumber + " is " + factorial(FibonacciNumber));
+        System.out.println("Factorial of " + FibonacciNumber + " is " + q4NFactorial(FibonacciNumber));
 
         System.out.println("+--------------+");
         //Q5 Substring index method starts here
@@ -86,7 +87,7 @@ public class AppDriver extends q15Operators  {
         int idx = 7;
         System.out.println("idx: " + idx + " " + "String: " + reverseString);
 
-        String newSubString = subString(idx, reverseString);
+        String newSubString = q5SubToIdx(idx, reverseString);
 
         System.out.println(newSubString);
 
@@ -125,6 +126,15 @@ public class AppDriver extends q15Operators  {
         for(q7SortEmployees E: employees){
             System.out.println(E);
         }
+
+        System.out.println("+--------------+");
+
+        //q8 Starts here
+        String[] initialStrings = new String[] {"karen","madam","tom","civic","radat","jimmy","kayak","john","refer","billy","did"};
+
+        ArrayList<ArrayList<String>> bothStringLists =  q8Palindrome.q8PalindromeO(initialStrings);
+
+        System.out.println(bothStringLists);
 
         System.out.println("+--------------+");
 

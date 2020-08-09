@@ -16,7 +16,8 @@ public class q1bubbleSort {
         int i, j;
         int temp;
 
-        //the iterations is - 1 of the length of n
+
+        //the iterations is - 1 of the length of the array
         for (i = 0; i < n - 1; i++) {
             //
             for (j = 0; j < n - i - 1; j++) {

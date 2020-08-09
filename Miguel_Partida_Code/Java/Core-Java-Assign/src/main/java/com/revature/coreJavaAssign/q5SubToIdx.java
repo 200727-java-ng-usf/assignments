@@ -7,7 +7,7 @@ public class q5SubToIdx {
     -the suString will be in btw 0 and (idx - 1)
     or
      */
-    static String subString (int idx,String str){
+    static String q5SubToIdx (int idx,String str){
         int i;
         //char array with the length of the int idx specified
         char[] sString = new char[idx];
