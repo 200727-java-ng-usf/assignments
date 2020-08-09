@@ -2,6 +2,9 @@ package assignment;
 
 import assignment.questions.*;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class AssignmentDriver {
 
     public static void main(String[] args){
@@ -75,7 +78,15 @@ public class AssignmentDriver {
         System.out.println("multiply 5 * 5: " + question15.multiplication(5,5));
         System.out.println("divide 5 by 5: " + question15.division(5,5));
 
+        Q16 question16 = new Q16();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a string:");
+        String string = scanner.nextLine();
+        System.out.println(question16.charactersInString(string));
 
+        Q17 question17 = new Q17();
+        System.out.println("Please enter your principal:");
+        question17.interestRate();
 
     }
 }
