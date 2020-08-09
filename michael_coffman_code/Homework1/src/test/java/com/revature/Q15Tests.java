@@ -66,10 +66,36 @@ public class Q15Tests {
 
     }
 
+    @Test
+    public void multiply() {
 
+        // Decimals to be rounded to 6th place
+        DecimalFormat decimal = new DecimalFormat(".######");
 
+        double a = 15.456;
+        double b = 3.5;
 
+        double expectedResult = 54.096;
+        double actualResult = a * b;
 
+        System.out.println(decimal.format(actualResult));
 
+        assertEquals(expectedResult, actualResult, .001);
 
+    }
+
+    @Test
+    public void divide() {
+
+        DecimalFormat decimal = new DecimalFormat(".######");
+
+        double a = 81;
+        double b = 9;
+
+        double expectedResult = 9;
+        double actualResult = a / b;
+        System.out.println(decimal.format(actualResult));
+
+        assertEquals(expectedResult, actualResult, .001);
+    }
 }

@@ -8,17 +8,14 @@ import java.util.Scanner;
 
 public class Q14Main {
 
-    private static int choice;
     private double sqrt;
     private String[] stringArray;
 
+    private static boolean keepRunning = true;
 
+    // constructor
     public Q14Main() {
-
-        // Constructor fields
-        double sqrt;
-        String[] stringArray;
-        int choice;
+        super();
     }
 
     // print override for the stringArray
@@ -55,7 +52,8 @@ public class Q14Main {
                                 findSquareRoot(input.nextDouble());
                                 run = false;
                             } catch (InputMismatchException e) {
-                                e.printStackTrace();
+                                //e.printStackTrace();
+                                System.out.println("Please enter a number, not... whatever that was.");
                                 System.out.println("+---------------------------------------------------------------+");
                             }
                         }
@@ -74,30 +72,47 @@ public class Q14Main {
                         String stringOne = input2.nextLine();
                         stringArray = stringOne.split(" ");
                         System.out.println(Arrays.toString(stringArray));
-                        input2.close();
                         break;
                 }
     }
 
-
-
+    // main method
     public static void main(String[] args) {
 
-        Q14Main test2 = new Q14Main();
+        // This code takes in user input to handle a full-scale application
+        // Nothing needs to be altered, as everything is handled in the switch cases. Based off user input.
+        // Just hit play and enjoy.
 
-        test2.switchCase(1);
-        System.out.println("+----------------------------+");
-        test2.switchCase(2);
-        System.out.println("+----------------------------+");
-        test2.switchCase(3);
-        System.out.println("+----------------------------+");
-        test2.switchCase(4);
-        // case 4 demonstrates that if 1-3 aren't entered,
-        // the switch-case just gets ignored.
+        Q14Main answer = new Q14Main();
+        Scanner input = new Scanner(System.in);
+
+        while (keepRunning) {
+            System.out.println("+-----------------------------------+");
+            System.out.println("1: Square Root Finder.");
+            System.out.println("2: Find today's date.");
+            System.out.println("3: Convert a String to a String[].");
+            System.out.println("0: Exit program.");
+            System.out.println("+-----------------------------------+");
 
 
+            try {
+                int choice = input.nextInt();
 
-
-
+                if (choice == 1 || choice == 2 || choice == 3) {
+                    answer.switchCase(choice);
+                } else if (choice == 0) {
+                    keepRunning = false;
+                    input.close();
+                    System.out.println("Closing program");
+                } else {
+                    System.out.println("Please choose a number from the list.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Wrong type of input buddy.");
+                System.out.println("Please choose a number from the list.");
+                //e.printStackTrace(); // for seeing the stackTrace
+                input.next();
+            }
+        }
     }
 }
