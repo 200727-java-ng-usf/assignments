@@ -60,7 +60,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Question1Test">
+    <configuration name="Question1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="question1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.qeustion1Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature.qeustion1Test" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.qeustion1Test.Question1Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Question1Test.notNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="question1" />
       <extension name="coverage">
@@ -79,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Question1Test" />
         <item itemvalue="JUnit.Question1Test.notNullTest" />
       </list>
     </recent_temporary>
@@ -115,22 +131,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="739" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1596636469661" />
-    <state width="914" height="295" key="GridCell.Tab.0.bottom" timestamp="1596578741955">
+    <state width="916" height="297" key="GridCell.Tab.0.bottom" timestamp="1596936640929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596578741955" />
-    <state width="914" height="295" key="GridCell.Tab.0.center" timestamp="1596578741955">
+    <state width="916" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596936640929" />
+    <state width="916" height="297" key="GridCell.Tab.0.center" timestamp="1596936640929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596578741955" />
-    <state width="914" height="295" key="GridCell.Tab.0.left" timestamp="1596578741955">
+    <state width="916" height="297" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596936640929" />
+    <state width="916" height="297" key="GridCell.Tab.0.left" timestamp="1596936640929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596578741955" />
-    <state width="914" height="295" key="GridCell.Tab.0.right" timestamp="1596578741955">
+    <state width="916" height="297" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596936640929" />
+    <state width="916" height="297" key="GridCell.Tab.0.right" timestamp="1596936640929">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596578741955" />
+    <state width="916" height="297" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596936640929" />
     <state x="459" y="201" key="new project wizard" timestamp="1596636498128">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
