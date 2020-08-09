@@ -1,0 +1,32 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+
+public class QuestionNineteenTest {
+
+    private QuestionNineteen sut;
+
+    @Before
+    public void setUp() throws Exception { sut = new QuestionNineteen(); }
+
+    @After
+    public void tearDown() throws Exception { sut = null; }
+
+    @Test
+    public void testingArrayOf4And5And6EvensAddedIs10() {
+        ArrayList<Integer> theIntArrayList = new ArrayList<>();
+        theIntArrayList.add(4);
+        theIntArrayList.add(5);
+        theIntArrayList.add(6);
+        int expectedResult = 10;
+        int actualResult = sut.addEvenNumbers(theIntArrayList);
+    }
+
+//    public void testAddOddNumbers() {
+//    }
+//
+//    public void testAddPrimeNumbers() {
+//    }
+}

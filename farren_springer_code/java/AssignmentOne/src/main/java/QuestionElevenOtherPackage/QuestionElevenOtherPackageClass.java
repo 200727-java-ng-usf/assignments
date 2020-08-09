@@ -2,6 +2,14 @@ package QuestionElevenOtherPackage;
 
 public class QuestionElevenOtherPackageClass {
 
+    public QuestionElevenOtherPackageClass() {
+    }
+
+    public QuestionElevenOtherPackageClass(float f1, float f2) {
+        float1 = f1;
+        float2 = f2;
+    }
+
     static float float1 = 1.378f;
     static float float2 = 4.275f;
 

@@ -2,6 +2,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class QuestionSixTest {
 
     private QuestionSix sut;
@@ -16,5 +18,6 @@ public class QuestionSixTest {
     public void fiveReturnsFalse() {
         boolean expectedResult = false;
         boolean actualResult = sut.isEven(5);
+        assertEquals(expectedResult, actualResult);
     }
 }

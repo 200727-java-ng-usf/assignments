@@ -5,8 +5,7 @@ public abstract class QuestionEighteen {
     public String word = "Howdy Hi Hello";
 
     public QuestionEighteen() {
-        super();
-        System.out.println("QuestionEighteen constructor called!");
+        super(); // do not need this. Implicit
     }
 
     public QuestionEighteen(String astring) { word = astring; }
