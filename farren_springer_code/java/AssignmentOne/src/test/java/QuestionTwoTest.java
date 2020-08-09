@@ -24,11 +24,21 @@ public class QuestionTwoTest {
 
     }
 
+    // Negative test
     @Test (expected = NumberFormatException.class)
     public void nullValueThrowsException() {
         int nullValue = Integer.parseInt(null);
         int[] unexpectedResult = {0, 1, 1, 2};
         int[] actualResult = sut.fibonacciGenerator(nullValue);
+        assertNotEquals(unexpectedResult, actualResult);
+    }
+
+    // Negative test
+    @Test (expected = ArrayIndexOutOfBoundsException.class)
+    public void inputOf0ThrowsArrayIndexOutOfBoundsException() {
+        int zeroValue = 0;
+        int[] unexpectedResult = {0};
+        int[] actualResult = sut.fibonacciGenerator(zeroValue);
         assertNotEquals(unexpectedResult, actualResult);
     }
 

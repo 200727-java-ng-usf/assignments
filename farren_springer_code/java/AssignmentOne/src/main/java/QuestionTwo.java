@@ -1,5 +1,11 @@
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
+/**
+ * This class has a method that generates a user-defined number of fibonacci numbers and
+ * a main method to call for user input.
+ */
 
 public class QuestionTwo {
 
@@ -11,6 +17,11 @@ public class QuestionTwo {
     // takes an int as a parameter. This int will be the number of Fibonacci numbers
     // the method will return.
 
+    /**
+     * This method generates the fibonacci numbers.
+     * @param numberOfNumbers
+     * @return
+     */
     public static int[] fibonacciGenerator(int numberOfNumbers) {
 
         // Instantiate an int array of the size specified in the parameter
@@ -37,17 +48,11 @@ public class QuestionTwo {
         return fibonacciArray;
     } // end method
 
-    // Main method to call the function
+    /**
+     * The main method uses try-catch blocks to catch invalid user input
+     * @param args
+     */
     public static void main(String[] args) {
-
-        // Create a scanner object
-        Scanner scanner = new Scanner(System.in);
-
-//        // Ask the user to input the number of numbers they want to see
-//        System.out.println("How many Fibonacci numbers do you want to see: ");
-//
-//        // Store the user's number in userNumber
-//        int userNumber = scanner.nextInt();
 
         // Mark if user input is valid. This will remain one until the input is valid
         int x = 1;
@@ -55,19 +60,27 @@ public class QuestionTwo {
         do {
             // Try taking in user input and catch a NumberFormatException
             try {
+                // Create a scanner object
+                Scanner scanner = new Scanner(System.in);
                 System.out.println("How many Fibonacci numbers do you want to see: ");
                 int userNumber = scanner.nextInt();
                 // Call the method using the userNumber
                 int[] result = fibonacciGenerator(userNumber);
                 System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(result));
                 x = 2;
+            } catch (InputMismatchException ime) {
+                System.out.println("Invalid entry. Cannot enter a decimal number.");
+                Scanner scanner = new Scanner(System.in);
             } catch (ArrayIndexOutOfBoundsException aioube) {
-                System.out.println("Invalid entry.");
+                System.out.println("Invalid entry. Cannot enter zero.");
+                Scanner scanner = new Scanner(System.in);
+            } catch (NegativeArraySizeException nase) {
+                System.out.println("Invalid entry. Cannot enter a number less than zero.");
+                Scanner scanner = new Scanner(System.in);
             }
+
         } while (x == 1);
 
-//        // Call the method using the userNumber
-//        System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(fibonacciGenerator(userNumber)));
 
         } // end main
     } // end class
