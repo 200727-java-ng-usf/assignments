@@ -16,11 +16,18 @@ public class QuestionFourTest  {
     public void tearDown() { sut = null;
     }
 
-    @Test
     // Positive Test
+    @Test
     public void threeFactorialIsSix() {
         int expectedResult = 6;
         int actualResult = sut.factorial(3);
         assertEquals(expectedResult, actualResult);
+    }
+
+    // Negative Test
+    @Test (expected = NumberFormatException.class)
+    public void nullValuePassedToFactorialThrowsNumberFormatException() {
+        int nullValue = Integer.parseInt(null);
+        sut.factorial(nullValue);
     }
 }

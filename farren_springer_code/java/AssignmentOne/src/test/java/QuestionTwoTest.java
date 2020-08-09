@@ -24,9 +24,9 @@ public class QuestionTwoTest {
     }
 
     @Test (expected = NumberFormatException.class)
-    public void nullIntThrowsException() {
-        int nullInt = Integer.parseInt(null);
-        sut.fibonacciGenerator(nullInt);
+    public void nullValueThrowsException() {
+        int nullValue = Integer.parseInt(null);
+        sut.fibonacciGenerator(nullValue);
     }
 
 
