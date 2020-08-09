@@ -7,48 +7,50 @@
  */
 package com.revature.question14;
 
-import com.sun.istack.internal.localization.NullLocalizable;
 
 import java.io.Console;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
 
-public class Question14<Type> {
+public class Question14 {
     private int caseNUmber;
-    private Type thingToReturn;
+    Console console = System.console();
+    double caseOne;
+    String todaysDate;
+    String[] splitStringArray;
 
-    public Question14(int someCaseNumber){
-        this.caseNUmber = someCaseNumber;
-        //this.thingToReturn = performSwitch(caseNUmber);
-    }
-    public Question14(int someCaseNumber, int someThingToTest){
-        this.thingToReturn = performSwitch(caseNUmber, someThingToTest);
-    }
+    public Question14(){
+        //start from console
+        System.out.println("please enter a case number from 1 to 3: ");
+        try {
+            caseNUmber = Integer.parseInt(console.readLine());
+            switch (caseNUmber){
+                case 1:{
+                    System.out.println("please enter a number to find the square root of: ");
+                    int someThingToTest = Integer.parseInt(console.readLine());
+                    caseOne = findSquareRoot(someThingToTest);
+                    System.out.println("The square root is: " + caseOne);
 
-    private Type performSwitch(int someCaseNumber, int someThingToTest){
-        Type returnMe = null;
-        Console console = System.console();
-        switch (someCaseNumber){
-            case 1:{
-                double caseOne = findSquareRoot(someThingToTest);
-                returnMe.equals(caseOne);
+                }
+                case 2:{
+                    todaysDate = getTodaysDate();
+                    System.out.println("Today's date is: " + todaysDate);
+                }
+                case 3:{
+                    System.out.println("Please enter string to store in array");
+                    String toSplit = console.readLine();
+                    splitStringArray = splitThisString(toSplit);
+                    System.out.println("the split string is: " + splitStringArray);
+                }
             }
-            case 2:{
-                String todaysDate = getTodaysDate();
-                returnMe.equals(todaysDate);
-            }
-            case 3:{
-                System.out.println("Please enter string to store in array");
-                String toSplit = console.readLine();
-                String[] splitStringArray = splitThisString(toSplit);
-                returnMe.equals(splitStringArray);
-            }
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("something went wrong ");
         }
 
-        return returnMe;
     }
+
     private double findSquareRoot(double findThis){
         double i = 0.00d;
         i = Math.sqrt(findThis);
@@ -66,27 +68,4 @@ public class Question14<Type> {
         return returnString;
     }
 
-    public int getCaseNUmber() {
-        return caseNUmber;
-    }
-
-    public void setCaseNUmber(int caseNUmber) {
-        this.caseNUmber = caseNUmber;
-    }
-
-    public Type getThingToReturn() {
-        return thingToReturn;
-    }
-
-    public void setThingToReturn(Type thingToReturn) {
-        this.thingToReturn = thingToReturn;
-    }
-
-    @Override
-    public String toString() {
-        return "Question14{" +
-                "caseNUmber=" + caseNUmber +
-                ", thingToReturn=" + thingToReturn +
-                '}';
-    }
 }

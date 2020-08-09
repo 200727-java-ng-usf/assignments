@@ -8,15 +8,25 @@
 package com.revature.question14Test;
 
 import com.revature.question14.Question14;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class Question14Test {
-    //Question14 case1 = new Question14(1);
-    //Question14 case2 = new Question14(2);
-    //Question14 case3 = new Question14(3);
+    Question14 sut;
 
+    @Before
+    public void setup(){
+
+    }
+    @After
+    public void tearDown(){
+        sut = null;
+    }
     @Test
     public void notNullTest(){
-        //System.out.println(case1);
+        String msg = "case 1: when given a number, it should find the known square root";
+
+        sut = new Question14();
     }
 }
