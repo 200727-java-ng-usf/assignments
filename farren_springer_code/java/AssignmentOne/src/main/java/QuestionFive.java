@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * This class has a method that truncates a string to a specified length and
+ * a main method that asks for user input.
+ */
 public class QuestionFive {
 
     // Create a method that creates a substring from a string to a specified char index
@@ -30,5 +34,6 @@ public class QuestionFive {
         // Call substring method
         System.out.println("Here is the first " + yourNumber + " letters of " + yourWord + ": " + substring(yourWord, yourNumber));
 
-    }
-} // done
+    } // end main
+} // end class
+// done

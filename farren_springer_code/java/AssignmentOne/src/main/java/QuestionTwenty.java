@@ -10,7 +10,7 @@ public class QuestionTwenty {
     public static void main(String[] args) throws IOException {
 
         // create a file object and use the relative path of the text file
-        File file = new File("src/main/resources/Data.txt");
+        File file = new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt");
         List<QuestionTwentyCharacter> characterList = new ArrayList<>();
 
         // If there are no more lines of text, exit the main method
@@ -36,10 +36,10 @@ public class QuestionTwenty {
 //                user.setAge(Integer.parseInt(userFields[2]));
 //                user.setHomeState(userFields[3]);
 
-                // add the created user to our list of users
+                // Add the created user to our list of users
                 characterList.add(user);
 
-                // tell our reader to move to the next line
+                // Tell our reader to move to the next line
                 currentLine = reader.readLine();
 
             }
@@ -58,12 +58,8 @@ public class QuestionTwenty {
 
         // traditional for loop (any version of Java)
         for (int i = 0; i < characterList.size(); i++) {
-            System.out.println(characterList.get(i));
+            System.out.println(characterList.get(i) + "\n");
         }
-
-
-        System.out.println("+-------------------------+");
-
 
     } // end main
 

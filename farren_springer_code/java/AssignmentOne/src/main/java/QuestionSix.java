@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * This class has a method that shows if a number is even and
+ * a main method that takes input from the user.
+ */
 public class QuestionSix {
 
     static boolean isEven(int n) {
@@ -24,6 +28,7 @@ public class QuestionSix {
             System.out.println("The number is Odd");
         }
 
-    }
+    } // end main
 
-} // done
+} // end class
+// done

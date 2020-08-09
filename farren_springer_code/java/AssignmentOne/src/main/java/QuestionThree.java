@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * This class takes in a string input from the user and returns the reversed string.
+ */
 public class QuestionThree {
 
-    // Create a method that takes in a string and returns a string
+    // Method that takes in a string and returns a string
     public static String reverseIt(String str) {
         String rev = "";
         for(int i = str.length() -1; i >= 0; i--) {

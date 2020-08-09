@@ -9,14 +9,6 @@ import java.util.Scanner;
 
 public class QuestionTwo {
 
-    // Display the first 25 Fibonacci numbers
-    // Fibonacci numbers are found by adding the last two numbers in the sequence,
-    // starting with 0 and 1.
-
-    // Define a method that has a class scope (static), returns an integer array, and
-    // takes an int as a parameter. This int will be the number of Fibonacci numbers
-    // the method will return.
-
     /**
      * This method generates the fibonacci numbers.
      * @param numberOfNumbers

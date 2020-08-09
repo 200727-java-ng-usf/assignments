@@ -52,11 +52,7 @@ public class QuestionTwentyCharacter {
 
     @Override
     public String toString() {
-        return "QuestionTwentyCharacter{" +
-                "Name" + firstName + lastName + '\'' +
-                ", age=" + age +
-                ", homeState='" + homeState + '\'' +
-                '}';
+        return "Name: " + firstName + " " + lastName + "\nAge: " + age + " years\n" + "State: " + homeState;
     }
 
     @Override
