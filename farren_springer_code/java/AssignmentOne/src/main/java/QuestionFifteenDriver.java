@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * This class contains a main method that calls to methods add(),
+ * subtract(), multiply(), and divide() in the QuestionFifteen class.
+ */
 public class QuestionFifteenDriver {
 
     public static void main(String[] args) {

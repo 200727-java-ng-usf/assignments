@@ -1,4 +1,5 @@
-import java.time.LocalDateTime;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -34,14 +35,18 @@ public class QuestionFourteen {
      */
     public static String printTheDate() {
 
-        // Find the date and store it in result as a string
-        String result = String.valueOf(LocalDateTime.now());
+        // Create a date format object
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
+        // Create a date object
+        Date date = new Date();
 
         // Show the user the result
-        System.out.println("Here is the date: " + result);
+        System.out.println("Here is the current date: " + formatter.format(date));
 
-        // return the result
-        return result;
+        // return the date
+        return formatter.format(date);
+
     }
 
     /**

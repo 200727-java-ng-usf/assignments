@@ -1,16 +1,21 @@
-import junit.framework.TestCase;
+import org.junit.After;
+import org.junit.Before;
 
-public class QuestionFifteenTest extends TestCase {
+public class QuestionFifteenTest {
 
-    // call the parameterized constructor for QuestionFifteen Class
-    private final QuestionFifteen questionFifteen = new QuestionFifteen(4,7);
+    private QuestionFifteen sut;
 
+    @Before
+    public void setUp() throws Exception { sut = new QuestionFifteen(); }
 
-    public void testGetNum1() throws Exception {
-        assertEquals(questionFifteen.getNum1(), 4);
-    }
-    public void testGetNum2() throws Exception {
-        assertEquals(questionFifteen.getNum2(), 7);
-    }
+    @After
+    public void tearDown() throws Exception { sut = null; }
+
+//    @@Test
+//    public void twoPlus3Is5() {
+//        int expectedResult = 5;
+//        int actualResult = sut.add(2,3);
+//
+//    }
 
 } // "main method that calls the implementing class"
