@@ -6,6 +6,7 @@
 
 package com.revature.question12;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Question12 {
@@ -13,6 +14,7 @@ public class Question12 {
     private int[] initialArray;
     private int rangeStart;
     private int rangeEnd;
+    private ArrayList<Integer> arrayList;
 
     //parameterized constructor to store and sort the arrays based on given range values:
     public Question12(int rangeStart, int rangeEnd){
@@ -28,6 +30,8 @@ public class Question12 {
         }
         //print the array now that it has been filled
         printThisArray(initialArray);
+
+
     }
 
     //method to print the array
@@ -36,9 +40,11 @@ public class Question12 {
         for(int i : initialArray){
             if (i%2 == 0 && i != 0){ //make sure we do not print zero!
                 System.out.println(i);
+
             }
 
         }
+
     }
 
 
