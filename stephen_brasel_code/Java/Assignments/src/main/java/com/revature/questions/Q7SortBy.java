@@ -14,6 +14,7 @@ public class Q7SortBy /*extends Comparator<T>*/{
 //            people[0] = people[1];
 //            people[1] = temp;
 //        }
+        if(people == null) return;
         people.sort(new EmployeeComparator());
     }
 }

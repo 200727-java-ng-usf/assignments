@@ -1,5 +1,6 @@
 package com.revature.questions;
 
+import com.revature.util.LessThan;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,59 +16,106 @@ public class T1BubbleSort {
     Q1BubbleSort q1;
     int[] bubbles;
     int[] sorted = {0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9};
+    int[] given = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
     int[] reversed = {9, 8, 7, 6, 5, 4, 3, 3, 2, 1, 0};
-    int[] unsorted = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
     Random rand;
 
 
     @Before
-    public void t1setupTest() {
-        rand = new Random();
+    public void t1Setup() {
         q1 = new Q1BubbleSort();
-        bubbles = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
-        for (int i = 0; i < unsorted.length; i++) {
-            int index = rand.nextInt() % unsorted.length;
-            index = index < 0 ? -index : index;
+        shuffle(given);
+    }
 
-            int temp = unsorted[i];
-            unsorted[i] = unsorted[index];
-            unsorted[index] = temp;
+    private void shuffle(int[] arr) {
+        rand = new Random();
+        rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
+        arr = Arrays.copyOf(sorted, sorted.length);
+        //ensure that an odd amount of cards are shuffled, so that it is guaranteed at least two will be out of order.
+        int len = arr.length;
+        len = len % 2 == 0 ? len - 1 : len;
+        for (int i = 0; i < len; i++) {
+            int index = rand.nextInt() % arr.length;
+            // get absolute value; make sure the index is positive.
+            index = index < 0 ? -index : index;
+            // make sure you're not swapping a card with itself,
+            // otherwise the previous assurances for an odd length is pointless
+            //     and you can (unlikely, but possible) get a perfectly sorted array from random.
+            if(index == i){
+                index = i == 0 ? i+1 : i-1;
+            }
+
+            int temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;
         }
-        System.out.println();
     }
 
     @After
-    public void t1tearDownTest(){
-        System.out.println();
+    public void t1tearDown(){
+        q1 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t1BubbleSortNotNull(){
-//        Collections.shuffle(bubbles);
+    public void t1NotNull(){
         assertNotNull(q1);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
-    public void t1BubbleSortSorted(){
-//        Collections.shuffle(bubbles);
-        q1.BubbleSort(bubbles);
-        System.out.println(Arrays.toString(bubbles));
-        assertArrayEquals(sorted, bubbles);
+    public void t1GSolutionWithGivenArray(){
+        // testSolutionWithGivenArray
+        int[] given = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        bubbles = q1.bubbleSort(given);
+        assertArrayEquals(Arrays.toString(bubbles), sorted, bubbles);
     }
+    @Test
+    public void t1GSolutionWithGivenArrayReverseOrder(){
+        // testSolutionWithGivenArray
+        int[] given = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        q1.setComparison(new LessThan());
+        bubbles = q1.bubbleSort(given);
+        assertArrayEquals(Arrays.toString(bubbles), reversed, bubbles);
+    }
+    @Test
+    public void t1SolutionUnsorted(){
+        bubbles = q1.bubbleSort(given);
+        assertFalse(Arrays.toString(bubbles), Arrays.equals(given, bubbles));
+    }
+    @Test
+    public void t1SolutionReversed(){
+    // testSolutionsWithReversedArray / worst case scenario
+        bubbles = q1.bubbleSort(reversed);
+        assertArrayEquals(Arrays.toString(bubbles), sorted, bubbles);
+    }
+    @Test
+    public void t1SolutionPresorted(){
+    // testSolutionsWithPresortedArray / best case scenario
+        bubbles = q1.bubbleSort(sorted);
+        assertArrayEquals(Arrays.toString(bubbles), sorted, bubbles);
+    }
+
+    // other test case examples:
+    // Parameterized junit tests
 
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
     @Test
-    public void t1BubbleSortNotUnsorted(){
-//        Collections.shuffle(bubbles);
-        q1.BubbleSort(bubbles);
-        System.out.println(Arrays.toString(bubbles));
-        assertArrayEquals(sorted, bubbles);
+    public void t1BubbleSortEmptyArray(){
+    // testSolutionWithEmptyArray
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {};
+        assertArrayEquals(msg, expectedResult, q1.bubbleSort(new int[] {}));
+    }
+    @Test
+    public void t1BubbleSortNullArray(){
+    // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {};
+        assertArrayEquals(msg, expectedResult, q1.bubbleSort(null));
     }
     //endregion
 

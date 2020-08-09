@@ -26,7 +26,7 @@ public class Q8Palindrome {
 //            System.out.println(str.charAt(i) + " " + str.charAt(str.length() - 1 - i));
             if(str.charAt(i) != str.charAt(str.length() - 1 - i)){
 //                isPal = false;
-//                System.out.println();
+//
                 return false;
             }
         }
@@ -35,11 +35,12 @@ public class Q8Palindrome {
     }
 
     public void sortAndStore(String[] strs){
-        allStr = new ArrayList<String>(Arrays.asList(strs));
+        if(strs == null) allStr = new ArrayList<>();
+        else allStr = new ArrayList<String>(Arrays.asList(strs));
         palindromes = new ArrayList<String>();
-        for (int i = 0; i < strs.length; i++) {
-            if(isPalindrome(strs[i])){
-                palindromes.add(strs[i]);
+        for (int i = 0; i < allStr.size(); i++) {
+            if(isPalindrome(allStr.get(i))){
+                palindromes.add(allStr.get(i));
             }
         }
     }

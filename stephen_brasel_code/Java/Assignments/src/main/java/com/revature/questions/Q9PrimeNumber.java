@@ -21,8 +21,8 @@ public class Q9PrimeNumber {
 
     public static boolean isPrime(int x){
         if(x <= 1) return false;
-        int halflen = x/2;
-        for(int i = 2; i < halflen+1; i++){
+        int halflen = x/2 + 1;
+        for(int i = 2; i < halflen; i++){
             if(x%i == 0) return false;
         }
         return true;

@@ -22,13 +22,13 @@ public class T19ArrayListOperations {
 	private final PrintStream originalErr = System.err;
 
 	@Before
-	public void t19setupTest() {
-		q19 = new Q19ArrayListOperations(10);
+	public void t19Setup() {
+		q19 = new Q19ArrayListOperations();
 	}
 
 	@After
-	public void t19tearDownTest(){
-		System.out.println();
+	public void t19TearDown(){
+
 	}
 
 	//region UTILITYTESTS
@@ -38,7 +38,7 @@ public class T19ArrayListOperations {
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 	@Test
 	public void t19Evens(){
 		System.setOut(new PrintStream(outContent));
@@ -77,12 +77,13 @@ public class T19ArrayListOperations {
 	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 	@Test
-	public void t19setupTestNegInts() {
+	public void t19NegInts() {
 		Random rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
 		int count = rand.nextInt() % 1000;
+		count = count < 0 ? -count : count;
 		q19 = new Q19ArrayListOperations(count);
 		assertEquals(count, q19.getInts().size());
 		System.out.println(String.format("%d, %d", count, q19.getInts().size()));

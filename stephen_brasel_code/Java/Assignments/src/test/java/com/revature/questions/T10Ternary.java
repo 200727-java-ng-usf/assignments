@@ -15,43 +15,77 @@ public class T10Ternary {
     Random rand;
 
     @Before
-    public void t10setupTest() {
+    public void t10Setup() {
         q10 = new Q10Ternary();
         rand = new Random();
         rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
-        System.out.println();
+
     }
 
     @After
-    public void t10tearDownTest(){
-        System.out.println();
+    public void t10TearDown(){
+
     }
 
     //region UTILITYTESTS
     @Test
-    public void t10TernaryNotNull(){
+    public void t10NotNull(){
         assertNotNull(q10);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t10Ternary(){
         int x = rand.nextInt();
         int y = rand.nextInt();
+        int result;
         System.out.println(x + " " + y + ": " + q10.lesser(x, y));
-        assertEquals((x < y ? x : y), q10.lesser(x, y));
+        if(x < y) result = x;
+        else result = y;
+        assertEquals(result, q10.lesser(x, y));
     }
     @Test
     public void t10TernaryEqual(){
         int x = rand.nextInt();
         int y = x;
+        int result;
         System.out.println(x + " " + y + ": " + q10.lesser(x, y));
-        assertEquals((x < y ? x : y), q10.lesser(x, y));
+        if(x < y) result = x;
+        else result = y;
+        assertEquals(result, q10.lesser(x, y));
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
+    @Test
+    public void t10TernaryMax(){
+        int x = Integer.MAX_VALUE;
+        int y = x;
+        System.out.println(x + " " + y + ": " + q10.lesser(x, y));
+        assertEquals(x, q10.lesser(x, y));
+    }
+    @Test
+    public void t10TernaryMin(){
+        int x = Integer.MAX_VALUE;
+        int y = x;
+        System.out.println(x + " " + y + ": " + q10.lesser(x, y));
+        assertEquals(x, q10.lesser(x, y));
+    }
+    @Test
+    public void t10TernaryMinMax(){
+        int x = Integer.MIN_VALUE;
+        int y = Integer.MAX_VALUE;
+        System.out.println(x + " " + y + ": " + q10.lesser(x, y));
+        assertEquals(x, q10.lesser(x, y));
+    }
+    @Test
+    public void t10TernaryMaxMin(){
+        int x = Integer.MAX_VALUE;
+        int y = Integer.MIN_VALUE;
+        System.out.println(x + " " + y + ": " + q10.lesser(x, y));
+        assertEquals(y, q10.lesser(x, y));
+    }
 
     //endregion
 

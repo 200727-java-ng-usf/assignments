@@ -26,15 +26,15 @@ public class T14SwitchCases {
 	Random rand;
 
 	@Before
-	public void t14setupTest() {
+	public void t14Setup() {
 		q14 = new Q14SwitchCases();
 		rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
 	}
 
 	@After
-	public void t14tearDownTest() {
-//		System.out.println();
+	public void t14TearDown() {
+//
 	}
 
 	//region UTILITYTESTS
@@ -44,7 +44,7 @@ public class T14SwitchCases {
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 
 
 	/**
@@ -95,14 +95,14 @@ public class T14SwitchCases {
 		q14.switcher(3);
 		System.out.println(Arrays.toString(strs));
 //		printStrArray(strs);
-		System.out.println();
+
 		System.out.println(Arrays.toString(q14.getSplits()));
 //		printStrArray(q14.getSplits());
 		assertArrayEquals(strs, q14.getSplits());
 	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 	@Test
 	public void t14Negative() {
 		System.setOut(new PrintStream(outContent));

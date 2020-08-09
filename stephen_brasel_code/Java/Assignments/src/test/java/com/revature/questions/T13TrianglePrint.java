@@ -6,8 +6,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.time.ZoneOffset;
-import java.util.Random;
 
 import static java.time.LocalDateTime.now;
 import static org.junit.Assert.*;
@@ -24,23 +22,23 @@ public class T13TrianglePrint {
 	private final PrintStream originalErr = System.err;
 
 	@Before
-	public void t13setupTest() {
+	public void t13Setup() {
 		q13 = new Q13TrianglePrint();
 	}
 
 	@After
-	public void t13tearDownTest() {
-//		System.out.println();
+	public void t13TearDown() {
+//
 	}
 
 	//region UTILITYTESTS
 	@Test
-	public void t13PackageAccessNotNull() {
+	public void t13NotNull() {
 		assertNotNull(q13);
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 
 
 	/**
@@ -50,7 +48,7 @@ public class T13TrianglePrint {
 	public void t13TrianglePoint(){
 		String[] strs = q13.triWhile(4);
 		for (String str : strs) {
-			Q13TrianglePrint.printStr(str);
+			Q13TrianglePrint.printSpacedOutStr(str);
 		}
 		assertArrayEquals(new String[]{"0", "10", "101", "0101"}, strs);
 	}
@@ -61,19 +59,19 @@ public class T13TrianglePrint {
 		System.setErr(new PrintStream(errContent));
 		String[] strs = q13.triWhile(4);
 		for (String str : strs) {
-			Q13TrianglePrint.printStr(str);
+			System.out.println(Q13TrianglePrint.printSpacedOutStr(str));
 		}
 		assertEquals(res, outContent.toString());
 
 		System.setOut(originalOut);
 		System.setErr(originalErr);
 		for (String str : strs) {
-			Q13TrianglePrint.printStr(str);
+			Q13TrianglePrint.printSpacedOutStr(str);
 		}
 	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS_TESTS
 	public void t13Negative() {
 
 	}

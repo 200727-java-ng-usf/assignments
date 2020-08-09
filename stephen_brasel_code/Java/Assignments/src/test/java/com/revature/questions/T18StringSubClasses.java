@@ -21,13 +21,13 @@ public class T18StringSubClasses {
     private final PrintStream originalErr = System.err;
 
     @Before
-    public void t19setupTest() {
+    public void t19Setup() {
         q18 = new Q18StringSubClasses();
     }
 
     @After
-    public void t19tearDownTest(){
-        System.out.println();
+    public void t19TearDown(){
+
     }
 
     //region UTILITYTESTS
@@ -37,7 +37,7 @@ public class T18StringSubClasses {
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t19HasUpperNo() {
         assertEquals(false, q18.hasUpper("this is a test."));
@@ -70,7 +70,7 @@ public class T18StringSubClasses {
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
     @Test
     public void t19HasUpperNothing() {
         assertEquals(false, q18.hasUpper(""));

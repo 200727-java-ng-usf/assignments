@@ -15,26 +15,25 @@ public class T2Fibonacci {
     int[] fib;
 
     @Before
-    public void t2setupTest() {
+    public void t2Setup() {
         q2 = new Q2Fibonacci();
         fib = new int[len];
-        System.out.println();
     }
 
     @After
-    public void t2tearDownTest(){
-        System.out.println();
+    public void t2TearDown(){
+        q2 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t2FibonacciNotNull(){
+    public void t2NotNull(){
 //        Collections.shuffle(bubbles);
         assertNotNull(q2);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t2FibonacciArray(){
         q2.fibonacci(fib, len);
@@ -53,7 +52,28 @@ public class T2Fibonacci {
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
+    @Test
+    public void t1SolutionEmptyArray(){
+        // testSolutionWithEmptyArray
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {};
+        assertArrayEquals(msg, expectedResult, q2.fibonacci(new int[] {}, 0));
+    }
+    @Test
+    public void t1SolutionNullArray(){
+        // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {};
+        assertArrayEquals(msg, expectedResult, q2.fibonacci(null, -4));
+    }
+    @Test
+    public void t1SolutionNegativeSize(){
+        // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {};
+        assertArrayEquals(msg, expectedResult, q2.fibonacci(fib, -4));
+    }
 
     //endregion
 

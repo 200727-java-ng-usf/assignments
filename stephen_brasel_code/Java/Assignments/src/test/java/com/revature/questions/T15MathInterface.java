@@ -18,15 +18,15 @@ public class T15MathInterface {
 	Random rand;
 
 	@Before
-	public void t15setupTest() {
+	public void t15Setup() {
 		q15 = new Q15MathInterface();
 		rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
 	}
 
 	@After
-	public void t15tearDownTest(){
-		System.out.println();
+	public void t15TearDown(){
+
 	}
 
 	//region UTILITYTESTS
@@ -37,7 +37,7 @@ public class T15MathInterface {
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 
 	@Test
 	public void t15MathInterfaceAdd() {
@@ -92,7 +92,7 @@ public class T15MathInterface {
 		);
 	}
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 
 	//endregion
 

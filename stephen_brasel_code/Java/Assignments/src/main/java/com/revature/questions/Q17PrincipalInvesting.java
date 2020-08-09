@@ -42,6 +42,8 @@ public class Q17PrincipalInvesting {
     }
 
     public double getInterest(double _principal, double _rate, int _time) throws ArithmeticException{
+        //edge cases
+        if(_principal < 0 || _rate < 0 || _time < 0) return 0.0f;
         double result = _principal * _rate * _time;
         if(Double.isInfinite(result)) throw new ArithmeticException();
         return result;

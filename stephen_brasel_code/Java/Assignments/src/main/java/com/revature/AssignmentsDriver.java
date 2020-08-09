@@ -13,9 +13,9 @@ public class AssignmentsDriver {
         Q1BubbleSort q1bubbles = new Q1BubbleSort();
         {
             int[] bubbles = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-            q1bubbles.BubbleSort(bubbles);
+            q1bubbles.bubbleSort(bubbles);
             printValues(bubbles);
-            System.out.println();
+
         }
         Q2Fibonacci q2fib = new Q2Fibonacci();
         {
@@ -23,13 +23,13 @@ public class AssignmentsDriver {
             int[] fib = new int[len];
             q2fib.fibonacci(fib, len);
             printValues(fib);
-            System.out.println();
+
         }
         //TODO String Reversal
         Q3StringReversal q3str = new Q3StringReversal();
         {
             String str = "ReverseMe";
-            str = q3str.reverseString(str);
+            str = q3str.reverseBuild(str);
             System.out.println(str);
         }
         Q4Factorial q4fac = new Q4Factorial();
@@ -50,7 +50,7 @@ public class AssignmentsDriver {
             double sub = q15matI.subtract(x, y);
             double mul = q15matI.multiply(x, y);
             double div = q15matI.divide(x, y);
-            System.out.println();
+
             System.out.println(
                     "Added: " + add + "\n" +
                     "Subtracted: " + sub + "\n" +

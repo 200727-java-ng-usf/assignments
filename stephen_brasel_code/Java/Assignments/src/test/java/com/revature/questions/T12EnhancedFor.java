@@ -22,25 +22,25 @@ public class T12EnhancedFor {
 	private final PrintStream originalErr = System.err;
 
 	@Before
-	public void t12setupTest() {
+	public void t12Setup() {
 		q12 = new Q12EnhancedFor();
 		rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
 	}
 
 	@After
-	public void t12tearDownTest() {
-//		System.out.println();
+	public void t12TearDown() {
+//
 	}
 
 	//region UTILITYTESTS
 	@Test
-	public void t12PackageAccessNotNull() {
+	public void t12NotNull() {
 		assertNotNull(q12);
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 
 	/**
 	 * System.out
@@ -70,7 +70,7 @@ public class T12EnhancedFor {
 	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 	public void t12Negative() {
 
 	}

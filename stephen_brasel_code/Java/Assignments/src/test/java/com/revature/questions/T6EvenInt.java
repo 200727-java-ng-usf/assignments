@@ -17,49 +17,60 @@ public class T6EvenInt {
     int x;
 
     @Before
-    public void t6setupTest() {
+    public void t6Setup() {
         rand = new Random();
         rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
         x = rand.nextInt();
         q6 = new Q6EvenInt();
         str = "ReverseMe";
-        System.out.println();
+
     }
 
     @After
-    public void t6tearDownTest(){
-        System.out.println();
+    public void t6TearDown(){
+        q6 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t6EvenIntNotNull(){
+    public void t6NotNull(){
 //        Collections.shuffle(bubbles);
         assertNotNull(q6);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
 
     @Test
     public void t6EvenInt(){
-        for (int i = 0; i < 5; i++) {
-            System.out.println(i + ": " + q6.isEven(i));
-        }
         System.out.println(x + ": " + q6.isEven(x));
         assertEquals((x%2==0), q6.isEven(x));
     }
-    //endregion
-
-    //region NEGATIVE
-
     @Test
     public void t6OddInt(){
-        for (int i = 0; i < 5; i++) {
-            System.out.println(i + ": " + q6.isEven(i));
-        }
         System.out.println(x + ": " + q6.isEven(x));
         assertNotEquals(((x+1)%2==0), q6.isEven(x));
+    }
+    //endregion
+
+    //region NEGATIVE_TESTS
+    @Test
+    public void t6ZeroInt(){
+        x = 0;
+        System.out.println(x + ": " + q6.isEven(x));
+        assertEquals(((x)%2==0), q6.isEven(x));
+    }
+    @Test
+    public void t6MaxInt(){
+        x = Integer.MAX_VALUE;
+        System.out.println(x + ": " + q6.isEven(x));
+        assertEquals(((x)%2==0), q6.isEven(x));
+    }
+    @Test
+    public void t6MinInt(){
+        x = Integer.MIN_VALUE;
+        System.out.println(x + ": " + q6.isEven(x));
+        assertEquals(((x)%2==0), q6.isEven(x));
     }
     //endregion
 

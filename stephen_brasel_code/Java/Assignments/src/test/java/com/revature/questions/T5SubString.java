@@ -16,25 +16,24 @@ public class T5SubString {
     int index = 3;
 
     @Before
-    public void t1setupTest() {
+    public void t1Setup() {
         q5 = new Q5SubString();
-        System.out.println();
     }
 
     @After
-    public void t1tearDownTest(){
-        System.out.println();
+    public void t1TearDown(){
+        q5 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t1BubbleSortNotNull(){
+    public void t1NotNull(){
 //        Collections.shuffle(bubbles);
         assertNotNull(q5);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t5SubString(){
         int index = 3;
@@ -46,12 +45,29 @@ public class T5SubString {
 
     //endregion
 
-    //region NEGATIVE
-    @Test(expected = IndexOutOfBoundsException.class)
-    public void t5SubStringException() throws IndexOutOfBoundsException{
+    //region NEGATIVE_TESTS
+    @Test
+    public void t5SubStringLargerIndexThanString() {
         int index = 3;
         String str = "R";
         String ret = q5.substr(str, index);
+        assertEquals("R", ret);
+        System.out.println(str + " substring " + index + ": " + ret);
+    }
+    @Test
+    public void t5SubStringNegativeIndex() {
+        int index = -1;
+        String str = "R";
+        String ret = q5.substr(str, index);
+        assertEquals("", ret);
+        System.out.println(str + " substring " + index + ": " + ret);
+    }
+    @Test
+    public void t5SubStringZeroIndex() {
+        int index = -1;
+        String str = "R";
+        String ret = q5.substr(str, index);
+        assertEquals("", ret);
         System.out.println(str + " substring " + index + ": " + ret);
     }
     //endregion

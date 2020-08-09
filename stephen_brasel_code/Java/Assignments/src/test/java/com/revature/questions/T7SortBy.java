@@ -15,26 +15,26 @@ public class T7SortBy {
     int index;
 
     @Before
-    public void t7setupTest() {
+    public void t7Setup() {
         q7 = new Q7SortBy();
         index = 2;
         people = new Employee[index];
-        System.out.println();
+
     }
 
     @After
-    public void t7tearDownTest(){
-        System.out.println();
+    public void t7TearDown(){
+        q7 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t7SortByNotNull(){
+    public void t7NotNull(){
         assertNotNull(q7);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
 
     @Test
     public void t7SortNothing(){
@@ -170,8 +170,23 @@ public class T7SortBy {
     }
     //endregion
 
-    //region NEGATIVE
-
+    //region NEGATIVE_TESTS
+    @Test
+    public void t7SortEmpty(){
+        ArrayList<Employee> employees = new ArrayList<>();
+        ArrayList<Employee> people = new ArrayList<>(employees);
+        q7.EmployeeSort(people);
+        System.out.println(people);
+        assertArrayEquals(employees.toArray(), people.toArray());
+    }
+    @Test
+    public void t7SortNull(){
+        ArrayList<Employee> employees = null;
+        ArrayList<Employee> people = null;
+        q7.EmployeeSort(people);
+        System.out.println(people);
+        assertEquals(employees, people);
+    }
     //endregion
 
 }

@@ -11,44 +11,60 @@ public class T3StringReversal {
     String str;
 
     @Before
-    public void t3setupTest() {
+    public void t3Setup() {
         q3 = new Q3StringReversal();
         str = "ReverseMe";
-        System.out.println();
+
     }
 
     @After
-    public void t3tearDownTest(){
-        System.out.println();
+    public void t3TearDown(){
+        q3 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t3StringReversalNotNull(){
+    public void t3NotNull(){
 //        Collections.shuffle(bubbles);
         assertNotNull(q3);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t3ReverseStringReversed()
     {
 //        str = q3.reverseBuild(str);
-        str = q3.reverseString(str);
+        str = q3.reverseBuild(str);
         System.out.print(str);
         assertEquals("eMesreveR", str);
     }
-    //endregion
-
-    //region NEGATIVE
     @Test
     public void t3ReverseStringForwardCheck()
     {
 //        str = q3.reverseBuild(str);
-        str = q3.reverseString(str);
+        str = q3.reverseBuild(str);
         System.out.print(str);
         assertNotEquals("ReverseMe", str);
+    }
+    @Test
+    public void t3ReverseStringReverseCheck()
+    {
+//        str = q3.reverseBuild(str);
+        str = q3.reverseBuild("eMesreveR");
+        System.out.print(str);
+        assertEquals("ReverseMe", str);
+    }
+    //endregion
+
+    //region NEGATIVE_TESTS
+    @Test
+    public void t3ReverseStringEmpty()
+    {
+//        str = q3.reverseBuild(str);
+        str = q3.reverseBuild("");
+        System.out.print(str);
+        assertEquals("", str);
     }
     //endregion
 

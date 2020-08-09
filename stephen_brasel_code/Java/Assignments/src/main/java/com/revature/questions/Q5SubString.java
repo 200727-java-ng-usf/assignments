@@ -7,7 +7,8 @@ public class Q5SubString {
 //      returns the substring contained between 0 and idx-1 inclusive.
 //    Do NOT use any of the existing substring methods in the String, StringBuilder, or StringBuffer APIs.
     public String substr(String str, int idx){
-        if(idx > str.length()) throw new IndexOutOfBoundsException();
+        if(idx > str.length()) return str;
+        else if(idx <= 0) return "";
         char[] ret = new char[idx];
         for (int i = 0; i < idx; i++) {
             ret[i] = str.charAt(i);

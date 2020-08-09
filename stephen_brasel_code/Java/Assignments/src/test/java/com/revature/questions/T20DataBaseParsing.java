@@ -19,24 +19,24 @@ public class T20DataBaseParsing {
     private final PrintStream originalErr = System.err;
 
     @Before
-    public void t20setupTest() {
+    public void t20Setup() {
     }
 
     @After
-    public void t20tearDownTest(){
+    public void t20TearDown(){
 
     }
 
     //region UTILITYTESTS
     @Test
-    public void t20DataBaseParsingNotNull(){
+    public void t20NotNull(){
 //        Collections.shuffle(bubbles);
         q20 = new Q20DataBaseParsing("\\src\\main\\java\\com\\revature\\util\\data.txt");
         assertNotNull(q20);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t20DataBaseParsing()
     {
@@ -48,7 +48,7 @@ public class T20DataBaseParsing {
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
     @Test
     public void t20DataBaseParsingThrowException()
     {

@@ -13,17 +13,25 @@ public class Q4Factorial {
             if(end condition) return accumulator;
             return recursive(count, function - operator - accumulator)
      */
-    private int FactorialGo(int n, int accumulator) {
-        if (n <= 1) return accumulator;
-        return FactorialGo(n - 1, n * accumulator);
+//    private int FactorialGo(int n, int accumulator) {
+//        if (n <= 1) return accumulator;
+//        return FactorialGo(n - 1, n * accumulator);
+//    }
+//
+//    public int Factorial(int n) {
+//        return FactorialGo(n, 1);
+//    }
+
+    public int Factorial(int n){
+        int ret = 1;
+        for (int i = 1; i <= n; i++) {
+            ret*=i;
+        }
+        return ret;
     }
 
-    public int Factorial(int n) {
-        return FactorialGo(n, 1);
-    }
-
-    public int FactorialRecursive(int n) {
-        if (n <= 1) return 1;
-        return (n * FactorialRecursive(n - 1));
-    }
+//    public int FactorialRecursive(int n) {
+//        if (n <= 1) return 1;
+//        return (n * FactorialRecursive(n - 1));
+//    }
 }

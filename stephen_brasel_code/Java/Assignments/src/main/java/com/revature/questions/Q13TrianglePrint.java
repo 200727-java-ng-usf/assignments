@@ -53,14 +53,16 @@ public class Q13TrianglePrint {
         return ret;
     }
 
-    public static void printStr(String str) {
+    public static String printSpacedOutStr(String str) {
+        StringBuilder ret = new StringBuilder();
         for (int j = 0; j < str.length(); j++) {
-            System.out.print(str.charAt(j));
+            ret.append(str.charAt(j));
             if (j < str.length() - 1) {
-                System.out.print(" ");
+                ret.append(" ");
             }
         }
-        System.out.println();
+        return ret.toString();
+
     }
 
 //    public String triDoWhile(){

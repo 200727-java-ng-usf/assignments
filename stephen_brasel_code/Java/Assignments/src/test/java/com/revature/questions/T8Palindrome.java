@@ -12,25 +12,24 @@ public class T8Palindrome {
     String[] pals = {"madam", "civic", "radar", "kayak", "refer", "did"};
 
     @Before
-    public void t7setupTest() {
+    public void t7Setup() {
         q8 = new Q8Palindrome();
         q8.sortAndStore(words);
-        System.out.println();
     }
 
     @After
-    public void t7tearDownTest(){
-        System.out.println();
+    public void t7TearDown(){
+        q8 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t7SortByNotNull(){
+    public void t7NotNull(){
         assertNotNull(q8);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
 
 
     @Test
@@ -44,7 +43,12 @@ public class T8Palindrome {
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
+    @Test
+    public void t8Null(){
+        q8.sortAndStore(null);
+        assertArrayEquals(new String[]{}, q8.getPalindromes().toArray());
+    }
 
     //endregion
 

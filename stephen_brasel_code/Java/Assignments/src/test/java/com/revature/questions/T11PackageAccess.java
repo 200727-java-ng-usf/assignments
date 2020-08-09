@@ -17,26 +17,26 @@ public class T11PackageAccess {
     Random rand;
 
     @Before
-    public void t11setupTest() {
+    public void t11Setup() {
         q11 = new Q11PackageAccess();
         rand = new Random();
         rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
-        System.out.println();
+
     }
 
     @After
-    public void t11tearDownTest(){
-        System.out.println();
+    public void t11TearDown(){
+        q11 = null;
     }
 
     //region UTILITYTESTS
     @Test
-    public void t11PackageAccessNotNull(){
+    public void t11NotNull(){
         assertNotNull(q11);
     }
     //endregion
 
-    //region POSITIVE
+    //region POSITIVE_TESTS
     @Test
     public void t11PackageAccessX(){
 //        q11
@@ -58,7 +58,7 @@ public class T11PackageAccess {
     }
     //endregion
 
-    //region NEGATIVE
+    //region NEGATIVE_TESTS
     public void t11PackageAccessNegative(){
 
     }

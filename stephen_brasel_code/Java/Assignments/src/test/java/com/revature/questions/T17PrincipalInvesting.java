@@ -23,13 +23,13 @@ public class T17PrincipalInvesting {
 	private final InputStream originalIn = System.in;
 
 	@Before
-	public void t9setupTest() {
+	public void t9Setup() {
 		q17 = new Q17PrincipalInvesting();
 	}
 
 	@After
-	public void t9tearDownTest(){
-		System.out.println();
+	public void t9TearDown(){
+
 	}
 
 	//region UTILITYTESTS
@@ -39,7 +39,7 @@ public class T17PrincipalInvesting {
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 	@Test
 	public void t17PrincipalInvesting() {
 		double result = (q17.getInterest(100.0d, 0.07d, 2));
@@ -57,39 +57,38 @@ public class T17PrincipalInvesting {
 //	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 	@Test
-	public void t17PrincipalInvestingNegative() {
+	public void t17SOlutionUnequal() {
 		double result = (q17.getInterest(100.0d, 0.07d, 2));
 		assertNotEquals(140.0d, result, 0.001D);
+	}
+	@Test
+	public void t17SolutionNegativePrincipal() {
+		double result = (q17.getInterest(-100.0d, 0.07d, 2));
+		assertEquals(0.0d, result, 0.001D);
+	}
+	@Test
+	public void t17SolutionNegativeRate() {
+		double result = (q17.getInterest(100.0d, -0.07d, 2));
+		assertEquals(0.0d, result, 0.001D);
+	}
+	@Test
+	public void t17SolutionNegativeTime() {
+		double result = (q17.getInterest(100.0d, 0.07d, -2));
+		assertEquals(0.0d, result, 0.001D);
 	}
 	@Test(expected = ArithmeticException.class)
 	public void t17PrincipalInvestingMaxPos() {
 		double result = (q17.getInterest(Double.MAX_VALUE, 1.1d, 1));
 		System.out.println(result);
-		assertNotEquals(140.0d, result, 0.001D);
 	}
-	@Test(expected = ArithmeticException.class)
+	@Test
 	public void t17PrincipalInvestingMaxNeg() {
 		double result = (q17.getInterest(Double.MAX_VALUE, -1.1d, 1));
 		System.out.println(result);
-		assertNotEquals(140.0d, result, 0.001D);
+		assertEquals(0.0d, result, 0.001D);
 	}
-//	@Ignore
-//	public void t17PrincipalInvestingUserInput_IncorrectPrincipal() {
-//		double result = (q17.UserEntry());
-//		assertEquals(14, result, 0.001D);
-//	}
-//	@Ignore
-//	public void t17PrincipalInvestingUserInput_IncorrectRate() {
-//		double result = (q17.UserEntry());
-//		assertEquals(14, result, 0.001D);
-//	}
-//	@Ignore
-//	public void t17PrincipalInvestingUserInput_IncorrectTime() {
-//		double result = (q17.UserEntry());
-//		assertEquals(14, result, 0.001D);
-//	}
 
 	//endregion
 

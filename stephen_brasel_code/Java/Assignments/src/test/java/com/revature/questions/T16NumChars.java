@@ -26,15 +26,15 @@ public class T16NumChars {
 	private final InputStream originalIn = System.in;
 
 	@Before
-	public void t16setupTest() {
+	public void t16Setup() {
 		q16 = new Q16NumChars();
 		rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
 	}
 
 	@After
-	public void t16tearDownTest(){
-		System.out.println();
+	public void t16TearDown(){
+
 	}
 
 	//region UTILITYTESTS
@@ -44,7 +44,7 @@ public class T16NumChars {
 	}
 	//endregion
 
-	//region POSITIVE
+	//region POSITIVE_TESTS
 	/**
 	 * System.in
 	 * System.out
@@ -90,7 +90,7 @@ public class T16NumChars {
 	}
 	//endregion
 
-	//region NEGATIVE
+	//region NEGATIVE_TESTS
 
 	//endregion
 

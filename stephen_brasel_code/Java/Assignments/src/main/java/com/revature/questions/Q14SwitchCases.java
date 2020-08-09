@@ -25,25 +25,25 @@ public class Q14SwitchCases {
         now = now();
     }
 
-    public Q14SwitchCases(double sqrnum) {
-        this();
-        this.sqrnum = sqrnum;
-    }
+//    public Q14SwitchCases(double sqrnum) {
+//        this();
+//        this.sqrnum = sqrnum;
+//    }
+//
+//    public Q14SwitchCases(String splitter) {
+//        this();
+//        this.splitter = splitter;
+//    }
+//
+//    public Q14SwitchCases(double sqrnum, String splitter) {
+//        this();
+//        this.sqrnum = sqrnum;
+//        this.splitter = splitter;
+//    }
 
-    public Q14SwitchCases(String splitter) {
-        this();
-        this.splitter = splitter;
-    }
-
-    public Q14SwitchCases(double sqrnum, String splitter) {
-        this();
-        this.sqrnum = sqrnum;
-        this.splitter = splitter;
-    }
-
-    public double getSqrnum() {
-        return sqrnum;
-    }
+//    public double getSqrnum() {
+//        return sqrnum;
+//    }
 
     public void setSqrnum(double sqrnum) {
         this.sqrnum = sqrnum;
@@ -53,13 +53,13 @@ public class Q14SwitchCases {
         return sqrrt;
     }
 
-    public LocalDate getToday() {
-        return now;
-    }
-
-    public String getSplitter() {
-        return splitter;
-    }
+//    public LocalDate getToday() {
+//        return now;
+//    }
+//
+//    public String getSplitter() {
+//        return splitter;
+//    }
 
     public void setSplitter(String splitter) {
         this.splitter = splitter;
