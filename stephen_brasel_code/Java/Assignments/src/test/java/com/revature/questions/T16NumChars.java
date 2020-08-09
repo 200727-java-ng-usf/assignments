@@ -57,12 +57,6 @@ public class T16NumChars {
 	 */
 	@Test
 	public void t16NumChars() throws IOException {
-		PrintStream out = new PrintStream(outContent);
-		System.setOut(out);
-		System.setErr(new PrintStream(errContent));
-		System.setIn(inContent);
-		Scanner keyboard = new Scanner(inContent);
-
 		int index, i, count = rand.nextInt() % maxSize;
 		count = count < 0 ? -count : count;
 		count += 10;									// at least 10 chars
@@ -75,28 +69,25 @@ public class T16NumChars {
 			char c = (char)index;
 			strb.append(c);
 		}
+//		inContent = new ByteArrayInputStream(strb.toString().getBytes());
+//		System.setIn(inContent);
 		Q16NumChars.main(new String[]{strb.toString()});
 //		out.print(strb.toString());
 //		Q16NumChars.main(new String[]{
 //				keyboard.nextLine()
 //		});
 		assertEquals(Integer.toString(count), outContent.toString());
-
-		System.setOut(originalOut);
-		System.setErr(originalErr);
-		System.setIn(originalIn);
-
 		System.out.println(count + ", " + Q16NumChars.getLen());
 	}
+	//endregion
+
+	//region NEGATIVE_TESTS
 	@Test
 	public void t16NumCharsNo(){
 		Q16NumChars.main(new String[]{});
 		System.out.print(0 + ", " + Q16NumChars.getLen());
 		assertEquals(0, Q16NumChars.getLen());
 	}
-	//endregion
-
-	//region NEGATIVE_TESTS
 
 	//endregion
 
