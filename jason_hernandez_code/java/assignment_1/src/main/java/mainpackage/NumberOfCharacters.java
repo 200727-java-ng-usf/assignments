@@ -2,7 +2,7 @@ package mainpackage;
 import java.util.Scanner;
 
 public class NumberOfCharacters {
-    public NumberOfCharacters(String[] args) {
+    public NumberOfCharacters() {
         String string = "I am learning core Java";
         System.out.println("Initial string: " + string);
         count(string);
