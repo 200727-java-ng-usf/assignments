@@ -1,66 +1,102 @@
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class QuestionFourteen {
 
-    // Method that uses switch case
-    public static String switchCaseExample(int theCaseNumber) {
+    /**
+     * This method asks the user for input and returns the square root.
+     */
+    public static double squareRoot() {
 
-        // Create a new scanner to take in user input in the case of case 1
+        // Create Scanner object
         Scanner scanner = new Scanner(System.in);
 
-        switch (theCaseNumber) {
-            case 1:
-                System.out.println("Enter a number: ");
-                int num = scanner.nextInt();
-                double ans = Math.sqrt(num);
-                System.out.println("Here is the square root of that number: " + ans);
-                return Double.toString(ans);
-                // no need for break; because return statement
-            case 2:
-                DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-                LocalDateTime now = LocalDateTime.now();
-                System.out.println(dtf.format(now));
-                return dtf.format(now);
-            case 3:
+        // Ask the user for a number
+        System.out.println("Enter a number: ");
 
-                System.out.println("'I am learning Core Java' ...Separating this phrase by word: ");
+        // Take the user input as the number to square root
+        int num = scanner.nextInt();
 
-                // instantiate the string to split
-                String originalString = "I am learning Core Java.";
-                String[] splitArray;
+        // Take the square root
+        double result = Math.sqrt(num);
 
-                // instantiate the delimitor
-                String separator = " ";
+        // Show the user the result
+        System.out.println("Here is the square root of that number: " + result);
 
-                splitArray = originalString.split(separator);
-
-                // print the strings in the splitArray
-                System.out.println("Here is the new array of strings, separated by line: ");
-                for (int i = 0; i < splitArray.length; i++) {
-                    System.out.println(splitArray[i]);
-                }
-                return Arrays.toString(splitArray);
-        }
-        return "Didn't go through";
+        // return the result
+        return result;
     }
 
+    /**
+     * This method returns the date as a string.
+     * @return
+     */
+    public static String printTheDate() {
+
+        // Find the date and store it in result as a string
+        String result = String.valueOf(LocalDateTime.now());
+
+        // Show the user the result
+        System.out.println("Here is the date: " + result);
+
+        // return the result
+        return result;
+    }
+
+    /**
+     * This method takes a string and splits it into a string array, delimited by a space.
+     * @param str
+     * @param delimitor
+     * @return
+     */
+    public static String[] splitTheString(String str, String delimitor) {
+
+        // The string to be split
+        str = "I am learning Core Java";
+
+        // Split the string
+        String[] splitStringArray = str.split(delimitor);
+
+        // Show the user the result
+        System.out.println("The string has been split into a string array: " + Arrays.toString(splitStringArray));
+
+        // return the result
+        return splitStringArray;
+    }
+
+    /**
+     * The main method contains the switch case, which calls one of the three methods depending on the case.
+     * @param args
+     */
     public static void main(String[] args) {
 
         // Explain what the method will do
         System.out.println("Case 1 will find the square root of a number.");
         System.out.println("Case 2 will print the date and time.");
         System.out.println("Case 3 will split the string: 'I am learning Core Java.'");
-        System.out.println("Which case would you like to execute? Enter 1, 2, or 3: ");
+
+        // Ask the user for input
+        System.out.println("\nWhich case would you like to execute? Enter 1, 2, or 3: ");
 
         // Create a scanner object
         Scanner scanner = new Scanner(System.in);
 
+        // Assign the user input to the case number
         int theCaseNumber = scanner.nextInt();
 
-        switchCaseExample(theCaseNumber);
+        // Use the case number to decide what case to run
+        switch (theCaseNumber) {
+            case 1:
+                squareRoot();
+                break;
+            case 2:
+                printTheDate();
+                break;
+            case 3:
+                splitTheString("I am learning Core Java", " ");
+                break;
+        }
 
     } // end main
 
