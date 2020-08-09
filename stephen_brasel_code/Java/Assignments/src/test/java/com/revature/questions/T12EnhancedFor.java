@@ -30,7 +30,7 @@ public class T12EnhancedFor {
 
 	@After
 	public void t12TearDown() {
-//
+		q12 = null;
 	}
 
 	//region UTILITYTESTS
@@ -71,8 +71,15 @@ public class T12EnhancedFor {
 	//endregion
 
 	//region NEGATIVE_TESTS
+	@Test
 	public void t12Negative() {
-
+		q12 = new Q12EnhancedFor(Integer.MIN_VALUE);
+		assertArrayEquals(new int[]{}, q12.getArrEven());
+	}
+	@Test
+	public void t12Zero() {
+		q12 = new Q12EnhancedFor(0);
+		assertArrayEquals(new int[]{}, q12.getArrEven());
 	}
 
 	//endregion

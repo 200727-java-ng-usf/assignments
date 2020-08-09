@@ -28,7 +28,7 @@ public class T13TrianglePrint {
 
 	@After
 	public void t13TearDown() {
-//
+		q13 = null;
 	}
 
 	//region UTILITYTESTS
@@ -72,8 +72,13 @@ public class T13TrianglePrint {
 	//endregion
 
 	//region NEGATIVE_TESTS_TESTS
+	@Test
 	public void t13Negative() {
-
+		assertArrayEquals(new String[]{}, q13.triWhile(Integer.MIN_VALUE));
+	}
+	@Test
+	public void t13Zero() {
+		assertArrayEquals(new String[]{}, q13.triWhile(0));
 	}
 
 	//endregion

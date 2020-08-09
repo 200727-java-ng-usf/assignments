@@ -20,7 +20,7 @@ public class T16NumChars {
 	byte[] buffer = new byte[maxSize];
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-	private final ByteArrayInputStream inContent = new ByteArrayInputStream(buffer);
+	private InputStream inContent = new ByteArrayInputStream(buffer);
 	private final PrintStream originalOut = System.out;
 	private final PrintStream originalErr = System.err;
 	private final InputStream originalIn = System.in;
@@ -30,10 +30,16 @@ public class T16NumChars {
 		q16 = new Q16NumChars();
 		rand = new Random();
 		rand.setSeed(now().toEpochSecond(ZoneOffset.UTC));
+		System.setOut(new PrintStream(outContent));
+		System.setErr(new PrintStream(errContent));
 	}
 
 	@After
 	public void t16TearDown(){
+		q16 = null;
+		System.setOut(originalOut);
+		System.setErr(originalErr);
+		System.setIn(originalIn);
 
 	}
 

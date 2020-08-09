@@ -27,10 +27,6 @@ public class Q13TrianglePrint {
     private String a = "0";
     private String b = "1";
 
-//    private String strPrepend(String str, String ins) {
-//        return ins + str;
-//    }
-
     private void swap(){
         String temp = a;
         a=b;
@@ -38,6 +34,7 @@ public class Q13TrianglePrint {
     }
 
     public String[] triWhile(int end) {
+        if(end < 0) return new String[]{};
         i = 0;
         ret = new String[end];
         while (i < end) {
@@ -64,24 +61,4 @@ public class Q13TrianglePrint {
         return ret.toString();
 
     }
-
-//    public String triDoWhile(){
-//        return str;
-//    }
-//    public String triFor(){
-//
-//    }
-//    public String triEnhancedFor(){
-//
-//    }
-//    public String triRecursive(){
-//
-//    }
-
-//    private String triTailRecursiveGo(){
-//
-//    }
-//    public String triTailRecursive(){
-//
-//    }
 }

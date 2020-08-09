@@ -26,7 +26,7 @@ public class T15MathInterface {
 
 	@After
 	public void t15TearDown(){
-
+		q15 = null;
 	}
 
 	//region UTILITYTESTS
@@ -38,7 +38,6 @@ public class T15MathInterface {
 	//endregion
 
 	//region POSITIVE_TESTS
-
 	@Test
 	public void t15MathInterfaceAdd() {
 		double x = rand.nextDouble();
@@ -80,8 +79,10 @@ public class T15MathInterface {
 		);
 		assertEquals(div, x/y, 0.001D);
 	}
-
 	//endregion
+
+
+	//region NEGATIVE_TESTS
 	@Test(expected = ArithmeticException.class)
 	public void t15MathInterfaceDivZero() throws ArithmeticException {
 		double x = rand.nextDouble();
@@ -91,8 +92,6 @@ public class T15MathInterface {
 				"Divided: " + div + "\n"
 		);
 	}
-
-	//region NEGATIVE_TESTS
 
 	//endregion
 

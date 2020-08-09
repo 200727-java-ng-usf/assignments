@@ -20,6 +20,7 @@ public class Q12EnhancedFor {
     }
 
     public Q12EnhancedFor(int n){
+        if(n < 0) n = 0;
         arr = new int[n];
         arrEven = new int[n/2];
         for (int i = 0; i < n; i++) {

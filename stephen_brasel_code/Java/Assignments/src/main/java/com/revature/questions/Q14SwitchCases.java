@@ -81,6 +81,7 @@ public class Q14SwitchCases {
                 break;
             case 3:
 //    Case 3: Split the following string and store it in a string array.
+                if(splitter == null) splitter = "";
                 splits = splitter.split(" ");
                 break;
             default:

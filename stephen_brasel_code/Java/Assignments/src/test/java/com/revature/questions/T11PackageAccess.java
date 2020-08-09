@@ -59,8 +59,37 @@ public class T11PackageAccess {
     //endregion
 
     //region NEGATIVE_TESTS
-    public void t11PackageAccessNegative(){
-
+    @Test
+    public void t11PackageAccessCastedDoublesX(){
+        double x = rand.nextDouble();
+        double y = rand.nextDouble();
+        FloatPoints fp = new FloatPoints((float)x, (float)y);
+        q11.printFloats(fp);
+        assertEquals(x, q11.getA(), 0.001F);
+    }
+    @Test
+    public void t11PackageAccessCastedDoublesY(){
+        double x = rand.nextDouble();
+        double y = rand.nextDouble();
+        FloatPoints fp = new FloatPoints((float)x, (float)y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
+    }
+    @Test
+    public void t11PackageAccessMax(){
+        float x = Float.MAX_VALUE;
+        float y = Float.MAX_VALUE;
+        FloatPoints fp = new FloatPoints((float)x, (float)y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
+    }
+    @Test
+    public void t11PackageAccessMin(){
+        float x = Float.MIN_VALUE;
+        float y = Float.MIN_VALUE;
+        FloatPoints fp = new FloatPoints((float)x, (float)y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
     }
 
     //endregion

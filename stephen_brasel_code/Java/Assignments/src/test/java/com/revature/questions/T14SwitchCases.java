@@ -34,7 +34,7 @@ public class T14SwitchCases {
 
 	@After
 	public void t14TearDown() {
-//
+		q14 = null;
 	}
 
 	//region UTILITYTESTS
@@ -118,7 +118,13 @@ public class T14SwitchCases {
 
 		if(nextIndex >= 1 && nextIndex <= 3) nextIndex += 3;
 		q14.switcher(nextIndex);
+	}
 
+	@Test
+	public void t14NullString(){
+		q14.setSplitter(null);
+		q14.switcher(3);
+		assertArrayEquals(new String[]{""}, q14.getSplits());
 	}
 
 	//endregion

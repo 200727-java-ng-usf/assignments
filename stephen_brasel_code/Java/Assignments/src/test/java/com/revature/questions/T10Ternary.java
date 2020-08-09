@@ -24,7 +24,7 @@ public class T10Ternary {
 
     @After
     public void t10TearDown(){
-
+        q10 = null;
     }
 
     //region UTILITYTESTS
