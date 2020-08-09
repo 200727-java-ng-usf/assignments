@@ -93,8 +93,8 @@ public class AppDriver {
         interestCalculator.interestCalculator();
         System.out.println("+------------------------+");
 
-        System.out.println("18. Change the case of characters");
-        ChangeCase changeCase = new ChangeCase();
+        System.out.println("18. Change the case of characters using subclass");
+        SubChangeCase changeCase = new SubChangeCase();
         changeCase.changeCase();
         System.out.println("+------------------------+");
 
