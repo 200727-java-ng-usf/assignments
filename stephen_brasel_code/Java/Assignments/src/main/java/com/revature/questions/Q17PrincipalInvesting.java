@@ -1,7 +1,6 @@
 package com.revature.questions;
 
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -15,29 +14,34 @@ public class Q17PrincipalInvesting {
     double rate = 0.0D;
     int time = 0;
 
-    public double UserEntry(InputStream in, PrintStream out, Double... args) throws InputMismatchException {
-        Scanner scanner = new Scanner(in);
+    public double UserEntry() {
+        Scanner sc = new Scanner(System.in);
+//            return Double.parseDouble(sc.nextLine());
         try {
-            out.println("Enter principal: ");
-            principal = scanner.nextDouble();
-        } catch (InputMismatchException e){
-            out.print("Principal needs to be a double.");
+            System.out.println("Enter principal: ");
+            principal = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.print("Principal needs to be a double.");
             e.printStackTrace();
+            return 0.0d;
         }
         try {
-            out.println("Enter rate: ");
-            rate = scanner.nextDouble();
-        } catch (InputMismatchException e){
-            out.print("Rate needs to be a double.");
+            System.out.println("Enter rate: ");
+            rate = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.print("Rate needs to be a double.");
             e.printStackTrace();
+            return 0.0d;
         }
         try {
-            out.println("Enter time in years: ");
-            time = scanner.nextInt();
-        } catch (InputMismatchException e){
-            out.print("Time in Years needs to be an int.");
+            System.out.println("Enter time in years: ");
+            time = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.print("Time in Years needs to be an int.");
             e.printStackTrace();
+            return 0.0d;
         }
+        sc.close();
         return getInterest(principal, rate, time);
     }
 

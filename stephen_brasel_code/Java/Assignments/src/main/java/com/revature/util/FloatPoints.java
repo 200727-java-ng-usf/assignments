@@ -4,9 +4,9 @@ public class FloatPoints {
     private float x = 42.0F;
     private float y = 31.0F;
 
-    public FloatPoints() {
-        super();
-    }
+//    public FloatPoints() {
+//        super();
+//    }
 
     public FloatPoints(float x, float y) {
         this.x = x;
@@ -17,15 +17,15 @@ public class FloatPoints {
         return x;
     }
 
-    public void setX(float x) {
-        this.x = x;
-    }
+//    public void setX(float x) {
+//        this.x = x;
+//    }
 
     public float getY() {
         return y;
     }
 
-    public void setY(float y) {
-        this.y = y;
-    }
+//    public void setY(float y) {
+//        this.y = y;
+//    }
 }

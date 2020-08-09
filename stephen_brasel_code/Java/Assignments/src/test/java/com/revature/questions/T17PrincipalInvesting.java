@@ -17,7 +17,7 @@ public class T17PrincipalInvesting {
 	byte[] buffer = new byte[maxSize];
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-	private final ByteArrayInputStream inContent = new ByteArrayInputStream(buffer);
+	private InputStream inContent = new ByteArrayInputStream(buffer);
 	private final PrintStream originalOut = System.out;
 	private final PrintStream originalErr = System.err;
 	private final InputStream originalIn = System.in;
@@ -25,16 +25,21 @@ public class T17PrincipalInvesting {
 	@Before
 	public void t9Setup() {
 		q17 = new Q17PrincipalInvesting();
+		System.setOut(new PrintStream(outContent));
+		System.setErr(new PrintStream(errContent));
 	}
 
 	@After
-	public void t9TearDown(){
-
+	public void t9TearDown() {
+		q17 = null;
+		System.setOut(originalOut);
+		System.setErr(originalErr);
+		System.setIn(originalIn);
 	}
 
 	//region UTILITYTESTS
 	@Test
-	public void t9NotNull(){
+	public void t9NotNull() {
 		assertNotNull(q17);
 	}
 	//endregion
@@ -45,16 +50,16 @@ public class T17PrincipalInvesting {
 		double result = (q17.getInterest(100.0d, 0.07d, 2));
 		assertEquals(14, result, 0.001D);
 	}
-//	@Test
-//	public void t17PrincipalInvestingUserInput() throws InputMismatchException {
-//		PrintStream out = new PrintStream(outContent);
-//
-//
-//		double result = (q17.UserEntry(inContent, System.out, 100.0d, 2.0d, 2.0d));
-//		assertEquals(14, result, 0.001D);
-//
-//		System.setOut(originalOut);
-//	}
+
+	@Test
+	public void t17PrincipalInvestingUserInput() {
+		String s = "100.0d\n0.07d\n2";
+		inContent = new ByteArrayInputStream(s.getBytes());
+		System.setIn(inContent);
+
+		double result = (q17.UserEntry());
+		assertEquals(14, result, 0.001D);
+	}
 	//endregion
 
 	//region NEGATIVE_TESTS
@@ -63,31 +68,69 @@ public class T17PrincipalInvesting {
 		double result = (q17.getInterest(100.0d, 0.07d, 2));
 		assertNotEquals(140.0d, result, 0.001D);
 	}
+
 	@Test
 	public void t17SolutionNegativePrincipal() {
 		double result = (q17.getInterest(-100.0d, 0.07d, 2));
 		assertEquals(0.0d, result, 0.001D);
 	}
+
 	@Test
 	public void t17SolutionNegativeRate() {
 		double result = (q17.getInterest(100.0d, -0.07d, 2));
 		assertEquals(0.0d, result, 0.001D);
 	}
+
 	@Test
 	public void t17SolutionNegativeTime() {
 		double result = (q17.getInterest(100.0d, 0.07d, -2));
 		assertEquals(0.0d, result, 0.001D);
 	}
+
 	@Test(expected = ArithmeticException.class)
 	public void t17PrincipalInvestingMaxPos() {
 		double result = (q17.getInterest(Double.MAX_VALUE, 1.1d, 1));
 		System.out.println(result);
 	}
+
 	@Test
 	public void t17PrincipalInvestingMaxNeg() {
 		double result = (q17.getInterest(Double.MAX_VALUE, -1.1d, 1));
 		System.out.println(result);
 		assertEquals(0.0d, result, 0.001D);
+	}
+	@Test
+	public void t17PIUserInputWrongPrincipal() {
+		String s = "100.0dasd\n0.07d\n2";
+		inContent = new ByteArrayInputStream(s.getBytes());
+		System.setIn(inContent);
+
+		double result = (q17.UserEntry());
+		assertEquals("Enter principal: \r\n" +
+				"Principal needs to be a double.", outContent.toString());
+	}
+	@Test
+	public void t17PIUserInputWrongRate() {
+		String s = "100.0d\n0.0Hi Wezley!7d\n2";
+		inContent = new ByteArrayInputStream(s.getBytes());
+		System.setIn(inContent);
+
+		double result = (q17.UserEntry());
+		assertEquals("Enter principal: \r\n" +
+				"Enter rate: \r\n" +
+				"Rate needs to be a double.", outContent.toString());
+	}
+	@Test
+	public void t17PIUserInputWrongTime() {
+		String s = "100.0d\n0.07d\n2123eds";
+		inContent = new ByteArrayInputStream(s.getBytes());
+		System.setIn(inContent);
+
+		double result = (q17.UserEntry());
+		assertEquals("Enter principal: \r\n" +
+				"Enter rate: \r\n" +
+				"Enter time in years: \r\n" +
+				"Time in Years needs to be an int.", outContent.toString());
 	}
 
 	//endregion
