@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionOneTest {
 
@@ -45,7 +46,9 @@ public class QuestionOneTest {
     @Test (expected = NullPointerException.class)
         public void nullArrayThrowsException() {
             int[] nullArray = null;
-            sut.bubbleSort(nullArray);
+        int[] unexpectedResult = {3, 2, 1, 0};
+        int[] actualResult = sut.bubbleSort(nullArray);
+        assertNotEquals(unexpectedResult, actualResult);
         }
 
 

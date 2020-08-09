@@ -14,10 +14,13 @@ public class QuestionSixTest {
     @After
     public void tearDown() {  sut = null;  }
 
+    // Positive Test
     @Test
     public void fiveReturnsFalse() {
         boolean expectedResult = false;
         boolean actualResult = sut.isEven(5);
         assertEquals(expectedResult, actualResult);
     }
+
+    // Negative Test
 }

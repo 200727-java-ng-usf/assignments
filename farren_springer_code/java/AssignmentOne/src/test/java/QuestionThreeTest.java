@@ -2,6 +2,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertNotEquals;
+
 public class QuestionThreeTest {
 
     private QuestionThree sut;
@@ -23,7 +25,9 @@ public class QuestionThreeTest {
     @Test (expected = NullPointerException.class)
     public void nullStringPassedToReverseIt() {
         String nullString = null;
-        sut.reverseIt(nullString);
+        String unexpectedResult = "llun";
+        String actualResult = sut.reverseIt(nullString);
+        assertNotEquals(unexpectedResult, actualResult);
     }
 
 

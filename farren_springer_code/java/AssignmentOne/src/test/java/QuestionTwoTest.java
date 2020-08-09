@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionTwoTest {
 
@@ -26,7 +27,9 @@ public class QuestionTwoTest {
     @Test (expected = NumberFormatException.class)
     public void nullValueThrowsException() {
         int nullValue = Integer.parseInt(null);
-        sut.fibonacciGenerator(nullValue);
+        int[] unexpectedResult = {0, 1, 1, 2};
+        int[] actualResult = sut.fibonacciGenerator(nullValue);
+        assertNotEquals(unexpectedResult, actualResult);
     }
 
 

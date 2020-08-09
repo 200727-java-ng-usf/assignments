@@ -43,14 +43,31 @@ public class QuestionTwo {
         // Create a scanner object
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user to input the number of numbers they want to see
-        System.out.println("How many Fibonacci numbers do you want to see: ");
+//        // Ask the user to input the number of numbers they want to see
+//        System.out.println("How many Fibonacci numbers do you want to see: ");
+//
+//        // Store the user's number in userNumber
+//        int userNumber = scanner.nextInt();
 
-        // Store the user's number in userNumber
-        int userNumber = scanner.nextInt();
+        // Mark if user input is valid. This will remain one until the input is valid
+        int x = 1;
 
-        // Call the method using the userNumber
-        System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(fibonacciGenerator(userNumber)));
+        do {
+            // Try taking in user input and catch a NumberFormatException
+            try {
+                System.out.println("How many Fibonacci numbers do you want to see: ");
+                int userNumber = scanner.nextInt();
+                // Call the method using the userNumber
+                int[] result = fibonacciGenerator(userNumber);
+                System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(result));
+                x = 2;
+            } catch (ArrayIndexOutOfBoundsException aioube) {
+                System.out.println("Invalid entry.");
+            }
+        } while (x == 1);
+
+//        // Call the method using the userNumber
+//        System.out.print("Here are the first " + userNumber + " Fibonacci numbers: " + Arrays.toString(fibonacciGenerator(userNumber)));
 
         } // end main
     } // end class
