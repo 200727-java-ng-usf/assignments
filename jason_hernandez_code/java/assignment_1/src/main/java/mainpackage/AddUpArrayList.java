@@ -2,16 +2,16 @@ package mainpackage;
 import java.util.ArrayList;
 
 public class AddUpArrayList {
-    public int[] addUpArrayList() {
 
-        // Initialize three arrayLists
-        ArrayList<Integer> numbers3 = new ArrayList<Integer>(100);
-        ArrayList<Integer> evenNumbers2 = new ArrayList<Integer>(50);
-        ArrayList<Integer> oddNumbers = new ArrayList<Integer>(50);
-        int[] nonPrime = new int[100];
+    public void addUpArraylist() {
+        // Initialize three arrayLists and int[]
+        ArrayList<Integer> numbers3 = new ArrayList<Integer>(10);
+        ArrayList<Integer> evenNumbers2 = new ArrayList<Integer>(5);
+        ArrayList<Integer> oddNumbers = new ArrayList<Integer>(5);
+        int[] nonPrime = new int[10];
 
         // Populate the first array with integers 1 to 100
-        for (int i = 1; i <= 100; i++)
+        for (int i = 1; i <= 10; i++)
             numbers3.add(i);
 
         // Check each number to see if it is even
@@ -60,19 +60,15 @@ public class AddUpArrayList {
                     }
                     //If isPrime is true then the number is prime else not
                     nonPrime = new int[0];
-                    if (isPrime)
+                    if (!isPrime)
                         nonPrime[j] = numbers3.get(j);
 
-                    return nonPrime;
                 }
-
 
                 System.out.println("Sum of Even numbers: " + sumEven);
                 System.out.println("Sum of odd numbers: " + sumOdd);
                 System.out.println("The non-prime numbers are" + nonPrime);
             }
         }
-
-        return nonPrime;
     }
 }

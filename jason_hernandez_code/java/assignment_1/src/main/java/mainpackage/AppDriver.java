@@ -25,6 +25,7 @@ public class AppDriver {
 
         System.out.println("4. Calculate N-factorial");
         Nfactorial nfactorial = new Nfactorial();
+        nfactorial.nFactorial();
 
         System.out.println("+------------------------+");
 
@@ -101,8 +102,8 @@ public class AppDriver {
         System.out.println("+------------------------+");
 
         System.out.println("19. From array list, add up evens and add up odds, remove prime numbers");
-        AddUpArrayList addUpArrayList = new AddUpArrayList();
-        addUpArrayList.addUpArraylist();
+        AddUpArrayList addArrayList = new AddUpArrayList();
+        addArrayList.addUpArraylist();
         System.out.println("+------------------------+");
 
         System.out.println("20. Read from NotePad");
