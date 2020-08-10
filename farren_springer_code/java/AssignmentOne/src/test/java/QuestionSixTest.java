@@ -26,9 +26,15 @@ public class QuestionSixTest {
     // Positive Test
     @Test
     public void fourDoesNotReturnFalse() {
-        boolean unexpectedResult = false;
         boolean actualResult = sut.isEven(4);
-        assertNotEquals(unexpectedResult, actualResult);
+        assertNotEquals(false, actualResult);
     }
 
+    // Negative test
+    @Test (expected = NumberFormatException.class)
+    public void decimalNumberResultsInNumberFormatException() {
+        int nullValue = Integer.parseInt(String.valueOf(1.0));
+        boolean actualResult = sut.isEven(nullValue);
+        assertNotEquals(true, actualResult);
+    }
 }
