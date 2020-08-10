@@ -4,6 +4,7 @@ import com.revature.util.FloatPoints;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.time.ZoneOffset;
 import java.util.Random;
@@ -11,6 +12,7 @@ import java.util.Random;
 import static java.time.LocalDateTime.now;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.*;
 
 public class T11PackageAccess {
     Q11PackageAccess q11;
@@ -37,6 +39,30 @@ public class T11PackageAccess {
     //endregion
 
     //region POSITIVE_TESTS
+    @Test
+    public void t11PackageAccessMockX(){
+//        q11
+        float x = rand.nextFloat();
+        float y = rand.nextFloat();
+        FloatPoints fp = Mockito.mock(FloatPoints.class);
+        when(fp.getX()).thenReturn(x);
+        when(fp.getY()).thenReturn(y);
+        q11.printFloats(fp);
+        assertEquals(x, q11.getA(), 0.001F);
+        verify(fp, times(2)).getX();
+    }
+    @Test
+    public void t11PackageAccessMockY(){
+//        q11
+        float x = rand.nextFloat();
+        float y = rand.nextFloat();
+        FloatPoints fp = Mockito.mock(FloatPoints.class);
+        when(fp.getX()).thenReturn(x);
+        when(fp.getY()).thenReturn(y);
+        q11.printFloats(fp);
+        assertEquals(y, q11.getB(), 0.001F);
+        verify(fp, times(2)).getY();
+    }
     @Test
     public void t11PackageAccessX(){
 //        q11
