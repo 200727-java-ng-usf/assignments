@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class Question19Test {
 
     @Test
-    public void question19Test(){
-        System.out.println("Question 19 running");
+    public void removePrimeNumbersFrom1to10(){
         //Question 19 test
         Question19 question19 = new Question19();
         ArrayList<Integer> expectedOutput = new ArrayList<Integer>();
@@ -22,7 +21,7 @@ public class Question19Test {
     }
 
     @Test
-    public void question19Test2(){
+    public void makeSure3IsNotAPrimeNumber(){
         //Question 19 negative test
         Question19 question19 = new Question19();
         ArrayList<Integer> unExpectedOutput = new ArrayList<Integer>();
@@ -41,7 +40,7 @@ public class Question19Test {
     }
 
     @Test
-    public void question19TestAddEvens(){
+    public void addEvenNumbersFrom1To10(){
         System.out.println("Question 19 running");
         //Question 19 test
         Question19 question19 = new Question19();
@@ -52,7 +51,7 @@ public class Question19Test {
     }
 
     @Test
-    public void question19TestAddOdds(){
+    public void addOddNumbersFrom1To10(){
         Question19 question19 = new Question19();
         assert(question19.addOdds() == 1 + 3 + 5 + 7 + 9);
     }

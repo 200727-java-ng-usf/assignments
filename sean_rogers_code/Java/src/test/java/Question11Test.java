@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class Question11Test {
     @Test
-    public void question11Test(){
+    public void getFloatf1FromQuestion11Object(){
         //Question 11 test
         Question11 question11 = new Question11();
         float f1 = question11.getFloat1();
@@ -11,7 +11,7 @@ public class Question11Test {
     }
 
     @Test
-    public void question11Test2(){
+    public void getFloatf2FromQuestion11Object(){
         //Question 11 test
         Question11 question11 = new Question11();
         float f2 = question11.getFloat2();

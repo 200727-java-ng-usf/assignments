@@ -24,14 +24,14 @@ public class Question8Test {
     }
 
     @Test
-    public void question8Test2(){
+    public void testPalindromesWithEmptyArray(){
         //Question 8 negative test
         Question8 question8 = new Question8();
         ArrayList<String> input = new ArrayList<String>();
         ArrayList<String> expectedOutput = new ArrayList<String>();
 
-        String[] words1 = {"karan", "madam"};
-        String[] words2 = {"karen", "madam"};
+        String[] words1 = {};
+        String[] words2 = {};
 
         for(String word : words1) {
             input.add(word);
@@ -40,6 +40,6 @@ public class Question8Test {
             expectedOutput.add(word);
         }
 
-        assert(!question8.getPalindromes(input).toString().equals(expectedOutput.toString()));
+        assert(question8.getPalindromes(input).toString().equals(expectedOutput.toString()));
     }
 }

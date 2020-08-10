@@ -2,37 +2,45 @@ import org.junit.Test;
 
 public class Question10Test {
     @Test
-    public void question10Test(){
+    public void findMinimumOf8And4(){
         //Question 10 test
         Question10 question10 = new Question10();
         assert(question10.findMin(8, 4) == 4);
     }
 
     @Test
-    public void question10Test2(){
+    public void findMinimumOf3And2(){
+        //Question 10 test
+        Question10 question10 = new Question10();
+        assert(question10.findMin(3, 2) == 2);
+    }
+
+    @Test
+    public void findMinimumOf2And3(){
         //Question 10 test
         Question10 question10 = new Question10();
         assert(question10.findMin(2, 3) == 2);
     }
 
     @Test
-    public void question10Test3(){
+    public void findMinimumOf1And1(){
         //Question 10 test
         Question10 question10 = new Question10();
         assert(question10.findMin(1, 1) == 1);
     }
 
     @Test
-    public void question10Test4(){
+    public void findMinimumOfNegative1And1(){
         //Question 10 test
         Question10 question10 = new Question10();
-        assert(question10.findMin(1, 1) != 2);
+        assert(question10.findMin(-1, 1) == -1);
     }
 
     @Test
-    public void question10Test5(){
+    public void findMinimumOfNegative3AndNegative4(){
         //Question 10 test
         Question10 question10 = new Question10();
-        assert(question10.findMin(1, 1) != 0);
+        assert(question10.findMin(-3, -4) == -4);
     }
+
 }

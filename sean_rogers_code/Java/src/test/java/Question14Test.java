@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Question14Test {
     @Test
-    public void question14Test1(){
+    public void question14Case1Sqrt16(){
 
         Question14 question14 = new Question14();
         String expectedValue = "4.0";
@@ -13,7 +13,7 @@ public class Question14Test {
     }
 
     @Test
-    public void question14Test2(){
+    public void question14Case2ReturnDate(){
         Date date = Calendar.getInstance().getTime();
         String expectedValue = date.toString();
         Question14 question14 = new Question14();
@@ -21,7 +21,7 @@ public class Question14Test {
     }
 
     @Test
-    public void question14Test3(){
+    public void question14Case3ReturnI_am_learn_core_javaWithSpacesInsteadOfUnderscores(){
 
         Question14 question14 = new Question14();
         String expectedValue = "I am learning core java ";

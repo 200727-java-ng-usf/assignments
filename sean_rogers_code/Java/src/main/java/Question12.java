@@ -7,8 +7,8 @@ public class Question12 {
         int[] numbers = new int[100];
         int[] evenNumbers = new int[numbers.length / 2];
         int evenNumbersIndex = 0;
-        for(int i = 1; i < 100; i++) {
-            numbers[i] = i;
+        for(int i = 0; i < 100; i++) {
+            numbers[i] = i+1;
         }
 
         for(int number : numbers) {
