@@ -2,6 +2,10 @@ package com.revature.questions;
 
 import com.revature.util.FloatPoints;
 
+/**
+ * A <code>Q11PackageAccess</code> access 2 floats from a different package.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q11PackageAccess {
 //    Q11. Write a program that would access two float-variables from a class that exists in another package.
 //    Note, you will need to create two packages to demonstrate the solution.

@@ -4,6 +4,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * A <code>Q20DataBaseParsing</code> parses in data from a file to populate an
+ * <code>{@link ArrayList}</code><<code>{@link Person}</code>> with people from the file, then
+ * displays their formatted information to the screen.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q20DataBaseParsing {
 //    Q20. Create a notepad file called Data.txt and enter the following:
 //

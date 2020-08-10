@@ -1,9 +1,18 @@
 package com.revature.questions;
 
+import com.revature.util.EmployeeComparator;
+
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
+/**
+ * A <code>Q8Palindrome</code> stores a given <code>{@link String}</code>[] in an
+ * <code>{@link ArrayList}</code><<code>{@link String}</code>> allStr, and stores the palindromes
+ * in that allStr in a separate <code>{@link ArrayList}</code><<code>{@link String}</code>>.
+ *
+ * @author stephen.brasel@gmail.com
+ */
 public class Q8Palindrome {
 //    Q8. Write a program that stores the following strings in an ArrayList and saves all the palindromes in another ArrayList.
 //

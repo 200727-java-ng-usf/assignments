@@ -3,6 +3,11 @@ package com.revature.questions;
 
 import java.util.Arrays;
 
+/**
+ * A <code>Q12EnhancedFor</code> stores all the numbers from 1 to {@code n} in an array,
+ * and prints out all of the even numbers in an enhanced for loop.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q12EnhancedFor {
 //    Q12. Write a program to store numbers from 1 to 100 in an array.
 //    Print out all the even numbers from the array.

@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q3StringReversal</code> reverses a given <code>{@link String}</code>.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q3StringReversal {
     //    Q3. Reverse a string without using a temporary variable.
 

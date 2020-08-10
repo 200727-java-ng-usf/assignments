@@ -8,6 +8,15 @@ import java.util.Date;
 
 import static java.time.LocalDate.now;
 
+/**
+ * A <code>Q14SwitchCases</code> does 1 of 4 things: <br>
+ *      1. Use the <code>{@link Math#sqrt(double)}</code> operation on <code>{@link #sqrnum}</code><br>
+ *      2. print the current Date.<br>
+ *      3. Use the <code>{@link String#split(String)}</code> method on <code>{@link #splitter}</code> to populate <code>{@link #splits}</code><br>
+ *      or, by default, <br>
+ *      4. Print out the phrase: "This is supposed to do nothing."
+ * @author stephen.brasel@gmail.com
+ */
 public class Q14SwitchCases {
 //    Q14. Write a program that demonstrates the switch case. Implement the following functionalities in the cases:java
 //    Case 1: Find the square root of a number using the Math class method.

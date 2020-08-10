@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q2Fibonacci</code> provides int[]s of the fibonacci sequence.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q2Fibonacci {
     //    Q2. Write a program to display the first 25 Fibonacci numbers beginning at 0.
     /*

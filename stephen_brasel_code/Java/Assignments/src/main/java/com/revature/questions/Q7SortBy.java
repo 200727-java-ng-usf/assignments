@@ -6,6 +6,10 @@ import com.revature.util.EmployeeComparator;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * A <code>Q7SortBy</code> sorts employees using an <code>{@link EmployeeComparator}</code>.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q7SortBy /*extends Comparator<T>*/{
 //    Q7. Sort two employees based on their name, department, and age using the Comparator interface.
 

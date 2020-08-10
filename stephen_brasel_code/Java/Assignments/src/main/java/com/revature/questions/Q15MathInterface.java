@@ -2,6 +2,11 @@ package com.revature.questions;
 
 import com.revature.util.MathInterface;
 
+/**
+ * A <code>Q15MathInterface</code> provides methods for adding, subtracting, multiplying, and dividing.
+ * implements <code>{@link MathInterface}</code>
+ * @author stephen.brasel@gmail.com
+ */
 public class Q15MathInterface implements MathInterface {
 //    Q15. Write a program that defines an interface having the following methods:
 //      addition, subtraction, multiplication, and division.

@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q4Factorial</code> provides the Factorial of a given int n, (n!).
+ * @author stephen.brasel@gmail.com
+ */
 public class Q4Factorial {
     //    Q4. Write a program to compute N factorial.
     /*

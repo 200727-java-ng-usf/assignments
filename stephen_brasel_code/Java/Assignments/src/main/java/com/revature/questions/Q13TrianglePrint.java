@@ -1,5 +1,14 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q13TrianglePrint</code> prints the following triangle pattern to the screen: <br>
+ * 0<br>
+ * 1 0<br>
+ * 1 0 1<br>
+ * 0 1 0 1<br>
+ * etc.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q13TrianglePrint {
 //    Q13. Display the triangle on the console as follows using any type of loop.
 //    Do NOT use a simple group of print statements to accomplish this.

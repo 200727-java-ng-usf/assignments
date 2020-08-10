@@ -3,6 +3,12 @@ package com.revature.questions;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * A <code>Q19ArrayListOperations</code> Creates an <code>{@link ArrayList}</code><<code>{@link Integer}</code>
+ * from 1 to "{@code count}", adds and displays all even numbers and all odd numbers, removes primes from the
+ * <code>{@link ArrayList}</code><<code>{@link Integer}</code>> and prints out the remaining numbers.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q19ArrayListOperations {
 //    Q19. Create an ArrayList and insert integers 1 through 10. Display the ArrayList.
 //    Add all the even numbers up and display the result.
@@ -15,11 +21,11 @@ public class Q19ArrayListOperations {
     private ArrayList<Integer> ints = new ArrayList<>();
 
     /**
-     * the number of {@code evens} in <code>{@link #ints}</code>
+     * the sum of {@code evens} in <code>{@link #ints}</code>
      */
     private Integer evens = 0;
     /**
-     * the number of {@code odds} in <code>{@link #ints}</code>
+     * the sum of {@code odds} in <code>{@link #ints}</code>
      */
     private Integer odds = 0;
 
@@ -31,14 +37,14 @@ public class Q19ArrayListOperations {
     }
 
     /**
-     * @return the amount of even numbers in <code>{@link #ints}</code>
+     * @return the sum of even numbers in <code>{@link #ints}</code>
      */
     public Integer getEvens() {
         return evens;
     }
 
     /**
-     * @return the amount of odd numbers in <code>{@link #ints}</code>
+     * @return the sum of odd numbers in <code>{@link #ints}</code>
      */
     public Integer getOdds() {
         return odds;
@@ -82,7 +88,7 @@ public class Q19ArrayListOperations {
     /**
      * performs the <code>{@link #addEvens()}</code> and
      * <code>{@link #addOdds()}</code> operations, populating
-     * <code>{@link #evens}</code> and <code>{@link #odds}</code>
+     * <code>{@link #evens}</code> and <code>{@link #odds}</code> with their respective sums.
      */
     private void Init(){
         addEvens();
@@ -92,7 +98,7 @@ public class Q19ArrayListOperations {
     }
 
     /**
-     * Populates <code>{@link #evens}</code> with the amount of even numbers in <code>{@link #ints}</code>
+     * Populates <code>{@link #evens}</code> with the sum of even numbers in <code>{@link #ints}</code>
      */
     public void addEvens(){
         for (Integer anInt : ints) {
@@ -103,7 +109,7 @@ public class Q19ArrayListOperations {
     }
 
     /**
-     * Populates <code>{@link #odds}</code> with the amount of odd numbers in <code>{@link #ints}</code>
+     * Populates <code>{@link #odds}</code> with the sum of odd numbers in <code>{@link #ints}</code>
      */
     public void addOdds(){
         for (Integer anInt : ints) {

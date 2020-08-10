@@ -5,6 +5,11 @@ import java.io.PrintStream;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * A <code>Q17PrincipalInvesting</code> calculates simple interest on the principal, rate of interest, and number
+ * of years provided by the user.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q17PrincipalInvesting {
 //    Q17. Write a program that calculates the simple interest on the principal,
 //    rate of interest and number of years provided by the user.

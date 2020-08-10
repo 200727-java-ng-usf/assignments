@@ -5,20 +5,32 @@ import com.revature.util.IntCommand;
 
 import java.util.Arrays;
 
+/**
+ * A <code>Q1BubbleSort</code> sorts int[]s by comparison, default ascending order.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q1BubbleSort {
 	//    Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
+	/**
+	 * an <code>{@link IntCommand}</code> implementation returning true or
+	 * false depending on if a condition has been met.
+	 * By default, this is set to an instance of <code>{@link GreaterThan}</code>,
+	 * which sorts BubbleSort in ascending order
+	 */
 	private IntCommand comparison;
 
 	/**
 	 * Sets the comparison operator for sorting.
-	 * @param comparison an IntCommand implementation returning true or false depending on if a condition has been met.
+	 * @param comparison an <code>{@link IntCommand}</code> implementation returning true or
+	 *                   false depending on if a condition has been met.
 	 */
 	public void setComparison(IntCommand comparison) {
 		this.comparison = comparison;
 	}
 
 	/**
-	 * By default, this sets the comparison operator to GreaterThan. This sorts BubbleSort in ascending order.
+	 * By default, this sets the comparison operator to <code>{@link GreaterThan}</code>.
+	 * This sorts BubbleSort in ascending order.
 	 */
 	public Q1BubbleSort() {
 		comparison = new GreaterThan();

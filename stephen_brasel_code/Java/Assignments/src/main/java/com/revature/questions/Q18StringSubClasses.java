@@ -2,6 +2,15 @@ package com.revature.questions;
 
 import com.revature.util.Q18SuperClass;
 
+/**
+ * A <code>Q18StringSubClasses</code> provides functionality for the following:<br>
+ *     1. determining if a given <code>{@link String}</code> has uppercase chars in it.<br>
+ *     2. converting a given <code>{@link String}</code> to uppercase.<br>
+ *     and <br>
+ *     3. parsing a <code>{@link String}</code> to an <code>{@link Integer}</code> and adding another
+ *     <code>{@link Integer}</code> to it.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q18StringSubClasses extends Q18SuperClass {
 //    Q18. Write a program having a concrete ;subclass that inherits three abstract methods from a superclass.
 //    Provide the following three implementations in the subclass corresponding to the abstract methods in the superclass:

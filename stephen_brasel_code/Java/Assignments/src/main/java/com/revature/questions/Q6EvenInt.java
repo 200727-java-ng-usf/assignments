@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q6EvenInt</code> determines if a number is even.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q6EvenInt {
 //    Q6. Write a program to determine if an integer is even without using the modulus operator (%)
 

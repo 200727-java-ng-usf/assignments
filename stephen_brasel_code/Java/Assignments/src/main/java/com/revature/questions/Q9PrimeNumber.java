@@ -1,7 +1,14 @@
 package com.revature.questions;
 
+import com.revature.util.EmployeeComparator;
+
 import java.util.ArrayList;
 
+/**
+ * A <code>Q9PrimeNumber</code> creates an <code>{@link ArrayList}</code><<code>{@link Integer}</code>>
+ * which stores numbers from 1 to N and prints out all the prime numbers in that <code>ArrayList</code> to the console.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q9PrimeNumber {
 //    Q9. Create an ArrayList which stores numbers from 1 to 100 and
 //      prints out all the prime numbers to the console.

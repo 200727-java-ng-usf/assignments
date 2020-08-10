@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q16NumChars</code> determines the number of chars in a <code>{@link String}</code>.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q16NumChars {
 //    Q16. Write a program to display the number of characters for a string input.
 //    The string should be entered as a command line argument using (String [ ] args).

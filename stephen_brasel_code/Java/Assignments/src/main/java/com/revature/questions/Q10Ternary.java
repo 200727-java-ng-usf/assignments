@@ -1,5 +1,9 @@
 package com.revature.questions;
 
+/**
+ * A <code>Q10Ternary</code> determines if a number is less than another number.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q10Ternary {
 //    Q10. Find the minimum of two numbers using ternary operators.
 

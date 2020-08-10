@@ -2,6 +2,11 @@ package com.revature.questions;
 
 import java.util.Arrays;
 
+/**
+ * A <code>Q5SubString</code> provides a substring of a given <code>{@link String}</code> {@code str} up to
+ * a given index {@code idx}.
+ * @author stephen.brasel@gmail.com
+ */
 public class Q5SubString {
 //    Q5. Write a substring method that accepts a string str and an integer idx and
 //      returns the substring contained between 0 and idx-1 inclusive.
