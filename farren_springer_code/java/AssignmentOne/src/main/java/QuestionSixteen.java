@@ -1,8 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * This class has a method that calculates the number of characters in a string
+ * and a main method to demonstrate this.
+ */
 public class QuestionSixteen {
 
-    // Create a method that returns an integer
+    /**
+     * This method takes in a string and returns the number of characters in the string.
+     * @param str
+     * @return
+     */
     static int numberOfCharactersInString(String str) {
         int result = 0;
         for(int i = 0; i < str.length(); i++) {
@@ -11,23 +19,35 @@ public class QuestionSixteen {
             }
         }
         return result;
-    }
+    } // end numberOfCharactersInString
 
-    // Call the method in the main method
+    /**
+     * The main method demonstrates the use of the numberOfCharactersInString method.
+     * @param args
+     */
     public static void main(String[] args) {
 
-        // Create a Scanner object
+        /**
+         * This creates a Scanner object to take in user input.
+         */
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user for their string
+        /**
+         * This will ask the user for a string.
+         */
         System.out.print("What is your string: ");
 
-        // Assign the user input to the correct field
+        /**
+         * This will assign the user input to a String object.
+         */
         String userString = scanner.nextLine();
 
-        // Call the method
+        /**
+         * This will call the method and print the result to the console.
+         */
         System.out.println("Your string has " + numberOfCharactersInString(userString) + " characters.");
 
     } // end main
+
 } // end class
 // done
