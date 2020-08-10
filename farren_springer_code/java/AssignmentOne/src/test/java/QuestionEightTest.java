@@ -30,4 +30,12 @@ public class QuestionEightTest {
         String actualResult = sut.reverseIt("Yay");
         assertNotEquals(unexpectedResult, actualResult);
     }
+
+    // Negative test
+    @Test (expected = NullPointerException.class)
+    public void nullPassedToReverseItResultsInNullPointerException() {
+        String nullString = null;
+        String actualResult = sut.reverseIt(nullString);
+        assertNotEquals(nullString, actualResult);
+    }
 }
