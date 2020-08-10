@@ -26,8 +26,15 @@ public class QuestionNineTest {
     // Positive test
     @Test
     public void eightIsNotPrime() {
-        boolean unexpectedResult = true;
         boolean actualResult = sut.isPrime(8);
-        assertNotEquals(unexpectedResult, actualResult);
+        assertNotEquals(true, actualResult);
+    }
+
+    // Negative test
+    @Test (expected = NumberFormatException.class)
+    public void decimalNumberResultsInNumberFormatException() {
+        int nullValue = Integer.parseInt(String.valueOf(1.0));
+        boolean unexpectedResult = true;
+        boolean actualResult = sut.isPrime(nullValue);
     }
 }
