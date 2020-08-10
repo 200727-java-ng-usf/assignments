@@ -37,5 +37,6 @@ public class QuestionOne {
         System.out.println(Arrays.toString(bubbleSort(someInts)));
 
     } // end main
+
 } // end class
 // done

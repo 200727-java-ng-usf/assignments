@@ -1,5 +1,8 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class QuestionEighteenSubclassTest {
 
@@ -15,15 +18,15 @@ public class QuestionEighteenSubclassTest {
 //    public void hElloHasUpperCaseLetters() {
 //        boolean expectedResult = true;
 //        boolean actualResult = sut.hasUpperCaseLetters();
-//        assertEquals(expectedResult, actualResult);
+//        assertEquals(true, actualResult);
 //    }
 //
-//    @Test
-//    public void helloConvertedToUppercaseIsHELLO() {
-//        String expectedResult = "HELLO";
-//        String actualResult = sut.convertToUppercase();
-//        assertEquals(expectedResult, actualResult);
-//    }
+    @Test
+    public void helloConvertedToUppercaseIsHELLO() {
+        String expectedResult = "HELLO";
+        String actualResult = sut.convertToUppercase();
+        assertEquals(expectedResult, actualResult);
+    }
 //
 //    @Test
 //    public void testConvertToIntAndAddTen() {

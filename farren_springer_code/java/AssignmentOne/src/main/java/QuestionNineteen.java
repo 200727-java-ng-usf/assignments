@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.ArrayList;
 
 public class QuestionNineteen {
@@ -32,16 +31,17 @@ public class QuestionNineteen {
     }
 
     // Create a method to add the prime numbers
-    static int addPrimeNumbers (ArrayList<Integer> intArr) {
+    static ArrayList<Integer> removePrimeNumbers (ArrayList<Integer> intArr) {
         int result = 0;
 
         // Parse through the array
         for (int i = 0; i < intArr.size(); i++) {
             if(QuestionNine.isPrime(intArr.get(i))){
-                result += intArr.get(i);
+                System.out.println(intArr.get(i) + " is prime.");
+                intArr.remove(i);
             }
         }
-        return result;
+        return intArr;
     }
 
     public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class QuestionNineteen {
         System.out.println("Here is the sum of all of the odd numbers: " + addOddNumbers(theArray));
 
         // Print the sum of the prime numbers
-        System.out.println("Here is the sum of all of the prime numbers: " + addPrimeNumbers(theArray));
+        System.out.println("Here is the original ArrayList without the prime numbers: " + removePrimeNumbers(theArray));
 
     }
 

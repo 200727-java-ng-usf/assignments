@@ -36,7 +36,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
         String result;
         result = word.toUpperCase();
-        System.out.println("Here is the string in all upper-case: ");
+        System.out.println("Here is the string in all upper-case: " + result);
         return result;
 
     }

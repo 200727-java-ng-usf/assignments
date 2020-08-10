@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class has a main method that locates a text file and
+ * parses through each line and creates objects.
+ */
 public class QuestionTwenty {
 
     public static void main(String[] args) throws IOException {
@@ -31,10 +35,6 @@ public class QuestionTwenty {
 
                 // Create a user object and begin setting its field values using the String[]
                 QuestionTwentyCharacter user = new QuestionTwentyCharacter(userFields[0], userFields[1], Integer.parseInt(userFields[2]), userFields[3]);
-//                user.setFirstName(userFields[0]);
-//                user.setLastName(userFields[1]);
-//                user.setAge(Integer.parseInt(userFields[2]));
-//                user.setHomeState(userFields[3]);
 
                 // Add the created user to our list of users
                 characterList.add(user);
@@ -56,7 +56,6 @@ public class QuestionTwenty {
 
         // iterate across our list of users and print each one out to the console
 
-        // traditional for loop (any version of Java)
         for (int i = 0; i < characterList.size(); i++) {
             System.out.println(characterList.get(i) + "\n");
         }
@@ -64,4 +63,5 @@ public class QuestionTwenty {
     } // end main
 
 } // end class
+// done
 
