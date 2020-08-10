@@ -101,5 +101,9 @@ public class AssignmentDriver {
         System.out.println("Question 19: ");
         question19.oneToTenArray();
 
+        Q20 question20 = new Q20();
+        System.out.println("Question 20: ");
+        question20.readData();
+
     }
 }
