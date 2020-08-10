@@ -9,7 +9,6 @@ public class QuestionTwelve {
         int[] arr = new int[100]; //instantiated an int array with 100 open spaces
 
         Arrays.setAll(arr, i -> i + 1); // used lambda expression to place int 1 through 100 into the array
-
         System.out.println(Arrays.toString(arr)); //print out the arrays initial elements
 
             for (int i : arr) {
