@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import static com.revature.coreJavaAssign.q12StoreArray.*;
+import static com.revature.coreJavaAssign.q17intrest.q17interest;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
 import static com.revature.coreJavaAssign.q2Fibonacci.*;
 import static com.revature.coreJavaAssign.q3Reverse.*;
@@ -198,10 +199,8 @@ public class AppDriver extends q15Operators  {
         System.out.println("+--------------+");
         // q17 Intrest method
 
-
-
-
-
+        double q17Answer = q17intrest.q17interest();
+        System.out.println(q17Answer);
 
         System.out.println("+--------------+");
         // q18 Inherits method
@@ -217,6 +216,12 @@ public class AppDriver extends q15Operators  {
         System.out.println("+--------------+");
         // q19 ArrayList
         ArrayList<Integer> oneToTen = new ArrayList<>();
+        for(int i = 0; i <=10;i++){
+            oneToTen.add(i);
+        }
+        ArrayList<Integer> results = q19ArrayList.q19ArrayList(oneToTen);
+
+        System.out.println(results);
 
 
 
