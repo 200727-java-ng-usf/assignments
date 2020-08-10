@@ -11,19 +11,19 @@ public class AssignmentDriver {
         Q1 question1 = new Q1();
         int[] array1 = {1,0,5,6,3,2,3,7,9,8,4};
         System.out.println("Question 1: ");
-        question1.sortArray(array1);
+        System.out.println(question1.sortArray(array1));
 
         Q2 question2 = new Q2();
         System.out.println("Question 2: ");
-        question2.nFib(25);
+        System.out.println(question2.nFib(25));
 
         Q3 question3 = new Q3();
         System.out.println("Question 3: ");
-        question3.reverseAString("Hello");
+        System.out.println(question3.reverseAString("Hello"));
 
         Q4 question4 = new Q4();
         System.out.println("Question 4: ");
-        question4.nFactorial(5);
+        System.out.println(question4.nFactorial(5));
 
         Q5 question5 = new Q5();
         System.out.println("Question 5: ");

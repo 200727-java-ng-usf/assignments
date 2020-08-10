@@ -16,8 +16,8 @@ public class Q1 {
             }
         }
     }
-    public void sortArray(int arr[]) {
+    public String sortArray(int arr[]) {
         bubbleSort(arr);
-        System.out.println(Arrays.toString(arr));
+        return Arrays.toString(arr);
     }
 }

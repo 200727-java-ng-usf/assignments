@@ -1,7 +1,7 @@
 package assignment.questions;
 
 public class Q3 {
-    public void reverseAString(String str){
+    public StringBuilder reverseAString(String str){
         // creates a char list to keep the characters of the string
         char[] reverseString = new char[str.length()];
         //reverses the order of the char list
@@ -11,6 +11,6 @@ public class Q3 {
         //puts reversed char list back into a string
         StringBuilder finalString = new StringBuilder("");
         finalString.append(reverseString);
-        System.out.println(finalString);
+        return finalString;
     }
 }

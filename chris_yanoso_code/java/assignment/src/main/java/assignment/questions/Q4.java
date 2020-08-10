@@ -2,7 +2,7 @@ package assignment.questions;
 
 public class Q4 {
 
-    public void nFactorial(int n) {
+    public int nFactorial(int n) {
         int nFact = 1;
         int i = 1;
         while (i != n + 1) {
@@ -10,6 +10,6 @@ public class Q4 {
             nFact = nFact * i;
             i++;
         }
-        System.out.println(nFact);
+        return nFact;
     }
 }
