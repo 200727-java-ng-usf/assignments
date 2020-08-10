@@ -40,16 +40,16 @@ public class Q9PrimeNumber {
     }
 
     /**
-     * Returns true if the given input x is a prime number
-     * @param x the input to determine primality of.
-     * @return true if the input x is prime.
+     * Returns true if the given input n is a prime number
+     * @param n the input to determine primality of.
+     * @return true if the input n is prime.
      */
-    public static boolean isPrime(int x){
-        if(x <= 1) return false;
-        int halflen = x/2 + 1;
-        for(int i = 2; i < halflen; i++){
-            if(x%i == 0) return false;
-        }
+    public static boolean isPrime(int n){
+        if(n <= 1) return false;
+        if(n <= 3) return true;
+        if(n % 2 == 0 || n % 3 == 0) return false;
+        for(long i = 5; (i * i) <= n; i += 6)
+            if(n%i == 0 || n % (i + 2) == 0) return false;
         return true;
     }
 
