@@ -9,6 +9,7 @@
 package com.revature.question15;
 
 public interface Question15Interface {
+    //implicitly abstract methods to be defined by the class
     double addition(double someValue1, double someValue2);
     double subtraction(double someValue1, double someValue2);
     double multiplication(double someValue1, double someValue2);

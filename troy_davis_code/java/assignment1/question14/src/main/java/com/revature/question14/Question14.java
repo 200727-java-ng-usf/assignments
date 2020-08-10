@@ -51,19 +51,19 @@ public class Question14 {
 
     }
 
-    private double findSquareRoot(double findThis){
+    public double findSquareRoot(double findThis){
         double i = 0.00d;
         i = Math.sqrt(findThis);
         return i;
     }
-    private String getTodaysDate(){
+    public String getTodaysDate(){
         String returnString = "";
         DateFormat date = new SimpleDateFormat("dd/MM/yy");
         Date dateObject = new Date();
         returnString = date.format(dateObject);
         return returnString;
     }
-    private String[] splitThisString(String splitTHis){
+    public String[] splitThisString(String splitTHis){
         String[] returnString = splitTHis.split(",");
         return returnString;
     }

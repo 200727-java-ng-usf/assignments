@@ -9,15 +9,19 @@ package com.revature.question14Test;
 
 import com.revature.question14.Question14;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
+
+
 
 public class Question14Test {
     Question14 sut;
-
+    Mockito mockito;
     @Before
     public void setup(){
-
+        sut = new Question14();
     }
     @After
     public void tearDown(){
@@ -27,6 +31,6 @@ public class Question14Test {
     public void notNullTest(){
         String msg = "case 1: when given a number, it should find the known square root";
 
-        sut = new Question14();
     }
+
 }
