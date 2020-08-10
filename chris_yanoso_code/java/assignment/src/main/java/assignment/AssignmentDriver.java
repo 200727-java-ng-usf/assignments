@@ -97,6 +97,9 @@ public class AssignmentDriver {
         System.out.println("Your string in all caps: " + question18.stringToUpperCase(q18String));
         System.out.println("Your string as an integer plus 10 is: " + question18.stringToInt(q18String));
 
+        Q19 question19 = new Q19();
+        System.out.println("Question 19: ");
+        question19.oneToTenArray();
 
     }
 }
