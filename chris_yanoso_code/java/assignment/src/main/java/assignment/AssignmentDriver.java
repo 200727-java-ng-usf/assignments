@@ -80,13 +80,23 @@ public class AssignmentDriver {
 
         Q16 question16 = new Q16();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Question 16: ");
         System.out.println("Please enter a string:");
         String string = scanner.nextLine();
-        System.out.println(question16.charactersInString(string));
+        System.out.println("Your string is " + question16.charactersInString(string) + " characters long!");
 
         Q17 question17 = new Q17();
-        System.out.println("Please enter your principal:");
+        System.out.println("Question 17: ");
         question17.interestRate();
+
+        Q18 question18 = new Q18();
+        System.out.println("Question 18: ");
+        System.out.println("Please enter the string to be used: ");
+        String q18String = scanner.nextLine();
+        System.out.println("Does your string contain an uppercase letter = " + question18.checkForUpperCase(q18String));
+        System.out.println("Your string in all caps: " + question18.stringToUpperCase(q18String));
+        System.out.println("Your string as an integer plus 10 is: " + question18.stringToInt(q18String));
+
 
     }
 }
