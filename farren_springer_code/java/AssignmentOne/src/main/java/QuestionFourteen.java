@@ -10,22 +10,34 @@ public class QuestionFourteen {
      */
     public static double squareRoot() {
 
-        // Create Scanner object
+        /**
+         * Create a Scanner object.
+         */
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user for a number
+        /**
+         * Ask for user input.
+         */
         System.out.println("Enter a number: ");
 
-        // Take the user input as the number to square root
+        /**
+         * Assign the input to an integer variable.
+         */
         int num = scanner.nextInt();
 
-        // Take the square root
+        /**
+         * Use the Math class to find the square root of the number.
+         */
         double result = Math.sqrt(num);
 
-        // Show the user the result
+        /**
+         * Show the result to the user.
+         */
         System.out.println("Here is the square root of that number: " + result);
 
-        // return the result
+        /**
+         * Return the result.
+         */
         return result;
     }
 
@@ -35,16 +47,24 @@ public class QuestionFourteen {
      */
     public static String printTheDate() {
 
-        // Create a date format object
+        /**
+         * Create a SimpleDateFormat object and establish a pattern for the date.
+         */
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
-        // Create a date object
+        /**
+         * Create a date object.
+         */
         Date date = new Date();
 
-        // Show the user the result
+        /**
+         * Display the result to the console.
+         */
         System.out.println("Here is the current date: " + formatter.format(date));
 
-        // return the date
+        /**
+         * Return the date.
+         */
         return formatter.format(date);
 
     }
@@ -57,16 +77,24 @@ public class QuestionFourteen {
      */
     public static String[] splitTheString(String str, String delimitor) {
 
-        // The string to be split
+        /**
+         * Assign the string to the string asked for by the question.
+         */
         str = "I am learning Core Java";
 
-        // Split the string
+        /**
+         * Split the string into an array of strings.
+         */
         String[] splitStringArray = str.split(delimitor);
 
-        // Show the user the result
+        /**
+         * Display the result.
+         */
         System.out.println("The string has been split into a string array: " + Arrays.toString(splitStringArray));
 
-        // return the result
+        /**
+         * Return the result.
+         */
         return splitStringArray;
     }
 
@@ -76,21 +104,31 @@ public class QuestionFourteen {
      */
     public static void main(String[] args) {
 
-        // Explain what the method will do
+        /**
+         * Print the description of the program to the console.
+         */
         System.out.println("Case 1 will find the square root of a number.");
         System.out.println("Case 2 will print the date and time.");
         System.out.println("Case 3 will split the string: 'I am learning Core Java.'");
 
-        // Ask the user for input
+        /**
+         * Ask for user input to chose which case will run.
+         */
         System.out.println("\nWhich case would you like to execute? Enter 1, 2, or 3: ");
 
-        // Create a scanner object
+        /**
+         * Create a Scanner object to take in user input.
+         */
         Scanner scanner = new Scanner(System.in);
 
-        // Assign the user input to the case number
+        /**
+         * Assign the user input to the variable that will be used as a case number.
+         */
         int theCaseNumber = scanner.nextInt();
 
-        // Use the case number to decide what case to run
+        /**
+         * Use the case number from the user as the parameter for the switch case.
+         */
         switch (theCaseNumber) {
             case 1:
                 squareRoot();
