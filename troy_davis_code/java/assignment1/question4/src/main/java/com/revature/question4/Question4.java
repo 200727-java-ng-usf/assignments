@@ -8,11 +8,19 @@ public class Question4 {
     int numberToFactor;
     int factorialtoReturn;
 
-    public Question4(int numberToFactor) {
-        //store the initial value
-        this.numberToFactor = numberToFactor;
-        //get the factorial upon initialization
-        this.factorialtoReturn = findFactiroal(this.numberToFactor);
+    //constructor to generate factored number upon instantiation, based on parameter
+    public Question4(Integer numberToFactor) {
+        //check for null or zer, if so, no need to compute
+        if (numberToFactor == null || numberToFactor == 0){
+            this.numberToFactor = 0;
+            this.factorialtoReturn = 0;
+        } else {
+            //store the initial value
+            this.numberToFactor = numberToFactor;
+            //get the factorial upon initialization
+            this.factorialtoReturn = findFactiroal(this.numberToFactor);
+        }
+
     }
 
     private int findFactiroal(int someNumber){
@@ -26,6 +34,7 @@ public class Question4 {
 
         return factoredNumber;
     }
+    //generate getters and setters
     public double getNumberToFactor() {
         return numberToFactor;
     }
