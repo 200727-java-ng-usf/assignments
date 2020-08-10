@@ -35,11 +35,13 @@ public class q8Palindrome {
 
         //String word;this for loop will iterate through the array and determine
         // if the string goes to the palindromeList or justStringsa
-        //
+
         for (int i = 0; i < initialStrings.length ; i++) {
+            //this will take the string from the index of i
+            // and give it a refrence to be checked by our previous method
             String word = (String) Array.get(initialStrings, i);
 
-            //
+
             if (checkIfPalindrom(word) == true) {
                 palindromList.add(word);
               //  System.out.println(palindromList);

@@ -13,7 +13,7 @@ import static com.revature.coreJavaAssign.q6EvenNumber.*;
 import static com.revature.coreJavaAssign.q10Minimum.*;
 import static com.revature.coreJavaAssign.q11Float.*;
 import static com.revature.coreJavaAssign.q13Triangle.*;
-import static com.revature.coreJavaAssign.q8Palindrome.*;
+
 
 public class AppDriver extends q15Operators  {
 
@@ -138,6 +138,20 @@ public class AppDriver extends q15Operators  {
 
         System.out.println("+--------------+");
 
+        //q9 prime numbers start here
+        ArrayList<Integer> oneToHundred = new ArrayList<Integer>(100);
+
+        //this for loop will go through the arraylist and add a number in each place
+        //untill 100 is inside
+        for (int i =1;i <= 100;i++){
+            oneToHundred.add(i);
+        }
+        System.out.println(oneToHundred);
+        ArrayList<ArrayList<Integer>> primeAndNonPrime = q9Prime.q9PrimeN(oneToHundred);
+
+        System.out.println(primeAndNonPrime);
+
+        System.out.println("+--------------+");
 
 
         //Q10 Minimum number method starts here
@@ -176,11 +190,41 @@ public class AppDriver extends q15Operators  {
         System.out.println(operators.division(x,y));
         System.out.println(operators.multiplacation(x,y));
         System.out.println("+--------------+");
+        // q16 command line argument
+
+
+
+
+        System.out.println("+--------------+");
+        // q17 Intrest method
 
 
 
 
 
+
+        System.out.println("+--------------+");
+        // q18 Inherits method
+
+
+
+
+
+
+
+
+
+        System.out.println("+--------------+");
+        // q19 ArrayList
+        ArrayList<Integer> oneToTen = new ArrayList<>();
+
+
+
+
+
+
+        System.out.println("+--------------+");
+        // q20 Notepad method
 
 
     }
