@@ -2,10 +2,9 @@ package mainpackage;
 
 public class Nfactorial {
 
-    public void nFactorial() {
+    public double nFactorial(double factorial) {
 
         double n = 0;
-        double factorial;
 
         {
             int res = 1, i;
@@ -14,6 +13,7 @@ public class Nfactorial {
             factorial = res;
 
             System.out.println("n-factorial for " + n + " is " + factorial);
+            return factorial;
         }
 
     }

@@ -1,21 +1,21 @@
-import mainpackage.BubbleSort;
+
 import mainpackage.Nfactorial;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.*;
 
 public class FactorialTest {
     private Nfactorial sut;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         sut = new Nfactorial();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         sut = null;
     }
 
@@ -24,7 +24,7 @@ public class FactorialTest {
         String msg = "Should return the factorial result 10! = 3628800";
         double testNumber = 10;
         double expectedResult = 3628800;
-        assertArrayEquals(msg, expectedResult, sut.nFactorial(testNumber));
+        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class FactorialTest {
         String msg = "Should return the factorial result 4! = 24";
         double testNumber = 4;
         double expectedResult = 24;
-        assertArrayEquals(msg, expectedResult, sut.nFactorial(testNumber));
+        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class FactorialTest {
         String msg = "Should return 1";
         double testNumber = 0;
         double expectedResult = 1;
-        assertArrayEquals(msg, expectedResult, sut.nFactorial(testNumber));
+        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
     }
 
     @Test
@@ -48,6 +48,6 @@ public class FactorialTest {
         String msg = "Should return infinity";
         double testNumber = 425;
         double expectedResult = Double.POSITIVE_INFINITY;
-        assertArrayEquals(msg, expectedResult, sut.nFactorial(testNumber));
+        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.1);
     }
 }
