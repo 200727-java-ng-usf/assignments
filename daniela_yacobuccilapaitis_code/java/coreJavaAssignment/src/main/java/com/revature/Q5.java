@@ -7,7 +7,14 @@ package com.revature;
  */
 public class Q5 {
 
+    public String substring (String str, int idx) {
 
+        StringBuilder returnString = null;
 
+        for(int i = 0; i < idx ; i++) {
+            returnString.append(str.charAt(idx));
+        }
+        return returnString.toString();
+    }
 
 }

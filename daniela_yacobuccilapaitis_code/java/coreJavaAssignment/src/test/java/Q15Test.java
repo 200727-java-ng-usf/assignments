@@ -22,10 +22,22 @@ public class Q15Test {
 
     Q15 newObj = new Q15();
 
+    public static void main(String[] args) {
+
+        Q15Test testObj = new Q15Test();
+
+        testObj.testingAddition();
+        testObj.testingSubtraction();
+        testObj.testingMultiplication();
+        testObj.testingDivision();
+
+    }
+
     @Test
     public void testingAddition(){
         assertEquals("msg", 12.0,(newObj.addition(num1, num2)), 0.001);
     }
+
     @Test
     public void testingSubtraction(){
         assertEquals(4.0,(newObj.subtraction(num1, num2)), 0.001);
