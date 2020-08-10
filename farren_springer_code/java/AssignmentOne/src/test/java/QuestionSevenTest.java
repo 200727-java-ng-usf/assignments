@@ -14,10 +14,12 @@ public class QuestionSevenTest {
     @After
     public void tearDown() {  sut = null;  }
 
+    // Positive test
     @Test
     public void defaultConstructorSetsDepartmentToHumanResources() {
         String expectedResult = "Human Resources";
         String actualResult = sut.getDepartment();
         assertEquals(expectedResult, actualResult);
     }
+
 }

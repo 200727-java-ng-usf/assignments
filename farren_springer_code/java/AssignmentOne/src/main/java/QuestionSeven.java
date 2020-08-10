@@ -1,10 +1,4 @@
-import java.util.Comparator;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
-import java.util.*;
-import java.lang.*;
+import java.util.ArrayList;
 
 
 public class QuestionSeven {
@@ -80,4 +74,10 @@ public class QuestionSeven {
                 '}';
     }
 
+//    @Override
+//    public int compare(QuestionSeven emp1, QuestionSeven emp2) {
+//        if(emp1.getName() > emp2.getName()) {
+//            return 1;
+//        }
+//    }
 } // not done. Implement Comparator Interface

@@ -23,11 +23,12 @@ public class QuestionSixTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    // Negative Test
+    // Positive Test
     @Test
     public void fourDoesNotReturnFalse() {
         boolean unexpectedResult = false;
         boolean actualResult = sut.isEven(4);
         assertNotEquals(unexpectedResult, actualResult);
     }
+
 }

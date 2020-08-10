@@ -21,4 +21,5 @@ public class QuestionTenTest {
         int actualResult = sut.smallerInt(3,5);
         assertEquals(expectedResult, actualResult);
     }
+
 }

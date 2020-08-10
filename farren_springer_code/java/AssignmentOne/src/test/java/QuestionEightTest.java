@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionEightTest {
 
@@ -20,5 +21,13 @@ public class QuestionEightTest {
         String expectedResult = "yeH";
         String actualResult = sut.reverseIt("Hey");
         assertEquals(expectedResult, actualResult);
+    }
+
+    // Positive test
+    @Test
+    public void reverseofYayIsNotYay() {
+        String unexpectedResult = "Yay";
+        String actualResult = sut.reverseIt("Yay");
+        assertNotEquals(unexpectedResult, actualResult);
     }
 }
