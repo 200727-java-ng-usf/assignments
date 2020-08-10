@@ -48,7 +48,7 @@ public class T13TrianglePrint {
 	public void t13TrianglePoint(){
 		String[] strs = q13.triWhile(4);
 		for (String str : strs) {
-			Q13TrianglePrint.printSpacedOutStr(str);
+			Q13TrianglePrint.formatSpacedOutStr(str);
 		}
 		assertArrayEquals(new String[]{"0", "10", "101", "0101"}, strs);
 	}
@@ -59,14 +59,14 @@ public class T13TrianglePrint {
 		System.setErr(new PrintStream(errContent));
 		String[] strs = q13.triWhile(4);
 		for (String str : strs) {
-			System.out.println(Q13TrianglePrint.printSpacedOutStr(str));
+			System.out.println(Q13TrianglePrint.formatSpacedOutStr(str));
 		}
 		assertEquals(res, outContent.toString());
 
 		System.setOut(originalOut);
 		System.setErr(originalErr);
 		for (String str : strs) {
-			Q13TrianglePrint.printSpacedOutStr(str);
+			Q13TrianglePrint.formatSpacedOutStr(str);
 		}
 	}
 	//endregion

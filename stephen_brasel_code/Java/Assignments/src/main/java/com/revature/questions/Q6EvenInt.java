@@ -2,6 +2,12 @@ package com.revature.questions;
 
 public class Q6EvenInt {
 //    Q6. Write a program to determine if an integer is even without using the modulus operator (%)
+
+    /**
+     * Returns true if the input x is even.
+     * @param x the int to determine evenness.
+     * @return true if x is even.
+     */
     public boolean isEven(int x){
         /*
             Zero is an even number.

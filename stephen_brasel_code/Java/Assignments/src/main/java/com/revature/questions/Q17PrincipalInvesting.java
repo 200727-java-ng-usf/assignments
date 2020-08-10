@@ -10,10 +10,24 @@ public class Q17PrincipalInvesting {
 //    rate of interest and number of years provided by the user.
 //    Enter principal, rate and time through the console using the Scanner class.
 //    Interest = Principal* Rate* Time
+    /**
+     * The principal amount of capital.
+     */
     double principal = 0.0D;
+    /**
+     * The interest rate.
+     */
     double rate = 0.0D;
+    /**
+     * The time in years.
+     */
     int time = 0;
 
+    /**
+     * Parses user input into the <code>{@link #principal}</code>,
+     * <code>{@link #rate}</code>, and <code>{@link #time}</code> variables.
+     * @return the result of the operation<br>principal * rate * time
+     */
     public double UserEntry() {
         Scanner sc = new Scanner(System.in);
 //            return Double.parseDouble(sc.nextLine());
@@ -45,6 +59,17 @@ public class Q17PrincipalInvesting {
         return getInterest(principal, rate, time);
     }
 
+    /**
+     * Calculates and returns the amount of interest (but not compound interest) on a {@code principal} amount
+     *  multiplied by the interest {@code rate} times the {@code time} in years.
+     * @param _principal the principal amount of capital
+     * @param _rate the interest rate
+     * @param _time the number of years
+     * @return the result of the operation<br>principal * rate * time
+     * @throws ArithmeticException if the result of the operation <br>
+     *     principal * rate * time<br>
+     *     is <code>{@link Double#POSITIVE_INFINITY}</code> or <code>{@link Double#NEGATIVE_INFINITY}</code>.
+     */
     public double getInterest(double _principal, double _rate, int _time) throws ArithmeticException{
         //edge cases
         if(_principal < 0 || _rate < 0 || _time < 0) return 0.0f;

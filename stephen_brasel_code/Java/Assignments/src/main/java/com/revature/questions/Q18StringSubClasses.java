@@ -11,6 +11,12 @@ public class Q18StringSubClasses extends Q18SuperClass {
 //            3. Convert the input string to integer and add 10, output the result to the console.
 //
 //    Create an appropriate class having a main method to test the above setup.
+
+    /**
+     * Returns true if <code>{@link String}</code> {@code str} has any uppercase characters in it.
+     * @param str the <code>{@link String}</code> to check for uppercase characters.
+     * @return true if <code>{@link String}</code> {@code str} has any uppercase characters in it.
+     */
     @Override
     public boolean hasUpper(String str) {
         for(int i = 0; i < str.length(); i++){
@@ -19,8 +25,14 @@ public class Q18StringSubClasses extends Q18SuperClass {
         return false;
     }
 
+    /**
+     * Converts all lowercase characters in the input <code>{@link String}</code> {@code str} to uppercase,
+     * and returns the uppercase <code>{@link String}</code>.
+     * @param str the <code>{@link String}</code> to convert to uppercase
+     * @return the converted uppercase <code>{@link String}</code>.
+     */
     @Override
-    public String swapCase(String str) {
+    public String toUpperCase(String str) {
         StringBuffer strb = new StringBuffer();
         Character ch;
         for (int i = 0; i < str.length(); i++) {
@@ -33,8 +45,15 @@ public class Q18StringSubClasses extends Q18SuperClass {
         return strb.toString();
     }
 
+    /**
+     * Parses a <code><{@#link String}</code> {@code str} into in <code>{@link Integer}</code>,
+     * adds {@code N} to that parsed value, then returns the value.
+     * @param str the <code>{@link String}</code> to parse into an <code>{@link Integer}</code>
+     * @param N the addend.
+     * @return the result of parsed <code>{@link Integer}</code> {@code str} added to {@code N}.
+     */
     @Override
-    public Integer toIntAddN(String str, Integer N) {
+    public Integer toIntAddN(String str, Integer N) throws NumberFormatException{
         Integer ret = 0;
         try{
             ret = Integer.parseInt(str);

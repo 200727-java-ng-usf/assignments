@@ -100,6 +100,19 @@ public class T14SwitchCases {
 //		printStrArray(q14.getSplits());
 		assertArrayEquals(strs, q14.getSplits());
 	}
+
+	@Test
+	public void t14SwitchCasesSplitGiven(){
+		String[] strs = {"I", "am", "learning", "Core", "Java"};
+		String sentence = "I am learning Core Java";
+		q14.setSplitter(sentence);
+		q14.switcher(3);
+//		printStrArray(strs);
+
+		System.out.println(Arrays.toString(q14.getSplits()));
+//		printStrArray(q14.getSplits());
+		assertArrayEquals(strs, q14.getSplits());
+	}
 	//endregion
 
 	//region NEGATIVE_TESTS

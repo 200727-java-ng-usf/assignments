@@ -7,12 +7,19 @@ import java.util.Arrays;
 
 public class Q1BubbleSort {
 	//    Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
-	IntCommand comparison;
+	private IntCommand comparison;
 
+	/**
+	 * Sets the comparison operator for sorting.
+	 * @param comparison an IntCommand implementation returning true or false depending on if a condition has been met.
+	 */
 	public void setComparison(IntCommand comparison) {
 		this.comparison = comparison;
 	}
 
+	/**
+	 * By default, this sets the comparison operator to GreaterThan. This sorts BubbleSort in ascending order.
+	 */
 	public Q1BubbleSort() {
 		comparison = new GreaterThan();
 	}
@@ -25,6 +32,11 @@ public class Q1BubbleSort {
 //		return c.execute(i1, i2);
 //	}
 
+	/**
+	 * BubbleSort. This method copies the incoming array and returns a new, sorted int[].
+	 * @param arr the incoming int[] to be sorted.
+	 * @return a new int[]. If null is passed to the method, returns a new int[0].
+	 */
 	public int[] bubbleSort(int[] arr) {
 		//check for edge cases
 		if (arr == null || arr.length == 0) return new int[0];

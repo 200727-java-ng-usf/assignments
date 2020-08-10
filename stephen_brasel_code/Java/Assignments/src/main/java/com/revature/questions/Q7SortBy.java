@@ -8,6 +8,11 @@ import java.util.Collections;
 
 public class Q7SortBy /*extends Comparator<T>*/{
 //    Q7. Sort two employees based on their name, department, and age using the Comparator interface.
+
+    /**
+     * Sorts an ArrayList of Employees using an EmployeeComparator.
+     * @param people the ArrayList of Employees to sort.
+     */
     public void EmployeeSort(ArrayList<Employee> people){
 //        if (people[0].compare(people[0], people[1]) > 0) {
 //            Employee temp = people[0];

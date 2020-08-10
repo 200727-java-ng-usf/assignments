@@ -23,23 +23,33 @@ public class T17PrincipalInvesting {
 	private final InputStream originalIn = System.in;
 
 	@Before
-	public void t9Setup() {
+	public void t17Setup() {
 		q17 = new Q17PrincipalInvesting();
 		System.setOut(new PrintStream(outContent));
 		System.setErr(new PrintStream(errContent));
 	}
 
 	@After
-	public void t9TearDown() {
+	public void t17TearDown() {
 		q17 = null;
 		System.setOut(originalOut);
 		System.setErr(originalErr);
 		System.setIn(originalIn);
 	}
 
+	@Test
+	public void t17InputTest(){
+		String s = "100.0d\n0.07d\n2";
+		inContent = new ByteArrayInputStream(s.getBytes());
+		System.setIn(inContent);
+
+		double result = (q17.UserEntry());
+		assertEquals(14, result, 0.001D);
+	}
+
 	//region UTILITYTESTS
 	@Test
-	public void t9NotNull() {
+	public void t17NotNull() {
 		assertNotNull(q17);
 	}
 	//endregion

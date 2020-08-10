@@ -17,20 +17,46 @@ public class Q20DataBaseParsing {
 //    Name: Mickey Mouse
 //    Age: 35 years
 //    State: Arizona State
+
+    /**
+     * A data structure for holding information such as first names, last names, state of home address, and an age.
+     */
     public class Person{
+        /**
+         * The first name of the person.
+         */
         private String fname;
+        /**
+         * The last name of the person
+         */
         private String lname;
+        /**
+         * The state of this person's home address
+         */
         private String state;
+        /**
+         * The age of this person in years.
+         */
         private int age;
 
-    public Person(String fname, String lname, int age, String state) {
-        this.fname = fname;
-        this.lname = lname;
-        this.state = state;
-        this.age = age;
-    }
+        /**
+         * Constructs a new Person from the following data:
+         * @param fname the first name of the person
+         * @param lname the last name of the person
+         * @param age the state of this person's home address
+         * @param state the age of this person in years.
+         */
+        public Person(String fname, String lname, int age, String state) {
+            this.fname = fname;
+            this.lname = lname;
+            this.state = state;
+            this.age = age;
+        }
 
-    @Override
+        /**
+         * @return a string representation of this person including their name, age, and home state.
+         */
+        @Override
         public String toString() {
             return "Name: " + fname + " " + lname + '\n' +
                     "Age: " + age + " years\n" +
@@ -71,12 +97,26 @@ public class Q20DataBaseParsing {
 //        }
     }
 
+    /**
+     * A Storage space for the <code>{@link Person}</code>s being read from file.
+     */
     private ArrayList<Person> people;
 
+    /**
+     * @return the <code>{@link ArrayList}</code><<code>{@link Person}</code>> <code>{@link #people}</code>
+     *          that holds all of the <code>{@link Person}</code>s read from file.
+     */
     public ArrayList<Person> getPeople() {
         return people;
     }
 
+    /**
+     * Constructs a new instance of this class by populating <code>{@link #people}</code> with
+     * a list of <code>{@link Person}</code>s read from the file at {@code _filepath}.
+     * @param _filepath the path of the file holding <code>{@link Person}</code> data
+     *                  in ':' seperated values, i.e. <br><br>
+     *                  Wonder:Woman:18:Montana
+     */
     public Q20DataBaseParsing(String _filepath) {
         people = new ArrayList<>();
         String filepath = new File("").getAbsolutePath();

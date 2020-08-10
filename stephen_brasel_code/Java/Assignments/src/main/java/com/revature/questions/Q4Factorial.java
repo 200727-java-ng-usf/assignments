@@ -22,6 +22,11 @@ public class Q4Factorial {
 //        return FactorialGo(n, 1);
 //    }
 
+    /**
+     * Returns the factorial of the given input n.
+     * @param n the integer to produce the factorial of.
+     * @return the factorial of int n, or n!
+     */
     public int Factorial(int n){
         int ret = 1;
         for (int i = 1; i <= n; i++) {

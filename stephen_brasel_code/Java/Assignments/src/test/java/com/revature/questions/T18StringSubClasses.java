@@ -6,9 +6,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -52,20 +49,26 @@ public class T18StringSubClasses {
 
     @Test
     public void t19SwapCaseNo() {
-        String result = q18.swapCase("hello");
+        String result = q18.toUpperCase("hello");
         assertEquals("HELLO", result);
     }
 
     @Test
     public void t19SwapCaseYes() {
-        String result = q18.swapCase("HELLO12");
+        String result = q18.toUpperCase("HELLO12");
         assertEquals("HELLO12", result);
     }
 
     @Test
-    public void t19ToIntAddN() {
+    public void t19ToIntAddN() throws NumberFormatException {
         Integer i = q18.toIntAddN("31", 10);
         assert(Integer.compare(41, i) == 0);
+    }
+
+    @Test
+    public void t19ToIntAddMax() throws NumberFormatException {
+        Integer i = q18.toIntAddN("1", Integer.MAX_VALUE);
+        assertEquals(new Integer(Integer.MIN_VALUE), i);
     }
     //endregion
 
@@ -77,7 +80,7 @@ public class T18StringSubClasses {
 
     @Test
     public void t19SwapCaseNothing() {
-        String result = q18.swapCase("");
+        String result = q18.toUpperCase("");
         assertEquals("", result);
     }
 
