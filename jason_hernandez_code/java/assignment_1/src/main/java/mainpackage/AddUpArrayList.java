@@ -2,12 +2,13 @@ package mainpackage;
 import java.util.ArrayList;
 
 public class AddUpArrayList {
-    public void addUpArrayList() {
+    public int[] addUpArrayList() {
 
         // Initialize three arrayLists
         ArrayList<Integer> numbers3 = new ArrayList<Integer>(100);
         ArrayList<Integer> evenNumbers2 = new ArrayList<Integer>(50);
         ArrayList<Integer> oddNumbers = new ArrayList<Integer>(50);
+        int[] nonPrime = new int[100];
 
         // Populate the first array with integers 1 to 100
         for (int i = 1; i <= 100; i++)
@@ -40,9 +41,38 @@ public class AddUpArrayList {
             for (int h : evenNumbers2) {
                 sumOdd += h;
             }
-            System.out.println("Sum of Even numbers: " + sumEven);
-            System.out.println("Sum of odd numbers: " + sumOdd);
 
-            return;
+            // Remove prime numbers
+            for (int i = 1; i <= 100; i++) {
+
+                // Start each one at default setting false
+                boolean isPrime = false;
+
+                // Iterate through the numbers
+                numbers3.set(i, i);
+                for (j = 2; j < i; j++) {
+
+                    // Check for remainders
+                    if (i % j != 0) {
+                        // If a no-remainder division is found, number is not prime
+                        isPrime = true;
+                        break;
+                    }
+                    //If isPrime is true then the number is prime else not
+                    nonPrime = new int[0];
+                    if (isPrime)
+                        nonPrime[j] = numbers3.get(j);
+
+                    return nonPrime;
+                }
+
+
+                System.out.println("Sum of Even numbers: " + sumEven);
+                System.out.println("Sum of odd numbers: " + sumOdd);
+                System.out.println("The non-prime numbers are" + nonPrime);
+            }
         }
-    }}
+
+        return nonPrime;
+    }
+}
