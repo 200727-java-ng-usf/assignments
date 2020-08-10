@@ -1,6 +1,7 @@
 package com.revature;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 public class Q9Test {
     Q9 showTest;
     ArrayList<Integer> primeNum;
+    ArrayList<Integer> result = new ArrayList<Integer>();
 
     @Before
     public void setShowTest(){
@@ -24,6 +26,9 @@ public class Q9Test {
 
         primeNum.add(2);
         primeNum.add(3);
-       showTest.printPrime(primeNum);
+        result.add(2);
+        Assert.assertNotNull(showTest.printPrime(primeNum));
+        Assert.assertEquals(result,showTest.printPrime(primeNum));
+
     }
 }

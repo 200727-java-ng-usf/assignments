@@ -21,7 +21,9 @@ public class Q6Test {
         @Test
         public void isEven() {
             int number =6;
+            int number2 =1;
             assertTrue(showTest.isEven(number));
+            assertFalse(showTest.isEven(number2));
 
     }
 }

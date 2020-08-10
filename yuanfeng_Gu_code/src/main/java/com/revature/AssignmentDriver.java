@@ -3,9 +3,7 @@ package com.revature;
 import com.revature.Q15.Calculator;
 import com.revature.Q18.stringImplement;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.TreeSet;
+import java.util.*;
 
 public class AssignmentDriver {
     public static void main(String[] args) {
@@ -29,8 +27,11 @@ public class AssignmentDriver {
             System.out.println(" ");
             System.out.println("Total 20 Questions,Enter 0 to exit");
             System.out.print("please Enter the number 1-20: ");
+            try{
             Scanner sc = new Scanner(System.in);
-            option = sc.nextInt();
+            option = sc.nextInt();}catch (InputMismatchException e){
+                e .printStackTrace();
+            }
             switch (option) {
                 case 1:q1();break;
                 case 2:q2();break;
@@ -65,8 +66,11 @@ public class AssignmentDriver {
             int[] arrayNum = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
             int[] result = showResult.BubbleSort(arrayNum);
             System.out.print("BubbleSort ：");
+            try{
             for (int i = 0; i < arrayNum.length; i++) {
                 System.out.print(result[i] + " ");
+            }}catch (NullPointerException e){
+                e.printStackTrace();
             }
         }
 
@@ -104,9 +108,16 @@ public class AssignmentDriver {
         }
         static void q6 () {
             Q6 showResult = new Q6();
-            Scanner scanner = new Scanner(System.in);
+            int number = 0;
+     
             System.out.println("Please Enter a number: ");
-            int number = scanner.nextInt();
+            try {
+                Scanner scanner = new Scanner(System.in);
+                number = scanner.nextInt();
+            }catch (InputMismatchException e){
+                e.printStackTrace();
+            }
+            
             if (showResult.isEven(number) == true) {
                 System.out.println("The number is Even");
             } else {
@@ -120,11 +131,13 @@ public class AssignmentDriver {
             Q7 employee1 = new Q7("Justin", "IT", 30);
             Q7 employee2 = new Q7("Dave", "Sales", 20);
             Q7 employee3 = new Q7("Leo", "IT", 50);
-
-
-            empCompare.add(employee1);
-            empCompare.add(employee2);
-            empCompare.add(employee3);
+            try {
+                empCompare.add(employee1);
+                empCompare.add(employee2);
+                empCompare.add(employee3);
+            }catch (NullPointerException e){
+                e.printStackTrace();
+            }
 
             System.out.println(" -------- Employee list ---------------");
             System.out.println("");
@@ -142,13 +155,22 @@ public class AssignmentDriver {
         static void q9 () {
             Q9 showResult = new Q9();
             Integer[] arrayNum = new Integer[99];
-            ArrayList<Integer> primeNum = new ArrayList<Integer>();
+            ArrayList<Integer> printNum = new ArrayList<Integer>();
+            ArrayList<Integer> prime = new ArrayList<Integer>();
+
             for (int i = 0; i < arrayNum.length; i++) {
                 arrayNum[i] = i + 1;
-                primeNum.add(arrayNum[i]);
-
+                printNum.add(arrayNum[i]);
             }
-            showResult.printPrime(primeNum);
+            try {
+                prime = showResult.printPrime(printNum);
+            }catch (NullPointerException e){
+                e.printStackTrace();
+            }
+            Iterator iterator = prime.iterator();
+            while (iterator.hasNext()){
+                System.out.print(iterator.next()+" ");
+            }
         }
         static void q10 () {
             Q10 showResult = new Q10();
@@ -163,12 +185,17 @@ public class AssignmentDriver {
 
         static void q12 () {
             Q12 showResult = new Q12();
+            ArrayList<Integer> printArr = new ArrayList<>();
 
             int[] arr = new int[101];
             for (int i = 0; i < 100; i++) {
                 arr[i] = i + 1;
             }
-            showResult.printEven(arr);
+            printArr=showResult.printEven(arr);
+            Iterator iterator = printArr.iterator();
+            while (iterator.hasNext()){
+                System.out.print(iterator.next()+ " ");
+            }
         }
         static void q13 () {
             Q13 showResult = new Q13();
