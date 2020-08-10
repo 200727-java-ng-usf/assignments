@@ -2,45 +2,32 @@ package mainpackage;
 
 public class ArithmeticImpl implements Arithmetic {
 
-    float implementArithmetic() {
-        float firstNumber;
-        float secondNumber;
+    void implementArithmetic() {
 
-        public float getFirstNumber () {
-        return firstNumber;
-    }
-
-        public void setFirstNumber (firstNumber){
-        this.firstNumber = firstNumber;
-    }
-
-        public float getSecondNumber () {
-        return secondNumber;
-    }
-
-        public void setSecondNumber (secondNumber) {
-                this.secondNumber = secondNumber;
-    }
     }
 
     @Override
-    public void addUp() {
+    public float addUp() {
         float sum = firstNumber + secondNumber;
+        return sum;
     }
 
     @Override
-    public void subtractIt() {
+    public float subtractIt() {
         float difference = firstNumber - secondNumber;
+        return difference;
     }
 
     @Override
-    public void multiplyIt() {
+    public float multiplyIt() {
         float product = firstNumber * secondNumber;
+        return product;
     }
 
     @Override
-    public void divideBy() {
+    public float divideBy() {
         float quotient = firstNumber / secondNumber;
+        return quotient;
     }
 
 
