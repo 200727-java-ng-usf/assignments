@@ -4,7 +4,7 @@ public class Question3Test {
 
 
     @Test
-    public void question3Test(){
+    public void reverseString(){
         //Question 3 test
         Question3 question3 = new Question3();
 
@@ -18,7 +18,7 @@ public class Question3Test {
 
     //Negative test. The output should not match unexpected output
     @Test
-    public void question3Test2() {
+    public void reverseStringShouldBeFalse() {
         Question3 question3 = new Question3();
         String input = "This is a Str!ng";
         StringBuilder unExpectedOutput = new StringBuilder("This should not work");
