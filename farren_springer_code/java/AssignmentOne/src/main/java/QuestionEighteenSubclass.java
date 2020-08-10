@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * This class implements three methods from the abstract class QuestionEighteen and has
+ * a main method to demonstrate their execution on a QuestionEighteenSubclass object.
+ */
 public class QuestionEighteenSubclass extends QuestionEighteen {
 
     String word;
@@ -26,7 +30,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
             return false;
         }
         else {
-            System.out.println("The string has " + counter + " upper-case letters.");
+            System.out.println("The string has " + counter + " upper-case letter(s).");
             return true;
         }
     }
@@ -56,14 +60,14 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
     public static void main(String[] args) {
 
-        // displays a message to the user to enter a string.
+        // Asks the console to enter a string.
         System.out.println("Enter a string: ");
 
-        // takes the input from the user and assigns it to a userWord string variable.
+        // takes the input and assigns it to a userWord string variable.
         Scanner scanner = new Scanner(System.in);
         String userWord = scanner.nextLine();
 
-        // create an object of the QuestionEighteenSubclass whose value is the userWord.
+        // creates an object of the QuestionEighteenSubclass whose value is the userWord.
         QuestionEighteenSubclass theWord = new QuestionEighteenSubclass(userWord);
 
         System.out.println(theWord.hasUpperCaseLetters());

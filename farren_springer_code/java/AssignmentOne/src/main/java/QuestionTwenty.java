@@ -60,7 +60,17 @@ public class QuestionTwenty {
             System.out.println(characterList.get(i) + "\n");
         }
 
+//        System.out.println(printResult(characterList));
+
     } // end main
+
+//    public static String printResult(List<QuestionTwentyCharacter> theList) {
+//        String result = "";
+//        for (int i = 0; i < theList.size(); i++) {
+//            result.concat(theList.get(i) + "\n");
+//        }
+//        return result;
+//    }
 
 } // end class
 // done

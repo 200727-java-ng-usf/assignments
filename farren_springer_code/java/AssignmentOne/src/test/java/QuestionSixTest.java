@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionSixTest {
 
@@ -23,4 +24,10 @@ public class QuestionSixTest {
     }
 
     // Negative Test
+    @Test
+    public void fourDoesNotReturnFalse() {
+        boolean unexpectedResult = false;
+        boolean actualResult = sut.isEven(4);
+        assertNotEquals(unexpectedResult, actualResult);
+    }
 }

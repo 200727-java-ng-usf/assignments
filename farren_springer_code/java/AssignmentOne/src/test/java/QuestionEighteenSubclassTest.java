@@ -16,20 +16,21 @@ public class QuestionEighteenSubclassTest {
 
 //    @Test
 //    public void hElloHasUpperCaseLetters() {
-//        boolean expectedResult = true;
 //        boolean actualResult = sut.hasUpperCaseLetters();
 //        assertEquals(true, actualResult);
 //    }
 //
-    @Test
-    public void helloConvertedToUppercaseIsHELLO() {
-        String expectedResult = "HELLO";
-        String actualResult = sut.convertToUppercase();
-        assertEquals(expectedResult, actualResult);
-    }
-//
 //    @Test
-//    public void testConvertToIntAndAddTen() {
+//    public void hElloConvertedToUppercaseIsHELLO() {
+//        String expectedResult = "HELLO";
+//        String actualResult = sut.convertToUppercase();
+//        assertEquals(expectedResult, actualResult);
 //    }
+//
+    @Test
+    public void hElloConvertedToAnIntPlus10Is107() {
+        int actualResult = sut.convertToIntAndAddTen();
+        assertEquals(107, actualResult);
+    }
 }
 
