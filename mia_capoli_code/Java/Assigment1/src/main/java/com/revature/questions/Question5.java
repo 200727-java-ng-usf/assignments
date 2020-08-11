@@ -8,9 +8,15 @@ public class Question5 {
         //use a stringbuilder class to get indexes of the string's individual characters
         StringBuilder holder = new StringBuilder("");
         //for each character that is defined in the provided int, store the character in the prefix string.
-        for(int i = 0; i < idx; i++) {
-            holder.append(str.charAt(i));
-            prefix = holder.toString();
+        if (str == "") {
+            return prefix;
+        } else if (str == null) {
+            return prefix;
+        } else {
+            for (int i = 0; i < idx; i++) {
+                holder.append(str.charAt(i));
+                prefix = holder.toString();
+            }
         }
         //return the string.
         return prefix;

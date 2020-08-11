@@ -6,10 +6,13 @@ public class Question2 {
     // getting the utility method "print values"
     Assignment1Driver printValues = new Assignment1Driver();
 
-    public void fibonacciSequence() {
+    public int[] fibonacciSequence(int arrSize) {
         //initializing the array
-        Integer[] fibonacciArray = new Integer[25];
-        for (int i = 0; i < 25; ++i) {
+        int[] fibonacciArray = new int[arrSize];
+        if (arrSize == 0) {
+            return fibonacciArray;
+        }
+        for (int i = 0; i < arrSize; ++i) {
             //inputting the first 3 numbers that are not easily calculated
             if (i == 0) {
                 fibonacciArray[0] = 0;
@@ -23,6 +26,6 @@ public class Question2 {
             }
         }
         //printing the values.
-        this.printValues.printObjs(fibonacciArray);
+        return fibonacciArray;
     }
 }

@@ -2,7 +2,7 @@ package com.revature.questions;
 
 public class Question3 {
 
-    public void stringReverse (String str) {
+    public String stringReverse (String str) {
         //creating stringbuilder holders to help reverse the array
         StringBuilder reverser = new StringBuilder("");
         StringBuilder reversedString = new StringBuilder("");
@@ -14,7 +14,7 @@ public class Question3 {
         }
         //convert result to a string.
         String finalString = reversedString.toString();
-        System.out.println(finalString);
+        return finalString;
 
     }
 
