@@ -10,6 +10,13 @@ import java.util.ArrayList;
 
  */
 public class Q8 {
-    ArrayList<String> allStrings  = new ArrayList<String>();
-    ArrayList<String> palindromes = new ArrayList<String>();
+
+    public static void main(String[] args) {
+
+        ArrayList<String> allStrings = new ArrayList<>();
+        ArrayList<String> palindromes = new ArrayList<>();
+
+        allStrings.add("karan");
+    }
+
 }

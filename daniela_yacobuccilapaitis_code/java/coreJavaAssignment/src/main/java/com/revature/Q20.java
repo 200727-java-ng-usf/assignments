@@ -1,5 +1,8 @@
 package com.revature;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 /*
     Q20. Create a notepad file called Data.txt and enter the following:
 
@@ -17,4 +20,9 @@ package com.revature;
 
  */
 public class Q20 {
+
+    public static void main(String[] args) {
+
+        BufferedReader br = new BufferedReader(new FileReader(Q20_text.txt));
+    }
 }

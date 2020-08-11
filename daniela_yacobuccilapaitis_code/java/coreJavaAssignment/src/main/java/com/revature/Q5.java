@@ -7,14 +7,20 @@ package com.revature;
  */
 public class Q5 {
 
-    public String substring (String str, int idx) {
+    public static String substring(String str, int idx) {
 
-        StringBuilder returnString = null;
+        StringBuilder returnString = new StringBuilder("");
 
         for(int i = 0; i < idx ; i++) {
-            returnString.append(str.charAt(idx));
+            returnString.append(str.charAt(i));
         }
         return returnString.toString();
     }
+
+    public static void main(String[] args) {
+        String a = "beaniE";
+        System.out.println(substring(a, 3));
+    }
+
 
 }
