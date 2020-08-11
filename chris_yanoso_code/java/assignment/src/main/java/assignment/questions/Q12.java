@@ -11,9 +11,9 @@ public class Q12 extends Q6 {
             oneHundred.add(i);
         }
         for(Integer n: oneHundred){
-           if (isEven(n)){
-               evenNumbers.add(n);
-           }
+                if (isEven(n)){
+                    evenNumbers.add(n);
+                }
         }
         for(Integer m: evenNumbers){
             System.out.print(m + ",");

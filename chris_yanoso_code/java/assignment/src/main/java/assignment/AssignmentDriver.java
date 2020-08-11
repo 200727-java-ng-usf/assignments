@@ -78,7 +78,7 @@ public class AssignmentDriver {
         question11.accessFloats();
 
         Q12 question12 = new Q12();
-        System.out.println("Question 12: ");
+        System.out.println("\nQuestion 12: ");
         question12.even100();
 
         Q13 question13 = new Q13();
