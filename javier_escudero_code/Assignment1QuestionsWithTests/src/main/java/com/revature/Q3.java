@@ -1,7 +1,7 @@
 package com.revature;
 
 public class Q3 {
-    public void reverseString(String str) {
+    public String reverseString(String str) {
         // save the string length for future use.
         int stringLength = str.length();      // If "abc", length = 3
         int startingIndex = stringLength - 1;  // If "abc", startingIndex = 2
@@ -20,14 +20,13 @@ public class Q3 {
         }
 
         //puts reversed char list back into a string
-        StringBuilder finalString = new StringBuilder("");
-        finalString.append(reverseStr);
-        System.out.println(finalString);
+        System.out.println("" + String.valueOf(reverseStr));
+        return str;
     }
 
-    public static void main(String[] args) {
-        Q3 q3 = new Q3();
-        q3.reverseString("abc d123");
-
-    }
+//    public static void main(String[] args) {
+//        Q3 q3 = new Q3();
+//        q3.reverseString("abc d123");
+//
+//    }
 }
