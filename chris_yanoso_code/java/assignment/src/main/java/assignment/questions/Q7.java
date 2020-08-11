@@ -15,13 +15,9 @@ import java.util.function.ToLongFunction;
 
 public class Q7  {
 
-    public void sortEmployees(){
+    public void sortEmployees(ArrayList em){
         //creating employee list
-        Employee John = new Employee("John Doe", "Cashier", 20);
-        Employee Jane = new Employee("Jane Doe", "Manager", 28);
-        ArrayList<Employee> em = new ArrayList<Employee>();
-        em.add(John);
-        em.add(Jane);
+
         //using the collections class, created new classes
         // each class will access the employee objs and compare them to each other
         // it will return a number for collections.sort to sort the array

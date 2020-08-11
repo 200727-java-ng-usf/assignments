@@ -1,7 +1,9 @@
 package assignment;
 
 import assignment.questions.*;
+import assignment.questions.question7.Employee;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,18 +40,36 @@ public class AssignmentDriver {
 
         Q7 question7 = new Q7();
         System.out.println("Question 7: ");
-        question7.sortEmployees();
+        Employee John = new Employee("John Doe", "Cashier", 20);
+        Employee Jane = new Employee("Jane Doe", "Manager", 28);
+        ArrayList<Employee> em = new ArrayList<Employee>();
+        em.add(John);
+        em.add(Jane);
+        question7.sortEmployees(em);
 
         Q8 question8 = new Q8();
         System.out.println("Question 8: ");
-        question8.palindromeTest();
+        ArrayList<String> stringList = new ArrayList<>(11);
+        //couldn't figure out to add strings all at once so did individually
+        stringList.add("karan");
+        stringList.add("madam");
+        stringList.add("tom");
+        stringList.add("civic");
+        stringList.add("radar");
+        stringList.add("jimmy");
+        stringList.add("kayak");
+        stringList.add("john");
+        stringList.add("refer");
+        stringList.add("billy");
+        stringList.add("did");
+        question8.palindromeTest(stringList);
 
         Q9 question9 = new Q9();
-        System.out.println("Question 9: ");
-        question9.primeNumbers();
+        System.out.println("\nQuestion 9: ");
+        question9.primeNumbers(100);
 
         Q10 question10 = new Q10();
-        System.out.println("Question 10: ");
+        System.out.println("\nQuestion 10: ");
         int num10 = question10.findMin(5,6);
         System.out.println("minimum number is: " + num10);
 

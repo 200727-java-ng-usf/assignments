@@ -4,37 +4,37 @@ import java.util.ArrayList;
 
 public class Q9 {
 
-    public void primeNumbers(){
+    public void primeNumbers(int n){
         ArrayList<Integer> primeNums = new ArrayList<>();
-        ArrayList<Integer> nums = new ArrayList<>(100);
+        ArrayList<Integer> nums = new ArrayList<>(n);
         //fills array from 1-100
-        for(Integer i = 1; i < 101; i ++){
+        for(Integer i = 1; i < n + 1; i ++){
             nums.add(i);
         }
         //test each individual number if prime
-        for (int n = 0; n < nums.size(); n++) {
-            if(prime(nums.get(n))){
-                primeNums.add(nums.get(n));
+        for (int j = 0; j < nums.size(); j++) {
+            if(prime(nums.get(j))){
+                primeNums.add(nums.get(j));
             }
 
         }
 
-        System.out.println(primeNums);
+        System.out.print(primeNums);
 
     }
 
-    public static boolean prime(int n){
+    public static boolean prime(int j){
         //1 is not prime
-        if (n == 1){
+        if (j == 1){
             return false;
         }
         //evens are not prime
-        else if (n%2 == 0){
+        else if (j%2 == 0){
             return false;
         }
         //divides by everything below the numbers square root to test for primes
-        for (int i =2; i <= Math.sqrt(n); i++){
-            if (n % i == 0){
+        for (int i =2; i <= Math.sqrt(j); i++){
+            if (j % i == 0){
                 return false;
             }
 
