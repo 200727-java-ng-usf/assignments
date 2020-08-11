@@ -6,15 +6,15 @@
            	“I am learning Core Java”
  */
 package com.revature.question14;
-
-
-import java.io.Console;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
-import java.util.Scanner;
+
 
 public class Question14 {
     private int caseNUmber;
@@ -24,65 +24,74 @@ public class Question14 {
 
     public Question14(){
         //start from console
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        //perform the switch evaluation upon instantiation
         System.out.println("please enter a case number from 1 to 3: ");
         try {
-            caseNUmber = Integer.parseInt(scanner.next());
+            //get the case number
+            caseNUmber = Integer.parseInt(reader.readLine());
             switch (caseNUmber){
                 case 1:{
                     System.out.println("please enter a number to find the square root of: ");
-                    int someThingToTest = Integer.parseInt(scanner.next());
+                    //parse the given return and cast it to an int
+                    int someThingToTest = Integer.parseInt(reader.readLine());
+                    //invoke the method to find the square root and store the return in the class field
                     caseOne = findSquareRoot(someThingToTest);
                     System.out.println("The square root is: " + caseOne);
                     break;
                 }
                 case 2:{
+                    //invoke the method to find today's date and store the return in the class field
                     todaysDate = getTodaysDate();
                     System.out.println("Today's date is: " + todaysDate);
                     break;
                 }
                 case 3:{
                     System.out.println("Please enter string to store in array");
-                    String toSplit = scanner.next();
+                    //get the string to split
+                    String toSplit = reader.readLine();
+                    //invoke the method to split the given string and store the return in the class field
                     splitStringArray = splitThisString(toSplit);
-                    System.out.println("the split string is: " + splitStringArray);
+                    System.out.println("the split string is: " + Arrays.toString(splitStringArray));
                     break;
                 }
             }
-        }catch (Exception e){
+        }catch (IOException e){
+            //print the stack trace
             e.printStackTrace();
-            System.out.println("something went wrong ");
+            System.out.println("please enter valid responses!");
         }
 
     }
 
     public double findSquareRoot(double findThis){
-        double i = 0.00d;
-        i = Math.sqrt(findThis);
-        return i;
+        //find square root using the Java Math Class
+        return Math.sqrt(findThis);
     }
     public String getTodaysDate(){
+        //create empty string
         String returnString = "";
+        //create new date format object
         DateFormat date = new SimpleDateFormat("dd/MM/yy");
+        //create new date object
         Date dateObject = new Date();
+        //return the string with the correct format
         returnString = date.format(dateObject);
         return returnString;
     }
     public String[] splitThisString(String splitTHis){
-        String[] returnString = splitTHis.split(" ",10);
-        for(String str:returnString){
-            System.out.println(str);;
-        }
+        //split the string using spaces as the delimiter
+        String[] returnString = splitTHis.split(" ");
+        //return the string
         return returnString;
     }
 
+    //Generated getters and setters
     public int getCaseNUmber() {
         return caseNUmber;
     }
 
-    public void setCaseNUmber(int caseNUmber) {
-        this.caseNUmber = caseNUmber;
-    }
+    public void setCaseNUmber(int caseNUmber) { this.caseNUmber = caseNUmber; }
 
     public double getCaseOne() {
         return caseOne;
@@ -122,4 +131,13 @@ public class Question14 {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Question14{" +
+                "caseNUmber=" + caseNUmber +
+                ", caseOne=" + caseOne +
+                ", todaysDate='" + todaysDate + '\'' +
+                ", splitStringArray=" + Arrays.toString(splitStringArray) +
+                '}';
+    }
 }

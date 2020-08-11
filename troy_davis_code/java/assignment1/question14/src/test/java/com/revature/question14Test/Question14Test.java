@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
@@ -45,7 +46,7 @@ public class Question14Test {
     public void case3Test(){
         String msg = "case3: when given a String, the class should store it in a split string array";
         String[] proof = {"i", "am", "learning", "core", "java"};
-        input = "3\n i am learning core java \n";
+        input = "3\ni am learning core java\n";
         inContent = new ByteArrayInputStream(input.getBytes());
         System.setIn(inContent);
         sut = new Question14();
