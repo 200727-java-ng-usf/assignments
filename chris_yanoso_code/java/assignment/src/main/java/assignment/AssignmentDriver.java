@@ -27,7 +27,9 @@ public class AssignmentDriver {
 
         Q5 question5 = new Q5();
         System.out.println("Question 5: ");
-        question5.partOfString();
+        String str = "random";
+        int idx = 4;
+        question5.partOfString(str,idx);
         System.out.println("");
 
         Q6 question6 = new Q6();

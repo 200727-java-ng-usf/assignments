@@ -2,11 +2,11 @@ package assignment.questions;
 
 public class Q5 {
 
-    public void partOfString(){
+    public void partOfString(String str, int idx){
         //custom string
-        String str = "random";
+        //String str = "random";
         //custom index
-        int idx = 4;
+        //int idx = 4;
         //prints out each character from 0 to idx
         for (int i = 0; i < idx + 1; i++){
             char c = str.charAt(i);
