@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -12,12 +13,18 @@ public class QuestionTwelve {
      * @param length
      * @return
      */
-    public static void arrayOperations (int length){
+    public static int[] arrayOperations (int length){
 
         /**
-         * This declares an integer array of a length specified by the method implementation.
+         * This declares an integer array of a length specified by the method implementation. We also
+         * declare an ArrayList object that will hold the even numbers. Since this must be dynamically
+         * sizeable, we make an ArrayList rather than an array. Next, we initialize a counter integer
+         * variable that will increment when we find an even number in the integer array to 0.
+         * This counter will be used to show the length of the integer array.
          */
         int[] theIntArray = new int[length];
+        ArrayList<Integer> resultArrayList = new ArrayList<>();
+        int countNumberOfEvenNumbers = 0;
 
         /**
          * Parse through the array and store consecutive values.
@@ -34,23 +41,39 @@ public class QuestionTwelve {
         /**
          * Print the even numbers to the console.
          */
-        System.out.print("Here is a list of the even numbers in the array: ");
+        System.out.print("Here are the even numbers in the array: ");
+
         for(int i : theIntArray) {
             /**
-             * If the integer at each index divided by two has a zero remainder, print it.
+             * If the integer at each index divided by two has a zero remainder, increment the counter and
+             * add the even number to the resultArrayList.
              */
             if(theIntArray[i-1]%2 == 0){
-
-                System.out.print(theIntArray[i-1]);
-
-            }
-            else {
-                /**
-                 * This puts space where there would be an odd number.
-                 */
-                System.out.print(" ");
+                countNumberOfEvenNumbers++;
+                resultArrayList.add(theIntArray[i-1]);
             }
         }
+
+        /**
+         * Initialize a result integer array to the length of the number of even numbers to return it
+         * to the method.
+         */
+        int[] resultArray = new int[countNumberOfEvenNumbers];
+
+        /**
+         * For each element in resultArrayList,
+         */
+        for(int i = 0; i < countNumberOfEvenNumbers; i++) {
+            resultArray[i] = resultArrayList.get(i);
+            System.out.print(resultArray[i] + " ");
+        }
+
+        /**
+         * Return the resultArray.
+         */
+        return resultArray;
+
+
 
     } // end arrayOperations
 
@@ -63,7 +86,13 @@ public class QuestionTwelve {
         /**
          * Pass 100 as the integer parameter of the method.
          */
-        arrayOperations(100);
+        try {
+            arrayOperations(100);
+        } catch (NullPointerException npe) {
+            npe.printStackTrace();
+            System.out.println("Null Pointer exception!");
+        }
+
 
     } // end main
 

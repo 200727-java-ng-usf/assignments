@@ -1,8 +1,5 @@
 import org.junit.After;
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class QuestionEighteenSubclassTest {
 
@@ -27,10 +24,10 @@ public class QuestionEighteenSubclassTest {
 //        assertEquals(expectedResult, actualResult);
 //    }
 //
-    @Test
-    public void hElloConvertedToAnIntPlus10Is107() {
-        int actualResult = sut.convertToIntAndAddTen();
-        assertEquals(107, actualResult);
-    }
+//    @Test
+//    public void hElloConvertedToAnIntPlus10Is107() {
+//        int actualResult = sut.convertToIntAndAddTen();
+//        assertEquals(107, actualResult);
+//    }
 }
 

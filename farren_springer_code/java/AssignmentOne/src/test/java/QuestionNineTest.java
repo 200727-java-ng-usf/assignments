@@ -36,5 +36,6 @@ public class QuestionNineTest {
         int nullValue = Integer.parseInt(String.valueOf(1.0));
         boolean unexpectedResult = true;
         boolean actualResult = sut.isPrime(nullValue);
+        assertNotEquals(unexpectedResult, actualResult);
     }
 }

@@ -21,5 +21,4 @@ public class QuestionSevenTest {
         String actualResult = sut.getDepartment();
         assertEquals(expectedResult, actualResult);
     }
-
 }
