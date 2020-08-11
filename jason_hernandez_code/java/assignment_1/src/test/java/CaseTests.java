@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class CaseTests {
 
     private SubChangeCase sut;
-    private String testString = ("The quick brown Fox");
+    private final String testString = ("The quick brown Fox");
 
     @Before
     public void setUp(){

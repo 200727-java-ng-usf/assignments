@@ -10,7 +10,7 @@ public class AddUpArrayList {
         ArrayList<Integer> oddNumbers = new ArrayList<Integer>(5);
         int[] nonPrime = new int[10];
 
-        // Populate the first array with integers 1 to 100
+        // Populate the first array with integers 1 to 10
         for (int i = 1; i <= 10; i++)
             numbers3.add(i);
 

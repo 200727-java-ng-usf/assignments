@@ -19,13 +19,13 @@ public class EvenNumberTests {
     }
 
     @Test
-    public void TryEvenNumber() {
+    public void tryEvenNumber() {
         float testNumber = 8;
         assertTrue(sut.determineIfEven(testNumber));
     }
 
     @Test
-    public void TryOddNumber() {
+    public void tryOddNumber() {
         float testNumber = 7;
         assertFalse(sut.determineIfEven(testNumber));
     }

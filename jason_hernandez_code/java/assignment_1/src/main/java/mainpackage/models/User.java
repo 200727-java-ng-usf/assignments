@@ -10,9 +10,6 @@ public class User {
     private int age;
     private String state;
 
-//    public User() {
-//
-//    }
 
     // Constructor with four args
     public User(String firstname, String lastname, int age, String state) {

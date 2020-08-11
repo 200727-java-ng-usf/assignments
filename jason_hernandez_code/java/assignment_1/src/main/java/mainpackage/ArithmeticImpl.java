@@ -6,6 +6,7 @@ public class ArithmeticImpl implements Arithmetic {
 
     }
 
+    // Each of these overrides the corresponding one in Arithmetic interface
     @Override
     public float addUp() {
         float sum = firstNumber + secondNumber;

@@ -7,7 +7,7 @@ public class FindMinimum {
 
     public int findTheMinimum(int num1, int num2) {
 
-
+        // A ternary operator allows this in one line
         int result = num1 < num2 ? num1 : num2;
         System.out.println("Original numbers are " + num1 + ", " + num2);
         System.out.println("Smallest Number is:" + result);

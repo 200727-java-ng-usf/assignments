@@ -13,6 +13,7 @@ public class ReverseString {
         // Begin with a string
         String string = "Revature Java";
         System.out.println(string);
+        // Break it down by characters
         List<Character> chars = new ArrayList<Character> ();
 
         // Convert to arraylist
