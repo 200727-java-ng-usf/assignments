@@ -38,9 +38,8 @@ public class MinimumTester {
     public void checkNumbersEqual() {
         int num1 = 6;
         int num2 = 6;
-        int expectedOutput = 6;
         try {
-            assertEquals(sut.findTheMinimum(num1, num2), expectedOutput, 0.01);
+            sut.findTheMinimum(num1, num2);
         } catch (ArithmeticException e) {
             String msg = "Should throw ArithmeticException";
         }

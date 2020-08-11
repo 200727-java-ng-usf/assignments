@@ -8,7 +8,7 @@ public class SubChangeCase extends ChangeCase{
     // If the string matches its toLowerCase version,then it does NOT contain an uppercase,
     // and is therefore false.
     @Override
-    boolean checkForUppercase() {
+    public boolean checkForUppercase() {
         boolean isLowercase = !stringToCheck.equals(stringToCheck.toLowerCase());
         if(isLowercase) {
             return false;
@@ -19,7 +19,7 @@ public class SubChangeCase extends ChangeCase{
 
     // Very straightforward, converts to uppercase
     @Override
-    String convertToUppercase() {
+    public String convertToUppercase() {
         String s1upper=stringToCheck.toUpperCase();
         return s1upper;
     }

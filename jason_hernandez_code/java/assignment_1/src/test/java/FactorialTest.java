@@ -24,7 +24,7 @@ public class FactorialTest {
         String msg = "Should return the factorial result 10! = 3628800";
         double testNumber = 10;
         double expectedResult = 3628800;
-        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
+        assertEquals(sut.nFactorial(), expectedResult, 0.01);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class FactorialTest {
         String msg = "Should return the factorial result 4! = 24";
         double testNumber = 4;
         double expectedResult = 24;
-        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
+        assertEquals(sut.nFactorial(), expectedResult, 0.01);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class FactorialTest {
         String msg = "Should return 1";
         double testNumber = 0;
         double expectedResult = 1;
-        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.01);
+        assertEquals(sut.nFactorial(), expectedResult, 0.01);
     }
 
     @Test
@@ -48,6 +48,6 @@ public class FactorialTest {
         String msg = "Should return infinity";
         double testNumber = 425;
         double expectedResult = Double.POSITIVE_INFINITY;
-        assertEquals(sut.nFactorial(testNumber), expectedResult, 0.1);
+        assertEquals(sut.nFactorial(), expectedResult, 0.1);
     }
 }
