@@ -4,6 +4,7 @@
  *     - department,
  *     - and age
  *     - using the Comparator interface.
+ * This class is a template to serve as the constructor for employee objects.
  */
 
 package com.revature.question7.models;
