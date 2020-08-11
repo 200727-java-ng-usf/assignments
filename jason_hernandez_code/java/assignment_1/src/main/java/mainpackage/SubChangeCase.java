@@ -26,7 +26,7 @@ public class SubChangeCase extends ChangeCase{
 
 
     @Override
-    int convertToIntPlusTen() {
+    public int convertToIntPlusTen() {
         // Create new field for the converted string
         String asciiValue = "";
         // Break original string down to char array

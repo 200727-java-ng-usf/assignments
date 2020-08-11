@@ -1,7 +1,6 @@
 package mainpackage;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class AppDriver {
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package mainpackage;
 
 public class IntEven {
 
-    boolean determineIfEven(float f) {
+    public boolean determineIfEven(float f) {
         // Divide the number by 2
         float quotient2 = f / 2f;
 

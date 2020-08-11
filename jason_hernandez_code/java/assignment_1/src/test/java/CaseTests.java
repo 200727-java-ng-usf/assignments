@@ -30,5 +30,10 @@ public class CaseTests {
         assertEquals("Should return in all caps", expectedString, sut.convertToUppercase());
     }
 
-    // How to test fo the conversion to int?
+    @Test
+    public void findTheAscii() {
+        String newTestString = "fox";
+        String newExpectedString = "102111130";
+        assertEquals("Should return 102111120 + 10 102111130", newExpectedString, sut.convertToIntPlusTen());
+    }
 }
