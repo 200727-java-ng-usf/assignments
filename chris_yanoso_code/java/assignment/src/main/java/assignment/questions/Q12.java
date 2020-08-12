@@ -18,6 +18,5 @@ public class Q12 extends Q6 {
         for(Integer m: evenNumbers){
             System.out.print(m + ",");
         }
-        System.out.println("");
     }
 }

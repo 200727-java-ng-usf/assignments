@@ -10,8 +10,8 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
-public class Q12Tests {
-    private Q12 sut;
+public class Q13Tests {
+    private Q13 sut;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -19,7 +19,7 @@ public class Q12Tests {
 
     @Before
     public void setup() {
-        sut = new Q12();
+        sut = new Q13();
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
     }
@@ -33,10 +33,23 @@ public class Q12Tests {
 
     @Test
     public void test1(){
-        //class 12 is just designed to print out even numbers from 1 - 100 from an array list
-        // it is not interchangeable so will only test for those even numbers
-        String expectedResult = "2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,";
-        sut.even100();
+        int b = 4;
+        String expectedResult = "0\n" +
+                "10\n" +
+                "010\n" +
+                "1010\n";
+        sut.trianglePrint(b);
         assertEquals(expectedResult, outContent.toString());
     }
+
+    @Test
+    public void test2(){
+        int b = 3;
+        String expectedResult = "0\n" +
+                "10\n" +
+                "010\n";
+        sut.trianglePrint(b);
+        assertEquals(expectedResult, outContent.toString());
+    }
+
 }

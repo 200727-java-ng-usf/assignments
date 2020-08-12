@@ -82,7 +82,7 @@ public class AssignmentDriver {
         question12.even100();
 
         Q13 question13 = new Q13();
-        System.out.println("Question 13: ");
+        System.out.println("\nQuestion 13: ");
         question13.trianglePrint(4);
 
         Q14 question14 = new Q14();
@@ -94,7 +94,7 @@ public class AssignmentDriver {
         question14.switchMethod(3);
 
         Q15 question15 = new Q15();
-        System.out.println("Question 15: ");
+        System.out.println("\nQuestion 15: ");
         System.out.println("add 5 + 5: " + question15.addition(5,5));
         System.out.println("subtract 5 - 5: " + question15.subtraction(5,5));
         System.out.println("multiply 5 * 5: " + question15.multiplication(5,5));

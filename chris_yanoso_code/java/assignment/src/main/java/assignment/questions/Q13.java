@@ -16,7 +16,7 @@ public class Q13 {
                 j--;
             }
             //adds new line
-            System.out.println("");
+            System.out.print("\n");
 
         }
     }

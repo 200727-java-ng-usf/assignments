@@ -11,12 +11,12 @@ public class Q14 {
             case 1:
                 //using Math to get square root of a number
                 double sqrt = Math.sqrt(squareRootNumber);
-                System.out.println("The square root of " + squareRootNumber + " is " + sqrt);
+                System.out.print("The square root of " + squareRootNumber + " is " + sqrt + "\n");
                 break;
             case 2:
                 //importing date to create a timestamp
                 Date today = new Date();
-                System.out.println("Today is " + today);
+                System.out.print("Today is " + today + "\n");
                 break;
             case 3:
                 //splitting the string using the whitespace regex
