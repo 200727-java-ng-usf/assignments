@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionFifteenTest {
 
@@ -14,6 +15,7 @@ public class QuestionFifteenTest {
     @After
     public void tearDown() throws Exception { sut = null; }
 
+    // Positive Tests
     @Test
     public void twoPlus3Is5() {
         int expectedResult = 5;
@@ -39,5 +41,45 @@ public class QuestionFifteenTest {
         double actualResult = sut.divide();
         assertEquals(expectedResult, actualResult, 0.0000001);
     }
+
+    //Negative test
+    @Test (expected = NumberFormatException.class)
+            public void nullValuePassedToAddThrowsNumberFormatException() {
+        int nullValue = Integer.parseInt(null);
+        int unexpectedResult = 5;
+        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        int actualResult = sut2.add();
+        assertNotEquals(unexpectedResult, actualResult);
+    }
+
+    @Test (expected = NumberFormatException.class)
+    public void nullValuePassedToSubtractThrowsNumberFormatException() {
+        int nullValue = Integer.parseInt(null);
+        int unexpectedResult = 5;
+        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        int actualResult = sut2.subtract();
+        assertNotEquals(unexpectedResult, actualResult);
+    }
+
+    @Test (expected = NumberFormatException.class)
+    public void nullValuePassedToMultiplyThrowsNumberFormatException() {
+        int nullValue = Integer.parseInt(null);
+        int unexpectedResult = 3;
+        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        int actualResult = (int) sut2.multiply();
+        assertNotEquals(unexpectedResult, actualResult);
+    }
+
+    @Test (expected = NumberFormatException.class)
+    public void nullValuePassedToDivideThrowsNumberFormatException() {
+        int nullValue = Integer.parseInt(null);
+        int unexpectedResult = 5;
+        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        int actualResult = (int) sut2.divide();
+        assertNotEquals(unexpectedResult, actualResult);
+    }
+
+
+
 
 } // "main method that calls the implementing class"
