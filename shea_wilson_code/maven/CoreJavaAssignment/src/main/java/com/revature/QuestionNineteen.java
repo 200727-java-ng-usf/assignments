@@ -53,6 +53,7 @@ public class QuestionNineteen {
         if (checkIfPrime(numbers)){
 
             numbers.remove(numbers);
+            System.out.println(numbers);
 
         }
 
