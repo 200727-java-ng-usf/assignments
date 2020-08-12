@@ -6,13 +6,8 @@
  */
 package com.revature.question17;
 
-import java.io.BufferedReader;
-import java.io.Console;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.channels.ClosedByInterruptException;
+import java.util.InputMismatchException;
 import java.util.Objects;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class Question17 {
@@ -22,10 +17,10 @@ public class Question17 {
     private double rate;
     private double time;
 
-    //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    //using scanner class
     Scanner reader = new Scanner(System.in);
 
-    public Question17(){
+    public Question17() throws InputMismatchException{
         //try to get input from user upon instantiation:
         try {
             //get principal
@@ -47,7 +42,7 @@ public class Question17 {
             //calculate the interest
             interest = calculateInterest(principal, rate, time);
 
-        } catch (NumberFormatException | ClassCastException e){
+        } catch (NumberFormatException | ClassCastException | InputMismatchException e){
             System.out.println("please use real numbers");
             e.printStackTrace();
         }
@@ -55,6 +50,7 @@ public class Question17 {
     }
 
     //paramerized constructor to create an instance based off given values
+    //does not requre user input
     public Question17(double somePrincipal, double someRate, double someTime){
         this.principal = somePrincipal;
         this.rate = someRate;
@@ -62,10 +58,12 @@ public class Question17 {
         this.interest = calculateInterest(principal, rate, time);
     }
 
+    //method to calculate the interest
     public double calculateInterest(double somePrincipal, double someRate, double someTime){
         return (somePrincipal * (someRate * .01) * someTime);
     }
 
+    //generated getters and setters
     public double getInterest() {
         return interest;
     }
