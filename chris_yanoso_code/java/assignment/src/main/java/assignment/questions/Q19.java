@@ -21,17 +21,19 @@ public class Q19 extends Q6 {
             }
 
         }
+        //checks for prime
         for (int n = 0; n < oneTen.size(); n++) {
             if(!prime(oneTen.get(n))){
                 noPrime.add(oneTen.get(n));
             }
 
         }
-        System.out.println("The sum of even numbers in 1-10 is: " + evenSum);
-        System.out.println("The sum of odd numbers in 1-10 is: " + oddSum);
-        System.out.println("An Array of 1-10 without prime numbers: " + noPrime);
+        //print out result
+        System.out.print("\nThe sum of even numbers in 1-10 is: " + evenSum +
+                "\nThe sum of odd numbers in 1-10 is: " + oddSum +
+                "\nAn Array of 1-10 without prime numbers: " + noPrime);
     }
-
+    //copied from earlier question
     public static boolean prime(int n){
         //1 is not prime
         if (n == 1){

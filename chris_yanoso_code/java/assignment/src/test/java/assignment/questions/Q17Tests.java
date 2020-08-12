@@ -64,4 +64,5 @@ public class Q17Tests {
         sut.interestRate();
         assertEquals(expectedResult, outContent.toString());
     }
+
 }

@@ -25,7 +25,7 @@ public class Q17 {
                 // if it reaches here than the user has enter valid numbers
                 success = true;
             } catch (InputMismatchException | NumberFormatException ime) {
-                System.out.println("Please enter a valid number");
+                System.out.print("\nPlease enter a valid number");
 
             }
         }while (!success);

@@ -31,17 +31,17 @@ import static org.junit.Assert.assertEquals;
             System.setErr(originalErr);
         }
 
-    /*
-    -Test fails because it compares the 2 and the "line separators are different"
-    -output is what is desired
+
+
     @Test
     public void test1(){
+            //first test of sorting system
         Employee John = new Employee("John Doe", "Cashier", 20);
         Employee Jane = new Employee("Jane Doe", "Manager", 28);
         ArrayList<Employee> em = new ArrayList<Employee>();
         em.add(John);
         em.add(Jane);
-        String test = "Sorted by Name: \n" +
+        String test = "\nSorted by Name: \n" +
                 "name= Jane Doe, department= Manager, age=28\n" +
                 "name= John Doe, department= Cashier, age=20\n" +
                 "Sorted by Department: \n" +
@@ -49,20 +49,21 @@ import static org.junit.Assert.assertEquals;
                 "name= Jane Doe, department= Manager, age=28\n" +
                 "Sorted by Age: \n" +
                 "name= John Doe, department= Cashier, age=20\n" +
-                "name= Jane Doe, department= Manager, age=28\n";
+                "name= Jane Doe, department= Manager, age=28";
         sut.sortEmployees(em);
         assertEquals(test, outContent.toString());
     }
 
-    -same thing, line separators are only differences
+
     @Test
     public void test2(){
+            //tests age and department
         Employee John = new Employee("John Doe", "Truck Driver", 30);
         Employee Jane = new Employee("Jane Doe", "Manager", 28);
         ArrayList<Employee> em = new ArrayList<Employee>();
         em.add(John);
         em.add(Jane);
-        String test = "Sorted by Name: \n" +
+        String test = "\nSorted by Name: \n" +
                 "name= Jane Doe, department= Manager, age=28\n" +
                 "name= John Doe, department= Truck Driver, age=30\n" +
                 "Sorted by Department: \n" +
@@ -70,20 +71,21 @@ import static org.junit.Assert.assertEquals;
                 "name= John Doe, department= Truck Driver, age=30\n" +
                 "Sorted by Age: \n" +
                 "name= Jane Doe, department= Manager, age=28\n" +
-                "name= John Doe, department= Truck Driver, age=30\n" ;
+                "name= John Doe, department= Truck Driver, age=30" ;
         sut.sortEmployees(em);
         assertEquals(test, outContent.toString());
     }
 
-    -the class sorts by name, department, and age successfully, however the "line spacing is off"
+
     @Test
     public void test3() {
+            //tests name
         Employee Adam = new Employee("Adam Doe", "Truck Driver", 30);
         Employee Jane = new Employee("Jane Doe", "Manager", 28);
         ArrayList<Employee> em = new ArrayList<Employee>();
         em.add(Adam);
         em.add(Jane);
-        String test = "Sorted by Name: \n" +
+        String test = "\nSorted by Name: \n" +
                 "name= Adam Doe, department= Truck Driver, age=30\n" +
                 "name= Jane Doe, department= Manager, age=28\n" +
                 "Sorted by Department: \n" +
@@ -91,8 +93,8 @@ import static org.junit.Assert.assertEquals;
                 "name= Adam Doe, department= Truck Driver, age=30\n" +
                 "Sorted by Age: \n" +
                 "name= Jane Doe, department= Manager, age=28\n" +
-                "name= Adam Doe, department= Truck Driver, age=30\n";
+                "name= Adam Doe, department= Truck Driver, age=30";
         sut.sortEmployees(em);
         assertEquals(test, outContent.toString());
-    }*/
+    }
 }

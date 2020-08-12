@@ -22,19 +22,19 @@ public class Q7  {
         // each class will access the employee objs and compare them to each other
         // it will return a number for collections.sort to sort the array
         Collections.sort(em, new SortByName());
-        System.out.println("Sorted by Name: ");
+        System.out.print("\nSorted by Name: ");
         for (int i=0; i<em.size(); i ++){
-            System.out.println(em.get(i));
+            System.out.print("\n" + em.get(i));
         }
         Collections.sort(em, new SortByDepartment());
-        System.out.println("Sorted by Department: ");
+        System.out.print("\nSorted by Department: ");
         for (int i=0; i<em.size(); i ++){
-            System.out.println(em.get(i));
+            System.out.print("\n" + em.get(i));
         }
         Collections.sort(em, new SortByAge());
-        System.out.println("Sorted by Age: ");
+        System.out.print("\nSorted by Age: ");
         for (int i=0; i<em.size(); i ++){
-            System.out.println(em.get(i));
+            System.out.print("\n" + em.get(i));
         }
 
     }

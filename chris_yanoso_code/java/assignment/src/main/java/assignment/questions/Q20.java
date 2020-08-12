@@ -11,15 +11,16 @@ import java.util.List;
 
 public class Q20 {
     public void readData() {
+        //creates new var for file
         File data = new File("src/main/resources/Data.txt");
-
+        //makes sure it exists
         if (!data.exists()) {
             return;
         }
 
         List<People> peopleList = new ArrayList<>();
         try{
-
+            //uses Buffered reader to read file and saves to an arraylist
             BufferedReader reader = new BufferedReader(new FileReader(data));
             String currentLine = reader.readLine();
 
@@ -36,7 +37,7 @@ public class Q20 {
             }
 
             reader.close();
-
+            //catches exceptions
         } catch (IOException ioe){
             ioe.printStackTrace();
             System.out.println("An exception occurred while reading the file");
@@ -44,8 +45,9 @@ public class Q20 {
             e.printStackTrace();
             System.out.println("Something went wrong...");
         }
+        //for each loop to print out people in arraylist
         for(People p : peopleList){
-            System.out.println(p.toString());
+            System.out.print("\n" + p.toString());
         }
     }
 }

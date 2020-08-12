@@ -3,6 +3,9 @@ package assignment.questions;
 import assignment.questions.question15.InterfaceQ15;
 
 public class Q15 implements InterfaceQ15 {
+    //implements an interface
+    // overrides methods
+    //simple math methods
 
     @Override
     public int addition(int n1, int n2) {

@@ -112,7 +112,7 @@ public class AssignmentDriver {
         question17.interestRate();
 
         Q18 question18 = new Q18();
-        System.out.println("Question 18: ");
+        System.out.println("\nQuestion 18: ");
         System.out.println("Please enter the string to be used: ");
         String q18String = scanner.nextLine();
         System.out.println("Does your string contain an uppercase letter = " + question18.checkForUpperCase(q18String));
@@ -124,7 +124,7 @@ public class AssignmentDriver {
         question19.oneToTenArray();
 
         Q20 question20 = new Q20();
-        System.out.println("Question 20: ");
+        System.out.println("\nQuestion 20: ");
         question20.readData();
 
     }
