@@ -5,21 +5,10 @@ import java.util.List;
 
 public class Question8 {
 
-    public void Palindromes() {
+    public ArrayList<String> Palindromes(ArrayList<String> arrList) {
         boolean keep = false;
-        ArrayList<String> isItAPalindrome = new ArrayList<String>();
+        ArrayList<String> isItAPalindrome = arrList;
         ArrayList<String> itIs = new ArrayList<String>();
-        isItAPalindrome.add("karan");
-        isItAPalindrome.add("madam");
-        isItAPalindrome.add("tom");
-        isItAPalindrome.add("civic");
-        isItAPalindrome.add("radar");
-        isItAPalindrome.add("jimmy");
-        isItAPalindrome.add("kayak");
-        isItAPalindrome.add("john");
-        isItAPalindrome.add("refer");
-        isItAPalindrome.add("billy");
-        isItAPalindrome.add("did");
         for (int i = 0; i < isItAPalindrome.size(); i++) {
             String current = isItAPalindrome.get(i);
             for (int j = 0, k = current.length() - 1 ; j < current.length(); j++, k--) {
@@ -34,7 +23,7 @@ public class Question8 {
                 }
             }
         }
-        System.out.println(itIs);
+        return itIs;
     }
 }
 

@@ -2,6 +2,8 @@ package com.revature.questions;
 
 import com.revature.questions.extras.Employee;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Question7 implements Comparator<Employee> {
@@ -26,4 +28,12 @@ public class Question7 implements Comparator<Employee> {
             }
         }
     }
+
+    public void SortEmployees(ArrayList<Employee> employees) {
+
+        employees.sort(new Question7());
+
+    }
+
+
 }

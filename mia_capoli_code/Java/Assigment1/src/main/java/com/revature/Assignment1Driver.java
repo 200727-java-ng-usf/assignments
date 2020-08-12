@@ -25,19 +25,19 @@ public class Assignment1Driver {
 //        Question6 questionSix = new Question6();
 //        System.out.println(questionSix.isEven(5));
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
-//        Employee emp1 = new Employee("Wezley", "Singleton", 30);
-//        Employee emp2 = new Employee("Matt", "Knighten", 30);
-//        Employee emp3 = new Employee("Blake", "Kruppa", 28);
-//        Employee emp4 = new Employee("Mia", "Capoli", 22);
-//
-//        ArrayList<Employee> employees = new ArrayList<>();
-//        employees.add(emp1);
-//        employees.add(emp2);
-//        employees.add(emp3);
-//        employees.add(emp4);
-//
-//        employees.forEach(System.out::println); // <------ method reference
-//        employees.sort(new Question7());
+        Employee emp1 = new Employee("Wezley", "Singleton", 30);
+        Employee emp2 = new Employee("Matt", "Knighten", 30);
+        Employee emp3 = new Employee("Blake", "Kruppa", 28);
+        Employee emp4 = new Employee("Mia", "Capoli", 22);
+
+        ArrayList<Employee> employees = new ArrayList<>();
+        employees.add(emp1);
+        employees.add(emp2);
+        employees.add(emp3);
+        employees.add(emp4);
+
+        employees.forEach(System.out::println); // <------ method reference
+        employees.sort(new Question7());
 //
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
 //        employees.forEach(System.out::println);
@@ -72,19 +72,7 @@ public class Assignment1Driver {
 //        question20.readFromFile();
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
     }
-    public void printValues(int[] arr) {
-        for(int i = 0; i < arr.length; ++i) {
-            System.out.println(arr[i]);
-        }
 
-    }
-
-    public void printObjs(Object[] arr) {
-        for(int i = 0; i < arr.length; ++i) {
-            System.out.println(arr[i]);
-        }
-
-    }
 
 
 }
