@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 

@@ -10,7 +10,7 @@
     main method that calls the implementing class.
  */
 
-import com.revature.Q15;
+import com.revature.questions.Q15;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

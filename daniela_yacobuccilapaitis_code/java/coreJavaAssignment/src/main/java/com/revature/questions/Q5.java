@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 
 /*
     Q5. Write a substring method that accepts a string str and an integer idx and returns

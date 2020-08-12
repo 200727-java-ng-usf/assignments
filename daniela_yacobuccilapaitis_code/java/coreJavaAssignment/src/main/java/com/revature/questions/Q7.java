@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 
 //Q7. Sort two employees based on their name, department,
 // and age using the Comparator interface.

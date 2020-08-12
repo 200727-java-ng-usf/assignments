@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 import java.util.Scanner;
 
 //Q3. Reverse a string without using a temporary variable.

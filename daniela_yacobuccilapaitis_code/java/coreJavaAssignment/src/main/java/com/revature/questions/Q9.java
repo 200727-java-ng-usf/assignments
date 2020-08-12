@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -13,6 +13,7 @@ public class Q9 {
 
         ArrayList<Integer> numbers = new ArrayList<Integer>(100);
 
+        // TODO make more efficient
         for(int i = 0; i < 100; i++){
             numbers.add(i, i+1);
         }

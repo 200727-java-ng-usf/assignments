@@ -1,0 +1,49 @@
+package com.revature.questions;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+/*
+    Q8. Write a program that stores the following strings in an ArrayList
+    and saves all the palindromes in another ArrayList.
+
+    “karan”, “madam”, ”tom”, “civic”, “radar”, “jimmy”, “kayak”, “john”,  “refer”, “billy”, “did”
+
+ */
+public class Q8 {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> allStrings = new ArrayList<>();
+        ArrayList<String> palindromes = new ArrayList<>();
+        ArrayList<String> temp = new ArrayList();
+
+
+        Iterator<String> iteratorAllStrings = allStrings.iterator();
+        Iterator<String> iteratorTemp = temp.iterator();
+
+        try {
+            Scanner scanner = new Scanner(new File("src/main/resources/Q8_text.txt"));
+            while(scanner.hasNext()) {
+                allStrings.add(scanner.next());
+            }
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        }
+
+        //TODO figuring out which ones are palindromes
+        while(iteratorAllStrings.hasNext()) {
+/*            if(temp.peek()) {
+                palindromes.isEmpty();
+
+            }*/
+
+            temp.clear();
+        }
+
+    }
+
+}

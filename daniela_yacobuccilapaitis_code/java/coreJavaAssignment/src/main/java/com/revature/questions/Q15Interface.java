@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 
 /*
     Q15. Write a program that defines an interface having the following methods:

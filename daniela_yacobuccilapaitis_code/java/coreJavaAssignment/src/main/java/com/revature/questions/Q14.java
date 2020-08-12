@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.questions;
 
 /*
     Q14. Write a program that demonstrates the switch case.

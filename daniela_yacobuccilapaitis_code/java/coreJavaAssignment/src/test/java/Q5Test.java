@@ -1,6 +1,5 @@
-import com.revature.Q15;
 import org.junit.Test;
-import com.revature.Q5;
+import com.revature.questions.Q5;
 
 import static org.junit.Assert.*;
 
