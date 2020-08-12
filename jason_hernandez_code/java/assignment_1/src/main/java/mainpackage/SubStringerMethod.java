@@ -9,18 +9,15 @@ public class SubStringerMethod {
 
         // Begin with a string
         String str = "Substringing a string";
-
-        // Break it down into chars
-        List<Character> chars = new ArrayList<>();
-
-        // Convert to arraylist
-        for(char ch: str.toCharArray()) {
-            chars.add(ch);
-        }
+        // Null substring as placeholder
+        String substr = "";
+        // Set an index
+        int idx = 10;
 
         // Get the chars between the specified indices
-        String substr = chars.toString();
-        System.out.println(substr);
+        substr = str.substring(0, idx-1);
+
+        System.out.println("Substring = " + substr); // Should output "Substringi"
     }
 
 
