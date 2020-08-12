@@ -16,11 +16,11 @@ public class Q17 {
         // if user inputs string or invalid number the do-while/try block will catch it and ask the user again
         do {
             try {
-                System.out.println("Please enter your principal:");
+                System.out.print("\nPlease enter your principal:");
                 principal = Double.parseDouble(scanner.next());
-                System.out.println("Please enter your rate:");
+                System.out.print("\nPlease enter your rate:");
                 rate = Double.parseDouble(scanner.next());
-                System.out.println("Please enter the amount of time:");
+                System.out.print("\nPlease enter the amount of time:");
                 time = Double.parseDouble(scanner.next());
                 // if it reaches here than the user has enter valid numbers
                 success = true;
@@ -31,6 +31,6 @@ public class Q17 {
         }while (!success);
         // finds interest and prints it out
         double interest = principal * rate * time;
-        System.out.println("Your interest is: " + interest);
+        System.out.print("\nYour interest is: " + interest);
     }
 }
