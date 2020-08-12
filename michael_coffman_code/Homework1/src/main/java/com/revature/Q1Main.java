@@ -7,6 +7,8 @@ public class Q1Main {
     private static void answer(){
 
         int[] array = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        System.out.println("Unsorted array.");
+        System.out.println(Arrays.toString(array));
 
         for (int i = 0; i < (array.length - 1); i++) {
 
@@ -19,7 +21,7 @@ public class Q1Main {
                 }
             }
         }
-        System.out.println("This is the sorted array.");
+        System.out.println("Sorted array.");
         System.out.println(Arrays.toString(array));
     }
 
