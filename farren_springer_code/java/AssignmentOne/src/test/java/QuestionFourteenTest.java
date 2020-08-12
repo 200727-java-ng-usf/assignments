@@ -17,12 +17,15 @@ public class QuestionFourteenTest {
     @After
     public void tearDown() throws Exception { sut = null; }
 
+    // Positive test
     @Test
     public void splitMethodPrintsSeparatedBySpaceIAmLearningCoreJava() {
         String[] expectedResult = {"I", "am", "learning", "Core", "Java"};
         String[] actualResult = sut.splitTheString("I am learning Core Java", " ");
         assertEquals(expectedResult, actualResult);
     }
+
+    // Positive test
     @Test
     public void printDateMethodPrintsDate() {
         // Create a date format object
@@ -34,10 +37,10 @@ public class QuestionFourteenTest {
         assertEquals(expectedResult, actualResult);
     }
 
-//    @Test
-//    public void squareRootOf49Is7() {
-//        // create a Scanner object in the test?
-    // change the method to take arguments. The Scanner object to be used in
-    // the main method? That way you can test to see if square root runs accurately.
+//    // Negative test
+//    @Test (expected = InputMismatchException.class)
+//    public void StringPassedToSwitchCaseReturnsInputMismatchException() {
+//        int stringTryingToBeAnInt = Integer.parseInt("notAString");
+//
 //    }
 }
