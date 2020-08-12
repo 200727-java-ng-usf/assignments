@@ -1,10 +1,13 @@
 package mainpackage;
 
+import java.util.ArrayList;
+
 public class PrimeNumbers {
 
 
     // Create array
-    public int[] isPrime(int[] candidateNumbers) {
+    public ArrayList<Integer> isPrime() {
+        ArrayList<Integer> primes = new ArrayList<>();
 
         // Add each integer to the array
         for (int i = 1; i <= 100; i++) {
@@ -13,7 +16,6 @@ public class PrimeNumbers {
             boolean isPrime = true;
 
             // Iterate through the numbers
-            candidateNumbers[i] = i;
             for (int j = 2; j < i; j++) {
 
                 // Check for remainders
@@ -23,14 +25,11 @@ public class PrimeNumbers {
                     break;
                 }
                 //If isPrime is true then the number is prime else not
-                int[] primes = new int[0];
                 if (isPrime)
-                    primes[j] = candidateNumbers[j];
-
-                return primes;
+                    primes.add(i);
             }
 
         }
-        return candidateNumbers;
+        return primes;
     }
 }

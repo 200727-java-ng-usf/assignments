@@ -1,12 +1,11 @@
 package mainpackage;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class SubStringerMethod {
 
-    public SubStringerMethod() {
+    public void subStringerMethod() {
 
         // Begin with a string
         String str = "Substringing a string";

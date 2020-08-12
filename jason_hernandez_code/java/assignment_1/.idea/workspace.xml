@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EvenNumberTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvenNumberTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/PrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SubStringerMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SubStringerMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BubbleTest.nullArray" />
         <item itemvalue="JUnit.SorterTests.nullArray" />
         <item itemvalue="JUnit.BubbleTest.test2" />
+        <item itemvalue="JUnit.BubbleTest.nullArray" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.AppDriver" />
       </list>
@@ -178,10 +178,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="519" y="198" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1596566217692" />
-    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1596635841837">
+    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1597191875391">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1596635841837" />
+    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597191875391" />
     <state width="1340" height="185" key="GridCell.Tab.0.bottom" timestamp="1596570007362">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -210,10 +210,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="519" y="211" key="extract.method.dialog/0.0.1600.860@0.0.1600.860" timestamp="1596567607782" />
-    <state x="192" y="114" key="new project wizard" timestamp="1596553462851">
+    <state x="192" y="114" key="new project wizard" timestamp="1597175292877">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="192" y="114" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1596553462851" />
+    <state x="192" y="114" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1597175292877" />
     <state x="452" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1596567317346">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
