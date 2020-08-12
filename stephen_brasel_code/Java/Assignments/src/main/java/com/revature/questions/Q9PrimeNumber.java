@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * A <code>Q9PrimeNumber</code> creates an <code>{@link ArrayList}</code><<code>{@link Integer}</code>>
- * which stores numbers from 1 to N and prints out all the prime numbers in that <code>ArrayList</code> to the console.
+ * which stores numbers from 1 to n and prints out all the prime numbers in that <code>ArrayList</code> to the console.
  * @author stephen.brasel@gmail.com
  */
 public class Q9PrimeNumber {
@@ -45,9 +45,9 @@ public class Q9PrimeNumber {
      * @return true if the input n is prime.
      */
     public static boolean isPrime(int n){
-        if(n <= 1) return false;
-        if(n <= 3) return true;
-        if(n % 2 == 0 || n % 3 == 0) return false;
+        if(n <= 1) return false;                            //negatives, 0, and 1 are not prime.
+        if(n <= 3) return true;                             //2 is the only even prime, 3 is the next sequential prime.
+        if(n % 2 == 0 || n % 3 == 0) return false;          // implementation checking for all numbers outside of 6n (+/-) 1
         for(long i = 5; (i * i) <= n; i += 6)
             if(n%i == 0 || n % (i + 2) == 0) return false;
         return true;
