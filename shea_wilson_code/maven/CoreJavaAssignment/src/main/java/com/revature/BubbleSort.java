@@ -2,7 +2,7 @@ package com.revature;
 
 public class BubbleSort {
     // method where the array is sorted
-    static void bubbleSort(int[] arr){
+    static int[] bubbleSort(int[] arr){
 
         //number of arr elements stored
         int n = arr.length;
@@ -18,6 +18,7 @@ public class BubbleSort {
 
             }
         }
+        return arr;
     }
 
     // main method where the sorted array is printed
