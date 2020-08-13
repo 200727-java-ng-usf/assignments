@@ -20,35 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60a8f89f-2281-49f5-8832-e4f08095baf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extras/Q11Extra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Q8_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q18Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q18Super.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q15Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q15Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q19.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q20.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Q9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Q15Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Q15Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Q5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Q5Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Q20_text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/questions/Q8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extras/Q11Extra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extras/Q11Extra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,18 +67,24 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Q19">
-    <configuration name="Q15Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q15Test" />
-      <module name="coreJavaAssignment" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Q18Driver">
     <configuration name="Q16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.revature.questions.Q16" />
       <module name="coreJavaAssignment" />
       <option name="PROGRAM_PARAMETERS" value="beanie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q18Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.revature.questions.Q18Driver" />
+      <module name="coreJavaAssignment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.revature.questions.*" />
@@ -134,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.revature.questions.Q5" />
+    <configuration name="Q8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.revature.questions.Q8" />
       <module name="coreJavaAssignment" />
       <extension name="coverage">
         <pattern>
@@ -148,19 +135,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Q5" />
-      <item itemvalue="Application.Q15Test" />
       <item itemvalue="Application.Q16" />
-      <item itemvalue="Application.Q20" />
       <item itemvalue="Application.Q19" />
+      <item itemvalue="Application.Q20" />
+      <item itemvalue="Application.Q8" />
+      <item itemvalue="Application.Q18Driver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Q18Driver" />
+        <item itemvalue="Application.Q8" />
         <item itemvalue="Application.Q19" />
-        <item itemvalue="Application.Q16" />
         <item itemvalue="Application.Q20" />
-        <item itemvalue="Application.Q5" />
-        <item itemvalue="Application.Q15Test" />
+        <item itemvalue="Application.Q16" />
       </list>
     </recent_temporary>
   </component>
@@ -194,70 +181,88 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="369" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1597209180160" />
-    <state x="502" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1596307107265">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state x="502" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1597351135396">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="502" y="141" key="#com.intellij.ide.util.MemberChooser/0.23.1440.812@0.23.1440.812" timestamp="1596307107265" />
+    <state x="502" y="142" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821@0.23.1440.821" timestamp="1597327467686" />
+    <state x="502" y="142" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823@0.23.1440.823" timestamp="1597351135396" />
     <state x="518" y="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596573543385">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="518" y="301" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.827@0.23.1440.827" timestamp="1596573543385" />
-    <state width="681" height="194" key="GridCell.Tab.0.bottom" timestamp="1597210512915">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1083" height="198" key="GridCell.Tab.0.bottom" timestamp="1597348639830">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1244" height="156" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1596247746660" />
     <state width="668" height="210" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1596343652571" />
     <state width="681" height="194" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1597210512915" />
     <state width="668" height="210" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1596308102647" />
     <state width="1071" height="194" key="GridCell.Tab.0.bottom/0.23.1440.817@0.23.1440.817" timestamp="1597096631043" />
-    <state width="1071" height="194" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1597175181085" />
-    <state width="1071" height="194" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597175462317" />
-    <state width="938" height="210" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1596569016390" />
-    <state width="1014" height="210" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1596568777178" />
+    <state width="1022" height="194" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1597293138859" />
+    <state width="1022" height="194" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1597293505575" />
+    <state width="1083" height="198" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1597348639830" />
+    <state width="681" height="194" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1597249919152" />
     <state width="861" height="194" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1596577477636" />
     <state width="1137" height="194" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1596569854570" />
-    <state width="681" height="194" key="GridCell.Tab.0.center" timestamp="1597210512914">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1083" height="198" key="GridCell.Tab.0.center" timestamp="1597348639829">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1244" height="156" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1596247746659" />
     <state width="668" height="210" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1596343652569" />
     <state width="681" height="194" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1597210512914" />
     <state width="668" height="210" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1596308102646" />
     <state width="1071" height="194" key="GridCell.Tab.0.center/0.23.1440.817@0.23.1440.817" timestamp="1597096631040" />
-    <state width="1071" height="194" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1597175181083" />
-    <state width="1071" height="194" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597175462303" />
-    <state width="938" height="210" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1596569016389" />
-    <state width="1014" height="210" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1596568777176" />
+    <state width="1022" height="194" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1597293138857" />
+    <state width="1022" height="194" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1597293505573" />
+    <state width="1083" height="198" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1597348639829" />
+    <state width="681" height="194" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1597249919145" />
     <state width="861" height="194" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1596577477635" />
     <state width="1137" height="194" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1596569854568" />
-    <state width="681" height="194" key="GridCell.Tab.0.left" timestamp="1597210512913">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1083" height="198" key="GridCell.Tab.0.left" timestamp="1597348639828">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1244" height="156" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1596247746658" />
     <state width="668" height="210" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1596343652564" />
     <state width="681" height="194" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1597210512913" />
     <state width="668" height="210" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1596308102646" />
     <state width="1071" height="194" key="GridCell.Tab.0.left/0.23.1440.817@0.23.1440.817" timestamp="1597096631040" />
-    <state width="1071" height="194" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1597175181071" />
-    <state width="1071" height="194" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597175462302" />
-    <state width="938" height="210" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1596569016388" />
-    <state width="1014" height="210" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1596568777174" />
+    <state width="1022" height="194" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1597293138856" />
+    <state width="1022" height="194" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1597293505572" />
+    <state width="1083" height="198" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1597348639828" />
+    <state width="681" height="194" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1597249919142" />
     <state width="861" height="194" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1596577477633" />
     <state width="1137" height="194" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1596569854566" />
-    <state width="681" height="194" key="GridCell.Tab.0.right" timestamp="1597210512914">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1083" height="198" key="GridCell.Tab.0.right" timestamp="1597348639829">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1244" height="156" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1596247746660" />
     <state width="668" height="210" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1596343652570" />
     <state width="681" height="194" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1597210512914" />
     <state width="668" height="210" key="GridCell.Tab.0.right/0.23.1440.815@0.23.1440.815" timestamp="1596308102646" />
     <state width="1071" height="194" key="GridCell.Tab.0.right/0.23.1440.817@0.23.1440.817" timestamp="1597096631041" />
-    <state width="1071" height="194" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1597175181084" />
-    <state width="1071" height="194" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597175462314" />
-    <state width="938" height="210" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1596569016389" />
-    <state width="1014" height="210" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1596568777177" />
+    <state width="1022" height="194" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1597293138858" />
+    <state width="1022" height="194" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1597293505574" />
+    <state width="1083" height="198" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1597348639829" />
+    <state width="681" height="194" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1597249919146" />
     <state width="861" height="194" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1596577477636" />
     <state width="1137" height="194" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1596569854569" />
+    <state width="671" height="264" key="GridCell.Tab.1.bottom" timestamp="1597348382775">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="671" height="264" key="GridCell.Tab.1.bottom/0.23.1440.824@0.23.1440.824" timestamp="1597348382775" />
+    <state width="671" height="264" key="GridCell.Tab.1.center" timestamp="1597348382774">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="671" height="264" key="GridCell.Tab.1.center/0.23.1440.824@0.23.1440.824" timestamp="1597348382774" />
+    <state width="671" height="264" key="GridCell.Tab.1.left" timestamp="1597348382773">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="671" height="264" key="GridCell.Tab.1.left/0.23.1440.824@0.23.1440.824" timestamp="1597348382773" />
+    <state width="671" height="264" key="GridCell.Tab.1.right" timestamp="1597348382774">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="671" height="264" key="GridCell.Tab.1.right/0.23.1440.824@0.23.1440.824" timestamp="1597348382774" />
     <state x="340" y="137" key="RollbackChangesDialog" timestamp="1596567413421">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
@@ -268,6 +273,10 @@
     <state x="0" y="150" key="new project wizard/0.23.1440.823@0.23.1440.823" timestamp="1597175457841" />
     <state x="52" y="92" key="new project wizard/0.23.1440.824@0.23.1440.824" timestamp="1596472978465" />
     <state x="52" y="92" key="new project wizard/0.23.1440.825@0.23.1440.825" timestamp="1596205341916" />
+    <state x="406" y="168" key="search.everywhere.popup" timestamp="1597292209976">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="406" y="168" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1597292209976" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/coreJavaAssignment$Q15Test.ic" NAME="Q15Test Coverage Results" MODIFIED="1596569853748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

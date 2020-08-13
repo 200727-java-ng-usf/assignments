@@ -19,12 +19,10 @@ public class Q8 {
 
         ArrayList<String> allStrings = new ArrayList<>();
         ArrayList<String> palindromes = new ArrayList<>();
-        ArrayList<String> temp = new ArrayList();
 
+        String currentString;
 
-        Iterator<String> iteratorAllStrings = allStrings.iterator();
-        Iterator<String> iteratorTemp = temp.iterator();
-
+        // adds all Strings to ArrayList from text file, which is used for simplicity
         try {
             Scanner scanner = new Scanner(new File("src/main/resources/Q8_text.txt"));
             while(scanner.hasNext()) {
@@ -34,16 +32,26 @@ public class Q8 {
             fnfe.printStackTrace();
         }
 
-        //TODO figuring out which ones are palindromes
-        while(iteratorAllStrings.hasNext()) {
-/*            if(temp.peek()) {
-                palindromes.isEmpty();
-
-            }*/
-
-            temp.clear();
+        // adds palindromes to a separate arrayList
+        for (String str: allStrings) {
+            if(isPalindrome(str)){
+                palindromes.add(str);
+            }
         }
 
+        // prints palindromes arraylist
+        System.out.println(palindromes.toString());
+
+    }
+
+    // determines which Strings are palindromes
+    private static boolean isPalindrome(String str) {
+        for(int i = 0, j = str.length()-1; i < ((str.length()-1)/2); i++, j--) {
+            if(str.charAt(i)!=str.charAt(j)){
+                return false;
+            }
+        }
+        return true;
     }
 
 }

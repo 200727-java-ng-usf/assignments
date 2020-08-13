@@ -11,5 +11,19 @@ package com.revature.questions;
     Create an appropriate class having a main method to test the above setup.
 
  */
-public class Q18 {
+public class Q18 extends Q18Super {
+    @Override
+    public boolean anyUppercaseLetters(String str) {
+        return !str.toLowerCase().equals(str);
+    }
+
+    @Override
+    public String allLowerCaseToUpperCase(String str) {
+        return str.toUpperCase();
+    }
+
+    @Override
+    public void addTen(String str) {
+        System.out.println(Integer.parseInt(str) + 10);
+    }
 }

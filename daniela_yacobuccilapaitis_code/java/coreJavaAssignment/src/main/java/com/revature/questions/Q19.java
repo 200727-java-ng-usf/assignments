@@ -42,17 +42,16 @@ public class Q19 {
         //display the result
         System.out.println("Sum of odd numbers " + oddNumbersSum);
 
-        while(iterator.hasNext()) {
-            Integer temp = iterator.next();
-            if(Q9.isPrime(temp)) {
-                arrayList.remove(temp);
+        //remove all prime numbers
+        for(int i = 0; i < arrayList.size(); i++) {
+            if(Q9.isPrime(arrayList.get(i))) {
+                arrayList.remove(i);
+                i--;
             }
         }
-
+        //display the result
         System.out.println(arrayList.toString());
     }
-
-    // TODO isPrime Q9
 
 
 }
