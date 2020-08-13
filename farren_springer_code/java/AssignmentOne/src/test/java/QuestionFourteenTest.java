@@ -47,7 +47,7 @@ public class QuestionFourteenTest {
 
     }
 
-    // TODO test Scanner input from method(?)
+    // TODO Negative tests
     // Negative test
 //    @Test (expected = NullPointerException.class)
 //    public void splitTheStringPassedNullStringReturnsNullPointerException() {

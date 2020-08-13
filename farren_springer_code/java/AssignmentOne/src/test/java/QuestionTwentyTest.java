@@ -17,7 +17,7 @@ public class QuestionTwentyTest {
 //    @Test
 //    public void outPutTest() {
 //        String expectedResult = "Name: Mickey Mouse\nAge: 35 years\nState: Arizona State\n";
-//        String actualResult = sut.(0);
+//        ArrayList<QuestionTwentyCharacter> actualResult = sut.makeQuestionTwentyCharactersOutOf(new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt"));
 //        assertEquals(expectedResult, actualResult);
 //    }
 }

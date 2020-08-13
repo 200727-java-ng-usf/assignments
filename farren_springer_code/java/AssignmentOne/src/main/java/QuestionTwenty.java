@@ -11,21 +11,18 @@ import java.util.List;
  */
 public class QuestionTwenty {
 
-    public static void main(String[] args) throws IOException {
+    /**
+     * Method that takes in a file, prints the objects in the format specified by the question,
+     * and returns an ArrayList of QuestionTwentyCharacterObjects.
+     */
+    public static ArrayList<QuestionTwentyCharacter> makeQuestionTwentyCharactersOutOf(File f) {
 
-        // create a file object and use the relative path of the text file
-        File file = new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt");
         List<QuestionTwentyCharacter> characterList = new ArrayList<>();
-
-        // If there are no more lines of text, exit the main method
-        if(!file.exists()){
-            return;
-        }
 
         // Use a try block in case the file is not found
         try {
 
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedReader reader = new BufferedReader(new FileReader(f));
             String currentLine = reader.readLine();
 
             while (currentLine != null) {
@@ -54,11 +51,26 @@ public class QuestionTwenty {
             System.out.println("Something went wrong...");
         }
 
-        // iterate across our list of users and print each one out to the console
-
         for (int i = 0; i < characterList.size(); i++) {
             System.out.println(characterList.get(i) + "\n");
         }
+
+        return (ArrayList<QuestionTwentyCharacter>) characterList;
+
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        // create a file object and use the relative path of the text file
+        File file = new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt");
+
+        // If there are no more lines of text, exit the main method
+        if(!file.exists()){
+            return;
+        }
+
+        makeQuestionTwentyCharactersOutOf(file);
+
 
     } // end main
 

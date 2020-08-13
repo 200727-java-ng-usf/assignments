@@ -8,14 +8,15 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
     private String word;
 
-    public QuestionEighteenSubclass() {
-        this.word = "Hey thErE how yoU DoIn";
-    }
-
     public QuestionEighteenSubclass(String word) {
         this.word = word;
     }
 
+    /**
+     * This method will return true if the QuestionEighteenSubclass object's field
+     * word has uppercase letters.
+     * @return
+     */
     @Override
     public boolean hasUpperCaseLetters() {
         int counter = 0;
@@ -35,6 +36,11 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
         }
     }
 
+    /**
+     * This method will convert QuestionEighteenSubclass object's field
+     * word to all uppercase letters.
+     * @return
+     */
     @Override
     public String convertToUppercase() {
 
@@ -45,7 +51,11 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
 
     }
 
-
+    /**
+     * This method will return the QuestionEighteenSubclass object's field
+     * word converted to an integer value plus 10.
+     * @return
+     */
     @Override
     public int convertToIntAndAddTen() {
         int result = 0;
@@ -53,7 +63,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
             result += Character.getNumericValue(word.charAt(i));
         }
         result += 10;
-        System.out.println("Here is the string converted to an integer + 10: ");
+        System.out.println("Here is the string converted to an integer + 10: " + result);
         return result;
 
     }
@@ -70,12 +80,12 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
         // creates an object of the QuestionEighteenSubclass whose value is the userWord.
         QuestionEighteenSubclass theWord = new QuestionEighteenSubclass(userWord);
 
-        System.out.println(theWord.hasUpperCaseLetters());
-        System.out.println(theWord.convertToUppercase());
-        System.out.println(theWord.convertToIntAndAddTen());
+        theWord.hasUpperCaseLetters();
+        theWord.convertToUppercase();
+        theWord.convertToIntAndAddTen();
 
 
-    }
+    } // end main
 
 
-}
+} // end class
