@@ -4,8 +4,8 @@ import java.util.Arrays;
 public class Q1 {
     /**    Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
      *
-     * @param arr is the array with integer values to be passed from Q1Test.java and tested in Q1.java
-     * @return the sorted integer array, otherwise might return an empty array
+     * @param arr is the array passed containing the given integer values mentioned above
+     * @return the bubble sorted integer array, otherwise might return an empty array
      */
     public int[] sort(int[] arr) {
 
@@ -15,7 +15,7 @@ public class Q1 {
         }
 
         // make a copy of the original array, this copy will be sorted instead of the original
-        int[] copy = Arrays.copyOf(arr, arr.length);
+        int[] copy = Arrays.copyOf(arr, arr.length); // best practice to work on a copy
         // sort the array
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {

@@ -1,18 +1,31 @@
 package com.revature;
 
+import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
 
 public class Q3Test {
 
-    private Q3 q3; // SUT = System Under Test
+    private Q3 sut;
+
+    @Before
+    public void t1Setup(){
+        sut = new Q3();
+    }
+
 
     @Test
-    public void testQ3() {
-        q3 = new Q3(); // creating a class object
-        StringBuilder sb = new StringBuilder("abc");
-        System.out.println("String was: " + sb);
-        q3.reverseMethod(sb);
-        System.out.println("\nAfter reversing it:\n" + sb);
+    public void testReverseMethod() {
+        StringBuilder testSb = new StringBuilder("abc");
+        String expectedString = "cba";
+        assertEquals(expectedString, sut.reverseMethod(testSb));
+    }
+
+    @Test
+    public void testReverseMethodAlphaNumeric() {
+        StringBuilder testSb = new StringBuilder("abc 123");
+        String expectedString = "321 cba";
+        assertEquals(expectedString, sut.reverseMethod(testSb));
     }
 }
