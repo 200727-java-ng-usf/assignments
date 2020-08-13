@@ -26,11 +26,12 @@ public class q17intrestTest {
     public void q17interest() {
         {
             double expected =1.0;
+            double delta = 1;
 
             String ROI = "1\n1\n1 ";
             InputStream inContent = new ByteArrayInputStream(ROI.getBytes());
             System.setIn(inContent);
-            assertEquals(expected, java.util.Optional.of(sut.q17interest()));
+            assertEquals(expected, sut.q17interest(),delta);
 
         }
 //        double principal =0;

@@ -2,6 +2,7 @@ package com.revature.coreJavaAssign;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 import static com.revature.coreJavaAssign.q12StoreArray.*;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
@@ -16,6 +17,7 @@ import static com.revature.coreJavaAssign.q13Triangle.*;
 
 
 public class AppDriver extends q15Operators  {
+
 
     public static void main(String[] args) {
 
@@ -101,32 +103,39 @@ public class AppDriver extends q15Operators  {
 
         System.out.println("+--------------+");
         //Q7 Starts here
-        q7SortEmployees emp1 = new q7SortEmployees("Goku","Marketing",25);
+        q7SortEmployees emp1 = new q7SortEmployees("zuko","Marketing",25);
         q7SortEmployees emp2 = new q7SortEmployees("Vegeta","Customer-Service",24);
 
         ArrayList<q7SortEmployees> employees = new ArrayList<>();
         employees.add(emp1);
         employees.add(emp2);
 
-        System.out.println("This compares Names");
-        employees.sort(new q7SortEmployees.compareName());
+        employees.sort(new q7SortEmployees());
         for(q7SortEmployees E: employees){
             System.out.println(E);
         }
-        System.out.println("\n");
 
-        System.out.println("This compares Department");
-        employees.sort(new q7SortEmployees.compareDepartment());
-        for(q7SortEmployees E: employees){
-            System.out.println(E);
-        }
-        System.out.println("\n");
 
-        System.out.println("This compares Age");
-        employees.sort(new q7SortEmployees.compareAge());
-        for(q7SortEmployees E: employees){
-            System.out.println(E);
-        }
+
+//        System.out.println("This compares Names");
+//        employees.sort(new q7SortEmployees.compareName());
+//        for(q7SortEmployees E: employees){
+//            System.out.println(E);
+//        }
+//        System.out.println("\n");
+//
+//        System.out.println("This compares Department");
+//        employees.sort(new q7SortEmployees.compareDepartment());
+//        for(q7SortEmployees E: employees){
+//            System.out.println(E);
+//        }
+//        System.out.println("\n");
+//
+//        System.out.println("This compares Age");
+//        employees.sort(new q7SortEmployees.compareAge());
+//        for(q7SortEmployees E: employees){
+//            System.out.println(E);
+//        }
 
         System.out.println("+--------------+");
 
@@ -210,6 +219,7 @@ public class AppDriver extends q15Operators  {
         // q17 Intrest method
 
 
+
         double q17Answer = q17intrest.q17interest();
         System.out.println(q17Answer);
 
@@ -217,7 +227,7 @@ public class AppDriver extends q15Operators  {
         // q18 Inherits method
         String thisString = "";
         q18Inherits q18appDriver = new q18Inherits(thisString) ;
-        q18appDriver.userToInt();
+        thisString = q18appDriver.userToInt();
 
 
 

@@ -6,15 +6,31 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class q20Notepad {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         File javaAssignment = new File("src/main/resources/Data.txt");
+        boolean fileRead = printFile(javaAssignment);
+        if(fileRead){
+            System.out.println("You have read the file" );
+        }else{
+            System.out.println("You did not read the file");
+        }
+
+    }
+        public static boolean printFile(File javaAssignment){
+        boolean readFile = false ;
+
         //this is edge casing in case the file does not exist
         if(!javaAssignment.exists()){
-            return;
+            return false;
         }
+
         try{
             BufferedReader reader = new BufferedReader(new FileReader(javaAssignment));
             String currentLine = reader.readLine();
+
+            if(currentLine !=null){
+                readFile = true;
+            }
 
             while (currentLine != null){
                 //this will make a string array from currentLine split
@@ -26,10 +42,10 @@ public class q20Notepad {
                 System.out.println("\n");
                 currentLine = reader.readLine();
             }
-
         }catch(IOException e){
             e.printStackTrace();
         }
 
+        return readFile;
     }
 }

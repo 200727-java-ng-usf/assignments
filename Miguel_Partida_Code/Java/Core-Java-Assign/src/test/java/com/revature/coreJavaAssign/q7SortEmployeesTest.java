@@ -14,21 +14,26 @@ public class q7SortEmployeesTest {
 
     q7SortEmployees emp1 = new q7SortEmployees("Goku","Marketing",25);
     q7SortEmployees emp2 = new q7SortEmployees("Vegeta","Customer-Service",24);
+    q7SortEmployees emp3 = new q7SortEmployees("freza","HR",600);
 
     ArrayList<q7SortEmployees> employees = new ArrayList<>();
 
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp()  {
+        sut = new q7SortEmployees();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
+        sut = null;
     }
 
 
+
+
     @Test
-    public void testq7(){
+    public void compare() {
 
     }
 }

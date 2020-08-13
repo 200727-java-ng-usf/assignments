@@ -8,7 +8,7 @@ public class q18Inherits extends q18Subclass{
         //this will get thisString from the superclass
         super(thisString);
     }
-    public void userToInt(){
+    public String userToInt(){
 
         String thisString;
         Scanner input = new Scanner(System.in);
@@ -29,5 +29,6 @@ public class q18Inherits extends q18Subclass{
         int stingPlusTen = userInput.convertToInt();
         System.out.println(thisString + " as an int plus ten is "+ stingPlusTen);
 
+        return thisString;
 }
 }
