@@ -4,7 +4,6 @@ import com.revature.util.Employee;
 import com.revature.util.EmployeeComparator;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * A <code>Q7SortBy</code> sorts employees using an <code>{@link EmployeeComparator}</code>.

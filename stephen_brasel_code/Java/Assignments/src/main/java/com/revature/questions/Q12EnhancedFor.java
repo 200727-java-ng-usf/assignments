@@ -1,8 +1,6 @@
 package com.revature.questions;
 
 
-import java.util.Arrays;
-
 /**
  * A <code>Q12EnhancedFor</code> stores all the numbers from 1 to {@code n} in an array,
  * and prints out all of the even numbers in an enhanced for loop.

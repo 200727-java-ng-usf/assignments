@@ -79,14 +79,30 @@ public class T18StringSubClasses {
     }
 
     @Test
+    public void t19HasUpperNull() {
+        assertFalse(q18.hasUpper(null));
+    }
+
+    @Test
     public void t19SwapCaseNothing() {
         String result = q18.toUpperCase("");
+        assertEquals("", result);
+    }
+
+    @Test
+    public void t19SwapCaseNull() {
+        String result = q18.toUpperCase(null);
         assertEquals("", result);
     }
 
     @Test(expected = NumberFormatException.class)
     public void t19ToIntAddNExcept() {
         Integer i = q18.toIntAddN("Seven", 10);
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void t19ToIntAddNExceptNull() {
+        Integer i = q18.toIntAddN(null, 10);
     }
 
     //endregion

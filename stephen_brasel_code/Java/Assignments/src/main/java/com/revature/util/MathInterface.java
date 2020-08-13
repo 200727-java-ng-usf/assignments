@@ -7,8 +7,8 @@ public interface MathInterface {
 //    to carry out the required operations.
 //    Hard code two operands in a test class having a main method that calls the implementing class.
 
-    public abstract double add(double a, double b);
-    public abstract double subtract(double a, double b);
-    public abstract double multiply(double a, double b);
-    public abstract double divide(double a, double b) throws Exception;
+    double add(double a, double b);
+    double subtract(double a, double b);
+    double multiply(double a, double b);
+    double divide(double a, double b) throws Exception;
 }

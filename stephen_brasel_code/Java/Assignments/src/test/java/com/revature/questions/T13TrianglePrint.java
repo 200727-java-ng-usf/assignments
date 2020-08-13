@@ -17,9 +17,7 @@ public class T13TrianglePrint {
 			"1 0 1\r\n" +
 			"0 1 0 1\r\n";
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 	private final PrintStream originalOut = System.out;
-	private final PrintStream originalErr = System.err;
 
 	@Before
 	public void t13Setup() {
@@ -39,8 +37,6 @@ public class T13TrianglePrint {
 	//endregion
 
 	//region POSITIVE_TESTS
-
-
 	/**
 	 * System.out
 	 */
@@ -56,15 +52,12 @@ public class T13TrianglePrint {
 	@Test
 	public void t13EnhancedForPrinted() {
 		System.setOut(new PrintStream(outContent));
-		System.setErr(new PrintStream(errContent));
 		String[] strs = q13.triWhile(4);
 		for (String str : strs) {
 			System.out.println(Q13TrianglePrint.formatSpacedOutStr(str));
 		}
 		assertEquals(res, outContent.toString());
-
 		System.setOut(originalOut);
-		System.setErr(originalErr);
 		for (String str : strs) {
 			Q13TrianglePrint.formatSpacedOutStr(str);
 		}

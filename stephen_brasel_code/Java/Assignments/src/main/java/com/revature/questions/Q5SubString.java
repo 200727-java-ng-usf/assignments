@@ -1,7 +1,5 @@
 package com.revature.questions;
 
-import java.util.Arrays;
-
 /**
  * A <code>Q5SubString</code> provides a substring of a given <code>{@link String}</code> {@code str} up to
  * a given index {@code idx}.

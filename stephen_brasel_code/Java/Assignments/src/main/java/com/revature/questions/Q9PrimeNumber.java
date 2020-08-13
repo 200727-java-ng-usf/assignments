@@ -1,7 +1,5 @@
 package com.revature.questions;
 
-import com.revature.util.EmployeeComparator;
-
 import java.util.ArrayList;
 
 /**
@@ -15,11 +13,11 @@ public class Q9PrimeNumber {
     /**
      * An ArrayList of Integers
      */
-    private ArrayList<Integer> intList = new ArrayList<Integer>();
+    private ArrayList<Integer> intList = new ArrayList<>();
     /**
      * An ArrayList of prime numbers in the intList
      */
-    private ArrayList<Integer> primeList = new ArrayList<Integer>();
+    private ArrayList<Integer> primeList = new ArrayList<>();
 
     /**
      * @return The ArrayList of prime numbers in the intList
@@ -58,9 +56,9 @@ public class Q9PrimeNumber {
      */
     public void populatePrimes(){
         primeList.clear();
-        for (int i = 0; i < intList.size(); i++) {
-            if(isPrime(intList.get(i))){
-                primeList.add(intList.get(i));
+        for (Integer integer : intList) {
+            if (isPrime(integer)) {
+                primeList.add(integer);
             }
         }
     }

@@ -27,7 +27,7 @@ public class Q20DataBaseParsing {
     /**
      * A data structure for holding information such as first names, last names, state of home address, and an age.
      */
-    public class Person{
+    public static class Person{
         /**
          * The first name of the person.
          */

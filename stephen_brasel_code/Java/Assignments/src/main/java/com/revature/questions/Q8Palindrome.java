@@ -1,10 +1,6 @@
 package com.revature.questions;
 
-import com.revature.util.EmployeeComparator;
-
 import java.util.*;
-import java.util.function.*;
-import java.util.stream.*;
 
 /**
  * A <code>Q8Palindrome</code> stores a given <code>{@link String}</code>[] in an
@@ -68,11 +64,11 @@ public class Q8Palindrome {
      */
     public void sortAndStore(String[] strs){
         if(strs == null) allStr = new ArrayList<>();
-        else allStr = new ArrayList<String>(Arrays.asList(strs));
-        palindromes = new ArrayList<String>();
-        for (int i = 0; i < allStr.size(); i++) {
-            if(isPalindrome(allStr.get(i))){
-                palindromes.add(allStr.get(i));
+        else allStr = new ArrayList<>(Arrays.asList(strs));
+        palindromes = new ArrayList<>();
+        for (String s : allStr) {
+            if (isPalindrome(s)) {
+                palindromes.add(s);
             }
         }
     }

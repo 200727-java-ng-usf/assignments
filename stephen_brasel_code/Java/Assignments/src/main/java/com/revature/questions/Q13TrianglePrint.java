@@ -30,18 +30,10 @@ public class Q13TrianglePrint {
 
      */
     /**
-     * index i for iterating through a loop in the <code>{@link #triWhile(int)}</code> method
-     */
-    private int i = 0;
-    /**
      * a blank string used to concatenate iterations of the triangle
      * pattern in the <code>{@link #triWhile(int)}</code> method
      */
     private String str = "";
-    /**
-     * An array of strings whose initial indices hold the smallest iterations of the triangle pattern.
-     */
-    private String[] ret;
 
     /**
      * A holder string for the triangle pattern variable 0.
@@ -72,8 +64,8 @@ public class Q13TrianglePrint {
      */
     public String[] triWhile(int end) {
         if(end < 0) return new String[]{};
-        i = 0;
-        ret = new String[end];
+        int i = 0;
+        String[] ret = new String[end];
         while (i < end) {
             if (i % 2 == 0) {
                 str = str.concat(a);

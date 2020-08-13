@@ -28,6 +28,7 @@ public class Q18StringSubClasses extends Q18SuperClass {
      */
     @Override
     public boolean hasUpper(String str) {
+        if(str == null) return false;
         for(int i = 0; i < str.length(); i++){
             if(Character.isUpperCase(str.charAt(i))) return true;
         }
@@ -42,8 +43,9 @@ public class Q18StringSubClasses extends Q18SuperClass {
      */
     @Override
     public String toUpperCase(String str) {
+        if(str == null) return "";
         StringBuffer strb = new StringBuffer();
-        Character ch;
+        char ch;
         for (int i = 0; i < str.length(); i++) {
             ch = str.charAt(i);
             if(Character.isLowerCase(ch)){
@@ -55,7 +57,7 @@ public class Q18StringSubClasses extends Q18SuperClass {
     }
 
     /**
-     * Parses a <code><{@#link String}</code> {@code str} into in <code>{@link Integer}</code>,
+     * Parses a <code><{@link String}</code> {@code str} into in <code>{@link Integer}</code>,
      * adds {@code N} to that parsed value, then returns the value.
      * @param str the <code>{@link String}</code> to parse into an <code>{@link Integer}</code>
      * @param N the addend.
@@ -63,7 +65,7 @@ public class Q18StringSubClasses extends Q18SuperClass {
      */
     @Override
     public Integer toIntAddN(String str, Integer N) throws NumberFormatException{
-        Integer ret = 0;
+        int ret = 0;
         try{
             ret = Integer.parseInt(str);
         } catch(NumberFormatException e){

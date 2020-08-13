@@ -1,7 +1,6 @@
 package com.revature.questions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A <code>Q19ArrayListOperations</code> Creates an <code>{@link ArrayList}</code><<code>{@link Integer}</code>
