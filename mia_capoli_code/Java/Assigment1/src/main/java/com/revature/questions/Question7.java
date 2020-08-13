@@ -29,11 +29,6 @@ public class Question7 implements Comparator<Employee> {
         }
     }
 
-    public void SortEmployees(ArrayList<Employee> employees) {
-
-        employees.sort(new Question7());
-
-    }
 
 
 }

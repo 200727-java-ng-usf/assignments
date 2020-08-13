@@ -1,6 +1,7 @@
 package com.revature.testing;
 
 import com.revature.questions.Question7;
+import com.revature.questions.Question7Sort;
 import com.revature.questions.extras.Employee;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class Question7Test {
 
-    private Question7 question7;
+    private Question7Sort question7;
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
@@ -22,7 +23,7 @@ public class Question7Test {
 
     @Before
     public void setup() {
-        question7 = new Question7();
+        question7 = new Question7Sort();
 
     }
 
