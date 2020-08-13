@@ -17,20 +17,37 @@ public class SwitchDemo {
     String theString;
 
     // Build the cases in the switcher
-    public void buildSwitchDemo(String dataPoint) {
+    public String buildSwitchDemo(String dataPoint) {
+
+        String result = "";
 
         switch (dataPoint) {
-            case "sqrt": System.out.println(Math.sqrt(a));
+            case "sqrt":
+                double sqrt1 = Math.sqrt(a);
+                String s = Double.toString(sqrt1);
+                result = s;
             break;
-            case "date": System.out.println(dtf.format(now));
+            case "date":
+                result = dtf.format(now);
             break;
-            case "split": System.out.println(Arrays.toString(theString.split(" ")));
+            case "split":
+                result = Arrays.toString(theString.split(" "));
             break;
 
         }
+        return result;
     }
 
     // Getters and Setters
+
+    public double getA() {
+        return a;
+    }
+
+    public void setA(double a) {
+        this.a = a;
+    }
+
     public DateTimeFormatter getDtf() {
         return dtf;
     }

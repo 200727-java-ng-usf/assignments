@@ -22,7 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="" />
+    <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MinimumTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MinimumTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +74,7 @@
       <recent name="C:\Users\jason\200727-java-ng-usf\assignments\jason_hernandez_code\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BubbleTest.nullArray">
+  <component name="RunManager" selected="Application.AppDriver">
     <configuration name="AppDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mainpackage.AppDriver" />
       <module name="assignment_1" />
@@ -127,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppDriver" />
         <item itemvalue="JUnit.SorterTests.nullArray" />
         <item itemvalue="JUnit.BubbleTest.test2" />
         <item itemvalue="JUnit.BubbleTest.nullArray" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.AppDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -166,10 +172,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="560" y="8" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1596315791812" />
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1597077504661">
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1597354689708">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1597077504661" />
+    <state x="626" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1597354689708" />
     <state x="519" y="198" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1596566217692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -210,6 +216,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="192" y="114" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1597175292877" />
+    <state x="479" y="201" key="refactoring.ChangeSignatureDialog" timestamp="1597351578868">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="479" y="201" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1597351578868" />
     <state x="452" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1596567317346">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

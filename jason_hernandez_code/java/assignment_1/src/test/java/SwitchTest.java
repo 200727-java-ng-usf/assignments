@@ -1,4 +1,4 @@
-import mainpackage.PrimeNumbers;
+import static org.junit.Assert.*;
 import mainpackage.SwitchDemo;
 import org.junit.After;
 import org.junit.Before;
@@ -21,8 +21,9 @@ public class SwitchTest {
     public void case1() { // Returns the square root
         String dataPoint = "sqrt";
         double a = 25;
-        double actualResult = b;
-        double expectedResult = 5;
+        String expectedResult = "5";
+        String  actualResult = sut.s;
+        assertEquals(expectedResult, actualResult, 0.01);
     }
 
     @Test
