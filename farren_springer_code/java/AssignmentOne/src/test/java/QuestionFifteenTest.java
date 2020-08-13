@@ -42,7 +42,7 @@ public class QuestionFifteenTest {
         assertEquals(expectedResult, actualResult, 0.0000001);
     }
 
-    //Negative test
+    //Negative tests
     @Test (expected = NumberFormatException.class)
             public void nullValuePassedToAddThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);

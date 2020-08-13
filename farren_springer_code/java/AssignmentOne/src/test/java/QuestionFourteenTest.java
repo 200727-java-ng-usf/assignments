@@ -37,10 +37,14 @@ public class QuestionFourteenTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    // TODO test Scanner input from method(?)
 //    // Negative test
 //    @Test (expected = InputMismatchException.class)
 //    public void StringPassedToSwitchCaseReturnsInputMismatchException() {
 //        int stringTryingToBeAnInt = Integer.parseInt("notAString");
+//        int unexpectedResult = 7;
+//        int actualResult = sut.squareRoot(stringTryingToBeAnInt);
+//        assertNotEquals(unexpectedResult, actualResult);
 //
 //    }
 }

@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class QuestionEighteenSubclass extends QuestionEighteen {
 
-    String word;
+    private String word;
 
     public QuestionEighteenSubclass() {
         this.word = "Hey thErE how yoU DoIn";

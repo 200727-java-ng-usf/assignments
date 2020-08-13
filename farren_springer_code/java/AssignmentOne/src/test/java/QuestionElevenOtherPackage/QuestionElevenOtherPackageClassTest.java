@@ -46,4 +46,5 @@ public class QuestionElevenOtherPackageClassTest {
         // TODO review the generated test code and remove the default call to fail.
         assertEquals(expectedResult, sut.getFloat2(), 0.000000000000000000001);
     }
+
 }

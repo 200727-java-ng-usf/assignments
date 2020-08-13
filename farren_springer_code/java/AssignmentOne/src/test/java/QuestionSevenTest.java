@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionSevenTest {
 
@@ -21,4 +22,16 @@ public class QuestionSevenTest {
         String actualResult = sut.getDepartment();
         assertEquals(expectedResult, actualResult);
     }
+
+    // Negative test
+    @Test (expected = NullPointerException.class)
+    public void nullObjectsPassedToOverriddenCompareMethodThrowNullPointerException() {
+        QuestionSeven o1 = new QuestionSeven();
+        o1 = null;
+        QuestionSeven o2 = new QuestionSeven();
+        o2 = null;
+        int unexpectedResult = 1;
+        assertNotEquals(1, sut.compare(o1, o2));
+    }
+
 }

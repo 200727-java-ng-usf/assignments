@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 
-public class QuestionSeven {
+public class QuestionSeven implements Comparator<QuestionSeven> {
 
     // establish two employee objects with string, string, and int
     private String name;
@@ -12,18 +14,28 @@ public class QuestionSeven {
     public static void main(String[] args) {
 
         // Create an ArrayList object to store the employees
-        ArrayList employeeArray = new ArrayList();
+        ArrayList employeeArrayList = new ArrayList();
+
+        QuestionSeven emp1 = new QuestionSeven("Susan", "Human Resources", 35);
+        QuestionSeven emp2 = new QuestionSeven("Henry", "Public Relations", 32);
 
         // Add two employees to the ArrayList
-        employeeArray.add(new QuestionSeven("Susan", "Human Resources", 27));
-        employeeArray.add(new QuestionSeven("Henry", "Public Relations", 32));
+        employeeArrayList.add(emp1);
+        employeeArrayList.add(emp2);
 
         System.out.println("+----------------------+");
-        for (int i = 0; i < employeeArray.size(); i++) {
-            System.out.println(employeeArray.get(i));
-        }
 
-    }
+        System.out.println("Unsorted: ");
+        employeeArrayList.forEach(System.out::println);
+
+        Collections.sort(employeeArrayList, new QuestionSeven());
+
+        System.out.println("Sorted: ");
+        employeeArrayList.forEach(System.out::println);
+
+
+
+    } // end main
 
     // no-args constructor
     public QuestionSeven() {
@@ -74,10 +86,34 @@ public class QuestionSeven {
                 '}';
     }
 
-//    @Override
-//    public int compare(QuestionSeven emp1, QuestionSeven emp2) {
-//        if(emp1.getName() > emp2.getName()) {
-//            return 1;
-//        }
-//    }
-} // not done. Implement Comparator Interface
+    @Override
+    public int compare(QuestionSeven e1, QuestionSeven e2) {
+        // Compare name first
+        if (e1.getName().compareTo(e2.getName()) > 0) {
+            return 1;
+        } else if (e1.getName().compareTo(e2.getName()) < 0) {
+            return -1;
+        } else { // Compare Department next
+            if (e1.getDepartment().compareTo(e2.getDepartment()) > 0) {
+                return 1;
+            } else if (e1.getDepartment().compareTo(e2.getDepartment()) < 0) {
+                return -1;
+            } else { // Compare age next
+                if (e1.getAge() > e2.getAge()) {
+                    return 1;
+                } else if (e1.getAge() < e2.getAge()) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            }
+        }
+
+    } // end compare
+
+
+
+
+
+} // end class
+// done

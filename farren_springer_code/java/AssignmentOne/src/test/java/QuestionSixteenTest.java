@@ -18,18 +18,20 @@ public class QuestionSixteenTest {
     // Positive test
     @Test
     public void thereAreFiveLettersInHello() {
-        int expectedResult = 5;
-        int actualResult = sut.numberOfCharactersInString("Hello");
-        assertEquals(expectedResult, actualResult);
+        String[] actualResult = new String[1];
+        actualResult[0] = "Heyoooooo";
+        int actualResultNum = sut.numberOfCharactersInString(actualResult);
+        assertEquals(9, actualResultNum);
     }
 
     // Negative test
     @Test (expected = NullPointerException.class)
         public void nullValuePassedToNumberOfCharactersInStringThrowsNullPointerException() {
-        String nullString = null;
+        String[] actualResult = new String[1];
+        actualResult[0] = null;
         int unexpectedResult = 4;
-        int actualResult = sut.numberOfCharactersInString(nullString);
-        assertNotEquals(unexpectedResult, actualResult);
+        int actualResultNum = sut.numberOfCharactersInString(actualResult);
+        assertNotEquals(unexpectedResult, actualResultNum);
     }
 
 

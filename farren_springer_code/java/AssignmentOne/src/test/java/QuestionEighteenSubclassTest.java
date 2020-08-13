@@ -11,6 +11,10 @@ public class QuestionEighteenSubclassTest {
     @After
     public void tearDown() throws Exception { sut = null; }
 
+    // TODO Positive test
+
+    // TODO Negative test
+
 //    @Test
 //    public void hElloHasUpperCaseLetters() {
 //        boolean actualResult = sut.hasUpperCaseLetters();

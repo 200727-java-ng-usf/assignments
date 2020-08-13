@@ -2,14 +2,26 @@ import java.util.Arrays;
 
 public class QuestionOne {
 
+    /**
+     * This method performs a bubble sort on an integer array and returns the
+     * new sorted integer array.
+     * @param arr
+     * @return
+     */
     public static int[] bubbleSort(int[] arr) {
 
-        // Create a temporary int variable to store for comparisons
+        /**
+         * Instantiate a temporary variable.
+         */
         int temp;
 
-        // Use loops to compare the integers in the array
+        /**
+         * Use loops to compare the integers in the array.
+          */
         for (int i = arr.length - 1; i > 0; i--) {
-            // For each index value, compare it to each other value in the array
+            /**
+             * For each index value, compare it to each other value in the array
+             */
             for (int j = 0; j < i; j++) {
                 // If the current array index value is greater
                 if (arr[j] > arr[j + 1]) {
@@ -22,18 +34,29 @@ public class QuestionOne {
                 }
             }
         }
+        /**
+         * Return the sorted integer array.
+         */
         return arr;
     }
 
     public static void main(String[] args) {
-        // Establish the string to be used from the worksheet
+
+        /**
+         * Instantiate the integer array from Q1.
+         */
         int someInts[] = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
 
-        // Print the unsorted array
+        /**
+         * Print the unsorted array.
+         */
         System.out.println("This is the unsorted array: " + Arrays.toString(someInts) + "\n");
-        System.out.print("This is the bubble sorted array: ");
 
-        // Print the bubble sorted array
+
+        /**
+         * Print the array returned from the bubbleSort method.
+         */
+        System.out.print("This is the bubble sorted array: ");
         System.out.println(Arrays.toString(bubbleSort(someInts)));
 
     } // end main
