@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class QuestionFourteenTest {
 
@@ -17,7 +18,7 @@ public class QuestionFourteenTest {
     @After
     public void tearDown() throws Exception { sut = null; }
 
-    // Positive test
+    // Positive test for splitTheString
     @Test
     public void splitMethodPrintsSeparatedBySpaceIAmLearningCoreJava() {
         String[] expectedResult = {"I", "am", "learning", "Core", "Java"};
@@ -25,7 +26,7 @@ public class QuestionFourteenTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    // Positive test
+    // Positive test for printTheDate
     @Test
     public void printDateMethodPrintsDate() {
         // Create a date format object
@@ -37,13 +38,24 @@ public class QuestionFourteenTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    // Positive test for squareRoot
+    @Test
+    public void squareRootOf49Is7() {
+        double expectedResult = 7.0;
+        double actualResult = sut.squareRoot(49);
+        assertEquals(expectedResult, actualResult, 0.000000000000001);
+
+    }
+
     // TODO test Scanner input from method(?)
-//    // Negative test
-//    @Test (expected = InputMismatchException.class)
-//    public void StringPassedToSwitchCaseReturnsInputMismatchException() {
-//        int stringTryingToBeAnInt = Integer.parseInt("notAString");
-//        int unexpectedResult = 7;
-//        int actualResult = sut.squareRoot(stringTryingToBeAnInt);
+    // Negative test
+//    @Test (expected = NullPointerException.class)
+//    public void splitTheStringPassedNullStringReturnsNullPointerException() {
+//        String nullString = null;
+//        String[] unexpectedResult = new String[2];
+//        unexpectedResult[0] = "Hey";
+//        unexpectedResult[1] = "there";
+//        String[] actualResult = sut.splitTheString(nullString, ":");
 //        assertNotEquals(unexpectedResult, actualResult);
 //
 //    }

@@ -8,22 +8,22 @@ public class QuestionFourteen {
     /**
      * This method asks the user for input and returns the square root.
      */
-    public static double squareRoot() {
+    public static double squareRoot( int num) {
 
-        /**
-         * Create a Scanner object.
-         */
-        Scanner scanner = new Scanner(System.in);
-
-        /**
-         * Ask for user input.
-         */
-        System.out.println("Enter a number: ");
-
-        /**
-         * Assign the input to an integer variable.
-         */
-        int num = scanner.nextInt();
+//        /**
+//         * Create a Scanner object.
+//         */
+//        Scanner scanner = new Scanner(System.in);
+//
+//        /**
+//         * Ask for user input.
+//         */
+//        System.out.println("Enter a number: ");
+//
+//        /**
+//         * Assign the input to an integer variable.
+//         */
+//        int num = scanner.nextInt();
 
         /**
          * Use the Math class to find the square root of the number.
@@ -131,7 +131,21 @@ public class QuestionFourteen {
          */
         switch (theCaseNumber) {
             case 1:
-                squareRoot();
+                /**
+                 * Create a Scanner object.
+                 */
+                Scanner scannerCase1 = new Scanner(System.in);
+
+                /**
+                 * Ask for user input.
+                 */
+                System.out.println("Enter a number: ");
+
+                /**
+                 * Assign the input to an integer variable.
+                 */
+                int num = scannerCase1.nextInt();
+                squareRoot(num);
                 break;
             case 2:
                 printTheDate();
