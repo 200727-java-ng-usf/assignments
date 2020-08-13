@@ -36,8 +36,6 @@ public class Q2Test {
         assertEquals(arr[24], actual[24]);
         }
     }
-
-
 //
 //
 //    public static void main(String[] args){
