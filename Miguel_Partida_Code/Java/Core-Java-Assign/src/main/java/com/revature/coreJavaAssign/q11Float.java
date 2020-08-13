@@ -5,7 +5,7 @@ import com.revature.anotherOne.q11Driver;
 
 
 public class q11Float {
-   static void floatsFromThere() {
+   static float[] floatsFromThere() {
       //created the object floats to carry the refrences to this method
       q11Driver floats = new q11Driver();
 
@@ -14,5 +14,7 @@ public class q11Float {
       float floatTwo = floats.float2;
 
       System.out.println("This is the first float: " + floatOne + " This is the second float: " + floatTwo);
+      float[] floatArray = {floatOne,floatTwo};
+      return floatArray;
    }
 }

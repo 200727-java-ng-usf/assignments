@@ -11,10 +11,16 @@ public class q14Cases {
 //        q14Cases();
 //    }
 
-    static void q14Cases(int casePick){
+    static boolean q14Cases(int casePick){
         Scanner scanner = new Scanner(System.in);
+        boolean pass = false;
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss") ;
         Date todaydate = new Date();
+        //this is the edge casing
+
+        if (casePick>=3||casePick<=0){
+            return false;
+        }
 
         switch (casePick){
             case 1:
@@ -29,7 +35,9 @@ public class q14Cases {
                 for(String i :individualWords){
                     System.out.print(i);
                 }
+                pass = true;
                 break;
         }
+        return pass;
     }
 }

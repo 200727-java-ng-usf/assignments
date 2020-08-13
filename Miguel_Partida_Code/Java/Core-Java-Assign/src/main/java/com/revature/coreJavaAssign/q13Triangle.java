@@ -4,9 +4,8 @@ package com.revature.coreJavaAssign;
 public class q13Triangle {
 
 
-    static void makeTriangle() {
-        //the number of rows that will be made
-        int rows = 8;
+    static int makeTriangle(int rows) {
+
         //this is the number of rows it will iterate
         for (int r = 1; r <= rows; r++) {
             //this is the number of columns it will iterate
@@ -22,5 +21,6 @@ public class q13Triangle {
             System.out.println(" ");
 
         }
+        return rows;
     }
 }

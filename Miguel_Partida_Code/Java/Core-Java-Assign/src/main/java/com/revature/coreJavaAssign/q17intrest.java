@@ -6,52 +6,36 @@ import java.util.Scanner;
 public class q17intrest {
     public static Double q17interest() {
         //These are the values that will be calculated
-        double rateOfInterest;
+        double totalInterest;
+        double rateOfInterest ;
         double principal;
         double numberOfYears;
-        double totalInterest;
-
-
 
         //this will take in the users inputs
-        Scanner principalInput = new Scanner(System.in);
-        //this while block will happen with all three of the refrences
-        while (true){
-            //the while loop will keep the try statement looping until that break statement is hit
-        try{
+        Scanner calculateIntreset = new Scanner(System.in);
+
             System.out.println("Enter principal: ");
-            principal = Double.parseDouble(principalInput.next());
+            principal = Double.parseDouble(calculateIntreset.next());
             //the break will exit the try statement when the right input is given
-            break;
-        }catch(Exception e){
-            System.out.println("Wrong input,please try again...");
-        }
-        }
 
-        Scanner rateOfInterestInput = new Scanner(System.in);
-        while (true){
-            try{
+
+        //I used to have a while loop in between ever System.in but had trouble testing
+        //so i removed that
+
+//        Scanner rateOfInterestInput = new Scanner(System.in);
+
                 System.out.println("Enter Rate of Interest: ");
-                rateOfInterest = Double.parseDouble(rateOfInterestInput.next());
+                rateOfInterest = Double.parseDouble(calculateIntreset.next());
                 //the break will exit the try statement when the right input is given
-                break;
-            }catch(Exception e){
-                System.out.println("Wrong input,please try again...");
-            }
-        }
 
 
-        Scanner numberOfYearsInput = new Scanner(System.in);
-        while (true){
-            try{
+
+//        Scanner numberOfYearsInput = new Scanner(System.in);
+
                 System.out.println("Enter Number of Years: ");
-                numberOfYears = Double.parseDouble(numberOfYearsInput.next());
-                //the break will exit the try statement when the right input is given
-                break;
-            }catch(Exception e){
-                System.out.println("Wrong input,please try again...");
-            }
-        }
+                numberOfYears = Double.parseDouble(calculateIntreset.next());
+
+
 
         //this will get the total intrest
         totalInterest = rateOfInterest * principal * numberOfYears;

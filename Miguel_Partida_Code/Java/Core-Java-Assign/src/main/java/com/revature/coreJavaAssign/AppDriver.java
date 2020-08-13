@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import static com.revature.coreJavaAssign.q12StoreArray.*;
-import static com.revature.coreJavaAssign.q17intrest.q17interest;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;
 import static com.revature.coreJavaAssign.q2Fibonacci.*;
 import static com.revature.coreJavaAssign.q3Reverse.*;
@@ -96,7 +95,8 @@ public class AppDriver extends q15Operators  {
 
         //Q6Even Number method starts here
         // will be using FibonacciNumber for int
-        isItEven(FibonacciNumber);
+        String evenOrOdd =isItEven(FibonacciNumber);
+        System.out.println(evenOrOdd);
 
 
         System.out.println("+--------------+");
@@ -164,22 +164,33 @@ public class AppDriver extends q15Operators  {
         System.out.println("+--------------+");
         // Access floats from another package
 
-        floatsFromThere();
+        float[] floatArray = floatsFromThere();
 
         //Access floats from another package end here
         System.out.println("+--------------+");
 
         // Store Away starts here
+        //this is my array with the size of 100
+        int[] evenArray = new int[100];
 
-        even100();
+       int[] evens = even100(evenArray);
+        System.out.println(evens);
 
         System.out.println(" ");
         System.out.println("+--------------+");
         //The triangle will be made here
-        makeTriangle();
+        int triangle = 4;
+
+        int rowsMade = makeTriangle(triangle);
+        System.out.println("There were "+rowsMade+" rows made");
 
         System.out.println(" ");
         System.out.println("+--------------+");
+        //q14 case pick
+        int casePick = 1;
+
+        boolean pass  = q14Cases.q14Cases(casePick);
+        System.out.println(pass);
 
         // q15 Operators Method
 
@@ -191,7 +202,6 @@ public class AppDriver extends q15Operators  {
         System.out.println(operators.division(x,y));
         System.out.println(operators.multiplacation(x,y));
         System.out.println("+--------------+");
-        // q16 command line argument
 
 
 
@@ -199,17 +209,15 @@ public class AppDriver extends q15Operators  {
         System.out.println("+--------------+");
         // q17 Intrest method
 
+
         double q17Answer = q17intrest.q17interest();
         System.out.println(q17Answer);
 
         System.out.println("+--------------+");
         // q18 Inherits method
-
-
-
-
-
-
+        String thisString = "";
+        q18Inherits q18appDriver = new q18Inherits(thisString) ;
+        q18appDriver.userToInt();
 
 
 
@@ -225,11 +233,7 @@ public class AppDriver extends q15Operators  {
 
 
 
-
-
-
         System.out.println("+--------------+");
-        // q20 Notepad method
 
 
     }
