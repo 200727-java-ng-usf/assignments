@@ -79,10 +79,10 @@ public class Q20Main {
 
         while (currentLine != null) {
 
-            // telling the bufferedReader where to split lines
+            // telling the currentLine String where to split lines to be stored in String[] userFields
             String[] userFields = currentLine.split(":");
 
-            // each iteration of this loop, a new object will be created and assigned
+            // each iteration of this while loop, a new object will be created and assigned
             // the proper fields
             Q20Main character = new Q20Main();
             character.setFirstName(userFields[0]);
@@ -97,8 +97,11 @@ public class Q20Main {
             currentLine = reader.readLine();
         }
 
-        for (Object persons : userList) {
+        for (Q20Main persons : userList) {
             System.out.println(persons);
+            // .toString() is implicitly called because printing
+            // the println method calls the default toString for objects
+            // if none is declared.
         }
 
 

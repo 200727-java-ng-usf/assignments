@@ -35,8 +35,14 @@ public class Q8Main {
             for (int j = original.get(i).length(); j > 0; j--) {
                 tempString += tempChar[j-1];
             }
-            palindrome.add(i, tempString);
+
+            if (tempString.equals(original.get(i))) {
+                palindrome.add(original.get(i));
+            }
+
         }
+
+
 
 
         System.out.println("Original Array:");

@@ -112,11 +112,6 @@ public class Q7Main {
 
     public static void main(String[] args) {
 
-        String firstInput;
-        String lastInput;
-        String deptInput;
-        int ageInput;
-
         // Enter employee information when adding to the array.
         //-----------------------------------------------------------
         ArrayList<Q7Main> employee = new ArrayList<Q7Main>();
