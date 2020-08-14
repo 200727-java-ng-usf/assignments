@@ -9,15 +9,16 @@ public class SubStringerMethod {
 
         // Begin with a string
         String str = "Substringing a string";
+        System.out.println("Original string: " + str);
         // Null substring as placeholder
         String substr = "";
         // Set an index
-        int idx = 10;
+        int idx = 9;
 
         // Get the chars between the specified indices
         substr = str.substring(0, idx-1);
 
-        System.out.println("Substring = " + substr); // Should output "Substring"
+        System.out.println("Substring = " + substr); // Should output "Substrin"
     }
 
 

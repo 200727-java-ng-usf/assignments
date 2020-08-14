@@ -30,6 +30,7 @@ public class PrimeNumbers {
             }
 
         }
+        System.out.println(primes);
         return primes;
     }
 }

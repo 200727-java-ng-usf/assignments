@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class Palindromes {
 
-    ArrayList checkForPalindromes() {
+    void checkForPalindromes() {
 
         // Start with two ArrayLists, original and palindromes
-        ArrayList originalStrings = new ArrayList<String>();
+        ArrayList<String> originalStrings = new ArrayList<>();
         originalStrings.add("karan");
         originalStrings.add("madam");
         originalStrings.add("tom");
@@ -27,21 +27,21 @@ public class Palindromes {
 
         // Now reverse each string
         String original, reverse = "";
-        Scanner in = new Scanner(System.in);
 
-        original = in.nextLine();
+        for(int i = 0; i < originalStrings.size(); i++) {
 
-        int length = original.length();
+            original = originalStrings.get(i);
+            reverse = "";
+            int length = original.length();
 
-        for (int i = length - 1; i >= 0; i--)
-            reverse = reverse + original.charAt(i);
+            for (int j = length - 1; j >= 0; j--)
+                reverse = reverse + original.charAt(j);
 
-        // Check if reverse is the same as original
-        if (original.equals(reverse))
-            palindromeStrings.add(reverse);
-
+            // Check if reverse is the same as original
+            if (original.equals(reverse))
+                palindromeStrings.add(reverse);
+        }
         System.out.println(palindromeStrings);
 
-        return palindromeStrings;
     }
 }

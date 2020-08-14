@@ -5,11 +5,8 @@ import java.util.Arrays;
 public class AppDriver {
     public static void main(String[] args) {
         System.out.println("1. Bubble Sort an array");
-        System.out.println("Array Before Bubble Sort");
         BubbleSort bubbleSort = new BubbleSort();
-
-        System.out.println("Array After Bubble Sort");
-        System.out.println(bubbleSort);
+        // System.out.println(Arrays.toString(bubbleSort()));
         System.out.println("+------------------------+");
 
         System.out.println("2. Generate Fibonacci series");
@@ -35,12 +32,14 @@ public class AppDriver {
 
         System.out.println("6. Determine if int is even without using modulo");
         IntEven intEven = new IntEven();
+        System.out.println("Number to check: 5");
         intEven.determineIfEven(5f);
         System.out.println("+------------------------+");
 
         System.out.println("7. Sort employees by name, department, and age");
         EmployeeSort employeeSort = new EmployeeSort();
         employeeSort.sortEmployee("", "", 0);
+        //System.out.println();
         System.out.println("+------------------------+");
 
         System.out.println("8. Extract palindromes from an array list");
@@ -55,7 +54,7 @@ public class AppDriver {
 
         System.out.println("10. Find the minimum of two numbers");
         FindMinimum findMinimum = new FindMinimum();
-        findMinimum.findTheMinimum(0, 0);
+        findMinimum.findTheMinimum(8, 5);
         System.out.println("+------------------------+");
 
         System.out.println("11. Access another package");
@@ -75,7 +74,9 @@ public class AppDriver {
 
         System.out.println("14. Demonstrate the switch case");
         SwitchDemo switchDemo = new SwitchDemo();
-        switchDemo.buildSwitchDemo("");
+        switchDemo.buildSwitchDemo("sqrt");
+        switchDemo.buildSwitchDemo("date");
+        switchDemo.buildSwitchDemo("split");
         System.out.println("+------------------------+");
 
         System.out.println("15. Implement an interface");

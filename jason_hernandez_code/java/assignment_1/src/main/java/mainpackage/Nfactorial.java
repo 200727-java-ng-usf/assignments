@@ -4,7 +4,7 @@ public class Nfactorial {
 
     public double nFactorial() {
 
-        double n = 0;
+        double n = 4;
 
         {
             int res = 1, i;

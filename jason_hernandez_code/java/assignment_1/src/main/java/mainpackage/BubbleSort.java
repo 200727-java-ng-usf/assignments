@@ -6,8 +6,11 @@ public class BubbleSort {
 
     // Instantiate a bubbleSort
     public int[] bubbleSort(int[] arr) {
+        // Set initial values as instructed
+        arr = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        System.out.println("Array Before Bubble Sort: " + arr);
 
-        // Check for edge cases
+        // Check for edge cases -- not technically needed with a hard coded arr, but good general practice
         if (arr == null || arr.length == 0) {
             return new int[0];
         }
@@ -28,7 +31,9 @@ public class BubbleSort {
                         number[j + 1] = placeholder;
                     }
                 }
+            System.out.println("Array After Bubble Sort" + number);
         }
         return number;
+
     }
 }

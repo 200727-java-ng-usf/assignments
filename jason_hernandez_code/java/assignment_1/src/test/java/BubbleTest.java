@@ -9,10 +9,10 @@ public class BubbleTest {
 
     private BubbleSort sut;
 
-    @Before
-    public void setUp() {
-        sut = new BubbleSort();
-    } // Call to the class being tested
+//    @Before
+//    public void setUp() {
+//        sut = new BubbleSort(new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4});
+//    } // Call to the class being tested
 
     @After
     public void tearDown() {
