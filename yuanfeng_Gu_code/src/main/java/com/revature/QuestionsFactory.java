@@ -8,23 +8,29 @@ import java.util.*;
 public class QuestionsFactory {  // for add or delete method
 
 
-    static void mainMenu() {
+    public static void mainMenu() {
+
+
+        System.out.println("com.revature.Assignment_1   ----------");
+
+
         int option = 63284623;
 
         while (option != 0) {
+            System.out.println(" ");
             System.out.println("  ");
-            System.out.println(" ");
-            System.out.println("com.revature.Assignment_1   ----------");
-            System.out.println(" ");
             System.out.println("Total 20 Questions,Enter 0 to exit");
             System.out.print("please Enter the number 1-20: ");
             try{
                 Scanner sc = new Scanner(System.in);
-                option = sc.nextInt();}catch (InputMismatchException e){
-                e .printStackTrace();
+                option = sc.nextInt();
+
+            } catch (InputMismatchException e){
+                System.out.println("Please enter 0 to 20 .");
             }
             switch (option) {
-                case 0:break;
+                case 0:
+                    System.out.println("Exit...");break;
                 case 1:q1();break;
                 case 2:q2();break;
                 case 3:q3();break;
@@ -46,7 +52,7 @@ public class QuestionsFactory {  // for add or delete method
                 case 19:q19();break;
                 case 20:q20();break;
                 default:
-                    System.out.println("Wrong number try again please......");
+                    System.out.println(" Try again please......");
 
             }
         }
