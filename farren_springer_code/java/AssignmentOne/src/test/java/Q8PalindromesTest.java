@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionEightTest {
+public class Q8PalindromesTest {
 
-    private QuestionEight sut;
+    private Q8Palindromes sut;
 
     @Before
-    public void setUp() {  sut = new QuestionEight();   }
+    public void setUp() {  sut = new Q8Palindromes();   }
 
     @After
     public void tearDown() { sut = null; }

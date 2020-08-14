@@ -1,7 +1,16 @@
 import java.util.Scanner;
+/**
+ * This class has a method that calculates which of two integers is the
+ * smallest and a main method that calls the smallerInt method.
+ */
+public class Q10MinNumber {
 
-public class QuestionTen {
-
+    /**
+     * The smallerInt method will return the smaller of two integers.
+     * @param a
+     * @param b
+     * @return
+     */
     public static int smallerInt(int a, int b) {
         int temp = a < b ? a:b;
         return temp;
@@ -9,9 +18,8 @@ public class QuestionTen {
 
     public static void main(String[] args) {
 
-        /* Scanner is used for getting user input.
-         * The nextInt() method of scanner reads the
-         * integer entered by user.
+        /**
+         * Creates a Scanner object and assign input to two integer references.
          */
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter First Number:");
@@ -21,14 +29,13 @@ public class QuestionTen {
 
         scanner.close();
 
-        /* In first step we are comparing only num1 and
-         * num2 and storing the smallest number into the
-         * temp variable and then comparing the temp and
-         * num3 to get final result.
+        /**
+         * Calls the smallerInt method and prints the results.
          */
 
         System.out.println("Smallest Number is: "+ smallerInt(num1, num2));
 
-    }
+    } // end main
 
-} // done
+} // end class
+// done

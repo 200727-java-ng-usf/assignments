@@ -1,8 +1,8 @@
 /**
- * This class has a method isPrime to determine if a number is prime. It
- * has a main method to demonstrate the isPrime method.
+ * This class has a method isPrime to determine if a number is prime and
+ * a main method that calls the isPrime method.
  */
-public class QuestionNine {
+public class Q9Primes {
 
     public static boolean isPrime(int n) {
         /**
@@ -41,23 +41,31 @@ public class QuestionNine {
                 return true;
             } else {
                 return false;
-            } // end if
-        } // end else
+            }
+        }
 
     } // end isPrime
 
     public static void main(String[] args) {
 
+        /**
+         * Instantiates an integer array to length 100.
+         */
         int[] hundredArray = new int[100];
 
+        /**
+         * Stores numbers 1 through 100 in the integer array.
+         */
         for(int i = 1; i < 101; i++) {
             hundredArray[i-1] = i;
         }
 
-        System.out.print("These are the prime numbers in an array with integers 1 through 100: ");
+        System.out.print("These are the prime numbers in an array " +
+                "with integers 1 through 100: ");
 
         /**
-         * Parse through the array. If the number is prime, print it.
+         * Go through each index position of the array. If the number
+         * is prime, print it.
          */
         for(int i = 0; i < hundredArray.length; i++) {
             if(isPrime(hundredArray[i])){
@@ -65,7 +73,7 @@ public class QuestionNine {
             } else {
                 System.out.print("");
             }
-        } // end for
+        }
 
     } // end main
 

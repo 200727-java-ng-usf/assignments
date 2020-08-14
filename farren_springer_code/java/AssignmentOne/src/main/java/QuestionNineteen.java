@@ -82,7 +82,7 @@ public class QuestionNineteen {
              * If an integer is prime, that integer will be removed from the Arraylist
              * specified in the parameter of the method.
              */
-            if(QuestionNine.isPrime(intArr.get(i))){
+            if(Q9Primes.isPrime(intArr.get(i))){
                 System.out.println(intArr.get(i) + " is prime.");
                 intArr.remove(i);
             }

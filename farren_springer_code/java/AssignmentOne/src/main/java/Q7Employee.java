@@ -46,6 +46,9 @@ public class Q7Employee implements Comparator<Q7Employee> {
          */
         Collections.sort(employeeArrayList, new Q7Employee());
 
+        /**
+         * Prints the sorted ArrayList to the console.
+         */
         System.out.println("Sorted: ");
         employeeArrayList.forEach(System.out::println);
 
@@ -53,21 +56,31 @@ public class Q7Employee implements Comparator<Q7Employee> {
 
     } // end main
 
-    // no-args constructor
+    /**
+     * No-args constructor
+     */
     public Q7Employee() {
         this.name = "John";
         this.department = "Human Resources";
         this.age = 30;
     }
 
-    // parameterized constructor
+    /**
+     * Parameterized constructor based on class fields
+     * @param name
+     * @param department
+     * @param age
+     */
     public Q7Employee(String name, String department, int age) {
         this.name = name;
         this.department = department;
         this.age = age;
     }
 
-    // getters and setters for all private variables
+    /**
+     * Getters and setters for private fields
+     * @return
+     */
     public String getName() {
         return name;
     }
@@ -92,7 +105,10 @@ public class Q7Employee implements Comparator<Q7Employee> {
         this.age = age;
     }
 
-    // custom toString
+    /**
+     * Custom toString method
+     * @return
+     */
     @Override
     public String toString() {
         return "QuestionSeven{" +
@@ -102,6 +118,12 @@ public class Q7Employee implements Comparator<Q7Employee> {
                 '}';
     }
 
+    /**
+     * Custom compare method. Comparator interface's one abstract method.
+     * @param e1
+     * @param e2
+     * @return
+     */
     @Override
     public int compare(Q7Employee e1, Q7Employee e2) {
         // Compare name first
