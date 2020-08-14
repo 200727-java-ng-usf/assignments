@@ -10,8 +10,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class Q20Tests {
     private Q20 sut;
@@ -52,4 +51,24 @@ public class Q20Tests {
         sut.readData();
         assertEquals(expectedResult,outContent.toString());
     }
+
+    @Test
+    public void test2(){
+        //test to make sure data is read
+        String expectedResult = "\nName: \n" +
+                "age: \n" +
+                "state: \n" +
+                "Name: \n" +
+                "age: \n" +
+                "state: \n" +
+                "Name: \n" +
+                "age: \n" +
+                "state: \n" +
+                "Name: \n" +
+                "age: \n" +
+                "state: ";
+        sut.readData();
+        assertNotEquals(expectedResult,outContent.toString());
+    }
+
 }

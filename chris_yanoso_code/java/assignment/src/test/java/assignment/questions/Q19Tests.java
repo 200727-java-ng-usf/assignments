@@ -10,8 +10,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class Q19Tests {
     private Q19 sut;
@@ -41,5 +40,15 @@ public class Q19Tests {
                 "\nAn Array of 1-10 without prime numbers: [1, 2, 4, 6, 8, 9, 10]";
         sut.oneToTenArray();
         assertEquals(expectedResult, outContent.toString());
+    }
+
+    @Test
+    public void test2(){
+        //testing to see if method returns nulls
+        String expectedResult = "\nThe sum of even numbers in 1-10 is: " + null +
+                "\nThe sum of odd numbers in 1-10 is: " + null +
+                "\nAn Array of 1-10 without prime numbers: null";
+        sut.oneToTenArray();
+        assertNotEquals(expectedResult, outContent.toString());
     }
 }

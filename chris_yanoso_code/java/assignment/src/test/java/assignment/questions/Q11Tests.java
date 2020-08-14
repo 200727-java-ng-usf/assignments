@@ -6,8 +6,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class Q11Tests {
     private Q11 sut;
@@ -38,5 +37,14 @@ public class Q11Tests {
         String test = ("f1: " + f1 + "\nf2: " + f2);
         sut.accessFloats();
         assertEquals(test, outContent.toString());
+    }
+    //tests to see it doesn't print out the wrong floats
+    @Test
+    public void test2(){
+        float f1 = 50.03f;
+        float f2 = 1234.06f;
+        String test = ("f1: " + f1 + "\nf2: " + f2);
+        sut.accessFloats();
+        assertNotEquals(test, outContent.toString());
     }
 }
