@@ -5,26 +5,48 @@
 package com.revature.question3Test;
 
 import com.revature.question3.Question3;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class Question3Test {
-    String testString1 = "hello";
-    String proofString1 = "olleh";
-    Question3 q = new Question3(testString1);
+    String testString;
+    String proofString;
+    String msg;
+    Question3 sut;
 
+    @After
+    public void tearDown(){
+        sut = null;
+        msg = null;
+        testString = null;
+        proofString = null;
+    }
 
     @Test
     public void notNullTest(){
-        //make sure we are not getiing null values
-        Assert.assertTrue(q.getInitialString() != null);
-        Assert.assertTrue(q.getReversedString() != null);
+        msg = "When given null values, the method should return an empty string";
+        testString = null;
+        sut = new Question3(testString);
+        proofString = "";
+        Assert.assertEquals(msg, proofString,sut.getReversedString());
+        Assert.assertEquals(msg, proofString,sut.getInitialString());
     }
     @Test
     public void canItReverseTest(){
-        //can the class return the reversed string based on proof string?
-        Assert.assertTrue(q.getReversedString().equalsIgnoreCase(proofString1));
+        msg = "Given a string, the method should return the string in reverse";
+        testString = "Hello World";
+        sut = new Question3(testString);
+        proofString = "dlroW olleH";
+        Assert.assertEquals(msg, proofString, sut.getReversedString());
     }
-
+    @Test
+    public void integerTest(){
+        msg = "Given a string of integers, the method should return a string of them reversed";
+        testString = "3217951969";
+        sut = new Question3(testString);
+        proofString = "9691597123";
+        Assert.assertEquals(msg, proofString, sut.getReversedString());
+    }
 
 }

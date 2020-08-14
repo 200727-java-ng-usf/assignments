@@ -11,14 +11,25 @@ public class Question3 {
     private String reversedString;
 
     public Question3(String givenString){
-        //parameterized constructor that will store the initial string, reverse the string, and store it in the proper String
-        this.initialString = givenString;
-        this.reversedString = reverseThisString(givenString);
+        //check for null values first
+        if(givenString == null || givenString.length() <2){
+            initialString = "";
+            reversedString = "";
+        }else {
+            //parameterized constructor that will store the initial string, reverse the string, and store it in the proper String
+            this.initialString = givenString;
+            this.reversedString = reverseThisString(initialString);
+        }
+
     }
 
     private String reverseThisString(String givenString){
-        //TODO: reverse String
-
+        //using for loop on original string, so no temp variables used
+        for(int i = 0; i <givenString.length(); i++){
+            givenString = givenString.substring(1, givenString.length() -i)
+                    + givenString.substring(0,1)
+                    + givenString.substring(givenString.length() - i);
+        }
         return givenString;
     }
 
