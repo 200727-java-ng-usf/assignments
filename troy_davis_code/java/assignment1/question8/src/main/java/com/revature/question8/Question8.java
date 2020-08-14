@@ -12,7 +12,7 @@ public class Question8 {
     private ArrayList<String> storageList;
     private ArrayList<String> palindromeList;
 
-    //variable argument constructor to evaluate strigs for palindromes upon instantiation
+    //variable argument constructor to evaluate strings for palindromes upon instantiation
     public Question8(String... someStrings){
         //initialize the arrays
         storageList = new ArrayList<>();
@@ -30,8 +30,6 @@ public class Question8 {
                 }
             }
         }
-
-
     }
 
     private boolean isThisAPalindrome(String someString){
