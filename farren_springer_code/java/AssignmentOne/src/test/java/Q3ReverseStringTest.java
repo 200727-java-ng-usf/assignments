@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionThreeTest {
+public class Q3ReverseStringTest {
 
-    private QuestionThree sut;
+    private Q3ReverseString sut;
 
     @Before
-    public void setUp() {  sut = new QuestionThree();   }
+    public void setUp() {  sut = new Q3ReverseString();   }
 
     @After
     public void tearDown()  {  sut = null;  }

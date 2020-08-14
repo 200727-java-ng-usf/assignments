@@ -27,7 +27,7 @@ public class QuestionNineteen {
             /**
              * If an integer is even, that integer will be added to the result.
              */
-            if(QuestionSix.isEven(intArr.get(i))) {
+            if(Q6EvenNumber.isEven(intArr.get(i))) {
                 result += intArr.get(i);
             }
         }
@@ -54,7 +54,7 @@ public class QuestionNineteen {
             /**
              * If an integer is NOT even, that integer will be added to the result.
              */
-            if (!QuestionSix.isEven(intArr.get(i))) {
+            if (!Q6EvenNumber.isEven(intArr.get(i))) {
                 result += intArr.get(i);
             }
         }

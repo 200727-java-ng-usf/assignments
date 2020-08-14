@@ -1,9 +1,9 @@
 import java.util.Comparator;
 
-public class QuestionSevenComparator implements Comparator<QuestionSeven>{
+public class Q7EmployeeComparator implements Comparator<Q7Employee>{
 
     @Override
-    public int compare(QuestionSeven o1, QuestionSeven o2) {
+    public int compare(Q7Employee o1, Q7Employee o2) {
         // Compare name first
         if (o1.getName().compareTo(o2.getName()) > 0) {
             return 1;

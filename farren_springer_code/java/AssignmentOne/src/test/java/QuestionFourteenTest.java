@@ -47,16 +47,20 @@ public class QuestionFourteenTest {
 
     }
 
-    // TODO Negative tests
-    // Negative test
-//    @Test (expected = NullPointerException.class)
-//    public void splitTheStringPassedNullStringReturnsNullPointerException() {
-//        String nullString = null;
-//        String[] unexpectedResult = new String[2];
-//        unexpectedResult[0] = "Hey";
-//        unexpectedResult[1] = "there";
-//        String[] actualResult = sut.splitTheString(nullString, ":");
-//        assertNotEquals(unexpectedResult, actualResult);
-//
-//    }
+    // Negative tests
+    @Test
+    public void splitTheStringPassedEmptyReturnsEmptyStringArray() {
+        String emptyString = "";
+        String[] expectedResult = new String[1];
+        expectedResult[0] = "";
+        String[] actualResult = sut.splitTheString(emptyString, "");
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test (expected = ArithmeticException.class)
+    public void squareRootPassedNegativeNumberReturnsArithmeticException() {
+        int negativeNumber = -49;
+        int unexpectedResult = 7;
+        assertNotEquals(unexpectedResult, sut.squareRoot(negativeNumber));
+    }
 }

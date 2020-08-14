@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionTwoTest {
+public class Q2FibonacciTest {
 
-    private QuestionTwo sut;
+    private Q2Fibonacci sut;
 
     @Before
-    public void setUp() { sut = new QuestionTwo();}
+    public void setUp() { sut = new Q2Fibonacci();}
 
     @After
     public void tearDown() {sut = null;}
@@ -41,7 +41,5 @@ public class QuestionTwoTest {
         int[] actualResult = sut.fibonacciGenerator(zeroValue);
         assertNotEquals(unexpectedResult, actualResult);
     }
-
-
 
 }

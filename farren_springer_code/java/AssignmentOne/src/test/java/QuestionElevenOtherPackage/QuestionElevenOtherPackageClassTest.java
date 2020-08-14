@@ -28,7 +28,6 @@ public class QuestionElevenOtherPackageClassTest {
     public void testSetFloat1() {
         float expectedResult = 1.77f;
         sut.setFloat1(expectedResult);
-        // TODO review the generated test code and remove the default call to fail.
         assertEquals(expectedResult, sut.getFloat1(), 0.000000000000000000001);
     }
 
@@ -43,7 +42,6 @@ public class QuestionElevenOtherPackageClassTest {
     public void testSetFloat2() {
         float expectedResult = 1.81f;
         sut.setFloat2(expectedResult);
-        // TODO review the generated test code and remove the default call to fail.
         assertEquals(expectedResult, sut.getFloat2(), 0.000000000000000000001);
     }
 

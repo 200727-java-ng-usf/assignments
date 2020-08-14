@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionSixTest {
+public class Q6EvenNumberTest {
 
-    private QuestionSix sut;
+    private Q6EvenNumber sut;
 
     @Before
-    public void setUp() { sut = new QuestionSix(); }
+    public void setUp() { sut = new Q6EvenNumber(); }
 
     @After
     public void tearDown() {  sut = null;  }

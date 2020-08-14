@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class QuestionOne {
+public class Q1BubbleSort {
 
     /**
      * This method performs a bubble sort on an integer array and returns the
@@ -25,13 +25,14 @@ public class QuestionOne {
             for (int j = 0; j < i; j++) {
                 // If the current array index value is greater
                 if (arr[j] > arr[j + 1]) {
-                    // Then store that in a temporary location
+                    // Then store that in a temporary location,
                     temp = arr[j];
-                    // Move the compared value to the location it was compared to
+                    // Move the compared value to the location it was compared to,
                     arr[j] = arr[j + 1];
-                    // Assign the temp variable that held the greater value to its rightful place
+                    // And assign the temp variable that held the greater value to its rightful place ahead of the other
                     arr[j + 1] = temp;
                 }
+                // if the current array index is not greater, continue the for loop
             }
         }
         /**

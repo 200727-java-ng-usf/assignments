@@ -5,13 +5,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionFourTest  {
+public class Q4FactorialTest {
 
-    private QuestionFour sut;
+    private Q4Factorial sut;
 
     @Before
     public void setUp() {
-        sut = new QuestionFour();
+        sut = new Q4Factorial();
     }
     @After
     public void tearDown() { sut = null;

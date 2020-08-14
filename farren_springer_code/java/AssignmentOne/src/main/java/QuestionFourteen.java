@@ -10,20 +10,10 @@ public class QuestionFourteen {
      */
     public static double squareRoot( int num) {
 
-//        /**
-//         * Create a Scanner object.
-//         */
-//        Scanner scanner = new Scanner(System.in);
-//
-//        /**
-//         * Ask for user input.
-//         */
-//        System.out.println("Enter a number: ");
-//
-//        /**
-//         * Assign the input to an integer variable.
-//         */
-//        int num = scanner.nextInt();
+        // Check for negative number
+        if (num < 0) {
+            throw new ArithmeticException("Invalid input");
+        }
 
         /**
          * Use the Math class to find the square root of the number.
@@ -80,7 +70,6 @@ public class QuestionFourteen {
         /**
          * Assign the string to the string asked for by the question.
          */
-        str = "I am learning Core Java";
 
         /**
          * Split the string into an array of strings.

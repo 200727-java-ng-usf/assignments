@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,9 +61,9 @@ public class QuestionTwenty {
         // create a file object and use the relative path of the text file
         File file = new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt");
 
-        // If there are no more lines of text, exit the main method
+        // If there are no more lines of text, throw an exception
         if(!file.exists()){
-            return;
+            throw new FileNotFoundException("The file does not exist.");
         }
 
         makeQuestionTwentyCharactersOutOf(file);

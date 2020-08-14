@@ -2,33 +2,49 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * This class is a POJO that uses the comparator interface to
+ * compare two Q7Employee objects.
+ */
+public class Q7Employee implements Comparator<Q7Employee> {
 
-public class QuestionSeven implements Comparator<QuestionSeven> {
-
-    // establish two employee objects with string, string, and int
+    /**
+     * Creates private fields for Q7Employee objects.
+     */
     private String name;
     private String department;
     private int age;
 
-    // main method
     public static void main(String[] args) {
 
-        // Create an ArrayList object to store the employees
+        /**
+         * Creates an ArrayList object to store the employees.
+         */
         ArrayList employeeArrayList = new ArrayList();
 
-        QuestionSeven emp1 = new QuestionSeven("Susan", "Human Resources", 35);
-        QuestionSeven emp2 = new QuestionSeven("Henry", "Public Relations", 32);
+        /**
+         * Instantiates two Q7Employee objects.
+         */
+        Q7Employee emp1 = new Q7Employee("Susan", "Human Resources", 35);
+        Q7Employee emp2 = new Q7Employee("Henry", "Public Relations", 32);
 
-        // Add two employees to the ArrayList
+        /**
+         * Adds the new employees to the employeeArrayList.
+         */
         employeeArrayList.add(emp1);
         employeeArrayList.add(emp2);
 
-        System.out.println("+----------------------+");
-
+        /**
+         * Prints the unsorted ArrayList to the console.
+         */
         System.out.println("Unsorted: ");
         employeeArrayList.forEach(System.out::println);
 
-        Collections.sort(employeeArrayList, new QuestionSeven());
+        /**
+         * The sort method uses the comparator object from
+         * Q7EmployeeComparator to sort the list.
+         */
+        Collections.sort(employeeArrayList, new Q7Employee());
 
         System.out.println("Sorted: ");
         employeeArrayList.forEach(System.out::println);
@@ -38,14 +54,14 @@ public class QuestionSeven implements Comparator<QuestionSeven> {
     } // end main
 
     // no-args constructor
-    public QuestionSeven() {
+    public Q7Employee() {
         this.name = "John";
         this.department = "Human Resources";
         this.age = 30;
     }
 
     // parameterized constructor
-    public QuestionSeven(String name, String department, int age) {
+    public Q7Employee(String name, String department, int age) {
         this.name = name;
         this.department = department;
         this.age = age;
@@ -87,7 +103,7 @@ public class QuestionSeven implements Comparator<QuestionSeven> {
     }
 
     @Override
-    public int compare(QuestionSeven e1, QuestionSeven e2) {
+    public int compare(Q7Employee e1, Q7Employee e2) {
         // Compare name first
         if (e1.getName().compareTo(e2.getName()) > 0) {
             return 1;

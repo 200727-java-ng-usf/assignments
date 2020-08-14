@@ -5,13 +5,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionFiveTest {
+public class Q5SubstringTest {
 
-    private QuestionFive sut;
+    private Q5Substring sut;
 
     @Before
     public void setUp()  {
-        sut = new QuestionFive();
+        sut = new Q5Substring();
     }
 
     @After

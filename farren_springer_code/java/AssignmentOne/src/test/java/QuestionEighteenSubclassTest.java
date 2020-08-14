@@ -33,7 +33,7 @@ public class QuestionEighteenSubclassTest {
         assertEquals(107, actualResult);
     }
 
-    // TODO Negative tests
+    // Negative tests
     @Test
     public void hasUpperCaseHandlesEmptyString() {
         String emptyString = "";

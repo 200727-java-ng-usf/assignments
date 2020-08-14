@@ -2,15 +2,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionOneTest {
+public class Q1BubbleSortTest {
 
     /**
      * methods to test in QuestionOne
@@ -24,11 +19,11 @@ public class QuestionOneTest {
         - testSolutionWithEmptyArray
      */
 
-    private QuestionOne sut; // SUT = System Under Test
+    private Q1BubbleSort sut; // SUT = System Under Test
 
     @Before
     public void setUp() {
-        sut = new QuestionOne();
+        sut = new Q1BubbleSort();
     }
 
     @After
