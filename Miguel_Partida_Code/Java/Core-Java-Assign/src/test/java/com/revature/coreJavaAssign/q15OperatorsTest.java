@@ -41,4 +41,11 @@ public class q15OperatorsTest {
         int divAnswer = 1;
         assertEquals(divAnswer,sut.division(x,y));
     }
+
+    @Test
+    public void divideBy0(){
+        int z =0;
+        int expected = 0;
+        assertEquals(expected,sut.division(z,y));
+    }
 }

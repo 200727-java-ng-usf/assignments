@@ -2,6 +2,7 @@ package com.revature.coreJavaAssign;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -28,5 +29,12 @@ public class q16NofCharTest {
         String expected = "woowie";
         assertEquals(expected,sut.printargs(args));
 
+    }
+
+    @Test
+    public void printNothinginArgs(){
+        String[] args = new String[0];
+        String expected = "";
+        assertEquals(expected,sut.printargs(args));
     }
 }

@@ -24,21 +24,25 @@ public class q17intrestTest {
 
     @Test
     public void q17interest() {
-        {
-            double expected =1.0;
-            double delta = 1;
 
-            String ROI = "1\n1\n1 ";
+            double expected =8.0;
+            double delta = 8;
+
+            String ROI = "2\n2\n2 ";
             InputStream inContent = new ByteArrayInputStream(ROI.getBytes());
             System.setIn(inContent);
             assertEquals(expected, sut.q17interest(),delta);
 
         }
-//        double principal =0;
-//        double rateOfInterest = 0;
-//        double numberOfYears = 0;
-//        double expected = 1;
-//        assertEquals(java.util.Optional.of(expected),sut.q17interest(rateOfInterest,principal,numberOfYears));
+
+        @Test
+    public void interestOf0(){
+        double expected = 0;
+        double delta = 0;
+        String ROI = "0\n0\n0";
+        InputStream inContent = new ByteArrayInputStream(ROI.getBytes());
+        System.setIn(inContent);
+        assertEquals(expected,sut.q17interest(),delta);
+        }
 
     }
-}

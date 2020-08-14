@@ -14,6 +14,7 @@ public class q16NofChar {
         String returnString = "";
         if (args.length == 0) {
             System.out.println("There is no command line to print");
+            return returnString;
         } else {
             for (String commandLine : args) {
                 System.out.println(commandLine);
