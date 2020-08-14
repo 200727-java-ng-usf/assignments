@@ -44,13 +44,9 @@ public class Q8Palindrome {
      * @return true if the input str is a palindrome
      */
     private boolean isPalindrome(String str){
-//        boolean isPal = true;
-        int halflen = (int)str.length()/2;
+        int halflen = str.length()/2;
         for (int i = 0; i < halflen; i++) {
-//            System.out.println(str.charAt(i) + " " + str.charAt(str.length() - 1 - i));
             if(str.charAt(i) != str.charAt(str.length() - 1 - i)){
-//                isPal = false;
-//
                 return false;
             }
         }
