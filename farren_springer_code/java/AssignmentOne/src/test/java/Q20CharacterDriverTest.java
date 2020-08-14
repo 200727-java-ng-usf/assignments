@@ -25,7 +25,7 @@ public class Q20CharacterDriverTest {
     // TODO Negative test (for no file found)
 //    @Test (expected = FileNotFoundException.class)
 //    public void invalidFilePathThrowsFileNotFoundException() {
-//        File imaginaryFile = new File("imaginary file");
-//        sut.makeQuestionTwentyCharactersOutOf(imaginaryFile);
+//        File notAFile = new File("notAFilePath");
+//        sut.makeQuestionTwentyCharactersOutOf(notAFile);
 //    }
 }

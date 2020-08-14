@@ -10,6 +10,13 @@ public class Q1BubbleSort {
      */
     public static int[] bubbleSort(int[] arr) {
 
+        /**
+         * If the array is empty, throw a new NullPointerException.
+         */
+        if (arr == null) {
+            throw new NullPointerException("input is empty");
+        }
+
         int temporaryValueHolder;
 
         /**
