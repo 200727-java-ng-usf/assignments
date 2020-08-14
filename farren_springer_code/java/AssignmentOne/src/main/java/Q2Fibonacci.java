@@ -1,30 +1,25 @@
 import java.util.Arrays;
 
 /**
- * This class has a method that generates a user-defined number
- * of fibonacci numbers and a main method to call for user input.
+ * This class has a method that generates any number
+ * of fibonacci numbers and a main method calls the
+ * method for the first 25 numbers..
  */
 
 public class Q2Fibonacci {
 
     /**
-     * This method generates the fibonacci numbers.
+     * To generate fibonacci numbers, this method takes an integer and returns
+     * an integer array of that length filled with fibonacci numbers, starting at 0
      * @param numberOfNumbers
      * @return
      */
     public static int[] fibonacciGenerator(int numberOfNumbers) {
 
-        /**
-         * Instantiate an int array of the size specified in the parameter.
-         */
         int[] fibonacciArray = new int[numberOfNumbers];
 
-        /**
-         * Initialize the first two numbers in the sequence.
-          */
-
-        int now = 1;
-        int then = 0;
+        int currentIndex = 1;
+        int previousIndex = 0;
 
         /**
          * The first two numbers are 0 and 1.
@@ -35,28 +30,29 @@ public class Q2Fibonacci {
         /**
          * Initialize a new variable that the then variable can be stored in.
          */
-        int thenthen;
+        int furtherPreviousIndex;
+
+        // currentIndex, previousIndex, furtherPreviousIndex
 
         /**
          * Parse through and add the previous two numbers in the sequence.
          */
         for (int i = 2; i < numberOfNumbers; i++) {
-            thenthen = then;
-            then = now;
-            now = thenthen + then;
-            fibonacciArray[i] = now;
+            furtherPreviousIndex = previousIndex; // index positions shift forward
+            previousIndex = currentIndex;
+            currentIndex = furtherPreviousIndex + previousIndex;
+            fibonacciArray[i] = currentIndex;
         }
         return fibonacciArray;
     } // end method
 
     /**
-     * The main method uses try-catch blocks to catch invalid user input.
+     * The main method calls the fibonacciGenerator method.
      * @param args
      */
     public static void main(String[] args) {
 
         /**
-         * Calls the FibonacciGenerator method.
          * Uses toString method to print the contents
          * of the array from the wrapper class.
          */
