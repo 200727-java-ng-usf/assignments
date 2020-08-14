@@ -17,7 +17,7 @@ public class Q8Palindromes {
      * @param s1
      * @return
      */
-    private static boolean isPalindrome(String s, String s1) {
+    public static boolean isPalindrome(String s, String s1) {
         return s.equals(s1);
     }
 

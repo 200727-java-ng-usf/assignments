@@ -10,55 +10,42 @@ public class Q1BubbleSort {
      */
     public static int[] bubbleSort(int[] arr) {
 
-        /**
-         * Instantiate a temporary variable.
-         */
-        int temp;
+        int temporaryValueHolder;
 
         /**
-         * Use loops to compare the integers in the array.
+         * To compare the numbers, we start at the first index position and
+         * go through every position in the array.
           */
-        for (int i = arr.length - 1; i > 0; i--) {
+        for (int indexPosition = 0; indexPosition < arr.length; indexPosition++) {
             /**
-             * For each index value, compare it to each other value in the array
+             * To compare each position, we start with the current index position + 1 and
+             * go through every position ahead of it.
              */
-            for (int j = 0; j < i; j++) {
-                // If the current array index value is greater
-                if (arr[j] > arr[j + 1]) {
+            for (int otherIndexPosition = indexPosition + 1; otherIndexPosition < arr.length; otherIndexPosition++) {
+                // If the other array index value is greater than the previous
+                if (arr[otherIndexPosition] < arr[indexPosition]) {
                     // Then store that in a temporary location,
-                    temp = arr[j];
+                    temporaryValueHolder = arr[indexPosition];
                     // Move the compared value to the location it was compared to,
-                    arr[j] = arr[j + 1];
+                    arr[indexPosition] = arr[otherIndexPosition];
                     // And assign the temp variable that held the greater value to its rightful place ahead of the other
-                    arr[j + 1] = temp;
+                    arr[otherIndexPosition] = temporaryValueHolder;
                 }
-                // if the current array index is not greater, continue the for loop
+                // if the next array index is not smaller, do nothing and continue the for loop
             }
         }
-        /**
-         * Return the sorted integer array.
-         */
+
         return arr;
     }
 
     public static void main(String[] args) {
 
-        /**
-         * Instantiate the integer array from Q1.
-         */
-        int someInts[] = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        int unsortedIntArray[] = {1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
 
-        /**
-         * Print the unsorted array.
-         */
-        System.out.println("This is the unsorted array: " + Arrays.toString(someInts) + "\n");
+        System.out.println("This is the unsorted array: " + Arrays.toString(unsortedIntArray) + "\n");
 
-
-        /**
-         * Print the array returned from the bubbleSort method.
-         */
         System.out.print("This is the bubble sorted array: ");
-        System.out.println(Arrays.toString(bubbleSort(someInts)));
+        System.out.println(Arrays.toString(bubbleSort(unsortedIntArray)));
 
     } // end main
 

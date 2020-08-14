@@ -15,27 +15,20 @@ public class Q8PalindromesTest {
     @After
     public void tearDown() { sut = null; }
 
-    // Positive test
+    // Positive tests
     @Test
-    public void reverseOfHeYIsYeH() {
-        String expectedResult = "yeH";
-        String actualResult = sut.reverseIt("Hey");
-        assertEquals(expectedResult, actualResult);
+    public void heyIsNotAPalindrome() {
+        assertEquals(false, sut.isPalindrome("Hey", "yeH"));
     }
 
-    // Positive test
     @Test
-    public void reverseofYayIsNotYay() {
-        String unexpectedResult = "Yay";
-        String actualResult = sut.reverseIt("Yay");
-        assertNotEquals(unexpectedResult, actualResult);
+    public void yayIsAPalindrome() {
+        assertNotEquals(true, sut.isPalindrome("yay", "yay"));
     }
 
     // Negative test
     @Test (expected = NullPointerException.class)
-    public void nullPassedToReverseItResultsInNullPointerException() {
-        String nullString = null;
-        String actualResult = sut.reverseIt(nullString);
-        assertNotEquals(nullString, actualResult);
+    public void nullPassedToIsPalindromeReturnsNullPointerException() {
+        assertNotEquals(true, sut.isPalindrome(null, null));
     }
 }
