@@ -2,7 +2,6 @@ package mainpackage;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 
 public class SwitchDemo {
 
@@ -17,25 +16,24 @@ public class SwitchDemo {
     String theString;
 
     // Build the cases in the switcher
-    public String buildSwitchDemo(String dataPoint) {
+    public void buildSwitchDemo(String dataPoint) {
 
         String result = "";
 
         switch (dataPoint) {
             case "sqrt":
                 double sqrt1 = Math.sqrt(a);
-                String s = Double.toString(sqrt1);
-                result = s;
+                System.out.println(sqrt1);;
             break;
             case "date":
-                result = dtf.format(now);
+                System.out.println(dtf.format(now));
             break;
             case "split":
-                result = Arrays.toString(theString.split(" "));
+                System.out.println(theString.split(" "));
             break;
 
         }
-        return result;
+
     }
 
     // Getters and Setters

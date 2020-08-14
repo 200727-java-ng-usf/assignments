@@ -25,8 +25,6 @@
     <list default="true" id="db620676-b80f-48af-91e1-d11dbb49c27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpackage/SwitchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MinimumTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MinimumTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PrimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrimeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../demos/jason_hernandez_code/java/week1demos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -180,10 +178,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="519" y="198" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1596566217692" />
-    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1597191875391">
+    <state x="577" y="213" key="FileChooserDialogImpl" timestamp="1597413648708">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597191875391" />
+    <state x="577" y="213" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1597413648708" />
     <state width="1340" height="185" key="GridCell.Tab.0.bottom" timestamp="1596570007362">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

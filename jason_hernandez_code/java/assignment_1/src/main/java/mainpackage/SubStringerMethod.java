@@ -17,7 +17,7 @@ public class SubStringerMethod {
         // Get the chars between the specified indices
         substr = str.substring(0, idx-1);
 
-        System.out.println("Substring = " + substr); // Should output "Substringi"
+        System.out.println("Substring = " + substr); // Should output "Substring"
     }
 
 

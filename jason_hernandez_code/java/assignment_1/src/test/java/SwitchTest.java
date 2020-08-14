@@ -21,8 +21,9 @@ public class SwitchTest {
     public void case1() { // Returns the square root
         String dataPoint = "sqrt";
         double a = 25;
-        String expectedResult = "5";
-        String  actualResult = sut.s;
+        double expectedResult = 5;
+        //double actualResult = sut.buildSwitchDemo(dataPoint);
+        double actualResult = Math.sqrt(a);
         assertEquals(expectedResult, actualResult, 0.01);
     }
 
