@@ -18,8 +18,8 @@ public class q11FloatTest {
 
     @Test
     public void testWhatIsExpected() {
-        float float1 = q11Driver.float1;
-        float float2 = q11Driver.float2;
+        float float1 = sut2.float1;
+        float float2 = sut2.float2;
         float[] expected = {float1,float2};
         assertEquals(expected,sut1.floatsFromThere());
     }

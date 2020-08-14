@@ -1,5 +1,6 @@
 package com.revature.coreJavaAssign;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,6 +12,11 @@ public class q10MinimumTest {
     @Before
     public void setUp(){
         sut = new q10Minimum();
+    }
+
+    @After
+    public void tearDown(){
+        sut =null;
     }
 
     @Test
@@ -27,5 +33,14 @@ public class q10MinimumTest {
         int actual2 =-1;
         int expected = -1;
         assertEquals(expected,sut.minNumber(actual1,actual2));
+    }
+
+    @Test
+    public void testnothing(){
+        int actual1 = 0;
+        int acutal2=0;
+        int expected= 0;
+        assertEquals(expected,sut.minNumber(actual1,acutal2));
+
     }
 }

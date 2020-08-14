@@ -26,12 +26,26 @@ public class q14CasesTest {
 
 
     @Test
-    public void cases() {
+    public void casepick1() {
         int casePick =1;
         boolean expected = true;
         String sqre = "4";
         InputStream inContent = new ByteArrayInputStream(sqre.getBytes());
         System.setIn(inContent);
+        assertEquals(expected,sut.q14Cases(casePick));
+    }
+
+    @Test
+    public void noCasePick(){
+        int casePick = 0;
+        boolean expected = false;
+        assertEquals(expected,sut.q14Cases(casePick));
+    }
+
+    @Test
+    public void casePick456(){
+        int casePick = 456;
+        boolean expected = false;
         assertEquals(expected,sut.q14Cases(casePick));
     }
 }

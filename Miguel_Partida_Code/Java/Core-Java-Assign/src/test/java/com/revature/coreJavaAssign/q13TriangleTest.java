@@ -23,10 +23,26 @@ public class q13TriangleTest {
 
 
     @Test
-    public void makeTriangle() {
+    public void make4rowTriangle() {
     int actual = 4;
     int expectedRows = 4;
 
     assertEquals(expectedRows, q13Triangle.makeTriangle(actual));
+    }
+
+    @Test
+    public void make2rowTriangle() {
+        int actual = 2;
+        int expectedRows = 2;
+
+        assertEquals(expectedRows, q13Triangle.makeTriangle(actual));
+    }
+
+    @Test
+    public void makeTriangle() {
+        int actual = 0;
+        int expectedRows = 0;
+
+        assertEquals(expectedRows, q13Triangle.makeTriangle(actual));
     }
 }
