@@ -1,5 +1,8 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class Q20CharacterDriverTest {
 
@@ -11,7 +14,13 @@ public class Q20CharacterDriverTest {
     @After
     public void tearDown() throws Exception {}
 
-    // TODO Positive test (for file found)
+    @Test
+    public void objectCreatedToStringMatchesExpected() {
+        Q20Character sutCharacter = new Q20Character("Mickey", "Mouse", 35, "Arizona");
+        String expectedResult = sutCharacter.toString();
+        String actualResult = "Name: Mickey Mouse" + "\nAge: 35 years\n" + "State: Arizona";
+        assertEquals(expectedResult, actualResult);
+    }
 
     // TODO Negative test (for no file found)
 //    @Test (expected = FileNotFoundException.class)

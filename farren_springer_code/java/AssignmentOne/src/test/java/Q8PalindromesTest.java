@@ -23,7 +23,7 @@ public class Q8PalindromesTest {
 
     @Test
     public void yayIsAPalindrome() {
-        assertNotEquals(true, sut.isPalindrome("yay", "yay"));
+        assertEquals(true, sut.isPalindrome("yay", "yay"));
     }
 
     // Negative test
