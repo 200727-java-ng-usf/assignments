@@ -32,8 +32,6 @@ public class Q2Fibonacci {
          */
         int furtherPreviousIndex;
 
-        // currentIndex, previousIndex, furtherPreviousIndex
-
         /**
          * Parse through and add the previous two numbers in the sequence.
          */
