@@ -22,6 +22,7 @@ public class QuestionTenTest {
         //act
         //assert
         assertEquals(expectedResult, actualResult);
+
     }
 
 
