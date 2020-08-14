@@ -8,10 +8,8 @@ public class Q2 {
 
     public static void main(String[] args) {
 
-
         int amountOfFib = 25;
         System.out.println(arrayToString(fibonacciList(amountOfFib)));
-
 
     }//main
 

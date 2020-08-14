@@ -11,7 +11,12 @@
  */
 
 import com.revature.questions.Q15;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.junit.rules.Timeout;
 
 import static org.junit.Assert.*;
 
@@ -19,38 +24,60 @@ public class Q15Test {
 
     double num1 = 8.0;
     double num2 = 4.0;
+    double delta = 0.001;
 
-    Q15 newObj = new Q15();
+    private Q15 sut;
 
-    public static void main(String[] args) {
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
 
-        Q15Test testObj = new Q15Test();
+    @Rule
+    public Timeout maximumTime = Timeout.seconds(3);
 
-        testObj.testingAddition();
-        testObj.testingSubtraction();
-        testObj.testingMultiplication();
-        testObj.testingDivision();
+    @Before
+    public void setUp() {
+        sut = new Q15();
+    }
 
+    @After
+    public void tearDown() {
+        sut = null;
     }
 
     @Test
-    public void testingAddition(){
-        assertEquals("msg", 12.0,(newObj.addition(num1, num2)), 0.001);
+    public void addEightAndFourIsTwelve() {
+        double expectedResult = 12.0;
+        double actualResult = sut.addition(num1, num2);
+        assertEquals(expectedResult, actualResult, delta);
     }
 
     @Test
-    public void testingSubtraction(){
-        assertEquals(4.0,(newObj.subtraction(num1, num2)), 0.001);
+    public void subtractEightMinusFourIsFour() {
+        double expectedResult = 4;
+        double actualResult = sut.subtraction(num1, num2);
+        assertEquals(expectedResult, actualResult, delta);
     }
 
     @Test
-    public void testingMultiplication(){
-        assertEquals(32.0, (newObj.multiplication(num1, num2)), 0.001);
+    public void multiplyEightByFourIsThirtyTwo() {
+        double expectedResult = 32;
+        double actualRestult = sut.multiplication(num1, num2);
+        assertEquals(expectedResult, actualRestult, delta);
     }
 
     @Test
-    public void testingDivision(){
-        assertEquals(2.0, (newObj.division(num1, num2)), 0.001);
+    public void multiplyEightByCeroIsCero() {
+        double expectedResult = 0;
+        double actualResult = sut.multiplication(num1, 0);
+        assertEquals(expectedResult, actualResult, delta);
     }
+
+    @Test
+    public void divideEightByFourIsTwo() {
+        double expectedResult = 2;
+        double actualResult = sut.division(num1, num2);
+        assertEquals(expectedResult, actualResult, delta);
+    }
+
 
 }

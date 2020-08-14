@@ -7,8 +7,6 @@ package com.revature.questions;
     Create a class that implements this interface and provides appropriate functionality
     to carry out the required operations.
 
-    Hard code two operands in a test class having a
-    main method that calls the implementing class.
  */
 
 public class Q15 implements Q15Interface {
