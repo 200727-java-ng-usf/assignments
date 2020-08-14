@@ -4,11 +4,11 @@ import java.util.Scanner;
  * This class implements three methods from the abstract class QuestionEighteen and has
  * a main method to demonstrate their execution on a QuestionEighteenSubclass object.
  */
-public class QuestionEighteenSubclass extends QuestionEighteen {
+public class Q18AbstractSubclass extends Q18Abstract {
 
     private String word;
 
-    public QuestionEighteenSubclass(String word) {
+    public Q18AbstractSubclass(String word) {
         this.word = word;
     }
 
@@ -78,7 +78,7 @@ public class QuestionEighteenSubclass extends QuestionEighteen {
         String userWord = scanner.nextLine();
 
         // creates an object of the QuestionEighteenSubclass whose value is the userWord.
-        QuestionEighteenSubclass theWord = new QuestionEighteenSubclass(userWord);
+        Q18AbstractSubclass theWord = new Q18AbstractSubclass(userWord);
 
         theWord.hasUpperCaseLetters();
         theWord.convertToUppercase();

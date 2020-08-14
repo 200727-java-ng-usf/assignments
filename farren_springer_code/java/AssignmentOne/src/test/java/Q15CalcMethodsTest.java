@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionFifteenTest {
+public class Q15CalcMethodsTest {
 
-    private QuestionFifteen sut;
+    private Q15CalcMethods sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionFifteen(2, 3); }
+    public void setUp() throws Exception { sut = new Q15CalcMethods(2, 3); }
 
     @After
     public void tearDown() throws Exception { sut = null; }
@@ -47,7 +47,7 @@ public class QuestionFifteenTest {
             public void nullValuePassedToAddThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
         int unexpectedResult = 5;
-        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
         int actualResult = sut2.add();
         assertNotEquals(unexpectedResult, actualResult);
     }
@@ -56,7 +56,7 @@ public class QuestionFifteenTest {
     public void nullValuePassedToSubtractThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
         int unexpectedResult = 5;
-        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
         int actualResult = sut2.subtract();
         assertNotEquals(unexpectedResult, actualResult);
     }
@@ -65,7 +65,7 @@ public class QuestionFifteenTest {
     public void nullValuePassedToMultiplyThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
         int unexpectedResult = 3;
-        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
         int actualResult = (int) sut2.multiply();
         assertNotEquals(unexpectedResult, actualResult);
     }
@@ -74,7 +74,7 @@ public class QuestionFifteenTest {
     public void nullValuePassedToDivideThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
         int unexpectedResult = 5;
-        QuestionFifteen sut2 = new QuestionFifteen(2, nullValue);
+        Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
         int actualResult = (int) sut2.divide();
         assertNotEquals(unexpectedResult, actualResult);
     }

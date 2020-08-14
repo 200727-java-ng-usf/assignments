@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-public class QuestionNineteenTest {
+public class Q19IntegerCalcOnAnArrayListTest {
 
-    private QuestionNineteen sut;
+    private Q19IntegerCalcOnAnArrayList sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionNineteen(); }
+    public void setUp() throws Exception { sut = new Q19IntegerCalcOnAnArrayList(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

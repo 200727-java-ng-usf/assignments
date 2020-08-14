@@ -6,12 +6,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionSeventeenTest {
+public class Q17InterestTest {
 
-    private QuestionSeventeen sut;
+    private Q17SimpleInterest sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionSeventeen(); }
+    public void setUp() throws Exception { sut = new Q17SimpleInterest(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

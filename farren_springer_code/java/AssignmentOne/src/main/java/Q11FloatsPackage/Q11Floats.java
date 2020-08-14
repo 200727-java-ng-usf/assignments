@@ -1,11 +1,11 @@
-package QuestionElevenOtherPackage;
+package Q11FloatsPackage;
 
-public class QuestionElevenOtherPackageClass {
+public class Q11Floats {
 
-    public QuestionElevenOtherPackageClass() {
+    public Q11Floats() {
     }
 
-    public QuestionElevenOtherPackageClass(float f1, float f2) {
+    public Q11Floats(float f1, float f2) {
         float1 = f1;
         float2 = f2;
     }
@@ -18,7 +18,7 @@ public class QuestionElevenOtherPackageClass {
     }
 
     public static void setFloat1(float float1) {
-        QuestionElevenOtherPackageClass.float1 = float1;
+        Q11Floats.float1 = float1;
     }
 
     public static float getFloat2() {
@@ -26,6 +26,6 @@ public class QuestionElevenOtherPackageClass {
     }
 
     public static void setFloat2(float float2) {
-        QuestionElevenOtherPackageClass.float2 = float2;
+        Q11Floats.float2 = float2;
     }
 }

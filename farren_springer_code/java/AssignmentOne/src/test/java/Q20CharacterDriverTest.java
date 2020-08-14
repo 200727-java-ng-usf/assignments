@@ -1,9 +1,9 @@
 import org.junit.After;
 import org.junit.Before;
 
-public class QuestionTwentyTest {
+public class Q20CharacterDriverTest {
 
-    private QuestionTwenty sut = new QuestionTwenty();
+    private Q20CharacterDriver sut = new Q20CharacterDriver();
 
     @Before
     public void setUp() throws Exception {}

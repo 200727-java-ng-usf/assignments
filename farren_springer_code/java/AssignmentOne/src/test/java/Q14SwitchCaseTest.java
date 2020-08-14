@@ -8,12 +8,12 @@ import java.util.Date;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionFourteenTest {
+public class Q14SwitchCaseTest {
 
-    private QuestionFourteen sut;
+    private Q14SwitchCase sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionFourteen(); }
+    public void setUp() throws Exception { sut = new Q14SwitchCase(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionThirteenTest {
+public class Q13BinaryWrapTest {
 
-    private QuestionThirteen sut;
+    private Q13BinaryWrap sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionThirteen(); }
+    public void setUp() throws Exception { sut = new Q13BinaryWrap(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionSixteenTest {
+public class Q16StringLengthTest {
 
-    private QuestionSixteen sut;
+    private Q16StringLength sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionSixteen(); }
+    public void setUp() throws Exception { sut = new Q16StringLength(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

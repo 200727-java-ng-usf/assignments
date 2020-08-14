@@ -5,7 +5,7 @@ import java.util.Scanner;
  * demonstrate that method.
  */
 
-public class QuestionSeventeen {
+public class Q17SimpleInterest {
 
     /**
      * This method takes in three values: a principal, a rate, and a time, and returns the

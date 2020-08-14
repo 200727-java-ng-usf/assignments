@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * one main method to demonstrate their use.
  */
 
-public class QuestionNineteen {
+public class Q19IntegerCalcOnAnArrayList {
 
     /**
      * This method will add all the even numbers in an ArrayList of integers and return the sum.

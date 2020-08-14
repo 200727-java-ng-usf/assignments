@@ -3,7 +3,7 @@ import java.util.Date;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuestionFourteen {
+public class Q14SwitchCase {
 
     /**
      * This method asks the user for input and returns the square root.

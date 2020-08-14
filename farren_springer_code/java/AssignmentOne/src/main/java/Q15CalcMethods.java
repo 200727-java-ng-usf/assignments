@@ -1,18 +1,18 @@
-public class QuestionFifteen implements QuestionFifteenInterface{
+public class Q15CalcMethods implements Q15Calc {
 
     private int num1;
     private int num2;
     private int ans;
 
     // constructor no args
-    public QuestionFifteen() {
+    public Q15CalcMethods() {
         this.num1 = 3;
         this.num2 = 5;
         this.ans = 0;
     }
 
     // constructor one arg
-    public QuestionFifteen(int num1, int num2){
+    public Q15CalcMethods(int num1, int num2){
         this.num1 = num1;
         this.num2 = num2;
     }

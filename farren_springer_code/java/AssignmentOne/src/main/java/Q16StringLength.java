@@ -2,7 +2,7 @@
  * This class has a method that calculates the number of characters in a string
  * and a main method to demonstrate this.
  */
-public class QuestionSixteen {
+public class Q16StringLength {
 
     /**
      * This method takes in a string and returns the number of characters in the string.

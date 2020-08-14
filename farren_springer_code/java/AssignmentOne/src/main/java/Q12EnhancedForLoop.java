@@ -5,7 +5,7 @@ import java.util.Arrays;
  * This class has a method, arrayOperations, that prints all even numbers in an array of integers and
  * a main method that demonstrates the use of arrayOperations.
  */
-public class QuestionTwelve {
+public class Q12EnhancedForLoop {
 
     /**
      * The arrayOperations method has an integer parameter to specify the length of the array and
@@ -78,7 +78,7 @@ public class QuestionTwelve {
     } // end arrayOperations
 
     /**
-     * The main method will demonstrate the use of the arrayOperations method.
+     * The main method will call the arrayOperations method.
      * @param args
      */
     public static void main(String[] args) {

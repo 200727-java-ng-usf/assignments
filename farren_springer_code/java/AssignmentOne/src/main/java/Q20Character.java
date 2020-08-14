@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class QuestionTwentyCharacter {
+public class Q20Character {
 
 
     private String firstName;
@@ -8,7 +8,7 @@ public class QuestionTwentyCharacter {
     private int age;
     private String homeState;
 
-    public QuestionTwentyCharacter(String firstName, String lastName, int age, String homeState) {
+    public Q20Character(String firstName, String lastName, int age, String homeState) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -59,7 +59,7 @@ public class QuestionTwentyCharacter {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        QuestionTwentyCharacter that = (QuestionTwentyCharacter) o;
+        Q20Character that = (Q20Character) o;
         return age == that.age &&
                 Objects.equals(firstName, that.firstName) &&
                 Objects.equals(lastName, that.lastName) &&

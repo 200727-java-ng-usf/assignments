@@ -1,4 +1,4 @@
-package QuestionElevenOtherPackage;
+package Q11FloatsPackage;
 
 
 import org.junit.After;
@@ -7,12 +7,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class QuestionElevenOtherPackageClassTest {
+public class Q11FloatsTest {
 
-    private QuestionElevenOtherPackageClass sut;
+    private Q11Floats sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionElevenOtherPackageClass(1.32f, 1.57f); }
+    public void setUp() throws Exception { sut = new Q11Floats(1.32f, 1.57f); }
 
     @After
     public void tearDown() throws Exception { sut = null; }

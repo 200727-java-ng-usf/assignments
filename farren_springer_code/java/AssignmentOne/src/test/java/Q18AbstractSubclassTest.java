@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class QuestionEighteenSubclassTest {
+public class Q18AbstractSubclassTest {
 
-    private QuestionEighteenSubclass sut;
+    private Q18AbstractSubclass sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionEighteenSubclass("hEllo"); }
+    public void setUp() throws Exception { sut = new Q18AbstractSubclass("hEllo"); }
 
     @After
     public void tearDown() throws Exception { sut = null; }
@@ -37,7 +37,7 @@ public class QuestionEighteenSubclassTest {
     @Test
     public void hasUpperCaseHandlesEmptyString() {
         String emptyString = "";
-        QuestionEighteenSubclass sutWithEmptyString = new QuestionEighteenSubclass(emptyString);
+        Q18AbstractSubclass sutWithEmptyString = new Q18AbstractSubclass(emptyString);
         boolean expectedResult = false;
         assertEquals(sutWithEmptyString.hasUpperCaseLetters(), expectedResult);
     }
@@ -45,7 +45,7 @@ public class QuestionEighteenSubclassTest {
     @Test
     public void convertToUpperCaseHandlesEmptyString() {
         String emptyString = "";
-        QuestionEighteenSubclass sutWithEmptyString = new QuestionEighteenSubclass(emptyString);
+        Q18AbstractSubclass sutWithEmptyString = new Q18AbstractSubclass(emptyString);
         String expectedResult = "";
         assertEquals(sutWithEmptyString.convertToUppercase(), expectedResult);
     }
@@ -53,7 +53,7 @@ public class QuestionEighteenSubclassTest {
     @Test
     public void emptyStringConvertedToAnIntPlus10Is10() {
         String emptyString = "";
-        QuestionEighteenSubclass sutWithEmptyString = new QuestionEighteenSubclass(emptyString);
+        Q18AbstractSubclass sutWithEmptyString = new Q18AbstractSubclass(emptyString);
         int expectedResult = 10;
         assertEquals(sutWithEmptyString.convertToIntAndAddTen(), expectedResult);
     }

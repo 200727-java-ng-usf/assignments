@@ -1,4 +1,4 @@
-public class QuestionThirteen {
+public class Q13BinaryWrap {
 
     /**
      * This class has a method called that wraps a string and displays

@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-public class QuestionTwelveTest {
+public class Q12EnhancedForLoopTest {
 
-    private QuestionTwelve sut;
+    private Q12EnhancedForLoop sut;
 
     @Before
-    public void setUp() throws Exception { sut = new QuestionTwelve(); }
+    public void setUp() throws Exception { sut = new Q12EnhancedForLoop(); }
 
     @After
     public void tearDown() throws Exception { sut = null; }
