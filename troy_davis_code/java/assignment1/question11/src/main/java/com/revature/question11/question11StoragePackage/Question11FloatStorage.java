@@ -1,31 +1,42 @@
-package com.revature.question11.question11VariablePackage;
+/**
+ * Q11.
+ * Write a program that would access two float-variables from a class that exists in another package.
+ * Note, you will need to create two packages to demonstrate the solution.
+ */
+package com.revature.question11.question11StoragePackage;
 
 import java.util.Objects;
-import java.util.Random;
+
 
 public class Question11FloatStorage {
-    //floats to store the values of the floats in the object
-    private float float1;
-    private float float2;
+    //static floats to store the values of the floats in the object
+    private static float float1;
+    private static float float2;
 
+    //no args constructor
     public Question11FloatStorage() {
-        //generate pseudo-random floats(mutated by instance Hashcode) to be accessed upon instantiation
-        this.float1 = (float) Math.random() *this.hashCode();
-        this.float2 = (float) Math.random() *this.hashCode();
+        super();
     }
 
     public float getFloat1() {
         return float1;
     }
 
-    public void setFloat1(float float1) { this.float1 = float1; }
+    public void setFloat1() {
+        //generate pseudo-random floats to be accessed
+        double temp1 = Math.random()*100;
+        float1 = (float) temp1;
+
+    }
 
     public float getFloat2() {
         return float2;
     }
 
-    public void setFloat2(float float2) {
-        this.float2 = float2;
+    public void setFloat2() {
+        //generate pseudo-random floats to be accessed
+        double temp2 = Math.random()*100;
+        float2 = (float) temp2;
     }
 
     @Override
