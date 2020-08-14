@@ -50,6 +50,13 @@ public class Question2Test {
 
     }
 
+    @Test
+    public void testFibonacciNegativeSize() {
+        String msg = "This returns an array with 35 of the fibonacci sequence numbers";
+        question2.fibonacciSequence(-3);
+
+    }
+
     @After
     public void tearDown() {
         question2 = null;

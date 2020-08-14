@@ -25,19 +25,19 @@ public class Assignment1Driver {
 //        Question6 questionSix = new Question6();
 //        System.out.println(questionSix.isEven(5));
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
-        Employee emp1 = new Employee("Wezley", "Singleton", 30);
-        Employee emp2 = new Employee("Matt", "Knighten", 30);
-        Employee emp3 = new Employee("Blake", "Kruppa", 28);
-        Employee emp4 = new Employee("Mia", "Capoli", 22);
-
-        ArrayList<Employee> employees = new ArrayList<>();
-        employees.add(emp1);
-        employees.add(emp2);
-        employees.add(emp3);
-        employees.add(emp4);
-
-        employees.forEach(System.out::println); // <------ method reference
-        employees.sort(new Question7());
+//        Employee emp1 = new Employee("Wezley", "Singleton", 30);
+//        Employee emp2 = new Employee("Matt", "Knighten", 30);
+//        Employee emp3 = new Employee("Blake", "Kruppa", 28);
+//        Employee emp4 = new Employee("Mia", "Capoli", 22);
+//
+//        ArrayList<Employee> employees = new ArrayList<>();
+//        employees.add(emp1);
+//        employees.add(emp2);
+//        employees.add(emp3);
+//        employees.add(emp4);
+//
+//        employees.forEach(System.out::println); // <------ method reference
+//        employees.sort(new Question7());
 //
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
 //        employees.forEach(System.out::println);
@@ -59,8 +59,8 @@ public class Assignment1Driver {
 //        Question13 question13 = new Question13();
 //        question13.pyramid();
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
-//        Question14  question14 = new Question14();
-//        question14.switchCase(3);
+        Question14  question14 = new Question14();
+        question14.switchCase(3);
 //        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~");
 //        Question17 question17 = new Question17();
 //        question17.simpleInterest();

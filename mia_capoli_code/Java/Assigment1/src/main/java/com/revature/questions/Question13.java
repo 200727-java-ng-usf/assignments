@@ -1,32 +1,34 @@
 package com.revature.questions;
 
 public class Question13 {
-    public void pyramid(){
-        int[] evenNumbers = new int[10];
-        for (int i = 0; i < 10; i++ ) {
+    public String pyramid() {
+        String[] evenNumbers = new String[10];
+        String finalPyramid = "";
+        for (int i = 0; i < 10; i++) {
             if (i % 2 == 0) {
-                evenNumbers[i] = 0;
+                evenNumbers[i] = "0";
             } else {
-                evenNumbers[i] = 1;
+                evenNumbers[i] = "1";
             }
         }
         for (int i = 0; i < 10; i++) {
             if (i == 0) {
-                System.out.println(evenNumbers[i]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i]);
             } else if (i == 1) {
-
-                System.out.print(evenNumbers[i]);
-                System.out.println(evenNumbers[i + 1]);
+                finalPyramid = finalPyramid.concat("\n" + evenNumbers[i]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 1]);
             } else if (i == 3) {
-                System.out.print(evenNumbers[i]);
-                System.out.print(evenNumbers[i + 1]);
-                System.out.println(evenNumbers[i + 2]);
+                finalPyramid = finalPyramid.concat("\n" + evenNumbers[i]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 1]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 2]);
             } else if (i == 6) {
-                System.out.print(evenNumbers[i]);
-                System.out.print(evenNumbers[i + 1]);
-                System.out.print(evenNumbers[i + 2]);
-                System.out.print(evenNumbers[i + 3]);
+                finalPyramid = finalPyramid.concat("\n" + evenNumbers[i]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 1]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 2]);
+                finalPyramid = finalPyramid.concat(evenNumbers[i + 3]);
             }
         }
+        System.out.println(finalPyramid);
+        return finalPyramid;
     }
 }

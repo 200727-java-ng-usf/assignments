@@ -1,17 +1,20 @@
 package com.revature.questions;
 
-import com.revature.Assignment1Driver;
-
 public class Question2 {
-    // getting the utility method "print values"
-    Assignment1Driver printValues = new Assignment1Driver();
+
 
     public int[] fibonacciSequence(int arrSize) {
         //initializing the array
-        int[] fibonacciArray = new int[arrSize];
+        if (arrSize < 0) {
+            System.out.println("You gave a negative value!!");
+            return null;
+        }
+
         if (arrSize == 0) {
+            int[] fibonacciArray = {};
             return fibonacciArray;
         }
+        int[] fibonacciArray = new int[arrSize];
         for (int i = 0; i < arrSize; ++i) {
             //inputting the first 3 numbers that are not easily calculated
             if (i == 0) {
