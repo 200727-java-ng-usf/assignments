@@ -35,6 +35,13 @@ public class q8PalindromeTest {
         expected.add(justString);
         expected.add(justplaindrome);
         assertEquals(expected,sut.q8PalindromeO(actual));
+    }
+
+    @Test
+    public void emptyStringarray(){
+        String[] actual = new String[0];
+        ArrayList<ArrayList<String>> expected = new ArrayList<>();
+        assertEquals(expected,sut.q8PalindromeO(actual));
 
     }
 

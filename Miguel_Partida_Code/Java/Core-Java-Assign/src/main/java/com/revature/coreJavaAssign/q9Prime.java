@@ -27,6 +27,11 @@ public class q9Prime {
         return true;
     }
     public static ArrayList<ArrayList<Integer>> q9PrimeN (ArrayList<Integer> initialInt){
+        //edge casing
+        if(initialInt==null){
+            return null;
+        }
+
         //non-prime numbers will go in here
         ArrayList<Integer> nonPrime = new ArrayList<>();
         //primes will go in here

@@ -2,7 +2,6 @@ package com.revature.coreJavaAssign;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 import static com.revature.coreJavaAssign.q12StoreArray.*;
 import static com.revature.coreJavaAssign.q1bubbleSort.*;

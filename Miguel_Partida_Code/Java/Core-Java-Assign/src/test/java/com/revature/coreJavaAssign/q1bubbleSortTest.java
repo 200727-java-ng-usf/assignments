@@ -24,9 +24,17 @@ public class q1bubbleSortTest {
     }
 
     @Test
-    public void testBubbleSort2() {
+    public void BubblesortPhoneNumber() {
         int[] actual = {8,7,2,1,7,8,2};
         int[] expected = {1,2,2,7,7,8,8 };
+
+        assertArrayEquals(expected,sut.q1bubbleSort(actual));
+    }
+
+    @Test
+    public void bubblesortNull() {
+        int[] actual = {};
+        int[] expected = {};
 
         assertArrayEquals(expected,sut.q1bubbleSort(actual));
     }

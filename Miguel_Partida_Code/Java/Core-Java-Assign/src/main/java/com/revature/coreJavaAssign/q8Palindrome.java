@@ -21,7 +21,10 @@ public class q8Palindrome {
     }
 
     public static ArrayList<ArrayList<String>> q8PalindromeO(String[] initialStrings) {
-
+        //edge casing
+        if(initialStrings==null){
+            return null;
+        }
 
         //this is were non-palindrome words will go
         ArrayList<String> justStrings = new ArrayList<>();

@@ -38,6 +38,13 @@ public class q9PrimeTest {
         nonPrime.add(567);
 
         assertEquals(expected,sut.q9PrimeN(actual));
+    }
+    @Test
+    public void testNoNumbers() {
+        ArrayList<Integer> actual = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> expected = new ArrayList<>();
+        assertEquals(expected,sut.q9PrimeN(actual));
 
     }
+
 }

@@ -8,6 +8,15 @@ public class q5SubToIdx {
     or
      */
     static String q5SubToIdx (int idx,String str){
+
+       //edge casing
+        if(idx ==0 ){
+            return str;
+        }
+        if(str == "" ){
+            return null;
+        }
+
         int i;
         //char array with the length of the int idx specified
         char[] sString = new char[idx];

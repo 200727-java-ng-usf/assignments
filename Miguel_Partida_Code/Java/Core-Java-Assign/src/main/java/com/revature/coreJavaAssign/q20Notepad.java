@@ -27,7 +27,8 @@ public class q20Notepad {
         try{
             BufferedReader reader = new BufferedReader(new FileReader(javaAssignment));
             String currentLine = reader.readLine();
-
+//   if the first line of the txt is empty it will read null and continue to give a false boolean
+            //
             if(currentLine !=null){
                 readFile = true;
             }
