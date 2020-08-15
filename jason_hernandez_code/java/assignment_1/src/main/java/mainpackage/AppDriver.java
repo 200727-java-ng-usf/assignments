@@ -1,6 +1,12 @@
 package mainpackage;
 
+import mainpackage.comparators.EmployeeSortByAge;
+import mainpackage.comparators.EmployeeSortByDepartment;
+import mainpackage.comparators.EmployeeSortByName;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class AppDriver {
     public static void main(String[] args) {
@@ -37,9 +43,28 @@ public class AppDriver {
         System.out.println("+------------------------+");
 
         System.out.println("7. Sort employees by name, department, and age");
-        EmployeeSort employeeSort = new EmployeeSort();
-        employeeSort.sortEmployee("", "", 0);
-        //System.out.println();
+        ArrayList<EmployeeSort> list = new ArrayList<>();
+        //Populate list with employees
+        list.add(new EmployeeSort("Pikup Andropov", "Shipping", 27));
+        list.add(new EmployeeSort("Allison Wonderland", "R and D", 35));
+        System.out.println("Unsorted");
+        for (int i=0; i<list.size(); i++)
+            System.out.println(list.get(i));
+        // Sort by name
+        Collections.sort(list, new EmployeeSortByName());
+        System.out.println("\nSorted by name");
+        for (int i=0; i<list.size(); i++)
+            System.out.println(list.get(i));
+        // Sort by Department
+        Collections.sort(list, new EmployeeSortByDepartment());
+        System.out.println("\nSorted by department");
+        for (int i=0; i<list.size(); i++)
+            System.out.println(list.get(i));
+        // Sort by Age
+        Collections.sort(list, new EmployeeSortByAge());
+        System.out.println("\nSorted by age");
+        for (int i=0; i<list.size(); i++)
+            System.out.println(list.get(i));
         System.out.println("+------------------------+");
 
         System.out.println("8. Extract palindromes from an array list");
