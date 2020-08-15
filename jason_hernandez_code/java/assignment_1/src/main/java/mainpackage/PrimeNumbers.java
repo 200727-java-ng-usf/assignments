@@ -13,6 +13,7 @@ public class PrimeNumbers {
         for (int i = 1; i <= 100; i++) {
 
             // Start each one at default setting true
+            int temp;
             boolean isPrime = true;
 
             // Iterate through the numbers

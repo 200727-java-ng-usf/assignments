@@ -117,7 +117,6 @@ public class AppDriver {
 
         System.out.println("16. Count number of characters in a string");
         NumberOfCharacters numberOfCharacters = new NumberOfCharacters();
-        numberOfCharacters.count("");
         System.out.println("+------------------------+");
 
         System.out.println("17. Calculate principal, rate, and time");
