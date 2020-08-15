@@ -38,7 +38,7 @@ public class BubbleSort {
                 }
 
         }
-        System.out.println("Array After Bubble Sort" + Arrays.toString(number));
+        System.out.println("Array After Bubble Sort: " + Arrays.toString(number));
         return number;
 
     }

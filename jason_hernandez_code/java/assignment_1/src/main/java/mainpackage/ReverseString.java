@@ -39,7 +39,13 @@ public class ReverseString {
     public void reverseString() {
         List<Character> reverse = reverseList(listOfCharacters);
         System.out.println(reverse);
-        System.out.println(new String(String.valueOf(reverse)));
+        StringBuilder sb = new StringBuilder();
+        for(Character ch : reverse) {
+            sb.append(ch);
+        }
+
+        String reversedString = sb.toString();
+        System.out.println(reversedString);
     }
 }
 
