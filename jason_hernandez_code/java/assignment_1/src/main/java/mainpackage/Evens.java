@@ -12,7 +12,6 @@ public class Evens {
         for (int i = 1; i <= 100; i++) {
             numbers2.add(i);
 
-
            // Check each number to see if it is even
             for (int j = 1; j <= numbers2.size(); j++)
                 if (i%2 == 0) {
