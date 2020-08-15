@@ -127,6 +127,7 @@ public class AppDriver {
         System.out.println("18. Change the case of characters using subclass");
         SubChangeCase changeCase = new SubChangeCase();
         changeCase.stringToCheck = "Foxes";
+        System.out.println("String to check: " + changeCase.stringToCheck);
         changeCase.checkForUppercase();
         changeCase.convertToUppercase();
         //changeCase.convertToIntPlusTen();

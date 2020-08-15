@@ -31,7 +31,7 @@ public class PrimeNumbers {
             }
 
         }
-        System.out.println("The prime numbers are:");
+        System.out.println("The prime numbers between 1 and 100 are:");
         System.out.println(listPrimes);
 
     }

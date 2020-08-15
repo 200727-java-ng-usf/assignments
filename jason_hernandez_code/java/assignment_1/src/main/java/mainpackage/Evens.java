@@ -23,7 +23,7 @@ public class Evens {
 
         }
 
-        System.out.println("The Even Numbers are " + (evenNumbers));
+        System.out.println("The Even Numbers up to 100 are " + (evenNumbers));
     }
 }
 

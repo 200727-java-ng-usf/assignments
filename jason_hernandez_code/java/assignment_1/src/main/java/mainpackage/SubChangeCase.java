@@ -14,10 +14,10 @@ public class SubChangeCase extends ChangeCase{
     public boolean checkForUppercase() {
         boolean isLowercase = !stringToCheck.equals(stringToCheck.toLowerCase());
         if(isLowercase) {
-            System.out.println("false");
+            System.out.println("Is lowercase: false");
             return false;
         } else {
-            System.out.println("true");
+            System.out.println("Is lowercase: true");
             return true;
         }
     }
