@@ -1,5 +1,6 @@
 package com.revature.coreJavaAssign;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,6 +14,11 @@ public class q19ArrayListTest {
     @Before
     public void setUp(){
         sut = new q19ArrayList();
+    }
+
+    @After
+    public void tearDown(){
+        sut = null;
     }
 
     @Test
@@ -29,5 +35,12 @@ public class q19ArrayListTest {
         expected.add(7);
         expected.add(9);
         assertEquals(expected,sut.q19ArrayList(oneToTen));
+    }
+
+    @Test
+    public void testNothing(){
+        ArrayList<Integer> nothing = new ArrayList<>();
+        ArrayList<Integer> expected = new ArrayList<>();
+        assertEquals(expected,sut.q19ArrayList(nothing));
     }
 }

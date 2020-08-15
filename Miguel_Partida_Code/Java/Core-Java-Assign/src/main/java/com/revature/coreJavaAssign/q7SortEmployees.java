@@ -53,26 +53,28 @@ public  class q7SortEmployees implements Comparator<q7SortEmployees> {
     }
 
 
-        @Override
-        //after talking to my collegues i realized that i shouldnt have 3 classes with 3 different override methods
-        public int compare(q7SortEmployees emp1, q7SortEmployees emp2) {
-            if (emp1.getName().compareTo(emp2.getName()) > 0) {
-                return 1;
-            } else if (emp1.getName().compareTo(emp2.getName()) < 0) {
-                return -1;
-            }
-            if (emp1.getDepartment().compareTo(emp2.getDepartment()) >0){
-                return 1;
-            } else if(emp1.getDepartment().compareTo(emp2.getDepartment())<0){
-                return -1;
-            }
-            if (emp1.getAge() > emp2.getAge()){
-                return 1;
-            }else if (emp1.getAge() < emp2.getAge()){
-                return -1;
-            }
-                return 0;
-            }
+    @Override
+    //after talking to my collegues i realized that i shouldnt have 3 classes with 3 different override methods
+    public int compare(q7SortEmployees emp1, q7SortEmployees emp2) {
+        if (emp1.getName().compareTo(emp2.getName()) > 0) {
+            return 1;
+        } else if (emp1.getName().compareTo(emp2.getName()) < 0) {
+            return -1;
+        }
+        if (emp1.getDepartment().compareTo(emp2.getDepartment()) > 0) {
+            return 1;
+        } else if (emp1.getDepartment().compareTo(emp2.getDepartment()) < 0) {
+            return -1;
+        }
+        if (emp1.getAge() > emp2.getAge()) {
+            return 1;
+        } else if (emp1.getAge() < emp2.getAge()) {
+            return -1;
+        }
+        return 0;
+    }
+
+}
 
 //            @Override
 //            public int compare(q7SortEmployees emp1, q7SortEmployees emp2) {
@@ -86,6 +88,7 @@ public  class q7SortEmployees implements Comparator<q7SortEmployees> {
 //                }
 //
 //            }
+
 //
 //
 //
@@ -101,7 +104,7 @@ public  class q7SortEmployees implements Comparator<q7SortEmployees> {
 //                }
 //            }
 
-    }
+
 
 
 

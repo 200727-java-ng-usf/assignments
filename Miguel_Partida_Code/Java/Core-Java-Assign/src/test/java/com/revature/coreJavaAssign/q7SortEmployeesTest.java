@@ -12,11 +12,7 @@ public class q7SortEmployeesTest {
 
     private q7SortEmployees sut;
 
-    q7SortEmployees emp1 = new q7SortEmployees("Goku","Marketing",25);
-    q7SortEmployees emp2 = new q7SortEmployees("Vegeta","Customer-Service",24);
-    q7SortEmployees emp3 = new q7SortEmployees("freza","HR",600);
 
-    ArrayList<q7SortEmployees> employees = new ArrayList<>();
 
 
     @Before
@@ -33,7 +29,18 @@ public class q7SortEmployeesTest {
 
 
     @Test
-    public void compare() {
+    public void compareDBZ() {
+        q7SortEmployees emp2 = new q7SortEmployees("Vegeta","Customer-Service",24);
+        q7SortEmployees emp3 = new q7SortEmployees("freza","HR",600);
+        int expected = sut.compare(emp2,emp3);
+        assertTrue(expected >= -1);
+    }
 
+    @Test
+    public void compareJackFSF() {
+        q7SortEmployees jFSF1 = new q7SortEmployees("Jake", "Customer-Service", 34);
+        q7SortEmployees jFSF2 = new q7SortEmployees("Jake","Customer-Service",28);
+        int expected = sut.compare(jFSF1,jFSF2);
+        assertTrue(expected <= 1);
     }
 }

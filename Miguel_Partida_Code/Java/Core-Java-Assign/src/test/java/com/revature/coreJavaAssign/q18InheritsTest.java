@@ -30,7 +30,16 @@ public class q18InheritsTest {
         InputStream inContent = new ByteArrayInputStream(sqre.getBytes());
         System.setIn(inContent);
         Assert.assertEquals(expected,sut.userToInt());
-
     }
+
+    @Test
+    public void testwow(){
+        String expected = "wow";
+        String input ="wow";
+        InputStream inContent = new ByteArrayInputStream(input.getBytes());
+        System.setIn(inContent);
+        Assert.assertEquals(expected,sut.userToInt());
+    }
+
 
 }
