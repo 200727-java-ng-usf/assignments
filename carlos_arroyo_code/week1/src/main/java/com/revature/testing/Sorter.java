@@ -1,8 +1,8 @@
-package com.revature;
+package com.revature.testing;
 
 import java.util.Arrays;
 
-public class BubbleSort {
+public class Sorter {
 
     public int[] sort(int[] arr) {
         // check for the edge cases
@@ -30,6 +30,4 @@ public class BubbleSort {
 
         return copy;
     }
-
-
 }
