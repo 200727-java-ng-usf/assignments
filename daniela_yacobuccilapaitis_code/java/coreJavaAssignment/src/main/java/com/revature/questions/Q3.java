@@ -6,17 +6,25 @@ import java.util.Scanner;
 public class Q3 {
 
     public static void main(String[] args) {
+            Q3 obj = new Q3();
             Scanner scan = new Scanner(System.in);
             System.out.println("Please enter a String");
-            String inputString = scan.next();
+            String inputString = scan.nextLine();
+            scan.close();
 
-            StringBuilder reversedString = new StringBuilder(inputString.length());
+            System.out.println("The following is the reversed String: " +
+                    obj.reverseString(inputString));
+
+    }
+
+    public String reverseString(String inputString) {
+
+        StringBuilder reversedString = new StringBuilder(inputString.length());
         for(int i = 0, j = inputString.length()-1; i < inputString.length(); i++, j--) {
 
             reversedString.insert(i, inputString.charAt(j));
+
         }
-
-        System.out.println("The following is the reversed String " + reversedString.toString());
-
+        return reversedString.toString();
     }
 }

@@ -14,6 +14,7 @@ public class Q17 {
      */
     public static void main(String[] args) {
 
+        Q17 obj = new Q17();
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter principal: ");
@@ -25,6 +26,10 @@ public class Q17 {
         System.out.println("Enter number of years ");
         int years = scan.nextInt();
 
-        System.out.println("The interest is the following: " + interest * rateOfInterest * years);
+        System.out.println("The interest is the following: " + obj.calculateInterestRate(interest, rateOfInterest, years));
+    }
+
+    public double calculateInterestRate (double interest, double rateOfInterest, int years){
+        return interest * rateOfInterest * years;
     }
 }

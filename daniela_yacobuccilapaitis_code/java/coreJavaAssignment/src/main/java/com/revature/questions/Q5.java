@@ -7,7 +7,13 @@ package com.revature.questions;
  */
 public class Q5 {
 
-    public static String substring(String str, int idx) {
+    public static void main(String[] args) {
+        Q5 obj = new Q5();
+        String a = "beaniE";
+        System.out.println(obj.substring(a, 3));
+    }
+
+    public String substring(String str, int idx) {
 
         StringBuilder returnString = new StringBuilder("");
 
@@ -17,10 +23,6 @@ public class Q5 {
         return returnString.toString();
     }
 
-    public static void main(String[] args) {
-        String a = "beaniE";
-        System.out.println(substring(a, 3));
-    }
 
 
 }

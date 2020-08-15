@@ -7,13 +7,14 @@ public class Q4 {
 
     public static void main(String[] args) {
 
+        Q4 obj = new Q4();
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number ");
         int num = (int)scan.nextInt();
-        System.out.println(num + "! =" + calcFactorial(num));
+        System.out.println(num + "! =" + obj.calcFactorial(num));
     }
 
-    public static int calcFactorial(int num) {
+    public int calcFactorial(int num) {
         if (num == 0||num == 1)
             return 1;
         else

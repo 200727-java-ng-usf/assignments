@@ -1,14 +1,10 @@
 package com.revature.questions;
 
-import java.util.Comparator;
+import java.util.ArrayList;
 
-//Q7. Sort two employees based on their name, department,
-// and age using the Comparator interface.
-public class Q7 implements Comparator {
+public class Q7 {
 
-    @Override
-    public int compare(Object o1, Object o2) {
-        return 0;
+    public void sort(ArrayList<Employee> employeeList) {
+        employeeList.sort(new Q7Comparator());
     }
-
 }

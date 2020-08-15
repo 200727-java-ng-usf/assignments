@@ -8,12 +8,13 @@ public class Q2 {
 
     public static void main(String[] args) {
 
+        Q2 obj = new Q2();
         int amountOfFib = 25;
-        System.out.println(arrayToString(fibonacciList(amountOfFib)));
+        System.out.println(arrayToString(obj.fibonacciList(amountOfFib)));
 
     }//main
 
-    private static int fibonacciNum (int num) {
+    public static int fibonacciNum (int num) {
 
         if (num==0) {
             return 0;
@@ -26,7 +27,7 @@ public class Q2 {
             return fibonacciNum(num-1) + fibonacciNum(num-2);
     }// fibonacciNum
 
-    private static int[] fibonacciList (int lengthOfArray) {
+    public int[] fibonacciList (int lengthOfArray) {
 
         int[] fibNums = new int [lengthOfArray];
 
@@ -37,7 +38,7 @@ public class Q2 {
 
     }//fibonacciList
 
-    private static String arrayToString(int arrayFib[]){
+    public static String arrayToString(int arrayFib[]){
 
         String string = "";
         for(int i = 0; i < arrayFib.length; i++){

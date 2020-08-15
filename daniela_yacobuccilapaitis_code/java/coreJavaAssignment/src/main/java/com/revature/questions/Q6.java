@@ -6,18 +6,21 @@ import java.util.Scanner;
 public class Q6 {
 
     public static void main(String[] args) {
+        Q6 obj = new Q6();
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter an integer ");
         int num = scan.nextInt();
-        isEven(num);
+        obj.isEven(num);
 
     }
 
-    private static void isEven(int num) {
-        if (num/2 == (double)num/2.0)
+    public boolean isEven(int num) {
+        if (num/2 == (double)num/2.0) {
             System.out.println("The number is even");
-        else
+            return true; }
+        else {
             System.out.println("The number is odd");
+            return false; }
 
     }
 }

@@ -1,9 +1,9 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import com.revature.questions.Q5;
 
 import static org.junit.Assert.*;
-
 
 public class Q5Test {
 
@@ -14,10 +14,16 @@ public class Q5Test {
         sut = new Q5();
     }
 
+    @After
+    public void tearDown() {
+        sut = null;
+    }
 
     @Test
-    public void substringTest(){
-    assertEquals("new", sut.substring("newer", 3));
+    public void areFirstFourLettersOfBeanieBean(){
+        String expectedResult = "Bean";
+        String actualResult = sut.substring("Beanie", 4);
+        assertEquals(expectedResult, actualResult);
 
     }
 }

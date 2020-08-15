@@ -19,6 +19,7 @@ public class Q8 {
 
         ArrayList<String> allStrings = new ArrayList<>();
         ArrayList<String> palindromes = new ArrayList<>();
+        Q8 obj = new Q8();
 
         String currentString;
 
@@ -34,7 +35,7 @@ public class Q8 {
 
         // adds palindromes to a separate arrayList
         for (String str: allStrings) {
-            if(isPalindrome(str)){
+            if(obj.isPalindrome(str)){
                 palindromes.add(str);
             }
         }
@@ -45,7 +46,7 @@ public class Q8 {
     }
 
     // determines which Strings are palindromes
-    private static boolean isPalindrome(String str) {
+    public boolean isPalindrome(String str) {
         for(int i = 0, j = str.length()-1; i < ((str.length()-1)/2); i++, j--) {
             if(str.charAt(i)!=str.charAt(j)){
                 return false;

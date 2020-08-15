@@ -16,6 +16,7 @@ public class Q19 {
         //Create an ArrayList
         ArrayList<Integer> arrayList = new ArrayList<Integer>(10);
         Iterator<Integer> iterator = arrayList.iterator();
+        Q19 obj = new Q19();
 
         //insert integers 1 through 10
         for(int i = 0; i < 10; i++){
@@ -44,13 +45,23 @@ public class Q19 {
 
         //remove all prime numbers
         for(int i = 0; i < arrayList.size(); i++) {
-            if(Q9.isPrime(arrayList.get(i))) {
+            if(obj.isPrime(arrayList.get(i))) {
                 arrayList.remove(i);
                 i--;
             }
         }
         //display the result
         System.out.println(arrayList.toString());
+    }
+
+    public boolean isPrime (int num){
+
+        for(int i = 2 ; i < num ; i++) {
+            if (((double)(((double) num) / ((double) i))) == num/i) {
+                return false;
+            }
+        }
+        return true;
     }
 
 
