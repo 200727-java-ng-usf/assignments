@@ -26,6 +26,7 @@ public class PrimeNumbers {
                 }
                 //If isPrime is true then the number is prime else not
                 if (isPrime)
+                  if(!primes.contains(i))
                     primes.add(i);
             }
 
