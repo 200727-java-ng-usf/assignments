@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q13BinaryWrapTest {
 
@@ -27,9 +26,7 @@ public class Q13BinaryWrapTest {
     @Test (expected = NullPointerException.class)
     public void nullStringPassedToWrapTheStringReturnsNullPointerException() {
         String nullString = null;
-        String unexpectedResult = "\n23\n2323\n232323\n";
-        String actualResult = sut.wrapTheString(nullString);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.wrapTheString(nullString);
     }
 
 }

@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q15CalcMethodsTest {
 
@@ -46,37 +45,25 @@ public class Q15CalcMethodsTest {
     @Test (expected = NumberFormatException.class)
             public void nullValuePassedToAddThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        int unexpectedResult = 5;
         Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
-        int actualResult = sut2.add();
-        assertNotEquals(unexpectedResult, actualResult);
     }
 
     @Test (expected = NumberFormatException.class)
     public void nullValuePassedToSubtractThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        int unexpectedResult = 5;
         Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
-        int actualResult = sut2.subtract();
-        assertNotEquals(unexpectedResult, actualResult);
     }
 
     @Test (expected = NumberFormatException.class)
     public void nullValuePassedToMultiplyThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        int unexpectedResult = 3;
         Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
-        int actualResult = (int) sut2.multiply();
-        assertNotEquals(unexpectedResult, actualResult);
     }
 
     @Test (expected = NumberFormatException.class)
     public void nullValuePassedToDivideThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        int unexpectedResult = 5;
         Q15CalcMethods sut2 = new Q15CalcMethods(2, nullValue);
-        int actualResult = (int) sut2.divide();
-        assertNotEquals(unexpectedResult, actualResult);
     }
 
 

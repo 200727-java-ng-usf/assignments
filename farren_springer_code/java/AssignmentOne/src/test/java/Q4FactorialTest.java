@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q4FactorialTest {
 
@@ -29,9 +28,6 @@ public class Q4FactorialTest {
     @Test (expected = NumberFormatException.class)
     public void nullValuePassedToFactorialThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        int unexpectedResult = 4;
-        int actualResult = sut.factorial(nullValue);
-        assertNotEquals(unexpectedResult, actualResult);
-
+        sut.factorial(nullValue);
     }
 }

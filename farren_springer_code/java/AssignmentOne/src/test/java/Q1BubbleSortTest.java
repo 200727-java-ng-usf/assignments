@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q1BubbleSortTest {
 
@@ -46,9 +45,7 @@ public class Q1BubbleSortTest {
     @Test (expected = NullPointerException.class)
         public void nullArrayThrowsException() {
             int[] nullArray = null;
-        int[] unexpectedResult = {3, 2, 1, 0};
-        int[] actualResult = sut.bubbleSort(nullArray);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.bubbleSort(nullArray);
         }
 
 }

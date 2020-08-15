@@ -30,14 +30,6 @@ public class Q19IntegerCalcOnAnArrayListTest {
     public void stringArrayListPassedToAddEvenNumbersThrowsNumberFormatException() {
         ArrayList<Integer> nullValueArrayList = new ArrayList<>();
         nullValueArrayList.add(Integer.parseInt(null));
-        int unexpectedResult = 4;
-        int actualResult = sut.addEvenNumbers(nullValueArrayList);
     }
 
-
-//    public void testAddOddNumbers() {
-//    }
-//
-//    public void testAddPrimeNumbers() {
-//    }
 }

@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q16StringLengthTest {
 
@@ -29,9 +28,7 @@ public class Q16StringLengthTest {
         public void nullValuePassedToNumberOfCharactersInStringThrowsNullPointerException() {
         String[] actualResult = new String[1];
         actualResult[0] = null;
-        int unexpectedResult = 4;
-        int actualResultNum = sut.numberOfCharactersInString(actualResult);
-        assertNotEquals(unexpectedResult, actualResultNum);
+         sut.numberOfCharactersInString(actualResult);
     }
 
 

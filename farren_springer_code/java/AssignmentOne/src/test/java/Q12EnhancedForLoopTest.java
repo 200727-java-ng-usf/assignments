@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q12EnhancedForLoopTest {
 
@@ -27,8 +26,6 @@ public class Q12EnhancedForLoopTest {
     @Test (expected = NumberFormatException.class)
     public void nullIntArrayPassedToArrayOperationsReturnsNullPointerException() {
         int nullValue = Integer.parseInt(null);
-        int[] unexpectedResult = {2,4,6,8,10};
-        int[] actualResult = sut.arrayOperations(nullValue);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.arrayOperations(nullValue);
     }
 }

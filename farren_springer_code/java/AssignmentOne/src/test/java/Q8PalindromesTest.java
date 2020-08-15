@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q8PalindromesTest {
 
@@ -29,6 +28,6 @@ public class Q8PalindromesTest {
     // Negative test
     @Test (expected = NullPointerException.class)
     public void nullPassedToIsPalindromeReturnsNullPointerException() {
-        assertNotEquals(true, sut.isPalindrome(null, null));
+        sut.isPalindrome(null, null);
     }
 }

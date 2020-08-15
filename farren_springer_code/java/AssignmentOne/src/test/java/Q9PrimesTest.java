@@ -34,8 +34,6 @@ public class Q9PrimesTest {
     @Test (expected = NumberFormatException.class)
     public void decimalNumberResultsInNumberFormatException() {
         int nullValue = Integer.parseInt(String.valueOf(1.0));
-        boolean unexpectedResult = true;
-        boolean actualResult = sut.isPrime(nullValue);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.isPrime(nullValue);
     }
 }

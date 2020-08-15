@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q5SubstringTest {
 
@@ -29,8 +28,6 @@ public class Q5SubstringTest {
     @Test (expected = NullPointerException.class)
     public void nullStringThrowsNullPointerException() {
         String nullString = null;
-        String unexpectedResult = "nul";
-        String actualResult = sut.substring(nullString, 3);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.substring(nullString, 3);
     }
 }

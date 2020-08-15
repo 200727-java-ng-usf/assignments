@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q14SwitchCaseTest {
 
@@ -60,7 +59,6 @@ public class Q14SwitchCaseTest {
     @Test (expected = ArithmeticException.class)
     public void squareRootPassedNegativeNumberReturnsArithmeticException() {
         int negativeNumber = -49;
-        int unexpectedResult = 7;
-        assertNotEquals(unexpectedResult, sut.squareRoot(negativeNumber));
+        sut.squareRoot(negativeNumber);
     }
 }

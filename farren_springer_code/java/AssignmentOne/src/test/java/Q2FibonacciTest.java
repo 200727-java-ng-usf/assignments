@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q2FibonacciTest {
 
@@ -28,18 +27,13 @@ public class Q2FibonacciTest {
     @Test (expected = NumberFormatException.class)
     public void nullValueThrowsException() {
         int nullValue = Integer.parseInt(null);
-        int[] unexpectedResult = {0, 1, 1, 2};
-        int[] actualResult = sut.fibonacciGenerator(nullValue);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.fibonacciGenerator(nullValue);
     }
 
     // Negative test
     @Test (expected = ArrayIndexOutOfBoundsException.class)
     public void inputOf0ThrowsArrayIndexOutOfBoundsException() {
         int zeroValue = 0;
-        int[] unexpectedResult = {0};
-        int[] actualResult = sut.fibonacciGenerator(zeroValue);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.fibonacciGenerator(zeroValue);
     }
-
 }

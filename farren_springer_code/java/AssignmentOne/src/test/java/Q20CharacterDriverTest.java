@@ -2,6 +2,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
+
 import static org.junit.Assert.assertEquals;
 
 public class Q20CharacterDriverTest {
@@ -14,6 +16,7 @@ public class Q20CharacterDriverTest {
     @After
     public void tearDown() throws Exception {}
 
+    // Positive tests
     @Test
     public void objectCreatedToStringMatchesExpected() {
         Q20Character sutCharacter = new Q20Character("Mickey", "Mouse", 35, "Arizona");
@@ -22,10 +25,21 @@ public class Q20CharacterDriverTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    // TODO Negative test (for no file found)
-//    @Test (expected = FileNotFoundException.class)
-//    public void invalidFilePathThrowsFileNotFoundException() {
-//        File notAFile = new File("notAFilePath");
-//        sut.makeQuestionTwentyCharactersOutOf(notAFile);
+//    @Test
+//    public void mainMethodRuns() throws FileNotFoundException {
+//        String[] strings = {"Hey", "Hi", "Hello"};
+//        sut.main(strings);
+//
 //    }
+
+    // Negative tests
+
+    @Test (expected = NullPointerException.class)
+    public void nullFileReturnsNullPointerException() throws NullPointerException {
+            String nullString = null;
+            File nullFile = new File(nullString);
+            sut.makeQuestionTwentyCharactersOutOf(nullFile);
+            System.out.println("No.");
+
+    }
 }

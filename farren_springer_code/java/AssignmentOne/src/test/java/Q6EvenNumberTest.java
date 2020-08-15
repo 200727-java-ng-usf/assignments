@@ -34,7 +34,6 @@ public class Q6EvenNumberTest {
     @Test (expected = NumberFormatException.class)
     public void decimalNumberResultsInNumberFormatException() {
         int nullValue = Integer.parseInt(String.valueOf(1.0));
-        boolean actualResult = sut.isEven(nullValue);
-        assertNotEquals(true, actualResult);
+        sut.isEven(nullValue);
     }
 }

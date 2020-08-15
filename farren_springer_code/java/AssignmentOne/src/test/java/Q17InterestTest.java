@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q17InterestTest {
 
@@ -28,8 +27,6 @@ public class Q17InterestTest {
     @Test (expected = NumberFormatException.class)
     public void nullTimePassedToCalculateInterestThrowsNumberFormatException() {
         int nullValue = Integer.parseInt(null);
-        double unexpectedResult = 15d;
-        double actualResult = sut.calculateInterest(100, 0.05d, nullValue);
-        assertNotEquals(actualResult, unexpectedResult);
+        sut.calculateInterest(100, 0.05d, nullValue);
     }
 }

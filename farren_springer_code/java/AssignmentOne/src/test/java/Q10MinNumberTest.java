@@ -3,7 +3,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
 
 public class Q10MinNumberTest {
 
@@ -27,9 +26,7 @@ public class Q10MinNumberTest {
     @Test (expected = NumberFormatException.class)
     public void decimalNumberPassedToSmallerIntResultsInNumberFormatException() {
         int nullValue = Integer.parseInt(String.valueOf(1.0));
-        int unexpectedResult = 3;
-        int actualResult = sut.smallerInt(nullValue,3);
-        assertNotEquals(unexpectedResult, actualResult);
+        sut.smallerInt(nullValue,3);
     }
 
 }

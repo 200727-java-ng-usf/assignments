@@ -43,9 +43,6 @@ public class Q20CharacterDriver {
         } catch (IOException ioe) {
             ioe.printStackTrace();
             System.out.println("An exception occurred while reading the file.");
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Something went wrong...");
         }
 
         for (int i = 0; i < characterList.size(); i++) {
@@ -56,18 +53,16 @@ public class Q20CharacterDriver {
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws FileNotFoundException {
 
-        // create a file object and use the relative path of the text file
         File file = new File("farren_springer_code/java/AssignmentOne/src/main/resources/Data.txt");
 
         // If there are no more lines of text, throw an exception
-        if(!file.exists()){
+        if (!file.exists()) {
             throw new FileNotFoundException("The file does not exist.");
         }
 
         makeQuestionTwentyCharactersOutOf(file);
-
 
     } // end main
 
