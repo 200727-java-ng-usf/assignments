@@ -6,7 +6,7 @@ public class AppDriver {
     public static void main(String[] args) {
         System.out.println("1. Bubble Sort an array");
         BubbleSort bubbleSort = new BubbleSort();
-        // System.out.println(Arrays.toString(bubbleSort()));
+        bubbleSort.bubbleSort();
         System.out.println("+------------------------+");
 
         System.out.println("2. Generate Fibonacci series");
