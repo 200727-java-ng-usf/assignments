@@ -4,6 +4,7 @@ import com.revature.anotherOne.q11Driver;
 import org.junit.Before;
 import org.junit.Test;
 
+import static java.lang.Float.valueOf;
 import static org.junit.Assert.*;
 
 public class q11FloatTest {
@@ -18,9 +19,10 @@ public class q11FloatTest {
 
     @Test
     public void testWhatIsExpected() {
-        float float1 = sut2.float1;
-        float float2 = sut2.float2;
+        float float1 = valueOf(sut2.float1);
+        float float2 = valueOf(sut2.float2);
         float[] expected = {float1,float2};
-        assertEquals(expected,sut1.floatsFromThere());
+        float delta = 1f;
+        assertArrayEquals(expected,sut1.floatsFromThere(),delta);
     }
 }
