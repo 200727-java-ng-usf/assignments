@@ -2,12 +2,15 @@ package com.revature;
 
 import org.junit.*;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 import static org.junit.Assert.*;
 
-public class Q1Tests {
+public class Q4Tests {
 
     // Creating the test system
-    private Q1Main sut;
+    private Q4Main sut;
 
     @BeforeClass
     public static void start() {
@@ -23,7 +26,7 @@ public class Q1Tests {
 
     @Before
     public void setUp() {
-        sut = new Q1Main();
+        sut = new Q4Main();
         System.out.println("New Test");
     }
 
@@ -35,26 +38,15 @@ public class Q1Tests {
     }
 
     @Test
-    public void bubbleSort() {
-        int[] original = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
-        int[] expectedArray = {0, 1, 2, 3, 3, 4, 5, 6, 7, 8, 9};
+    public void SevenFactorial() {
 
-        for (int i = 0; i < (original.length - 1); i++) {
+        int n = 7;
+        int expected = 5040;
 
-            for (int j = 0; j < (original.length - i - 1); j++) {
-
-                if (original[j] > original[j + 1]) {
-                    int temp = original[j];
-                    original[j] = original[j + 1];
-                    original[j + 1] = temp;
-                }
-            }
+        for (long i = n - 1; i > 1; i--) {
+            n *= i;
         }
 
-        assertArrayEquals(expectedArray, original);
-
+        assertEquals(expected, n);
     }
-
-
-
 }
