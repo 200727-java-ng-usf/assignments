@@ -25,13 +25,13 @@ public class QuestionFive {
         return str3;
     }
 
-    public static void main(String[] args) {
-        int idx = 10;
-        String str = "roll tide roll";
-        String result = Q5(str, idx);
-        System.out.println(str);
-        System.out.println(idx);
-        System.out.println("substring without the roll: " + result);
-    }
+//    public static void main(String[] args) {
+//        int idx = 10;
+//        String str = "roll tide roll";
+//        String result = Q5(str, idx);
+//        System.out.println(str);
+//        System.out.println(idx);
+//        System.out.println("substring without the roll: " + result);
+//    }
 
 }
