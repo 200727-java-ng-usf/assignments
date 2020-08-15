@@ -25,6 +25,5 @@ public class Q1Test {
         int[] actualResult = sut.bubbleSortArray(unsortedArray);
         assertArrayEquals(expectedResult, actualResult);
     }
-    // TODO array with null
 
 }

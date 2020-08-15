@@ -2,8 +2,6 @@ import com.revature.questions.Q3;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.revature.questions.Q5;
-
 import static org.junit.Assert.*;
 
 public class Q3Test {
