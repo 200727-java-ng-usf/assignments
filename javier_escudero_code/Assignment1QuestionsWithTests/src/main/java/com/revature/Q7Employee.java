@@ -66,14 +66,14 @@ class Main
         for (int i = 0; i < empList.size(); i++)
             System.out.println(empList.get(i));
 
-//        System.out.println("\nSorted list by age: ");
-//        Collections.sort(empList, new SortByAge());
-//        for (int i = 0; i < empList.size(); i++)
-//            System.out.println(empList.get(i));
-//
-//        System.out.println("\nSorted list by department: ");
-//        Collections.sort(empList, new SortByDepartment());
-//        for (int i = 0; i < empList.size(); i++)
-//            System.out.println(empList.get(i));
+        System.out.println("\nSorted list by age: ");
+        Collections.sort(empList, new SortByAge());
+        for (int i = 0; i < empList.size(); i++)
+            System.out.println(empList.get(i));
+
+        System.out.println("\nSorted list by department: ");
+        Collections.sort(empList, new SortByDepartment());
+        for (int i = 0; i < empList.size(); i++)
+            System.out.println(empList.get(i));
     }
 }
