@@ -8,14 +8,19 @@ import java.util.Arrays;
 // Print out all the even numbers from the array. Use the enhanced FOR loop for printing out the number
 public class QuestionTwelve {
 
-    public static int[] evenArrayQ12 (int arrayNum){
+    public static int[] evenArrayQ12(int arrayNum) {
+
+        /**
+         *set up int array for evens
+         * set up array list to hold
+         * */
 
         int[] evenArray = new int[arrayNum];
         ArrayList<Integer> holdNumsArray = new ArrayList<>();
-        int count =0;
+        int count = 0;
 
-        for (int i =1; i < evenArray.length + 1; i++){
-            evenArray[i-1] =i;
+        for (int i = 1; i < evenArray.length + 1; i++) {
+            evenArray[i - 1] = i;
         }
         System.out.println("--------------------------------");
         System.out.println("stored numbers");
@@ -27,15 +32,23 @@ public class QuestionTwelve {
 
 
         //adavanced FOR loop
-        for(int i : evenArray){
-            if (evenArray[i-1] %2==0){
+        /**
+         *move through the array index.
+         * subtract by one. check the if remainder = to 0
+         *
+         * */
+        for (int i : evenArray) {
+            if (evenArray[i - 1] % 2 == 0) {
                 count++;
-                holdNumsArray.add(evenArray[i-1]);
+                holdNumsArray.add(evenArray[i - 1]);
             }
         }
         int[] numOfEvens = new int[count];
 
-        for (int i=0; i<count; i++){
+        /**
+         *
+         * */
+        for (int i = 0; i < count; i++) {
             numOfEvens[i] = holdNumsArray.get(i);
             System.out.println(numOfEvens[i] + " ");
         }
