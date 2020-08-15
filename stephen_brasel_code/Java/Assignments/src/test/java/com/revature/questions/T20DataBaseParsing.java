@@ -50,7 +50,7 @@ public class T20DataBaseParsing {
 
     //region NEGATIVE_TESTS
     @Test
-    public void t20DataBaseParsingThrowException()
+    public void t20DataBaseParsingIncorrectFilePath()
     {
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
@@ -61,6 +61,19 @@ public class T20DataBaseParsing {
         System.setOut(originalOut);
         System.setErr(originalErr);
         q20 = new Q20DataBaseParsing("\\src\\main\\java\\com\\revature\\util\\data.md");
+    }
+    @Test
+    public void t20DataBaseParsingNullFilePath()
+    {
+        System.setOut(new PrintStream(outContent));
+        System.setErr(new PrintStream(errContent));
+
+        q20 = new Q20DataBaseParsing(null);
+        assertEquals("Null filepath was given.\r\n", outContent.toString());
+
+        System.setOut(originalOut);
+        System.setErr(originalErr);
+        q20 = new Q20DataBaseParsing(null);
     }
     //endregion
 

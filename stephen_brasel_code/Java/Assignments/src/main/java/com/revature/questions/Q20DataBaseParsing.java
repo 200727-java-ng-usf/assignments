@@ -126,10 +126,9 @@ public class Q20DataBaseParsing {
     public Q20DataBaseParsing(String _filepath) {
         people = new ArrayList<>();
         String filepath = new File("").getAbsolutePath();
-        filepath = filepath.concat(_filepath);
-//        System.out.println(filepath);
-        File file = new File(filepath);
         try{
+            filepath = filepath.concat(_filepath);
+            File file = new File(filepath);
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()){
                 String data = scanner.nextLine();
@@ -142,7 +141,10 @@ public class Q20DataBaseParsing {
                         split[3]));
             }
             scanner.close();
-        } catch(FileNotFoundException e) {
+        } catch(NullPointerException npe) {
+            System.out.println("Null filepath was given.");
+            npe.printStackTrace();
+        }catch(FileNotFoundException e) {
             System.out.println("The file was not found at the specified location.");
             e.printStackTrace();
         }
