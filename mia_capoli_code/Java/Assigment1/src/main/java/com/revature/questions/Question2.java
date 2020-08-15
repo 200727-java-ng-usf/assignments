@@ -1,5 +1,7 @@
 package com.revature.questions;
 
+import com.revature.questions.extras.Utils;
+
 public class Question2 {
 
 
@@ -9,11 +11,12 @@ public class Question2 {
             System.out.println("You gave a negative value!!");
             return null;
         }
-
+        //accounts for edge case if input is zero
         if (arrSize == 0) {
             int[] fibonacciArray = {};
             return fibonacciArray;
         }
+        //initialize properly sized array
         int[] fibonacciArray = new int[arrSize];
         for (int i = 0; i < arrSize; ++i) {
             //inputting the first 3 numbers that are not easily calculated
@@ -29,6 +32,7 @@ public class Question2 {
             }
         }
         //printing the values.
+        Utils.printValues(fibonacciArray);
         return fibonacciArray;
     }
 }

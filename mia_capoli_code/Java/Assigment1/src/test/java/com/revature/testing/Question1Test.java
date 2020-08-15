@@ -26,9 +26,7 @@ public class Question1Test {
         question1 = new Question1();
     }
 
-    //testsolutionwithreversedArray
-    //testsolutionwithpresortedarray
-    //testsolutionwithemptyarray
+
 
     @Test
     public void testBubbleSortGivenArray() {

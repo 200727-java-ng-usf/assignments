@@ -1,5 +1,7 @@
 package com.revature.questions;
 
+import com.revature.questions.extras.Utils;
+
 import java.util.Arrays;
 
 public class Question1 {
@@ -28,6 +30,7 @@ public class Question1 {
             }
         }
         //return result
+        Utils.printValues(q1Array);
         return q1Array;
 
     }

@@ -11,7 +11,8 @@ public class Question4 {
             temp = i;
             stored *= temp + 1;
         }
-        int factorialFinal = stored;
+        //return final result.
+        System.out.println(stored);
         return stored;
     }
 

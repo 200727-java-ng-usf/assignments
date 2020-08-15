@@ -1,7 +1,12 @@
 package com.revature.questions;
+import com.revature.questions.extras.Question18Subclass;
 
-public abstract class Question18 {
-    public abstract boolean checkUppercase();
-    public abstract String convertToLowercase();
-    public abstract int convertStringToInt();
+public class Question18 {
+    public static void main(String[] args) {
+        //main class to run declared methods.
+        Question18Subclass question18 = new Question18Subclass();
+        System.out.println(question18.checkUppercase());
+        System.out.println(question18.convertToLowercase());
+        System.out.println(question18.convertStringToInt());
+    }
 }

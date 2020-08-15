@@ -2,6 +2,7 @@ package com.revature.questions;
 
 public class Question13 {
     public String pyramid() {
+        //Wezley, looking at the prompt, this was not the goal. It's late at the moment, so I'll look at this again on Sunday.
         String[] evenNumbers = new String[10];
         String finalPyramid = "";
         for (int i = 0; i < 10; i++) {

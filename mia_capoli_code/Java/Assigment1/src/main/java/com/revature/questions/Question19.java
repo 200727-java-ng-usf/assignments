@@ -1,33 +1,33 @@
 package com.revature.questions;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Question19 {
 
     ArrayList<Integer> numbers = new ArrayList<>();
     ArrayList<Integer> noPrimeNumbers = new ArrayList<>();
 
-    public void addOddAndEvenRemovePrime() {
-
+    public String[] addOddAndEvenRemovePrime() {
+        //add numbers to the ArrayList
         for (int i = 1; i < 11; i++) {
             numbers.add(i);
         }
         System.out.println(numbers);
-
+        //get the even and odd sums
         int evens = 0;
         int odds = 0;
         for (int i = 1; i < 11; i++) {
             if (i % 2 != 0) {
-                evens += i;
-            } else {
                 odds += i;
-            }
-            if (i == 10) {
-                System.out.println("Evens: " + evens);
-                System.out.println("Odds: " + odds);
+            } else {
+                evens += i;
             }
         }
+        System.out.println("Evens: " + evens);
+        System.out.println("Odds: " + odds);
 
+        //get the primes and "remove" them from the list (add them to a new ArrayList)
         for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i) <= 1) {
                 continue;
@@ -52,7 +52,7 @@ public class Question19 {
             }
         }
         System.out.println(noPrimeNumbers);
-
+        return new String[] {String.valueOf(evens), String.valueOf(odds), noPrimeNumbers.toString()};
     }
 
 }

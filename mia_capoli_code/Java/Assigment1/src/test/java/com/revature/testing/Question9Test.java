@@ -26,15 +26,12 @@ public class Question9Test {
         question9 = new Question9();
     }
 
-    //testsolutionwithreversedArray
-    //testsolutionwithpresortedarray
-    //testsolutionwithemptyarray
 
     @Test
     public void testPrimeNumbersGivenArray() {
         String msg = "If a number is provided, the impl should return an array of numbers in a range of 1 to said number.";
         int size = 100;
-        Object[] correctArray = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+        Object[] correctArray = {1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
         Object[] arrayToBeTested = question9.printPrime(size).toArray();
         assertArrayEquals(msg, correctArray, arrayToBeTested);
 

@@ -1,7 +1,7 @@
 package com.revature.interfaces;
 
 public interface MathMethods {
-
+    //math method interface for addition, subtraction, multiplication, and division.
     double additionM(double a, double b);
 
     double subtractionM(double a, double b);

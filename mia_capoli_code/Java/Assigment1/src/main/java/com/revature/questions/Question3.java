@@ -12,8 +12,9 @@ public class Question3 {
         for (int i = 0, j = reverser.length() - 1; i < reverser.length(); i++, j--) {
             reversedString.append(reverser.charAt(j));
         }
-        //convert result to a string.
+        //convert result to a string and return.
         String finalString = reversedString.toString();
+        System.out.println(finalString);
         return finalString;
 
     }

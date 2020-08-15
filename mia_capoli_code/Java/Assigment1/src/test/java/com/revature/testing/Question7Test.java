@@ -52,12 +52,7 @@ public class Question7Test {
 
 
     }
-//
-//    @Test
-//    public void testNumber() {
-//
-//
-//    }
+
 
     @After
     public void tearDown() {
