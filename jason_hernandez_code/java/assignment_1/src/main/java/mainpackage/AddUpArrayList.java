@@ -64,7 +64,7 @@ public class AddUpArrayList {
                     nonPrime = new int[0];
                     if (!isPrime)
                         nonPrime[j] = numbers3.get(j);
-                    System.out.println("Sum of odd numbers: " + sumOdd);
+                    System.out.println("Non prime numbers: " + nonPrime);
 
                 }
 

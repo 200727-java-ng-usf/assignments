@@ -106,7 +106,13 @@ public class AppDriver {
 
         System.out.println("15. Implement an interface");
         ArithmeticImpl arithmetic = new ArithmeticImpl();
-        arithmetic.implementArithmetic();
+        arithmetic.setFirstNumber(6);
+        arithmetic.setSecondNumber(5);
+        System.out.println("Numbers are: 6 and 5");
+        arithmetic.addUp();
+        arithmetic.subtractIt();
+        arithmetic.multiplyIt();
+        arithmetic.divideBy();
         System.out.println("+------------------------+");
 
         System.out.println("16. Count number of characters in a string");

@@ -1,6 +1,7 @@
 package mainpackage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Evens {
     public ArrayList<Integer> getEvens() {
@@ -16,7 +17,7 @@ public class Evens {
         int temp;
         boolean isEven = true;
 
-        for (int j = 2; j <= numbers2.size() / 2; j++) {
+        for (int j = 2; j <= numbers2.size(); j++) {
             temp = numbers2.size() % 2;
             if (temp == 0) {
                 isEven = false;
@@ -27,8 +28,7 @@ public class Evens {
                 evenNumbers.add(j);
 
         }
-        System.out.println("The Even Numbers are " + evenNumbers);
-
+        System.out.println("The Even Numbers are " + (evenNumbers));
         return evenNumbers;
     }
 }
