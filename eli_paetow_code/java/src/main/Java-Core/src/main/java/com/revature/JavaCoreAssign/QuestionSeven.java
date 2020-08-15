@@ -20,13 +20,11 @@ public class QuestionSeven implements Comparator<QuestionSeven> {
         employeeDetials.add(employeeOne);
         employeeDetials.add(employeeTwo);
 
-        System.out.println("not yet sorted");
-        employeeDetials.forEach(System.out::println);
+
 
         Collections.sort(employeeDetials, new QuestionSeven());
 
-        System.out.println("sorted now");
-        employeeDetials.forEach(System.out::println);
+
 
     }
 
