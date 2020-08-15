@@ -14,8 +14,10 @@ public class SubChangeCase extends ChangeCase{
     public boolean checkForUppercase() {
         boolean isLowercase = !stringToCheck.equals(stringToCheck.toLowerCase());
         if(isLowercase) {
+            System.out.println("false");
             return false;
         } else {
+            System.out.println("true");
             return true;
         }
     }
@@ -24,6 +26,7 @@ public class SubChangeCase extends ChangeCase{
     @Override
     public String convertToUppercase() {
         String s1upper=stringToCheck.toUpperCase();
+        System.out.println(s1upper);
         return s1upper;
     }
 
@@ -40,11 +43,12 @@ public class SubChangeCase extends ChangeCase{
         }
         // Convert string of numeric characters to int
         int asciiInt = Integer.parseInt(asciiValue);
+        // Add ten to the resulting int
+        asciiInt += asciiInt + 10;
         StringBuilder sbf
                 = new StringBuilder("");
         sbf.append(asciiInt);
-         // Add ten to the resulting int
-         asciiInt += asciiInt + 10;
+
         return asciiInt;
     }
 }

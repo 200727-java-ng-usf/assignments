@@ -31,8 +31,9 @@ public class BubbleSort {
                         number[j + 1] = placeholder;
                     }
                 }
-            System.out.println("Array After Bubble Sort" + number);
+
         }
+        System.out.println("Array After Bubble Sort" + number);
         return number;
 
     }

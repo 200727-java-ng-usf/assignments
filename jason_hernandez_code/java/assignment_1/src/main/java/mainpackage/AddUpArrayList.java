@@ -35,12 +35,14 @@ public class AddUpArrayList {
             for (int k : evenNumbers2) {
                 sumEven += k;
             }
+            System.out.println("Sum of Even numbers: " + sumEven);
 
             // Add up the odd numbers
             double sumOdd = 0;
             for (int h : evenNumbers2) {
                 sumOdd += h;
             }
+            System.out.println("Sum of odd numbers: " + sumOdd);
 
             // Remove prime numbers
             for (int i = 1; i <= 100; i++) {
@@ -62,12 +64,11 @@ public class AddUpArrayList {
                     nonPrime = new int[0];
                     if (!isPrime)
                         nonPrime[j] = numbers3.get(j);
+                    System.out.println("Sum of odd numbers: " + sumOdd);
 
                 }
 
-                System.out.println("Sum of Even numbers: " + sumEven);
-                System.out.println("Sum of odd numbers: " + sumOdd);
-                System.out.println("The non-prime numbers are" + nonPrime);
+
             }
         }
     }

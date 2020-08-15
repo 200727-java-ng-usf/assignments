@@ -25,11 +25,11 @@ public class Evens {
             //If isEven is true then the number is even else not
             if (isEven)
                 evenNumbers.add(j);
-            return evenNumbers;
+
         }
         System.out.println("The Even Numbers are " + evenNumbers);
 
-        return numbers2;
+        return evenNumbers;
     }
 }
 

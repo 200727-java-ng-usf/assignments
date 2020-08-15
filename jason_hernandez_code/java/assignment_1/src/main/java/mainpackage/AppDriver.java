@@ -99,7 +99,7 @@ public class AppDriver {
         changeCase.stringToCheck = "Foxes";
         changeCase.checkForUppercase();
         changeCase.convertToUppercase();
-        changeCase.convertToIntPlusTen();
+        //changeCase.convertToIntPlusTen();
         System.out.println("+------------------------+");
 
         System.out.println("19. From array list, add up evens and add up odds, remove prime numbers");
