@@ -30,6 +30,7 @@ public class Question2Tests {
     public void tearDown(){
         System.setOut(printStream);
         expectedReturn = null;
+        sut = null;
     }
 
     @Test
