@@ -2,18 +2,24 @@ package mainpackage;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class SwitchDemo {
 
     // Number to find the sqrt
-    double a;
+    double a = 25;
 
     // Need to have the datetime available
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
     LocalDateTime now = LocalDateTime.now();
 
     // And the string
-    String theString;
+    String theString = "This is the string";
+
 
     // Build the cases in the switcher
     public void buildSwitchDemo(String dataPoint) {
@@ -23,13 +29,16 @@ public class SwitchDemo {
         switch (dataPoint) {
             case "sqrt":
                 double sqrt1 = Math.sqrt(a);
-                System.out.println(sqrt1);;
+                System.out.println("Original number: " + a + "sqrt: " + sqrt1);;
             break;
             case "date":
-                System.out.println(dtf.format(now));
+                System.out.println("Today's date: " + dtf.format(now));
             break;
             case "split":
-                System.out.println(theString.split(" "));
+                List<String> splitUp = new ArrayList<>(); // initialize a new ArrayList
+                System.out.println("String to split: " + theString);
+                splitUp = Arrays.asList(theString.split(" ")); // split the sting by spaces, add to ArrayList
+                System.out.println(splitUp);
             break;
 
         }

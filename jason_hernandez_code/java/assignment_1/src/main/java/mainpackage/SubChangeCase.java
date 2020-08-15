@@ -1,5 +1,8 @@
 package mainpackage;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+
 public class SubChangeCase extends ChangeCase{
 
     // Begin with a string
@@ -37,8 +40,11 @@ public class SubChangeCase extends ChangeCase{
         }
         // Convert string of numeric characters to int
         int asciiInt = Integer.parseInt(asciiValue);
-        // Add ten to the resulting int
-        asciiInt += asciiInt + 10;
+        StringBuilder sbf
+                = new StringBuilder("");
+        sbf.append(asciiInt);
+         // Add ten to the resulting int
+         asciiInt += asciiInt + 10;
         return asciiInt;
     }
 }
