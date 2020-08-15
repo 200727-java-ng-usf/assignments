@@ -6,6 +6,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class Q12Test {
 
+        /*
     Q12 testCl = new Q12();
 
     @Test
@@ -17,5 +18,7 @@ public class Q12Test {
     public void q12Test2(){ //not much to test for
         assertEquals(100, testCl.hunArr[99]);
     }
+
+         */
 
 }

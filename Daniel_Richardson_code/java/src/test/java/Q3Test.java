@@ -1,5 +1,6 @@
 import com.revature.Q1;
 import com.revature.Q3;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -7,7 +8,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class Q3Test {
 
-
+/*
 
     @Test
     public void q3Test1(){
@@ -33,5 +34,5 @@ public class Q3Test {
         System.out.println(newStr);
         assertEquals("lwob nori eht ta raey tsal DEKCERW tog amabalA", newStr);
     }
-
+*/
 }

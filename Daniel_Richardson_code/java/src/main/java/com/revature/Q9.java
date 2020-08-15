@@ -6,7 +6,9 @@ public class Q9 {
     //Create an ArrayList which stores numbers
     // from 1 to 100 and prints out all the prime numbers to the console.
 
-
+    public Q9(){
+        primeList();
+    }
 
     public void primeList(){
         ArrayList<Integer> nums = new ArrayList<>(); //make arraylist
@@ -24,14 +26,13 @@ public class Q9 {
         for(int i = 2; i < nums.size(); i+=0){ //manual iteration
             //elements drop down after removal
             if(nums.get(i)%2==0 && nums.get(i)!=2){ //multiples of 2
-
                 nums.remove(i);
                 //if element gets removed, don't iterate i
             } else if (nums.get(i)%3==0 && nums.get(i)!=3){ //multiples of 3
-
                 nums.remove(i);
-            } else if (nums.get(i)%3==0 && nums.get(i)!=5) { //multiples of 5
-
+            } else if (nums.get(i)%5==0 && nums.get(i)!=5) { //multiples of 5
+                nums.remove(i);
+            } else if (nums.get(i)%7==0 && nums.get(i)!=7) { //multiples of 5
                 nums.remove(i);
             } else {
                 i += 1; //iterate
@@ -47,7 +48,6 @@ public class Q9 {
         boolean notPrime = false;
         for(int i = 0; i < nums.size() ; i++) { //loop through all elements of list
             //todo: resort to the dark arts to figure out why the hell this isn't working
-
             for (int w = 2; w <= nums.size()/2; ++w) { //now run modulous divide each for primes
                 // condition for nonprime number
                 if (nums.get(i) % w == 0) {

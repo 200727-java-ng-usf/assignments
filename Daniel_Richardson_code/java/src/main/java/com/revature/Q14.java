@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static com.revature.AppDriver.defaults;
+
 public class Q14 {
     //Write a program that demonstrates the switch case.
     //Implement the following functionalities in the cases:java
@@ -13,31 +15,43 @@ public class Q14 {
     //               “I am learning Core Java”
 
 
-    public static void caseSw(){
-        Scanner scanner = new Scanner(System.in);
+    public Q14(){
+        caseSwSelector(); //calls caseSwitch from method, to handle defaults setting
+    }
+
+    public void caseSwSelector() {
+        InputHandler input = InputHandler.getInstance();
         int java = 0;
-        double inputNum= 0;
-
-        try {
-            System.out.print("Enter java value: ");
-            java = scanner.nextInt();
+        if (!defaults) {
+            System.out.println("Requires choice for case switch (1,2,3).");
+            while (java < 1 || java > 3) {
+                java = input.intInput();
+                if (java < 1 || java > 3) {
+                    System.out.println("No.");
+                }
+            }
+            caseSwitch(java);
+        } else {
+            //will execute each case statement
+            caseSwitch(1);
+            caseSwitch(2);
+            caseSwitch(3);
         }
-        catch(InputMismatchException e){
-            System.out.println("I can't let you do that, Dave.");
-            caseSw();
-        }
 
+    }
+    public void caseSwitch(int java){
+        InputHandler input = InputHandler.getInstance();
         switch(java){
             case 1:
-                try {
-                    System.out.print("Enter sqrt input: ");
-                    inputNum = scanner.nextDouble();
+                double d;
+                if(!defaults){
+                    System.out.print("Requires double for square root.");
+                     d = input.doubleInput();
+                } else {
+                    d = 99;
                 }
-                catch(InputMismatchException e){
-                    System.out.println("I can't let you do that, Dave.");
-                    caseSw();
-                }
-                System.out.println(Math.sqrt(inputNum));
+                d = Math.sqrt(d);
+                System.out.println(d);
                 break;
 
             case 2:
@@ -45,37 +59,18 @@ public class Q14 {
                 System.out.println(today);
                 break;
             case 3:
-                try {
-                    scanner.nextLine(); //fascinating debug stuff
-                    //apparently an open scanner that had handled a previous int
-                    //still needed to 'consume' a /n line
-                    //so i needed to sate it with this call
-                    //otherwise, it would skip the inputStr call before inputs could be made
-
-
-                    System.out.print("Enter string: ");
-                    String inputStr = "";
-                    inputStr += scanner.nextLine();
-                    String[] inputStrArr = inputStr.split(" ");
-                    //making array out of string from splitting
-                    for (String element : inputStrArr){
-                        System.out.println(element);
-                    }
+                String str;
+                if(!defaults){
+                    System.out.println("Requires a phrase of words.");
+                    str = input.strInput();
+                } else {
+                    str = "I Am Learning Core Java";
                 }
-                catch(InputMismatchException e){
-                    System.out.println("I can't let you do that, Dave.");
-                    caseSw();
-                }
-
-                break;
-            default:
-                if (java > 3) {
-                    System.out.println("No.");
-                    caseSw();
+                String[] inputStrArr = str.split(" ");
+                for (String element : inputStrArr){
+                    System.out.println(element);
                 }
                 break;
         }
-        scanner.close();
     }
-
 }

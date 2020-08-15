@@ -20,11 +20,37 @@ public class Q20 {
     //Age: 35 years
     //State: Arizona State
 
-    public static void dataRead(){
 
+    //i considered making a DataHandler class but this is the only one that would need it
+    public Q20(){
+
+        //debug
+        //it worked once, then it didn't, then it did again
+
+        /*
+        System.out.println();
+        //File myObj = new File("Daniel_Richardson_code\\java\\src\\main\\resources\\Data.txt");
+        //File myObj = new File("Daniel_Richardson_code/java/src/main/resources/Data.txt");
+        //File myObj = new File("/Daniel_Richardson_code/java/src/main/resources/Data.txt");
+        File myObj = new File("java/src/main/resources/Data.txt");
+        if (myObj.exists()) {
+            System.out.println("File name: " + myObj.getName());
+            System.out.println("Absolute path: " + myObj.getAbsolutePath());
+            System.out.println("Writeable: " + myObj.canWrite());
+            System.out.println("Readable " + myObj.canRead());
+            System.out.println("File size in bytes " + myObj.length());
+        } else {
+            System.out.println("The file does not exist.");
+        }
+        */
+
+        dataRead();
+    }
+
+    public void dataRead(){
         try {
-
-            File users = new File("src/main/resources/Data.txt");
+            File users = new File("java/src/main/resources/Data.txt");
+            //System.out.println(users.canRead());
             List<Q20User> usersList = new ArrayList<>(); //create q20 user list
 
             BufferedReader reader = new BufferedReader(new FileReader(users));
@@ -50,6 +76,7 @@ public class Q20 {
             }
             reader.close();
         } catch(Exception E){
+            E.printStackTrace();
             System.out.println("AHHHH");
         }
     }

@@ -1,30 +1,48 @@
 package com.revature;
 
+import static com.revature.AppDriver.defaults;
+
 public class Q18Sub extends Q18{
 
-    String example = "15 Reasons Why Nick Saban is a LAME and BORING coach.";
-    //you won't BELIEVE number 5
-    boolean containsUpper = false; //default
 
-    public boolean upperCaseCheck(){
-        for ( char element: example.toCharArray()) { //spread into c array
-            if(Character.isUpperCase(element)==true){ //checking each character for an uppercase
-                containsUpper = true;
+
+
+    public Q18Sub(){
+        String example = "15 Reasons Why Nick Saban is a LAME and BORING coach.";
+        //you won't BELIEVE number 5
+        boolean containsUpper = false; //default
+        if(!defaults){
+            InputHandler input = InputHandler.getInstance();
+            System.out.println("Requires multi-word phrase that includes ints.");
+            example = input.strInput();
+        }
+        containsUpper = upperCaseCheck(example);
+        System.out.println("Contains an upper case? " + containsUpper);
+        example = forceUpperCase(example);
+        System.out.println("Forced Upper Case: ");
+        System.out.println(example);
+        int pulled = stringToInt(example);
+        System.out.println("Retrieved ints + 10: " + pulled);
+
+    }
+
+    public boolean upperCaseCheck(String str){
+        boolean flag = false;
+        for ( char element: str.toCharArray()) { //spread into c array
+            if(Character.isUpperCase(element)){ //checking each character for an uppercase
+                flag = true;
             }
         }
-        return containsUpper;
+        return flag;
     }
-    public String forceUpperCase(){
-        return example.toUpperCase();
+    public String forceUpperCase(String str){
+        return str.toUpperCase();
     }
-    public Integer stringToInt(){
-
-        example = example.replaceAll("[^\\d]", "");
+    public Integer stringToInt(String str){
+        str = str.replaceAll("[^\\d]", "");
+        return Integer.parseInt(str)+10;
         //had to use stackoverflow for this
         //using regular expression (regex) to pull out non-digits and decimals/periods
-        //just so that parseint wouldn't freak out
-        System.out.println(example);
-        return Integer.parseInt(example)+10;
-
+        //just so that parseInt wouldn't freak out
     }
 }

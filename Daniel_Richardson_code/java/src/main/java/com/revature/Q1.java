@@ -1,11 +1,30 @@
 package com.revature;
 
-import java.lang.reflect.Array;
+import static com.revature.AppDriver.defaults;
 
 public class Q1 {
+    //Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
+
+    public Q1(){
+        //makeArray(); //i like to auto-call this for the assignment, but it goofs up testing
+    }
+
+    public void makeArray(){
+        int[] q1Array;
+        if(!defaults){
+            System.out.println("Requires int array.");
+            InputHandler input = InputHandler.getInstance();
+            q1Array = input.intArrayInput();
+        } else {
+            q1Array = new int[]{1, 0, 5, 6, 3, 2, 3, 7, 9, 8, 4};
+        }
+        arrayDisplay(q1Array, true);
+        q1Array= bSort(q1Array);
+        arrayDisplay(q1Array, false);
+    }
 
     //made a bonus array displayer to keep main from looking gross and messy
-    static public void arrayDisplay(int[] array, boolean original){
+     public static void arrayDisplay(int[] array, boolean original){
         if(original == true){
             System.out.print("Old:");
         } else {
@@ -16,8 +35,9 @@ public class Q1 {
             //using print instead of println since i don't want those NASTY new lines. SAD.
         }
     }
+    /* //this was intended for Q3, didn't end up using it
 
-    static public void arrayDisplay(char[] array, boolean original){
+    public void arrayDisplay(char[] array, boolean original){
         if(original == true){
             System.out.print("Old:");
         } else {
@@ -28,8 +48,8 @@ public class Q1 {
             //using print instead of println since i don't want those NASTY new lines. SAD.
         }
     }
-
-    static public int[] bSort(int[] array) {
+    */
+    public int[] bSort(int[] array) {
         int temp;
         //--------------------
         //Array[] newArray = new Array[array.length];

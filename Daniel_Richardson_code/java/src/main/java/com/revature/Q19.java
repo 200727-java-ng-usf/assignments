@@ -10,6 +10,9 @@ public class Q19 {
 
     //note:I did Q19 before Q9, which had a better prime number method
     //ill change this if i get the time
+    public Q19(){
+        aList();
+    }
 
     public void aList(){
         ArrayList<Integer> ints = new ArrayList<Integer>(); //make arraylist

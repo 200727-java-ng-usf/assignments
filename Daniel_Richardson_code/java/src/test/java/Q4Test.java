@@ -8,7 +8,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class Q4Test {
 
-
+/*
 
     @Test
     public void q4Test1(){
@@ -31,5 +31,7 @@ public class Q4Test {
         System.out.println(factorialNum);
         assertEquals(2, factorialNum);
     }
+
+ */
 
 }

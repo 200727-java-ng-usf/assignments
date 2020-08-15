@@ -1,12 +1,35 @@
 package com.revature;
 
-public class Q3 {
+import java.util.Scanner;
 
-    public static String strRev(String str){
+import static com.revature.AppDriver.defaults;
+
+public class Q3 {
+    //Reverse a string without using a temporary variable.
+    // Do NOT use reverse() in the
+    // StringBuffer or the StringBuilder APIs.
+
+
+    public Q3(){
+        String str;
+        if(!defaults){
+            System.out.println("Requires string for reversal.");
+            InputHandler input = InputHandler.getInstance();
+            str = input.strInput();
+        } else {
+            str = "This is the default string.";
+        }
+        System.out.println(str);
+        String reversedString = strRev(str);
+        System.out.println(reversedString);
+        //for more precise testing, i could save these into private vars then manually call methods
+    }
+
+    public String strRev(String str){
         char[] charArr = str.toCharArray(); //translate into character array
         char[] revResult = new char[charArr.length]; //create target array
 
-        for (int i = 0; i < charArr.length; i++) { //begin for loop to swaperoo
+        for (int i = 0; i < charArr.length; i++) { //begin for loop to swapperoo
             revResult[revResult.length-i-1] = charArr[i];
             //charArr counting up from start [0]
             //revResult counting down from end of array (length-1)
