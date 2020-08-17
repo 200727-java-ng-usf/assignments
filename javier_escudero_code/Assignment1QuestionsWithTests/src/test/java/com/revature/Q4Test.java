@@ -1,7 +1,6 @@
 package com.revature;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class Q4Test {
     private Q4 q4; // SUT = System Under Test

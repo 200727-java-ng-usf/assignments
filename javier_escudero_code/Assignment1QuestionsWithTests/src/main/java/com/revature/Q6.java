@@ -1,11 +1,8 @@
 package com.revature;
 
 public class Q6 {
-    /**
-     * Q6. Write a program to determine if an integer
+     /* 6. Write a program to determine if an integer
      * is even without using the modulus operator (%)
-     */
-    /**
      *
      * @param isEvenOrNot a whole number passed
      * @return true is number is even, false otherwise
@@ -27,10 +24,10 @@ public class Q6 {
             return even;
         }
     }
-//    public static void main(String[] args) {
-//        Q6.isEven(-1);
-//        Q6.isEven(0);
-//        Q6.isEven('a');
-//        Q6.isEven(10);
-//    }
+    public static void main(String[] args) {
+        Q6.isEven(-1);
+        Q6.isEven(0);
+        Q6.isEven('a');
+        Q6.isEven(10);
+    }
 }

@@ -1,6 +1,5 @@
 package com.revature;
 
-import com.revature.Q1;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -30,6 +29,6 @@ public class Q1Test {
     public void testSolutionWithNullArray() {
         String msg = "If a null array is provided, them impl should return an empty array.";
         int[] expectedResult = {};
-       assertNotNull(sut.sort(expectedResult));
+       assertNotNull(msg, sut.sort(expectedResult));
     }
 }
