@@ -85,4 +85,10 @@ public class Employee {
                 '}';
     }
 
+    public void foo(){
+        //region this
+
+        //endregion
+    }
+
 }
