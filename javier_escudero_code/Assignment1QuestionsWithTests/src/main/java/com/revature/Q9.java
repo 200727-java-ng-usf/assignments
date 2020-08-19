@@ -18,7 +18,7 @@ public class Q9 {
         }
     }
 
-    static public void onlyPrime1to100(){
+    static public ArrayList<Integer> onlyPrime1to100(){
 
         Q9 q9 = new Q9();
         q9.storeNumbers1to100();
@@ -58,7 +58,8 @@ public class Q9 {
             }
         }
         q9.primeList.remove((q9.primeList.size()-1)); // removes the last index, i.e. 100
-}
+        return q9.primeList;
+    }
 
 //    public static void main(String[] args) {
 //        Q9.onlyPrime1to100();
