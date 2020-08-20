@@ -112,26 +112,82 @@ delete from "Customer"
 
 
 --Task – Create a function that returns the current time.
+select current_timestamp;
 
 
 --Task – create a function that returns the length of a mediatype from the mediatype table
+
+select length("Name")
+from "MediaType" mt 
+where "MediaTypeId" = 1;
+
+
 --3.2 System Defined Aggregate Functions
+
+
 --Task –Create a function that returns the average total of all invoices
+select avg("Total") from "Invoice" i;
+
+
 --Task – Create a function that returns the most expensive track
+select max("UnitPrice") from "Track" t;
+
+
 --3.3 User Defined Scalar Functions
+
+
 --Task – Create a function that returns the average price of invoice-line items in the invoice-line table
+select avg("UnitPrice" ) from "InvoiceLine" il;
+
 --3.4 User Defined Table Valued Functions
+
+
 --Task – Create a function that returns all employees who are born after 1968.
+select * from "Employee" e
+where "BirthDate" > '1968-12-31';
+
+
 --5.0 JOINS
---In this section you will be working with combining various tables through the use of joins. You will work with outer, inner, right, left, cross, and self joins.
+
 --5.1 INNER
+
 --Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
+select c."FirstName", c."LastName", i."InvoiceId" 
+from "Customer" c
+join "Invoice" i
+on i."CustomerId" = c."CustomerId";
+
+
+
 --5.2 OUTER
+
+
 --Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, last name, invoiceId, and total.
+select c."FirstName", c."LastName", c."CustomerId", i."InvoiceId", i."Total" 
+from "Customer" c
+full join "Invoice" i
+on i."CustomerId" = c."CustomerId";
+
+
 --5.3 RIGHT
 --Task – Create a right join that joins album and artist specifying artist name and title.
+select a2."Name", a."Title" 
+from "Album" a
+RIGHT join "Artist" a2
+on a."ArtistId" = a2."ArtistId";
+
 --5.4 CROSS
 --Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+select *
+from "Album" a
+Cross join "Artist" a2
+order by a2."Name";
+
+
 --5.5 SELF
 --Task – Perform a self-join on the employee table, joining on the reports to column.
+select e."FirstName", e."LastName", e."ReportsTo", e2."FirstName", e2."LastName" 
+from "Employee" e 
+inner join "Employee" e2 on e."ReportsTo" = e2."EmployeeId";
+
 
