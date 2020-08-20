@@ -96,14 +96,24 @@ and
 
 
 --2.7 DELETE
+
+
 --Task – Delete a record in Customer table where the name is Robert Walter (There may be constraints that rely on this, find out how to resolve them).
---
---
+
+delete from "Customer"
+	where 
+	"FirstName" = 'Robert' 
+	and 
+	"LastName" = 'Walter';
+
+
 --3.0 SQL Functions
---In this section you will be using the PostGreSQL system functions, as well as your own functions, to perform various actions against the database
 --3.1 System Defined Functions
---
+
+
 --Task – Create a function that returns the current time.
+
+
 --Task – create a function that returns the length of a mediatype from the mediatype table
 --3.2 System Defined Aggregate Functions
 --Task –Create a function that returns the average total of all invoices
