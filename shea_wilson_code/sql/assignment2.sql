@@ -49,6 +49,44 @@ values
 select * from "Customer";
 insert into "Customer" ("CustomerId","FirstName" ,"LastName","Company" ,"Address" ,"City" )
 
+
+--2.4 UPDATE
+--Task – Update Aaron Mitchell in Customer table to Robert Walter
+update "Customer" 
+set "FirstName" = Robert
+where "CustomerId" = 32;
+
+update "Customer" 
+set "LastName" = Walter
+where "CustomerId" = 32;
+
+--Task – Update name of artist “Creedence Clearwater Revival” to “CCR”
+update "Artist" 
+set "Name" = 'CCR'
+where "ArtistId" =76;
+
+--2.5 LIKE
+-- Task – Select all invoices with a billing address like “T”
+
+select * from "Invoice" 
+where "BillingAddress" like '%T%';
+
+--2.6 BETWEEN
+-- Task – Select all invoices that have a total between 15 and 50
+select * from "Invoice"
+where "Total" between 15 and 50;
+
+-- Task – Select all employees hired between 1st of June 2003 and 1st of March 2004
+select * from "Employee"
+where "HireDate" between timestamp'2003-06-01' and timestamp'2004-03-01';
+
+--2.7 DELETE
+--Task – Delete a record in Customer table where the name is Robert Walter (There may be constraints that rely on this, find out how to resolve them)
+select * from "Customer";
+
+
+
+
 commit;
 
 
