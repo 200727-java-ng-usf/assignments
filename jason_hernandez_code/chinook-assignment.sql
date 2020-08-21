@@ -86,9 +86,17 @@ where "CustomerId" = 32; -- verify that there is such a column in this table
 alter table "Invoice" 
 drop constraint "FK_InvoiceCustomerId"; -- must first drop existing constraint
 
+alter table "InvoiceLine" 
+drop constraint "FK_InvoiceLineInvoiceId"; -- and the other one
+
 -- set foreign key to cascade delete
 ALTER TABLE "Invoice" ADD CONSTRAINT "FK_InvoiceCustomerId"
     FOREIGN KEY ("CustomerId") REFERENCES "Customer" ("CustomerId") ON delete cascade; 
+   
+ALTER TABLE "InvoiceLine" ADD CONSTRAINT "FK_InvoiceLineInvoiceId"
+    FOREIGN KEY ("InvoiceId") REFERENCES "Invoice" ("InvoiceId") ON delete cascade;
 
 delete from "Customer" 
-where "FirstName" = 'Robert' and "LastName" = 'Walter';
+where "FirstName" = 'Robert' and "LastName" = 'Walter'; -- now it works
+
+commit;
