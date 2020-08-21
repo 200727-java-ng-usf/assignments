@@ -1,3 +1,7 @@
+/*
+ * Push to Github Assignments Folder by Tuesday, August 25
+ */
+
 --Part I – Working with an existing database
 --
 --Setting up Chinook
@@ -118,13 +122,16 @@ select *
 from "Invoice" i 
 where "CustomerId" = 32;
 
+
+ALTER TABLE "Invoice" DROP CONSTRAINT "FK_InvoiceCustomerId";
+ALTER TABLE "Invoice" ADD CONSTRAINT "FK_InvoiceCustomerId"
+    FOREIGN KEY ("CustomerId") REFERENCES "Customer" ("CustomerId") ON DELETE CASCADE;
+ALTER TABLE "InvoiceLine" DROP CONSTRAINT "FK_InvoiceLineInvoiceId";
+ALTER TABLE "InvoiceLine" ADD CONSTRAINT "FK_InvoiceLineInvoiceId"
+    FOREIGN KEY ("InvoiceId") REFERENCES "Invoice" ("InvoiceId") ON DELETE CASCADE;
 delete from "Customer" 
 where "FirstName" = 'Robert'
 	and "LastName" = 'Walter';
-
-alter table "Customer" add constraint "FK_CustomerInvoiceId"
-    foreign key ("CustomerId") references "Invoice" ("CustomerId") on delete cascade;
-
 
 --
 --
@@ -133,23 +140,84 @@ alter table "Customer" add constraint "FK_CustomerInvoiceId"
 --3.1 System Defined Functions
 --
 --Task – Create a function that returns the current time.
+select current_time ;
+
 --Task – create a function that returns the length of a mediatype from the mediatype table
+
+select * 
+from "MediaType" mt ;
+
+select length("Name" ) as len
+from "MediaType" mt ;
+
 --3.2 System Defined Aggregate Functions
 --Task –Create a function that returns the average total of all invoices
+
+select avg(i."Total") 
+from "Invoice" i ;
+
 --Task – Create a function that returns the most expensive track
+
+select *
+from "Track" t2 
+where "UnitPrice" = (
+	select max("UnitPrice" )
+	from "Track" t3 
+);
+
 --3.3 User Defined Scalar Functions
 --Task – Create a function that returns the average price of invoice-line items in the invoice-line table
+
+select avg(il."UnitPrice" )
+from "InvoiceLine" il ;
+
 --3.4 User Defined Table Valued Functions
 --Task – Create a function that returns all employees who are born after 1968.
+select *
+from "Employee" e2 
+where "BirthDate" > date '1968-01-01';
 --5.0 JOINS
 --In this section you will be working with combining various tables through the use of joins. You will work with outer, inner, right, left, cross, and self joins.
 --5.1 INNER
 --Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
+
+select * from "Invoice" i2 order by "CustomerId" ;
+
+select *
+from "Invoice" i 
+inner join "Customer" c2 
+ON c2."CustomerId" = i."CustomerId" 
+order by i."CustomerId" ;
 --5.2 OUTER
 --Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, last name, invoiceId, and total.
+select c2."CustomerId", c2."FirstName" ,c2."LastName" , i2."InvoiceId" , i2."Total" 
+from "Customer" c2
+full outer join "Invoice" i2 
+on c2."CustomerId" = i2."CustomerId" ;
 --5.3 RIGHT
 --Task – Create a right join that joins album and artist specifying artist name and title.
+select * from "Artist" a2 ;
+select * from "Album" a order by "ArtistId" ;
+
+select a3."Name" , a2."Title" 
+from "Album" a2 
+right join "Artist" a3 
+on a3."ArtistId" = a2."ArtistId" ;
 --5.4 CROSS
 --Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+select  a3."Name", a2."Title"
+from "Album" a2 
+cross join "Artist" a3 
+order by a3."Name" asc;
 --5.5 SELF
-Task – Perform a self-join on the employee table, joining on the reports to column.
+--Task – Perform a self-join on the employee table, joining on the reports to column.
+select m."FirstName" , e."FirstName" as ReportsTo
+from "Employee" e 
+join "Employee" m 
+on e."EmployeeId" = m."ReportsTo"
+order by m."EmployeeId" ;
+
+
+
+
+
