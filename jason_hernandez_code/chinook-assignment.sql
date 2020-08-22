@@ -151,7 +151,7 @@ as $$
 	
 $$ language plpgsql;
 
-SELECT get_average();
+SELECT get_average(); -- 5.6567407
 
 -- Create a function that returns the most expensive track
 create or replace function get_priciest_track()
@@ -179,7 +179,7 @@ as $$
 	
 $$ language plpgsql;
 
-select get_priciest_track();
+select get_priciest_track(); -- Balls to the Wall
 
 -- 3.3 User Defined Scalar Functions
 -- Create a function that returns the average price of invoice-line items in the invoice-line table
@@ -202,6 +202,83 @@ as $$
 	
 $$ language plpgsql; -- not very different from 3.2
 
-SELECT get_line_average();
+SELECT get_line_average(); -- 1.040408193
 
 commit; -- another wise place to save
+
+-- 3.4 User Defined Table Valued functions
+-- Create a function that returns all employees who are born after 1968.
+create or replace function get_employees_by_birthdate()
+returns text 
+as $$
+	declare 
+		birth_date date;
+		last_name text; 
+		first_name text;
+		retrieved_result text; 
+		
+	begin 
+		select "BirthDate"
+		into birth_date
+		from "Employee"
+		where "BirthDate" > '1968-12-31';
+		
+		select "FirstName"
+		into first_name
+		from "Employee"
+		where "BirthDate" > '1968-12-31';
+	
+		select "LastName"
+		into last_name
+		from "Employee"
+		where "BirthDate" > '1968-12-31';
+	
+		
+		retrieved_result := birth_date || ' - ' || first_name || ' - ' || last_name;
+		return retrieved_result;
+	end 
+	
+$$ language plpgsql;
+
+select get_employees_by_birthdate(); -- 1973-08-29 - Jane - Peacock
+
+-- 5.1 inner join
+-- Create an inner join that joins customers and orders 
+-- and specifies the name of the customer and the invoiceId.
+select c."FirstName", c."LastName", i."InvoiceId"
+from "Customer" c
+inner join "Invoice" i 
+on c."CustomerId" = i."CustomerId"; -- Leonie Kohler 1, Bjorn Hansen 2, Daan Peters 3, etc.
+
+-- 5.2 outer join
+-- Create an outer join that joins the customer and invoice table, 
+-- specifying the CustomerId, firstname, last name, invoiceId, and total.
+select c."CustomerId", c."FirstName", c."LastName", i."InvoiceId", i."Total"
+from "Customer" c
+full outer join "Invoice" i 
+on c."CustomerId" = i."CustomerId"; -- same first three, now 1.98, 3.96, 5.94, etc.
+
+-- 5.3 RIGHT join
+-- Create a right join that joins album and artist specifying artist name and title.
+select al."Title", ar."Name"
+from "Album" al
+right join "Artist" ar 
+on al."ArtistId" = ar."ArtistId"; -- "For Those About To Rock We Salute You", "AC/DC";
+									-- "Balls to the Wall", Accept;
+									-- "REstless and Wild", Accept; etc.
+									
+-- 5.4 CROSS join
+--  Create a cross join that joins album and artist and sorts by artist name in ascending order.
+select al."Title", ar."Name"
+from "Album" al
+cross join "Artist" ar
+order by ar."Name"; -- 347 Albums, all attributed to Aaron Copland and London Symphony Orchestra
+
+-- 5.5 SELF join
+-- Perform a self-join on the employee table, joining on the reports to column.
+select e1."EmployeeId", e1."LastName", e1."FirstName", e1."Title", e2."LastName" as "ManagerLastName",
+e2."FirstName" as "ManagerFirstName"
+from "Employee" e1, "Employee" e2
+where e1."ReportsTo" = e2."EmployeeId"; -- Edwards, Nancy, Sales Manager, reports to Adams, Andrew
+
+commit; -- Finished!
