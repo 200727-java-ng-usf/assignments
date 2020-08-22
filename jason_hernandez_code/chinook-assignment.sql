@@ -89,7 +89,7 @@ drop constraint "FK_InvoiceCustomerId"; -- must first drop existing constraint
 alter table "InvoiceLine" 
 drop constraint "FK_InvoiceLineInvoiceId"; -- and the other one
 
--- set foreign key to cascade delete
+-- set foreign keys to cascade delete
 ALTER TABLE "Invoice" ADD CONSTRAINT "FK_InvoiceCustomerId"
     FOREIGN KEY ("CustomerId") REFERENCES "Customer" ("CustomerId") ON delete cascade; 
    
@@ -99,4 +99,109 @@ ALTER TABLE "InvoiceLine" ADD CONSTRAINT "FK_InvoiceLineInvoiceId"
 delete from "Customer" 
 where "FirstName" = 'Robert' and "LastName" = 'Walter'; -- now it works
 
-commit;
+commit; -- not about to lose that much work!!
+
+-- 3.1 System Defined functions
+-- Create a function that returns the current time.
+create or replace function get_time(t date)
+returns date 
+as $$
+	begin 
+		return convert(time, GETDATE());
+	end
+$$ language plpgsql;
+
+--create a function that returns the length of a mediatype from the mediatype table
+select * from "MediaType"; -- first see what is there
+
+create or replace function find_length(j numeric)
+returns numeric 
+as $$
+	declare 
+		name_length integer;
+		retrieved_result text;
+	
+	begin 
+		SELECT "Name", length("Name") 
+		into name_length 
+		FROM "MediaType";
+	
+		retrieved_result := name_length;
+		return retrieved_result;
+	end
+$$ language plpgsql;
+
+-- 3.2 System Defined Aggregate functions
+-- Create a function that returns the average total of all invoices
+create or replace function get_average()
+returns numeric 
+as $$
+	declare 
+		average_price float;
+		retrieved_result float; 
+		
+	begin 
+		select avg("Total")
+		into average_price
+		from "Invoice";
+		
+		retrieved_result := average_price;
+		return retrieved_result;
+	end 
+	
+$$ language plpgsql;
+
+SELECT get_average();
+
+-- Create a function that returns the most expensive track
+create or replace function get_priciest_track()
+returns text 
+as $$
+	declare 
+		highest_price integer;
+		track_name text; 
+		retrieved_result text; 
+		
+	begin 
+		select max("UnitPrice")
+		into highest_price
+		from "Track";
+		
+		select "Name"
+		into track_name
+		from "Track"
+		where "TrackId" = highest_price;
+	
+		
+		retrieved_result := highest_price || ' - ' || track_name;
+		return retrieved_result;
+	end 
+	
+$$ language plpgsql;
+
+select get_priciest_track();
+
+-- 3.3 User Defined Scalar Functions
+-- Create a function that returns the average price of invoice-line items in the invoice-line table
+
+create or replace function get_line_average()
+returns numeric 
+as $$
+	declare 
+		average_price float;
+		retrieved_result float; 
+		
+	begin 
+		select avg("UnitPrice")
+		into average_price
+		from "InvoiceLine";
+		
+		retrieved_result := average_price;
+		return retrieved_result;
+	end 
+	
+$$ language plpgsql; -- not very different from 3.2
+
+SELECT get_line_average();
+
+commit; -- another wise place to save
