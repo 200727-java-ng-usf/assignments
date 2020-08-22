@@ -76,13 +76,23 @@ where "BillingAddress" like '%T%';
 select * from "Invoice"
 where "Total" between 15 and 50;
 
+
 -- Task – Select all employees hired between 1st of June 2003 and 1st of March 2004
 select * from "Employee"
 where "HireDate" between timestamp'2003-06-01' and timestamp'2004-03-01';
 
 --2.7 DELETE
 --Task – Delete a record in Customer table where the name is Robert Walter (There may be constraints that rely on this, find out how to resolve them)
+select * from "InvoiceLine" 
+alter table "Invoice" 
+add foreign key (InvoiceId_Fk)
+references "InvoiceLine"(InvoiceId)
+on delete cascade ;
+
 select * from "Customer";
+delete from "Customer" 
+where "CustomerId" = 32;
+
 
 
 
