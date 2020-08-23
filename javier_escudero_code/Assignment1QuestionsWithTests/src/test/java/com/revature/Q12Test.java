@@ -3,42 +3,46 @@ package com.revature;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class Q12Test {
-    /*
-    *Q12. Write a program to store numbers from 1 to 100 in an array.
-    *Print out all the even numbers from the array. Use the enhanced FOR loop for printing out the numbers.
-    * */
+
     private Q12 q12;
+    private int[] arr2;
+    private int COUNT = 100;
 
     @Before
-    public void tSetup(){
+    public void tSetup() {
         q12 = new Q12();
+        arr2 = q12.numbersStored1to100ToArray();
     }
-    // test to check for odd numbers. For example, if (numList % 2 == 1) should be false.
-    //q12 = new Q12();
+
     @Test
-    public void all100NumbersSaved(){
-        int COUNT = 100;
-        int []arr2 = q12.numbersStored();
+    public void all100NumbersSaved() {
         assertEquals(COUNT, arr2.length);
-}
+    }
 
     @Test
-    public void testIfAllNumbersAreEven(){
-        //assertEquals(1,1);
-        int arr[] = {0,2,4,6,8};
-        int i = 0;
-        while(i < arr.length){
+    public void test1stNumberIs1andLastIs100() {
+        assertEquals(1, arr2[0]);
+        assertEquals(100, arr2[99]);
+    }
 
-            System.out.println(i +  " " + arr.length + " " + arr[i]);
-           // assert
-            i++;
+    @Test
+    public void testIfAllNumbersAreEvenAndItsCountIs50() {
+        int i = 1; // [0] = 1, [1] = 2, [2] = 3, ...
+        Arrays.sort(arr2);
+        int evenNumbersCount = 0;
+        while (i < arr2.length) {
+            // test foe even numbers if evenly divisible by 2
+            assertEquals(0, arr2[i] % 2);
+            ++evenNumbersCount;
+            i += 2;
         }
-////        boolean isEven = (arr[i] % 2 == 0);
-////        assertArrayEquals();
-//        assertTrue(isEven);
+        // total even count from inclusive 1 to 100 must be 50
+        assertEquals(evenNumbersCount, COUNT/2);
     }
 }
 
