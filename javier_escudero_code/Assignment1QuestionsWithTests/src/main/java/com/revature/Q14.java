@@ -1,16 +1,15 @@
 package com.revature;
-
-//import java.time.LocalDate;
-//import java.util.Date;
-//import java.text.SimpleDateFormat;
-
 import java.util.Date;
-import java.util.InputMismatchException;
 import java.util.Scanner;
-//java.util.Date date=new java.util.Date();
 
 public class Q14 {
-
+    /**
+     * Q14. Write a program that demonstrates the switch case. Implement the following functionalities in the cases:java
+     * Case 1: Find the square root of a number using the Math class method.
+     * Case 2: Display today’s date.
+     * Case 3: Split the following string and store it in a string array.
+     * “I am learning Core Java”
+     */
     static double x;
     static String substring = "I am learning Core Java";
     static String date;
