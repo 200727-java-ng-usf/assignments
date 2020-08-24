@@ -24,7 +24,7 @@ public class Q17 {
         System.out.println("Simple interest of the amount is : " + interest);
     }
 
-    public static void main() {
+    public static void main(String []args) {
       Q17 q17 = new Q17();
       q17.calculateRate();
     }
