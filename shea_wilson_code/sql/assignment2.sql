@@ -183,16 +183,67 @@ where ("BirthDate" ) > timestamp '1968-12-31';
 --In this section you will be working with combining various tables through the use of joins. You will work with outer, inner, right, left, cross, and self joins.
 --5.1 INNER
 --Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
+select * from "Customer";
+select * from "Invoice";
+
+select "Customer"."FirstName" , "Invoice"."InvoiceId" 
+from "Customer"
+inner join "Invoice" 
+on "Customer"."CustomerId"= "Invoice"."CustomerId" ;
+
 --5.2 OUTER
 --Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, last name, invoiceId, and total.
+
+select "Customer"."CustomerId" ,
+		"Customer"."FirstName",
+		"Customer"."LastName",
+		"Invoice"."InvoiceId",
+		"Invoice"."Total" 
+from "Customer"
+left outer join "Invoice" 
+on "Customer"."CustomerId" ="Invoice"."CustomerId" 
+union 
+select 
+		"Customer"."CustomerId" ,
+		"Customer"."FirstName",
+		"Customer"."LastName",
+		"Invoice"."InvoiceId",
+		"Invoice"."Total" 		
+from "Customer"
+right outer join "Invoice" 
+on "Customer"."CustomerId" ="Invoice"."CustomerId" ;
+
 --5.3 RIGHT
 --Task – Create a right join that joins album and artist specifying artist name and title.
+
+select * from "Artist";
+select * from "Album";
+
+select "Artist"."Name", 
+		"Album"."Title"
+from "Artist" 
+right join "Album" 
+on "Artist"."ArtistId" ="Album"."ArtistId";
+
 --5.4 CROSS
 --Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+
+select a2."Name",
+		a3."Title" 
+from "Artist" a2 
+cross join "Album" a3 
+order by a2."Name" asc;
+
 --5.5 SELF
 --Task – Perform a self-join on the employee table, joining on the reports to column.
 
+select * from "Employee";
 
+select e."FirstName",
+		e."ReportsTo",
+		r."FirstName" 
+from "Employee" e, "Employee" r
+where  e."ReportsTo" = r."ReportsTo";
 
 
 commit;
