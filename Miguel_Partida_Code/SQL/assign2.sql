@@ -126,8 +126,25 @@ from "Customer" c
 full join "Invoice" i 
 on c."CustomerId" = i."CustomerId";
 
---5.3
-select * 
-from "Album";
+--5.3Create a right join that joins album and artist specifying
+-- artist name and title.
 
+SELECT a1."ArtistId",a2."ArtistId",a2."Title",a1."Name"
+FROM "Artist" a1
+RIGHT JOIN "Album" a2
+ON a1."ArtistId"= a2."ArtistId";
+ 
 
+--5.4 Create a cross join that joins album and artist and sorts
+-- by artist name in ascending order.
+select "Name", "Title"
+from "Album"  
+cross join "Artist"
+
+order by "Name" asc ;
+
+--5.5Perform a self-join on the employee table, 
+--joining on the reports to colum
+select *
+from "Employee" e 
+inner join "Employee" e2 on e."ReportsTo" = e2."ReportsTo" ;
