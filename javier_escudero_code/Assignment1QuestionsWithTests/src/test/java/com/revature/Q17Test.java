@@ -31,8 +31,8 @@ public class Q17Test {
         // InputStream is used to read data from a source
         InputStream inContent = new ByteArrayInputStream(s.getBytes());
         System.setIn(inContent);
-        double interest = (10000 * 2.0 * 10)/100;
-        String expectedResult = "Enter principle amount : " +
+        double interest = (10000 * 2.0 * 10);
+        String expectedResult = "Enter principal amount : " +
                 "Enter the annual rate, i.e. 6.5% is 6.5: " +
                 "Enter time in years: " +
                 "Simple interest of the amount is : " + interest;
@@ -45,8 +45,8 @@ public class Q17Test {
         String s = "1000\n2.5\n5";
         InputStream inContent = new ByteArrayInputStream(s.getBytes());
         System.setIn(inContent);
-        double interest = (1000 * 2.5 * 5)/100;
-        String expectedResult = "Enter principle amount : " +
+        double interest = (1000 * 2.5 * 5);
+        String expectedResult = "Enter principal amount : " +
                 "Enter the annual rate, i.e. 6.5% is 6.5: " +
                 "Enter time in years: " +
                 "Simple interest of the amount is : " + interest;

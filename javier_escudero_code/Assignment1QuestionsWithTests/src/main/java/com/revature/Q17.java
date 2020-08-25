@@ -12,7 +12,7 @@ public class Q17 {
     static Scanner scan;
      public void calculateRate(){
          scan = new Scanner(System.in);
-        System.out.print("Enter principle amount : ");
+        System.out.print("Enter principal amount : ");
         double principle = Double.parseDouble(scan.next());
 
         System.out.print("Enter the annual rate, i.e. 6.5% is 6.5: ");
@@ -21,7 +21,7 @@ public class Q17 {
         System.out.print("Enter time in years: ");
         double time = Double.parseDouble(scan.next());
 
-        double interest = (principle * rate * time)/100;
+        double interest = (principle * rate * time);
         System.out.print("Simple interest of the amount is : " + interest);
     }
 
