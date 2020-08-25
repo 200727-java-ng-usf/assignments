@@ -15,7 +15,7 @@ public class Q17 {
         System.out.print("Enter principal amount : ");
         double principle = Double.parseDouble(scan.next());
 
-        System.out.print("Enter the annual rate, i.e. 6.5% is 6.5: ");
+        System.out.print("Enter the annual rate, i.e. 6.5% is 0.065: ");
         double rate = Double.parseDouble(scan.next());
 
         System.out.print("Enter time in years: ");

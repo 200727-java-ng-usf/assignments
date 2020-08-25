@@ -33,7 +33,7 @@ public class Q17Test {
         System.setIn(inContent);
         double interest = (10000 * 2.0 * 10);
         String expectedResult = "Enter principal amount : " +
-                "Enter the annual rate, i.e. 6.5% is 6.5: " +
+                "Enter the annual rate, i.e. 6.5% is 0.065: " +
                 "Enter time in years: " +
                 "Simple interest of the amount is : " + interest;
         q17.calculateRate();
@@ -47,7 +47,7 @@ public class Q17Test {
         System.setIn(inContent);
         double interest = (1000 * 2.5 * 5);
         String expectedResult = "Enter principal amount : " +
-                "Enter the annual rate, i.e. 6.5% is 6.5: " +
+                "Enter the annual rate, i.e. 6.5% is 0.065: " +
                 "Enter time in years: " +
                 "Simple interest of the amount is : " + interest;
         q17.calculateRate();
