@@ -110,3 +110,96 @@ foreign key ("InvoiceId") references "Invoice" ("InvoiceId") on delete cascade; 
 delete from "Customer" where "FirstName" = 'Robert' and "LastName" = 'Walter'; -- safe to delete now
 
 -- alter table so that it will add constraint to cascade delete
+
+
+--3.0 SQL Functions
+
+--In this section you will be using the PostGreSQL system functions, as well as your own functions, to perform various actions against the database
+
+--3.1 System Defined Functions
+
+--Task – Create a function that returns the current time.
+select current_timestamp;
+
+--create function getTime()
+--returns varTypeHere
+--begin
+--	declare the_time varTypeHere;
+--	set the_time = current_timestamp 
+--	return the_time;
+--end
+
+--Task – create a function that returns the length of a mediatype from the mediatype table
+select length ("MediaType"."Name")
+from "MediaType";
+
+
+--3.2 System Defined Aggregate Functions
+
+--Task –Create a function that returns the average total of all invoices
+select avg ("Invoice"."Total")
+from "Invoice";
+
+--Task – Create a function that returns the most expensive track
+select max ("Track"."UnitPrice")
+from "Track";
+
+--3.3 User Defined Scalar Functions
+
+--Task – Create a function that returns the average price of invoice-line items in the invoice-line table
+select avg ("InvoiceLine"."UnitPrice")
+from "InvoiceLine";
+
+
+--3.4 User Defined Table Valued Functions
+
+--Task – Create a function that returns all employees who are born after 1968.
+select *
+from "Employee"
+where ("BirthDate" > date '1968-01-01');
+
+/*5.0 JOINS
+
+--In this section you will be working with combining various tables through the use of joins.
+ You will work with outer, inner, right, left, cross, and self joins.
+
+--5.1 INNER
+*/
+--Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
+select "Invoice"."InvoiceId", "Customer"."FirstName"
+from "Invoice"
+inner join "Customer" 
+on "Invoice"."CustomerId"="Customer"."CustomerId"; 
+
+--5.2 OUTER
+
+--Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, last name, invoiceId, and total.
+select "Customer"."CustomerId", "Customer"."FirstName", "Customer"."LastName", "Invoice"."InvoiceId", "Invoice"."Total"
+from "Invoice"
+full outer join "Customer"
+on "Invoice"."CustomerId" = "Customer"."CustomerId"; 
+
+--5.3 RIGHT
+
+--Task – Create a right join that joins album and artist specifying artist name and title.
+select "Album"."Title", "Artist"."Name"
+from "Album"
+right join "Artist"
+on "Album"."ArtistId" = "Artist"."ArtistId";
+
+--5.4 CROSS
+
+--Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+select "Album"."Title", "Artist"."Name"
+from "Album"
+cross join "Artist"
+order by "Artist"."Name" asc;
+
+--5.5 SELF
+
+--Task – Perform a self-join on the employee table, joining on the reports to column.
+select * from "Employee" e 
+join "Employee" e2 
+on e."ReportsTo" = e2."ReportsTo";
+
+
