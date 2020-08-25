@@ -173,9 +173,65 @@ WHERE "UnitPrice"
 
 
 
+------------- 3.3 User Defined Scalar Functions --------------
+
+-- Task 1:
+SELECT count("UnitPrice") AS Line_Items, avg("UnitPrice")::numeric(5,2) AS Average_Price_Each_Item
+FROM "InvoiceLine";
+
+
+---------- 3.4 User Defined Table Valued Functions -----------
+
+-- Task 1:
+SELECT *
+FROM "Employee" 
+WHERE
+	"BirthDate" >= '1969-01-01';
 
 
 
+--------------------- 5.1 INNER JOIN --------------------------
+
+-- Task 1:
+SELECT c."FirstName", c."LastName", i."InvoiceId"
+FROM "Customer" c
+INNER JOIN "Invoice" i ON i."InvoiceId" = c."CustomerId";
 
 
 
+------------------- 5.2 FULL OUTER JOIN -----------------------
+
+-- Task 1:
+SELECT c."CustomerId", c."FirstName", c."LastName", i."InvoiceId", i."Total"
+FROM "Customer" c
+FULL OUTER JOIN "Invoice" i ON i."InvoiceId" = c."CustomerId";
+
+	
+---------------------- 5.3 RIGHT JOIN -------------------------
+
+-- Task 1:
+SELECT al."Title" AS Song_Title, ar."Name" AS Artist 
+FROM "Album" al
+RIGHT JOIN "Artist" ar ON al."ArtistId" = ar."ArtistId";
+
+
+---------------------- 5.4 CROSS JOIN -------------------------
+
+-- Task 1:
+SELECT al."Title" AS Song_Title, ar."Name" AS Artist
+FROM "Album" al
+CROSS JOIN "Artist" ar
+ORDER BY ar."Name";
+
+
+------------------------ 5.5 SELF JOIN -----------------------
+
+-- Task 1:
+select e1."FirstName" || ' ' || e1."LastName" AS Employee , e2."FirstName" || ' ' || e2."LastName" as ReportsTo
+from "Employee" e1 
+join "Employee" e2 
+on e1."ReportsTo" = e2."EmployeeId" 
+order by e1."EmployeeId";
+
+COMMIT;
+	
