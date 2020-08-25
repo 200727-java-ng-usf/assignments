@@ -80,14 +80,24 @@ where "HireDate" between date '2003-06-01' and date '2004-03-01';
 --2.7 DELETE
 
 --Task – Delete a record in Customer table where the name is Robert Walter (There may be constraints that rely on this, find out how to resolve them).
---alter table chinook."Customer"
---drop constraint PK_Customer;
---
---delete from chinook."Customer" 
---where "Robert" = "FirstName";
---
---alter table chinook."Customer"
---check constraint PK_Constraint;
+
+select * from "Invoice" i where "CustomerId" = 32; -- Find Walter
+
+alter table "Invoice"
+drop constraint "FK_InvoiceCustomerId"; -- drop the fk constraint
+
+alter table "Invoice"
+add constraint "FK_InvoiceCustomerId"
+foreign key ("CustomerId") references "Customer" ("CustomerId") on delete cascade; -- after deleting, add the constraint again
+
+alter table "InvoiceLine" 
+drop constraint "FK_InvoiceLineInvoiceId"; -- drop the constraint on the invoiceLINE table
+
+alter table "InvoiceLine" 
+add constraint "FK_InvoiceLineInvoiceId"
+foreign key ("InvoiceId") references "Invoice" ("InvoiceId") on delete cascade; -- after deleting, add the constraint again
+
+delete from "Customer" where "FirstName" = 'Robert' and "LastName" = 'Walter'; -- safe to delete now
 
 -- alter table so that it will add constraint to cascade delete
 
@@ -100,6 +110,14 @@ where "HireDate" between date '2003-06-01' and date '2004-03-01';
 
 --Task – Create a function that returns the current time.
 select current_timestamp;
+
+--create function getTime()
+--returns varTypeHere
+--begin
+--	declare the_time varTypeHere;
+--	set the_time = current_timestamp 
+--	return the_time;
+--end
 
 --Task – create a function that returns the length of a mediatype from the mediatype table
 select length ("MediaType"."Name")
@@ -170,7 +188,9 @@ order by "Artist"."Name" asc;
 --5.5 SELF
 
 --Task – Perform a self-join on the employee table, joining on the reports to column.
-
+select * from "Employee" e 
+join "Employee" e2 
+on e."ReportsTo" = e2."ReportsTo";
 
 
 
