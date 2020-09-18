@@ -10,6 +10,10 @@ public class AppDriver {
     public static boolean defaults = false; //for default inputs or not
 
     public static void main(String[] args) {
+        String pwtest = "password1";
+        pwtest = Integer.toString(pwtest.hashCode());
+        System.out.println(pwtest);
+
         InputHandler input = InputHandler.getInstance();
         System.out.println("Use default inputs?");
         defaults = input.yesOrNo();
