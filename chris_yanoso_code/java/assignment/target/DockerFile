@@ -1,0 +1,5 @@
+FROM openjdk:8
+
+COPY assignment-1.0-SNAPSHOT.jar App/
+WORKDIR App/
+ENTRYPOINT ["java", "-jar", "assignment-1.0-SNAPSHOT.jar"]
