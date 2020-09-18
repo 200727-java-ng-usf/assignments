@@ -111,7 +111,7 @@ where "FirstName" = 'Robert' and "LastName" = 'Walter';
 --3.1 System Defined Functions
 
 --Task – Create a function that returns the current time.
-select CURRENT_DATE;
+select CURRENT_TIME;
 
 --Task – create a function that returns the length of a mediatype from the mediatype table
 select length("Name") from "MediaType";
