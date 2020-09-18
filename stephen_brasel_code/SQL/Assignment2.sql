@@ -188,14 +188,18 @@ from "Invoice" i
 inner join "Customer" c2 
 ON c2."CustomerId" = i."CustomerId" 
 order by i."CustomerId" ;
+
 --5.2 OUTER
 --Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, last name, invoiceId, and total.
+
 select c2."CustomerId", c2."FirstName" ,c2."LastName" , i2."InvoiceId" , i2."Total" 
 from "Customer" c2
 full outer join "Invoice" i2 
 on c2."CustomerId" = i2."CustomerId" ;
+
 --5.3 RIGHT
 --Task – Create a right join that joins album and artist specifying artist name and title.
+
 select * from "Artist" a2 ;
 select * from "Album" a order by "ArtistId" ;
 
@@ -203,21 +207,25 @@ select a3."Name" , a2."Title"
 from "Album" a2 
 right join "Artist" a3 
 on a3."ArtistId" = a2."ArtistId" ;
+
 --5.4 CROSS
 --Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+
 select  a3."Name", a2."Title"
 from "Album" a2 
 cross join "Artist" a3 
 order by a3."Name" asc;
+
 --5.5 SELF
 --Task – Perform a self-join on the employee table, joining on the reports to column.
+
 select m."FirstName" , e."FirstName" as ReportsTo
 from "Employee" e 
 join "Employee" m 
 on e."EmployeeId" = m."ReportsTo"
-order by m."EmployeeId" ;
+order by m."ReportsTo" ;
 
-
+select * from "Employee" e ;
 
 
 
