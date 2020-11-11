@@ -25,6 +25,26 @@ public class T31CyclicRotatingStringsTest {
 	}
 
 	@Test
+	public void isNotCyclicRotatedNullA() {
+		assertFalse(sut.isCyclicRotated(null, "B"));
+	}
+
+	@Test
+	public void isNotCyclicRotatedNullB() {
+		assertFalse(sut.isCyclicRotated("A", null));
+	}
+
+	@Test
+	public void isNotCyclicRotatedEmptyA() {
+		assertFalse(sut.isCyclicRotated("", "B"));
+	}
+
+	@Test
+	public void isNotCyclicRotatedEmptyB() {
+		assertFalse(sut.isCyclicRotated("A", ""));
+	}
+
+	@Test
 	public void isNotCyclicRotatedAB() {
 		assertFalse(sut.isCyclicRotated("A", "B"));
 	}
@@ -47,6 +67,11 @@ public class T31CyclicRotatingStringsTest {
 	@Test
 	public void isCyclicRotatedAB_ABAB() {
 		assertTrue(sut.isCyclicRotated("AB", "ABAB"));
+	}
+
+	@Test
+	public void isCyclicRotatedABAB_AB() {
+		assertTrue(sut.isCyclicRotated("ABAB", "AB"));
 	}
 
 	@Test
