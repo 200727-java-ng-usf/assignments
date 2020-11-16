@@ -1,6 +1,4 @@
 package com.revature.questions;
-//
-//import org.javatuples.Map.Entry;
 
 import java.util.*;
 
@@ -21,15 +19,6 @@ public class Q32NumberOfIslands {
 
 		public Integer getY() {
 			return y;
-		}
-
-		@Override
-		public boolean equals(Object o) {
-			if (this == o) return true;
-			if (o == null || getClass() != o.getClass()) return false;
-			coord coord = (coord) o;
-			return Objects.equals(x, coord.x) &&
-					Objects.equals(y, coord.y);
 		}
 
 		@Override

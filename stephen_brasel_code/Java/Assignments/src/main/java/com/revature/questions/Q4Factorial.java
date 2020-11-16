@@ -17,21 +17,21 @@ public class Q4Factorial {
             if(end condition) return accumulator;
             return recursive(count, function - operator - accumulator)
      */
-//    private int FactorialGo(int n, int accumulator) {
-//        if (n <= 1) return accumulator;
-//        return FactorialGo(n - 1, n * accumulator);
-//    }
-//
-//    public int Factorial(int n) {
-//        return FactorialGo(n, 1);
-//    }
+    private int FactorialGo(int n, int accumulator) {
+        if (n <= 1) return accumulator;
+        return FactorialGo(n - 1, n * accumulator);
+    }
+
+    public int FactorialTail(int n) {
+        return FactorialGo(n, 1);
+    }
 
     /**
      * Returns the factorial of the given input n.
      * @param n the integer to produce the factorial of.
      * @return the factorial of int n, or n!
      */
-    public int Factorial(int n){
+    public int FactorialFor(int n){
         int ret = 1;
         for (int i = 1; i <= n; i++) {
             ret*=i;
@@ -39,8 +39,8 @@ public class Q4Factorial {
         return ret;
     }
 
-//    public int FactorialRecursive(int n) {
-//        if (n <= 1) return 1;
-//        return (n * FactorialRecursive(n - 1));
-//    }
+    public int Factorial(int n) {
+        if (n <= 1) return 1;
+        return (n * Factorial(n - 1));
+    }
 }

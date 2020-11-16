@@ -53,6 +53,42 @@ public class T4Factorial {
 	public void t4FactorialSingular() {
 		assertEquals(facN, q4.Factorial(n));
 	}
+	@Test
+	public void t4FactorialForArray() {
+		int n = 11;
+		int[] ar = new int[n];
+		for (int i = 0; i < n; i++) {
+			ar[i] = q4.FactorialFor(i + 1);
+			System.out.print(ar[i]);
+			if (i < n - 1) {
+				System.out.print(", ");
+			}
+		}
+		assertArrayEquals(result, ar);
+	}
+
+	@Test
+	public void t4FactorialForSingular() {
+		assertEquals(facN, q4.FactorialFor(n));
+	}
+	@Test
+	public void t4FactorialTailArray() {
+		int n = 11;
+		int[] ar = new int[n];
+		for (int i = 0; i < n; i++) {
+			ar[i] = q4.FactorialTail(i + 1);
+			System.out.print(ar[i]);
+			if (i < n - 1) {
+				System.out.print(", ");
+			}
+		}
+		assertArrayEquals(result, ar);
+	}
+
+	@Test
+	public void t4FactorialTailSingular() {
+		assertEquals(facN, q4.FactorialTail(n));
+	}
 	//endregion
 
 	//region NEGATIVE_TESTS
@@ -67,6 +103,30 @@ public class T4Factorial {
 	@Test
 	public void t4FactorialNegative() {
 		assertEquals(1, q4.Factorial(-1));
+	}
+	@Test
+	public void t4FactorialForSingularNotEqual() {
+		assertNotEquals(n, q4.FactorialFor(n));
+	}
+	@Test
+	public void t4FactorialForZero() {
+		assertEquals(1, q4.FactorialFor(0));
+	}
+	@Test
+	public void t4FactorialForNegative() {
+		assertEquals(1, q4.FactorialFor(-1));
+	}
+	@Test
+	public void t4FactorialTailSingularNotEqual() {
+		assertNotEquals(n, q4.FactorialTail(n));
+	}
+	@Test
+	public void t4FactorialTailZero() {
+		assertEquals(1, q4.FactorialTail(0));
+	}
+	@Test
+	public void t4FactorialTailNegative() {
+		assertEquals(1, q4.FactorialTail(-1));
 	}
 	//endregion
 
