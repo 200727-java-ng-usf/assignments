@@ -1,7 +1,7 @@
 package com.revature.questions;
 
-import com.revature.util.GreaterThan;
-import com.revature.util.IntCommand;
+import com.revature.util.operators.GreaterThan;
+import com.revature.util.operators.BooleanOperator;
 
 import java.util.Arrays;
 
@@ -12,19 +12,19 @@ import java.util.Arrays;
 public class Q1BubbleSort {
 	//    Q1. Perform a bubble sort on the following integer array:  1,0,5,6,3,2,3,7,9,8,4
 	/**
-	 * an <code>{@link IntCommand}</code> implementation returning true or
+	 * an <code>{@link BooleanOperator}</code> implementation returning true or
 	 * false depending on if a condition has been met.
 	 * By default, this is set to an instance of <code>{@link GreaterThan}</code>,
 	 * which sorts BubbleSort in ascending order
 	 */
-	private IntCommand comparison;
+	private BooleanOperator comparison;
 
 	/**
 	 * Sets the comparison operator for sorting.
-	 * @param comparison an <code>{@link IntCommand}</code> implementation returning true or
+	 * @param comparison an <code>{@link BooleanOperator}</code> implementation returning true or
 	 *                   false depending on if a condition has been met.
 	 */
-	public void setComparison(IntCommand comparison) {
+	public void setComparison(BooleanOperator comparison) {
 		this.comparison = comparison;
 	}
 

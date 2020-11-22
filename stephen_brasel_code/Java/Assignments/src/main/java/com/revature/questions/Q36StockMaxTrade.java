@@ -58,6 +58,9 @@ public class Q36StockMaxTrade {
 		for (int i = 0; i < ar.length - 1; i++) {
 			if(ar[i+1]>ar[i]) max += ar[i+1]-ar[i];
 		}
+		"hello".concat(" world");
+		String n = "hello";
+		n += " world";
 		return max;
 	}
 }

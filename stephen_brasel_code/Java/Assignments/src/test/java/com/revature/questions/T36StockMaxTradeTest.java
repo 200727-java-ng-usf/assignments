@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q36StockMaxTradeTest {
+public class T36StockMaxTradeTest {
 	Q36StockMaxTrade sut;
 
 	@Before

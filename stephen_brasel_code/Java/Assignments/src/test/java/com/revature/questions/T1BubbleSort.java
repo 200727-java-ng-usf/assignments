@@ -1,6 +1,6 @@
 package com.revature.questions;
 
-import com.revature.util.LessThan;
+import com.revature.util.operators.LessThan;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
