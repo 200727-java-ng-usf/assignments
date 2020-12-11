@@ -70,6 +70,11 @@ public class T45NumberInSquaresTest {
 	}
 
 	@Test
+	public void numInSquares59() {
+		assertEquals(1, sut.numInSquares(5,9));
+	}
+
+	@Test
 	public void numInSquares612() {
 		assertEquals(4, sut.numInSquares(6,12));
 	}
@@ -87,6 +92,30 @@ public class T45NumberInSquaresTest {
 	@Test
 	public void numInSquares1212() {
 		assertEquals(6, sut.numInSquares(12,12));
+	}
+
+	@Test
+	public void numInSquares100000AllLogN(){
+		int max = 0, num = 100000;
+		for (int i = 0; i < num; i++) {
+			int n = sut.numInSquares(num, i);
+			if(max < n) {
+				max = n;
+				System.out.println(max + ": " + i);
+			}
+		}
+	}
+
+	@Test
+	public void numInSquares100000AllN(){
+		int max = 0, num = 100000;
+		for (int i = 0; i < num; i++) {
+			int n = sut.numInSquaresN(num, i);
+			if(max < n) {
+				max = n;
+				System.out.println(max + ": " + i);
+			}
+		}
 	}
 
 	@Test

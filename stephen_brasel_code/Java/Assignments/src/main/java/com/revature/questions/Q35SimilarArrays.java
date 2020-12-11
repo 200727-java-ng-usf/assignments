@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Q35SimilarArrays {
 	public boolean areSimilarCount(int[] a, int[] b) {
-		if(Arrays.equals(a, b)) return true;
-		else if (a == null || b == null
+		if (a == null || b == null
 				|| a.length != b.length || a.length == 0)
 			return false;
+		else if(Arrays.equals(a, b)) return true;
 		int swapA = 0, swapB = 0, count = 0;
 		for(int i = 0; i < a.length; i++){
 			if(a[i] != b[i]) {
@@ -24,10 +24,10 @@ public class Q35SimilarArrays {
 	}
 
 	public boolean areSimilarSwap(int[] a, int[] b) {
-		if(Arrays.equals(a, b)) return true;
-		else if (a == null || b == null
+		if (a == null || b == null
 				|| a.length != b.length || a.length == 0)
 			return false;
+		else if(Arrays.equals(a, b)) return true;
 		boolean valuesStored = false;
 		int aVal = 0, index = 0;
 		for(int i = 0; i < a.length; i++){

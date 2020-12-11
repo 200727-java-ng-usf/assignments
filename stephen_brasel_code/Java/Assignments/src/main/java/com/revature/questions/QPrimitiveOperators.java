@@ -4,23 +4,48 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * =	Type
- * +=	Type
+ * ******************************
+ *
+ * Operator Precedence
+ * postfix					expr++ expr--
+ * unary					+=expr --expr +expr -expr ~ !
+ * multiplicative			* / %
+ * additive					+ -
+ * shift					>> << <<<
+ * relational				< > <= >= instanceof
+ * equality					== !=
+ * bitwise AND				&
+ * bitwise exclusive OR		^
+ * bitwise inclusive OR		|
+ * logical AND				&&
+ * logical OR				||
+ * ternary					?:
+ * assignment				= += -= *= /= %= &= ^= |= <<= >>= >>>=
+ *
+ * ******************************
+ * Operator return types for primitive and Object data types
+ * =	Object, Primitive
+ * +=	char, String, byte, short, int, long, float, double
  * -=	Type
  * *=	Type
  * /=	Type
  * %=	Type
+ * <<=	Number (byte, short, int, long, float, and double)
+ * >>=	Number (byte, short, int, long, float, and double)
+ * >>>=	Number (byte, short, int, long, float, and double)
  * +	Type
  * -	Type
  * *	Type
  * /	Type
  * %	Type
- * &	int
- * |	int
- * ^	int
- * &=	int
- * |=	int
- * ^=	int
+ * &	int (byte, short, int, long)
+ * |	int (byte, short, int, long)
+ * ^	int (byte, short, int, long)
+ * &=	int (byte, short, int, long)
+ * |=	int (byte, short, int, long)
+ * ^=	int (byte, short, int, long)
+ * ++	Number (byte, short, int, long, float, and double)
+ * --	Number (byte, short, int, long, float, and double)
  * &&	boolean
  * ||	boolean
  * ==	boolean
@@ -92,6 +117,12 @@ public class QPrimitiveOperators {
 	public void testchar(char x){
 		x = c;
 		x = C;
+
+		if(x == s){
+			System.out.println("Chars can equal shorts");
+		} else {
+			System.out.println("Chars cannot equal shorts");
+		}
 
 		x += c;
 		x += C;

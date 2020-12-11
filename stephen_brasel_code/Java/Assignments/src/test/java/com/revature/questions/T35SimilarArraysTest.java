@@ -25,14 +25,14 @@ public class T35SimilarArraysTest {
 	public void areSimilarSwapNull() {
 		a = null;
 		b = null;
-		assertTrue(sut.areSimilarSwap(a, b));
+		assertFalse(sut.areSimilarSwap(a, b));
 	}
 
 	@Test
 	public void areSimilarSwapEmpty() {
 		a = new int[]{};
 		b = new int[]{};
-		assertTrue(sut.areSimilarSwap(a, b));
+		assertFalse(sut.areSimilarSwap(a, b));
 	}
 
 	@Test
@@ -126,14 +126,14 @@ public class T35SimilarArraysTest {
 	public void areSimilarCountNull() {
 		a = null;
 		b = null;
-		assertTrue(sut.areSimilarCount(a, b));
+		assertFalse(sut.areSimilarCount(a, b));
 	}
 
 	@Test
 	public void areSimilarCountEmpty() {
 		a = new int[]{};
 		b = new int[]{};
-		assertTrue(sut.areSimilarCount(a, b));
+		assertFalse(sut.areSimilarCount(a, b));
 	}
 
 	@Test

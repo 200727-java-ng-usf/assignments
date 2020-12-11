@@ -55,10 +55,10 @@ public class Q1BubbleSort {
 		//make a copy of the original array, this copy will be sorted instead of the original
 		int[] copy = Arrays.copyOf(arr, arr.length);
 		boolean sorted;
-		int i = 0, temp = 0, n = copy.length;
+		int i = 0, temp = 0, n = copy.length - 1;
 		do {
 			sorted = true;
-			for (i = 0; i < n - 1; i++) {
+			for (i = 0; i < n; i++) {
 //                if (copy[i] > copy[i + 1]) {
 				if (comparison.execute(copy[i], copy[i + 1])) {
 					//swap

@@ -45,14 +45,18 @@ public class Q8Palindrome {
      * @return true if the input str is a palindrome
      */
     private boolean isPalindrome(String str){
-        int halflen = str.length()/2;
-        for (int i = 0; i < halflen; i++) {
-            if(str.charAt(i) != str.charAt(str.length() - 1 - i)){
+        for (int i = 0, len = str.length()/2; i < len; i++)
+            if(str.charAt(i) != str.charAt(str.length() - 1 - i))
                 return false;
-            }
-        }
-        System.out.println(str);
         return true;
+    }
+
+    private boolean isKPalindrome(String s, int k){
+        return s.length() <= 1 || (
+                (s.charAt(0) == s.charAt(s.length() - 1))
+                        ? isKPalindrome(s.substring(1, s.length() - 1), k)
+                        : (k != 0) && (isKPalindrome(s.substring(1), k - 1) || isKPalindrome(s.substring(0, s.length() - 1), k - 1))
+        );
     }
 
     /**
@@ -64,7 +68,7 @@ public class Q8Palindrome {
         else allStr = new ArrayList<>(Arrays.asList(strs));
         palindromes = new ArrayList<>();
         for (String s : allStr) {
-            if (isPalindrome(s)) {
+            if (isKPalindrome(s, 0)) {
                 palindromes.add(s);
             }
         }

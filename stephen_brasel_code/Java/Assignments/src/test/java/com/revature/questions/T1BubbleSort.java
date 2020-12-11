@@ -112,10 +112,31 @@ public class T1BubbleSort {
     }
     @Test
     public void t1BubbleSortNullArray(){
-    // testSolutionWithNull
+        // testSolutionWithNull
         String msg = "If a null array is provided, the impl should return an empty array.";
         int[] expectedResult = {};
         assertArrayEquals(msg, expectedResult, q1.bubbleSort(null));
+    }
+    @Test
+    public void t1BubbleSortOneElementArray(){
+        // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {1};
+        assertArrayEquals(msg, expectedResult, q1.bubbleSort(new int[] {1}));
+    }
+    @Test
+    public void t1BubbleSortMaxMinArray(){
+        // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {Integer.MIN_VALUE, Integer.MAX_VALUE};
+        assertArrayEquals(msg, expectedResult, q1.bubbleSort(new int[] {Integer.MAX_VALUE, Integer.MIN_VALUE}));
+    }
+    @Test
+    public void t1BubbleSortMinMaxArray(){
+        // testSolutionWithNull
+        String msg = "If a null array is provided, the impl should return an empty array.";
+        int[] expectedResult = {Integer.MIN_VALUE, Integer.MAX_VALUE};
+        assertArrayEquals(msg, expectedResult, q1.bubbleSort(new int[] {Integer.MIN_VALUE, Integer.MAX_VALUE}));
     }
     //endregion
 
