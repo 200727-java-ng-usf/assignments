@@ -44,18 +44,29 @@ public class Q8Palindrome {
      * @param str the String to determine whether or not it is a palindrome
      * @return true if the input str is a palindrome
      */
-    private boolean isPalindrome(String str){
+    public boolean isPalindrome(String str){
         for (int i = 0, len = str.length()/2; i < len; i++)
             if(str.charAt(i) != str.charAt(str.length() - 1 - i))
                 return false;
         return true;
     }
 
-    private boolean isKPalindrome(String s, int k){
+
+    /**
+     * Determines whether an given String str is a palindrome or can be
+     * turned into by changing k or less characters.
+     * @param s the String to determine whether or not it is a palindrome
+     * @param k the maximum allowed discrepancies
+     * @return true if the input s can be a palindrome
+     */
+    public boolean isKPalindrome(String s, int k){
         return s.length() <= 1 || (
                 (s.charAt(0) == s.charAt(s.length() - 1))
                         ? isKPalindrome(s.substring(1, s.length() - 1), k)
-                        : (k != 0) && (isKPalindrome(s.substring(1), k - 1) || isKPalindrome(s.substring(0, s.length() - 1), k - 1))
+                        :
+                        (k != 0)
+                                && (isKPalindrome(s.substring(1), k - 1)
+                                || isKPalindrome(s.substring(0, s.length() - 1), k - 1))
         );
     }
 
@@ -68,7 +79,7 @@ public class Q8Palindrome {
         else allStr = new ArrayList<>(Arrays.asList(strs));
         palindromes = new ArrayList<>();
         for (String s : allStr) {
-            if (isKPalindrome(s, 0)) {
+            if (isPalindrome(s)) {
                 palindromes.add(s);
             }
         }

@@ -34,6 +34,7 @@ public class T47BSTCreationTest {
 		bt.add(7);
 		bt.add(12);
 		bt.add(10);
+		bt.add(10);
 		bt.add(9);
 		bt.add(11);
 		bt.add(14);

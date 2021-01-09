@@ -1,9 +1,11 @@
 package com.revature;
 
+import com.revature.util.Mouse;
 import com.revature.util.Timer;
+import com.revature.util.operators.VoidOperator;
 
+import java.awt.*;
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Random;
 
 class A{
@@ -46,6 +48,28 @@ public class Driver {//	private int Señor = 0;
 		String val = args.length > 0 ? args[0] : "null";
 		switch(val){
 			default:
+			case "mousetrap":
+				Mouse tim = new Mouse("Tim", Color.DARK_GRAY);
+				Object o = new Object();
+				mousetrap(tim);
+				mousetrap(o);
+				o = tim;
+				mousetrap(o);
+				if(!val.equals("null")) break;
+			case "shortCircuitZeroMult":
+				System.out.println(0*(giveIncrement()));
+				count--;
+				if(!val.equals("null")) break;
+			case "rhombus":
+				rhombus(args.length > 1 ? Integer.parseInt(args[1]) : 7, 1);
+				if(!val.equals("null")) break;
+			case "rightTriangle":
+				int rtn = args.length > 1 ? Integer.parseInt(args[1]) : 10;
+				rightTriangle(rtn, "SW");
+				rightTriangle(rtn, "NW");
+				rightTriangle(rtn, "SE");
+				rightTriangle(rtn, "NE");
+				if(!val.equals("null")) break;
 			case "-+": case "negPos": case "negativePositive":
 				negativePositive();
 				if(!val.equals("null")) break;
@@ -78,7 +102,84 @@ public class Driver {//	private int Señor = 0;
 				recurse(0, 4);
 				if(!val.equals("null")) break;
 		}
+	}
 
+	public static void mousetrap(Object o){
+		if(o instanceof Mouse) System.out.println("We caught a mouse!");
+		else System.out.println("We did not catch a mouse.");
+	}
+
+	public static void rhombus(int n, int x){
+		for (int i = 0; i < n-x; i++) {
+			System.out.print(" ");
+		}
+		palinNumber(x);
+		System.out.println();
+		if(x == n) return;
+		rhombus(n,x+1);
+		for (int i = 0; i < n-x; i++) {
+			System.out.print(" ");
+		}
+		palinNumber(x);
+		System.out.println();
+	}
+
+	public static void palinNumber(int n){
+		System.out.print(n);
+		if(n == 1) return;
+		palinNumber(n-1);
+		System.out.print(n);
+	}
+
+	public static void rightTriangle(int n, String type){
+		for (int i = 1; i <= n; i++) {
+			switch (type){
+				default:
+				case "NW":
+					rightTriangleNW(n, i);
+					break;
+				case "NE":
+					rightTriangleNE(n, i);
+					break;
+				case "SW":
+					rightTriangleSW(n, i);
+					break;
+				case "SE":
+					rightTriangleSE(n, i);
+					break;
+			}
+			System.out.println();
+		}
+	}
+
+	public static void rightTriangleNE(int n, int i){
+		for (int j = 1; j <= i; j++) {
+			System.out.print(j);
+		}
+	}
+
+	public static void rightTriangleNW(int n, int i){
+		for (int j = 0; j < n-i; j++) {
+			System.out.print(" ");
+		}
+		for (int j = i; j >= 1; j--) {
+			System.out.print(j);
+		}
+	}
+
+	public static void rightTriangleSW(int n, int i){
+		for (int j = 0; j < i-1; j++) {
+			System.out.print(" ");
+		}
+		for (int j = n-i+1; j >= 1; j--) {
+			System.out.print(j);
+		}
+	}
+
+	public static void rightTriangleSE(int n, int i){
+		for (int j = n-i+1; j >= 1; j--) {
+			System.out.print(j);
+		}
 	}
 
 	public static void negativePositive() {
@@ -92,8 +193,8 @@ public class Driver {//	private int Señor = 0;
 
 	private static void TimedCheck() {
 		count = 100;
-		Timer.printTime(Driver::ifElseCheck);
-		Timer.printTime(Driver::switchCheck);
+		Timer.printTime((VoidOperator)Driver::ifElseCheck);
+		Timer.printTime((VoidOperator)Driver::switchCheck);
 	}
 
 	private static void randomizeBoard() {
@@ -148,7 +249,7 @@ public class Driver {//	private int Señor = 0;
 		}
 	}
 
-	public static void switchCheck() {
+	public static void switchCheck(Object... args) {
 		switch (count){
 			case 1:
 				System.out.println(count);
@@ -453,7 +554,12 @@ public class Driver {//	private int Señor = 0;
 		}
 	}
 
-	private static void ifElseCheck() {
+	private static void ifElseCheck(Object... args) {
+//		for (int i = 1; i < 100; i++) {
+//			if(count == i){
+//				System.out.println(count);
+//			}
+//		}
 		if(count == 1){
 			System.out.println(count);
 		} else if(count == 2){

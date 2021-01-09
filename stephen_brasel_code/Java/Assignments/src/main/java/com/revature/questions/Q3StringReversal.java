@@ -20,11 +20,18 @@ public class Q3StringReversal {
      */
     public String reverseBuild(String str){
         StringBuilder strbd = new StringBuilder();
-        for (int i = str.length() -1; i >= 0; i--) {
+        for (int i = str.length() -1; i >= 0; i--)
             strbd.append(str.charAt(i));
-        }
         return strbd.toString();
     }
+
+//    public String reverseBuild(String str){
+//        String strbd = "";
+//        for (int i = str.length() -1; i >= 0; i--) {
+//            strbd += (str.charAt(i));
+//        }
+//        return strbd;
+//    }
 
 //    public String reverseString(String str) {
 //

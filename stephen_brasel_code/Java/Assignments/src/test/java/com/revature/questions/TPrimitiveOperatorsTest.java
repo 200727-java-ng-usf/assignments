@@ -35,6 +35,11 @@ public class TPrimitiveOperatorsTest {
 	}
 
 	@Test
+	public void testcharShort() {
+		sut.testchar((char)1);
+	}
+
+	@Test
 	public void testCharacter() {
 		sut.testCharacter('A');
 	}

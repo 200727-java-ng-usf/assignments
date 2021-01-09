@@ -86,17 +86,17 @@ public class T50SortBufferedArraysTester {
 	}
 
 	@Before
-	public void t9Setup(){
+	public void Setup(){
 		sut = new Q50SortBufferedrrays();
 	}
 
 	@After
-	public void t9Teardown(){
+	public void Teardown(){
 		sut = null;
 	}
 
 	@Test
-	public void t9PrimeZero(){
+	public void BufferredArraySort(){
 		System.out.println("Target: " + Arrays.toString(target) + "\nSource: " + Arrays.toString(source));
 		sut.sort(target, source);
 		assertArrayEquals(expected, target);

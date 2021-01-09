@@ -77,4 +77,16 @@ public class Q38DateTime {
 				", localTime=" + localTime +
 				'}';
 	}
+
+	public static void main(String[] args) {
+		System.out.println(getAge(LocalDate.of(1992, 8, 25)));
+	}
+
+	public static int getAge(LocalDate birthday){
+		return birthday.until(LocalDate.now()).getYears();
+	}
+
+	public static int getAgeFrom(LocalDate current, LocalDate birthday){
+		return birthday.until(current).getYears();
+	}
 }

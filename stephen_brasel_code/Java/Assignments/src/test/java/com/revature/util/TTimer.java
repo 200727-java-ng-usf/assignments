@@ -1,5 +1,6 @@
 package com.revature.util;
 
+import com.revature.util.operators.VoidOperator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,6 +9,12 @@ import static org.junit.Assert.*;
 
 public class TTimer {
 	Timer sut;
+	VoidOperator v = new VoidOperator() {
+		@Override
+		public void execute(Object... args) {
+			return;
+		}
+	};
 
 	@Before
 	public void setUp() throws Exception {
@@ -26,11 +33,12 @@ public class TTimer {
 
 	@Test
 	public void time() {
-		assertEquals(0, Timer.time(() -> {return;}));
+		Object[] o = new Object[]{};
+		assertEquals(0, Timer.time(v, o));
 	}
 
 	@Test
 	public void printTime() {
-		Timer.printTime(() -> {return;});
+		Timer.printTime(v);
 	}
 }

@@ -118,12 +118,6 @@ public class QPrimitiveOperators {
 		x = c;
 		x = C;
 
-		if(x == s){
-			System.out.println("Chars can equal shorts");
-		} else {
-			System.out.println("Chars cannot equal shorts");
-		}
-
 		x += c;
 		x += C;
 		x += s;
